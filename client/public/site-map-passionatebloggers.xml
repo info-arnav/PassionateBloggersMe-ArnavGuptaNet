@@ -1,0 +1,171 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/index</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.1</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/contact</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/license</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/profile</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/active</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/license</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>never</changefreq>
+
+      <priority>1</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/sitemap</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.8</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/dashboard</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+   <url>
+
+      <loc>http://www.passionatebloggers.me/login</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+      <url>
+
+      <loc>http://www.passionatebloggers.me/register</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+      <url>
+
+      <loc>http://www.passionatebloggers.me/login</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+      <url>
+
+      <loc>http://www.passionatebloggers.me/projects</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>1.0</priority>
+
+   </url>
+
+      <url>
+
+      <loc>http://www.passionatebloggers.me/feed</loc>
+
+      <lastmod>2020-10-11</lastmod>
+
+      <changefreq>monthly</changefreq>
+
+      <priority>0.5</priority>
+
+   </url>
+</urlset>
