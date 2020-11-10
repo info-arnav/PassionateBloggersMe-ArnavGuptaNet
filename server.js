@@ -1,7 +1,8 @@
-const bcrypt = require("bcryptjs")
+const bcrypt = require("bcryptjs");
 const express = require("express");
 const mongoose = require("mongoose");
 const bodyParser = require("body-parser");
+const xml2js = require("xml2js");
 const mailgun = require("mailgun-js");
 const path = require("path");
 const passport = require("passport");
@@ -215,7 +216,7 @@ app.post("/profile/update/data", async (req, res) => {
       imagePath: req.body.imagePath,
       biology: req.body.biology,
       website: req.body.website,
-imagePath : req.body.imagePath,
+      imagePath: req.body.imagePath,
       facebook: req.body.facebook,
       instagram: req.body.instagram,
       twitter: req.body.twitter,
@@ -254,13 +255,177 @@ app.post("/teams/submit", async (req, res) => {
   body = req.body;
   await eventModel.create(req.body, async (error, success) => {
     if (success) {
+      await fs.readFile(
+        "./client/public/site-map-arnavgupta-ssl.xml",
+        "utf-8",
+        (err, data) => {
+          if (err) {
+            throw err;
+          }
+
+          // convert XML data to JSON object
+          xml2js.parseString(data, async (err, result) => {
+            if (err) {
+              throw err;
+            }
+            // add a new database to list
+            const postgres = {
+              loc: `https://www.arnavgupta.net/posted${success._id}`,
+              changefreq: "monthly",
+              priority: "1.0",
+            };
+
+            result.urlset.url.push(postgres);
+
+            // convert SJON objec to XML
+            const builder = new xml2js.Builder();
+            const xml = builder.buildObject(result);
+
+            // write updated XML string to a file
+            fs.writeFile(
+              "./client/public/site-map-arnavgupta-ssl.xml",
+              xml,
+              (err) => {
+                if (err) {
+                  throw err;
+                }
+
+                console.log(`Updated XML is written to a new file.`);
+              }
+            );
+          });
+        }
+      );
+      await fs.readFile(
+        "./client/public/site-map-arnavgupta.xml",
+        "utf-8",
+        (err, data) => {
+          if (err) {
+            throw err;
+          }
+
+          // convert XML data to JSON object
+          xml2js.parseString(data, async (err, result) => {
+            if (err) {
+              throw err;
+            }
+            // add a new database to list
+            const postgres = {
+              loc: `http://www.arnavgupta.net/posted${success._id}`,
+              changefreq: "monthly",
+              priority: "1.0",
+            };
+
+            result.urlset.url.push(postgres);
+
+            // convert SJON objec to XML
+            const builder = new xml2js.Builder();
+            const xml = builder.buildObject(result);
+
+            // write updated XML string to a file
+            fs.writeFile(
+              "./client/public/site-map-arnavgupta.xml",
+              xml,
+              (err) => {
+                if (err) {
+                  throw err;
+                }
+
+                console.log(`Updated XML is written to a new file.`);
+              }
+            );
+          });
+        }
+      );
+      await fs.readFile(
+        "./client/public/site-map-passionatebloggers-ssl.xml",
+        "utf-8",
+        (err, data) => {
+          if (err) {
+            throw err;
+          }
+
+          // convert XML data to JSON object
+          xml2js.parseString(data, async (err, result) => {
+            if (err) {
+              throw err;
+            }
+            // add a new database to list
+            const postgres = {
+              loc: `https://www.passionatebloggers.me/posted${success._id}`,
+              changefreq: "monthly",
+              priority: "1.0",
+            };
+
+            result.urlset.url.push(postgres);
+
+            // convert SJON objec to XML
+            const builder = new xml2js.Builder();
+            const xml = builder.buildObject(result);
+
+            // write updated XML string to a file
+            fs.writeFile(
+              "./client/public/site-map-passionatebloggers-ssl.xml",
+              xml,
+              (err) => {
+                if (err) {
+                  throw err;
+                }
+
+                console.log(`Updated XML is written to a new file.`);
+              }
+            );
+          });
+        }
+      );
+      await fs.readFile(
+        "./client/public/site-map-passionatebloggers.xml",
+        "utf-8",
+        (err, data) => {
+          if (err) {
+            throw err;
+          }
+
+          // convert XML data to JSON object
+          xml2js.parseString(data, async (err, result) => {
+            if (err) {
+              throw err;
+            }
+            // add a new database to list
+            const postgres = {
+              loc: `http://www.passionatebloggers.me/posted${success._id}`,
+              changefreq: "monthly",
+              priority: "1.0",
+            };
+
+            result.urlset.url.push(postgres);
+
+            // convert SJON objec to XML
+            const builder = new xml2js.Builder();
+            const xml = builder.buildObject(result);
+
+            // write updated XML string to a file
+            fs.writeFile(
+              "./client/public/site-map-passionatebloggers.xml",
+              xml,
+              (err) => {
+                if (err) {
+                  throw err;
+                }
+
+                console.log(`Updated XML is written to a new file.`);
+              }
+            );
+          });
+        }
+      );
       await User.findOne({ name: body.name }, async (error, user) => {
         if (user) {
           const teamdata = {
             from: "Arnav Gupta <postmaster@arnavgupta.net>",
             to: `${user.email}, arnav.xx.gupta@gmail.com`,
             subject: "New Post",
-            text: "team was ammended succesfully",
+            text: "The new post was succesfully made",
           };
           await mg.messages().send(teamdata, async function (error, cbody) {
             if (cbody) {
@@ -440,7 +605,185 @@ app2.post("/user", async (req, res) => {
           error.boundry =
             "user email is already under use so choose another one";
         } else {
-userModel.create(body).then(e=>res.redirect(applicationParams + "login"))
+          userModel
+            .create(body)
+            .then(
+              async (e) =>
+                await fs.readFile(
+                  "./client/public/site-map-arnavgupta-ssl.xml",
+                  "utf-8",
+                  (err, data) => {
+                    if (err) {
+                      throw err;
+                    }
+
+                    // convert XML data to JSON object
+                    xml2js.parseString(data, async (err, result) => {
+                      if (err) {
+                        throw err;
+                      }
+                      // add a new database to list
+                      const postgres = {
+                        loc: `https://www.arnavgupta.net/profile${body.userName}`,
+                        changefreq: "monthly",
+                        priority: "1.0",
+                      };
+
+                      result.urlset.url.push(postgres);
+
+                      // convert SJON objec to XML
+                      const builder = new xml2js.Builder();
+                      const xml = builder.buildObject(result);
+
+                      // write updated XML string to a file
+                      fs.writeFile(
+                        "./client/public/site-map-arnavgupta-ssl.xml",
+                        xml,
+                        (err) => {
+                          if (err) {
+                            throw err;
+                          }
+
+                          console.log(`Updated XML is written to a new file.`);
+                        }
+                      );
+                    });
+                  }
+                )
+            )
+            .then(
+              async (e) =>
+                await fs.readFile(
+                  "./client/public/site-map-arnavgupta.xml",
+                  "utf-8",
+                  (err, data) => {
+                    if (err) {
+                      throw err;
+                    }
+
+                    // convert XML data to JSON object
+                    xml2js.parseString(data, async (err, result) => {
+                      if (err) {
+                        throw err;
+                      }
+                      // add a new database to list
+                      const postgres = {
+                        loc: `http://www.arnavgupta.net/profile${body.userName}`,
+                        changefreq: "monthly",
+                        priority: "1.0",
+                      };
+
+                      result.urlset.url.push(postgres);
+
+                      // convert SJON objec to XML
+                      const builder = new xml2js.Builder();
+                      const xml = builder.buildObject(result);
+
+                      // write updated XML string to a file
+                      fs.writeFile(
+                        "./client/public/site-map-arnavgupta.xml",
+                        xml,
+                        (err) => {
+                          if (err) {
+                            throw err;
+                          }
+
+                          console.log(`Updated XML is written to a new file.`);
+                        }
+                      );
+                    });
+                  }
+                )
+            )
+            .then(
+              async (e) =>
+                await fs.readFile(
+                  "./client/public/site-map-passionatebloggers-ssl.xml",
+                  "utf-8",
+                  (err, data) => {
+                    if (err) {
+                      throw err;
+                    }
+
+                    // convert XML data to JSON object
+                    xml2js.parseString(data, async (err, result) => {
+                      if (err) {
+                        throw err;
+                      }
+                      // add a new database to list
+                      const postgres = {
+                        loc: `https://www.passionatebloggers.me/profile${body.userName}`,
+                        changefreq: "monthly",
+                        priority: "1.0",
+                      };
+
+                      result.urlset.url.push(postgres);
+
+                      // convert SJON objec to XML
+                      const builder = new xml2js.Builder();
+                      const xml = builder.buildObject(result);
+
+                      // write updated XML string to a file
+                      fs.writeFile(
+                        "./client/public/site-map-passionatebloggers-ssl.xml",
+                        xml,
+                        (err) => {
+                          if (err) {
+                            throw err;
+                          }
+
+                          console.log(`Updated XML is written to a new file.`);
+                        }
+                      );
+                    });
+                  }
+                )
+            )
+            .then(
+              async (e) =>
+                await fs.readFile(
+                  "./client/public/site-map-passionatebloggers.xml",
+                  "utf-8",
+                  (err, data) => {
+                    if (err) {
+                      throw err;
+                    }
+
+                    // convert XML data to JSON object
+                    xml2js.parseString(data, async (err, result) => {
+                      if (err) {
+                        throw err;
+                      }
+                      // add a new database to list
+                      const postgres = {
+                        loc: `http://www.passionatebloggers.me/profile${body.userName}`,
+                        changefreq: "monthly",
+                        priority: "1.0",
+                      };
+
+                      result.urlset.url.push(postgres);
+
+                      // convert SJON objec to XML
+                      const builder = new xml2js.Builder();
+                      const xml = builder.buildObject(result);
+
+                      // write updated XML string to a file
+                      fs.writeFile(
+                        "./client/public/site-map-passionatebloggers.xml",
+                        xml,
+                        (err) => {
+                          if (err) {
+                            throw err;
+                          }
+
+                          console.log(`Updated XML is written to a new file.`);
+                        }
+                      );
+                    });
+                  }
+                )
+            )
+            .then((e) => res.redirect(applicationParams + "login"));
           error.status = false;
           error.boundry = "";
         }
