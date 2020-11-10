@@ -18,36 +18,52 @@ class Footer extends Component {
                 <li>
                   <a href="/register">Sign up</a>
                 </li>
+                <li>
+                  <a href="/contact">Contact Us</a>
+                </li>
               </ul>
             </div>
             <div className="col-sm-3">
               <h5>Extensions</h5>
               <ul>
                 <li>
-                  <a href="https://chrome.google.com/webstore/detail/badbllgllmfcbdebaakkoiehefmmjngh">BuzzSpot - Chrome</a>
+                  <a href="https://chrome.google.com/webstore/detail/badbllgllmfcbdebaakkoiehefmmjngh">
+                    BuzzSpot - Chrome
+                  </a>
                 </li>
                 <li>
-                  <a href="https://chrome.google.com/webstore/detail/dajhfhdjfpcomojccfkakenbgnahpmdp">PassionateBlogger - Chrome</a>
+                  <a href="https://chrome.google.com/webstore/detail/dajhfhdjfpcomojccfkakenbgnahpmdp">
+                    PassionateBlogger - Chrome
+                  </a>
                 </li>
-<li>
-                  <a href="https://microsoftedge.microsoft.com/addons/detail/ndjdppjhbollancnchjcpkobgaeibbfm">ArnavGuptaNet - Edge</a>
+                <li>
+                  <a href="https://microsoftedge.microsoft.com/addons/detail/ndjdppjhbollancnchjcpkobgaeibbfm">
+                    ArnavGuptaNet - Edge
+                  </a>
                 </li>
-<li>
-                  <a href="https://microsoftedge.microsoft.com/addons/detail/dbdnfcbjgjagelfpfngedlbljlciljoc">BuzzSpot - Edge</a>
+                <li>
+                  <a href="https://microsoftedge.microsoft.com/addons/detail/dbdnfcbjgjagelfpfngedlbljlciljoc">
+                    BuzzSpot - Edge
+                  </a>
                 </li>
               </ul>
             </div>
             <div className="col-sm-3">
-              <h5>Support</h5>
+              <h5>Webpages</h5>
               <ul>
                 <li>
-                  <a href="/">FAQ</a>
+                  <a href="http://www.passionatebloggers.me/">
+                    PassionateBlogger
+                  </a>
                 </li>
                 <li>
-                  <a href="/contact">Help desk</a>
+                  <a href="http://arnavgupta.net/">ArnavGuptaNet</a>
                 </li>
                 <li>
-                  <a href="/">Forums</a>
+                  <a href="http://cancerya.passionatebloggers.me/">Cancerya</a>
+                </li>
+                <li>
+                  <a href="http://cancerya.arnavgupta.net/">Cancerya</a>
                 </li>
               </ul>
             </div>
@@ -55,10 +71,7 @@ class Footer extends Component {
               <h5>Legal</h5>
               <ul>
                 <li>
-                  <a href="/License">Terms of Service</a>
-                </li>
-                <li>
-                  <a href="/license">Terms of Use</a>
+                  <a href="/License">Liscence</a>
                 </li>
               </ul>
             </div>
@@ -73,3 +86,4 @@ class Footer extends Component {
 }
 
 export default Footer;
+
