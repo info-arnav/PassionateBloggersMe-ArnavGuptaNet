@@ -1,0 +1,664 @@
+0 verbose cli [
+0 verbose cli   '/home/ubuntu/.nvm/versions/node/v15.0.1/bin/node',
+0 verbose cli   '/home/ubuntu/.nvm/versions/node/v15.0.1/bin/npm',
+0 verbose cli   'i'
+0 verbose cli ]
+1 info using npm@7.0.3
+2 info using node@v15.0.1
+3 timing config:load:defaults Completed in 2ms
+4 timing config:load:file:/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/npmrc Completed in 0ms
+5 timing config:load:builtin Completed in 0ms
+6 timing config:load:cli Completed in 2ms
+7 timing config:load:env Completed in 0ms
+8 timing config:load:project Completed in 0ms
+9 timing config:load:file:/home/ubuntu/.npmrc Completed in 1ms
+10 timing config:load:user Completed in 1ms
+11 timing config:load:file:/home/ubuntu/.nvm/versions/node/v15.0.1/etc/npmrc Completed in 0ms
+12 timing config:load:global Completed in 0ms
+13 timing config:load:cafile Completed in 0ms
+14 timing config:load:validate Completed in 1ms
+15 timing config:load:setUserAgent Completed in 0ms
+16 timing config:load:setEnvs Completed in 1ms
+17 timing config:load Completed in 8ms
+18 verbose npm-session 88c075ff5e0b6092
+19 timing npm:load Completed in 18ms
+20 timing arborist:ctor Completed in 1ms
+21 timing idealTree:init Completed in 433ms
+22 timing idealTree:userRequests Completed in 5ms
+23 silly idealTree buildDeps
+24 timing idealTree:#root Completed in 0ms
+25 timing idealTree:buildDeps Completed in 2ms
+26 timing idealTree:fixDepFlags Completed in 0ms
+27 timing idealTree Completed in 441ms
+28 timing reify:loadTrees Completed in 444ms
+29 timing reify:diffTrees Completed in 14ms
+30 silly reify moves {}
+31 timing reify:retireShallow Completed in 0ms
+32 timing reify:createSparse Completed in 103ms
+33 timing reify:loadBundles Completed in 0ms
+34 timing reifyNode:node_modules/spdx-exceptions Completed in 3291ms
+35 timing reifyNode:node_modules/pm2/node_modules/@pm2/pm2-version-check Completed in 3295ms
+36 timing reifyNode:node_modules/osenv Completed in 3297ms
+37 http fetch POST 200 https://registry.npmjs.org/-/npm/v1/security/advisories/bulk 3328ms
+38 timing auditReport:getReport Completed in 3331ms
+39 timing reifyNode:node_modules/amp-message Completed in 3326ms
+40 timing reifyNode:node_modules/wrappy Completed in 3359ms
+41 timing reifyNode:node_modules/wrap-ansi/node_modules/string-width Completed in 3359ms
+42 timing reifyNode:node_modules/wrap-ansi/node_modules/is-fullwidth-code-point Completed in 3360ms
+43 timing reifyNode:node_modules/wide-align Completed in 3359ms
+44 timing reifyNode:node_modules/wrap-ansi Completed in 3360ms
+45 timing reifyNode:node_modules/with-callback Completed in 3361ms
+46 timing reifyNode:node_modules/validate-npm-package-license Completed in 3364ms
+47 timing reifyNode:node_modules/strip-json-comments Completed in 3364ms
+48 timing reifyNode:node_modules/strip-ansi Completed in 3364ms
+49 timing reifyNode:node_modules/toidentifier Completed in 3365ms
+50 timing reifyNode:node_modules/strip-eof Completed in 3365ms
+51 timing reifyNode:node_modules/string-width Completed in 3364ms
+52 timing reifyNode:node_modules/string-width/node_modules/strip-ansi Completed in 3365ms
+53 timing reifyNode:node_modules/string-width/node_modules/ansi-regex Completed in 3365ms
+54 timing reifyNode:node_modules/spdx-license-ids Completed in 3365ms
+55 timing reifyNode:node_modules/shebang-regex Completed in 3366ms
+56 timing reifyNode:node_modules/shebang-command Completed in 3367ms
+57 timing reifyNode:node_modules/send/node_modules/ms Completed in 3367ms
+58 timing reifyNode:node_modules/run-series Completed in 3366ms
+59 timing reifyNode:node_modules/resolve-from Completed in 3366ms
+60 timing reifyNode:node_modules/require-in-the-middle Completed in 3367ms
+61 timing reifyNode:node_modules/read-pkg/node_modules/pify Completed in 3365ms
+62 timing reifyNode:node_modules/read-pkg Completed in 3365ms
+63 timing reifyNode:node_modules/process-nextick-args Completed in 3365ms
+64 timing reifyNode:node_modules/pm2/node_modules/color-name Completed in 3368ms
+65 timing reifyNode:node_modules/pify Completed in 3367ms
+66 timing reifyNode:node_modules/path-is-absolute Completed in 3368ms
+67 timing reifyNode:node_modules/path-key Completed in 3368ms
+68 timing reifyNode:node_modules/path-exists Completed in 3368ms
+69 timing reifyNode:node_modules/parse-json Completed in 3368ms
+70 timing reifyNode:node_modules/p-locate Completed in 3370ms
+71 timing reifyNode:node_modules/os-tmpdir Completed in 3369ms
+72 timing reifyNode:node_modules/os-homedir Completed in 3369ms
+73 timing reifyNode:node_modules/once Completed in 3369ms
+74 timing reifyNode:node_modules/p-finally Completed in 3369ms
+75 timing reifyNode:node_modules/p-defer Completed in 3369ms
+76 timing reifyNode:node_modules/object-assign Completed in 3370ms
+77 timing reifyNode:node_modules/number-is-nan Completed in 3370ms
+78 timing reifyNode:node_modules/npm-packlist Completed in 3370ms
+79 timing reifyNode:node_modules/npm-run-path Completed in 3370ms
+80 timing reifyNode:node_modules/npm-bundled Completed in 3371ms
+81 timing reifyNode:node_modules/os-locale Completed in 3371ms
+82 timing reifyNode:node_modules/normalize-path Completed in 3371ms
+83 timing reifyNode:node_modules/ms Completed in 3371ms
+84 timing reifyNode:node_modules/mute-stream Completed in 3372ms
+85 timing reifyNode:node_modules/mquery/node_modules/ms Completed in 3372ms
+86 timing reifyNode:node_modules/mongoose-legacy-pluralize Completed in 3372ms
+87 timing reifyNode:node_modules/lodash.isstring Completed in 3373ms
+88 timing reifyNode:node_modules/lodash.once Completed in 3373ms
+89 timing reifyNode:node_modules/lodash.isplainobject Completed in 3374ms
+90 timing reifyNode:node_modules/lodash.isboolean Completed in 3374ms
+91 timing reifyNode:node_modules/lodash.isnumber Completed in 3374ms
+92 timing reifyNode:node_modules/lodash.isinteger Completed in 3374ms
+93 timing reifyNode:node_modules/locate-path Completed in 3375ms
+94 timing reifyNode:node_modules/is-stream Completed in 3380ms
+95 timing reifyNode:node_modules/is-number Completed in 3380ms
+96 timing reifyNode:node_modules/is-fullwidth-code-point Completed in 3380ms
+97 timing reifyNode:node_modules/is-glob Completed in 3380ms
+98 timing reifyNode:node_modules/is-extglob Completed in 3380ms
+99 timing reifyNode:node_modules/ini Completed in 3381ms
+100 timing reifyNode:node_modules/inflight Completed in 3381ms
+101 timing reifyNode:node_modules/ignore-walk Completed in 3382ms
+102 timing reifyNode:node_modules/invert-kv Completed in 3382ms
+103 timing reifyNode:node_modules/http-proxy-agent/node_modules/ms Completed in 3381ms
+104 timing reifyNode:node_modules/has-unicode Completed in 3382ms
+105 timing reifyNode:node_modules/ieee754 Completed in 3383ms
+106 timing reifyNode:node_modules/has-flag Completed in 3382ms
+107 timing reifyNode:node_modules/get-caller-file Completed in 3384ms
+108 timing reifyNode:node_modules/glob-parent Completed in 3384ms
+109 timing reifyNode:node_modules/gauge/node_modules/string-width Completed in 3384ms
+110 timing reifyNode:node_modules/gauge/node_modules/is-fullwidth-code-point Completed in 3385ms
+111 timing reifyNode:node_modules/fs-minipass Completed in 3384ms
+112 timing reifyNode:node_modules/follow-redirects/node_modules/ms Completed in 3385ms
+113 timing reifyNode:node_modules/find-up Completed in 3385ms
+114 timing reifyNode:node_modules/fast-levenshtein Completed in 3392ms
+115 timing reifyNode:node_modules/escape-string-regexp Completed in 3395ms
+116 timing reifyNode:node_modules/escape-html Completed in 3395ms
+117 timing reifyNode:node_modules/error-ex Completed in 3396ms
+118 timing reifyNode:node_modules/ee-first Completed in 3393ms
+119 timing reifyNode:node_modules/end-of-stream Completed in 3397ms
+120 timing reifyNode:node_modules/destroy Completed in 3394ms
+121 timing reifyNode:node_modules/debug/node_modules/ms Completed in 3396ms
+122 timing reifyNode:node_modules/decamelize Completed in 3396ms
+123 timing reifyNode:node_modules/code-point-at Completed in 3401ms
+124 timing reifyNode:node_modules/cliui/node_modules/strip-ansi Completed in 3400ms
+125 timing reifyNode:node_modules/cliui/node_modules/ansi-regex Completed in 3400ms
+126 timing reifyNode:node_modules/cli-tableau/node_modules/color-name Completed in 3401ms
+127 timing reifyNode:node_modules/chownr Completed in 3401ms
+128 timing reifyNode:node_modules/chalk/node_modules/has-flag Completed in 3402ms
+129 timing reifyNode:node_modules/buffer-from Completed in 3403ms
+130 timing reifyNode:node_modules/brace-expansion Completed in 3403ms
+131 timing reifyNode:node_modules/array-flatten Completed in 3404ms
+132 timing reifyNode:node_modules/aproba Completed in 3404ms
+133 timing reifyNode:node_modules/ansi-regex Completed in 3405ms
+134 timing reifyNode:node_modules/ansi-styles Completed in 3405ms
+135 timing reifyNode:node_modules/abbrev Completed in 3405ms
+136 timing reifyNode:node_modules/@types/warning Completed in 3405ms
+137 timing reifyNode:node_modules/@types/prop-types Completed in 3405ms
+138 timing reifyNode:node_modules/@pm2/agent/node_modules/color-name Completed in 3407ms
+139 timing reifyNode:node_modules/y18n Completed in 3436ms
+140 timing reifyNode:node_modules/word-wrap Completed in 3436ms
+141 timing reifyNode:node_modules/which-module Completed in 3437ms
+142 timing reifyNode:node_modules/warning Completed in 3437ms
+143 timing reifyNode:node_modules/vary Completed in 3437ms
+144 timing reifyNode:node_modules/utils-merge Completed in 3438ms
+145 timing reifyNode:node_modules/unpipe Completed in 3437ms
+146 timing reifyNode:node_modules/type-is Completed in 3438ms
+147 timing reifyNode:node_modules/to-regex-range Completed in 3438ms
+148 timing reifyNode:node_modules/supports-color Completed in 3439ms
+149 timing reifyNode:node_modules/streamsearch Completed in 3438ms
+150 timing reifyNode:node_modules/sliced Completed in 3438ms
+151 timing reifyNode:node_modules/set-blocking Completed in 3438ms
+152 timing reifyNode:node_modules/read Completed in 3436ms
+153 timing reifyNode:node_modules/range-parser Completed in 3436ms
+154 timing reifyNode:node_modules/pm2-axon/node_modules/escape-string-regexp Completed in 3437ms
+155 timing reifyNode:node_modules/pm2/node_modules/supports-color Completed in 3437ms
+156 timing reifyNode:node_modules/pm2/node_modules/has-flag Completed in 3438ms
+157 timing reifyNode:node_modules/path-to-regexp Completed in 3437ms
+158 timing reifyNode:node_modules/parseurl Completed in 3438ms
+159 timing reifyNode:node_modules/p-try Completed in 3439ms
+160 timing reifyNode:node_modules/p-is-promise Completed in 3439ms
+161 timing reifyNode:node_modules/p-limit Completed in 3440ms
+162 timing reifyNode:node_modules/on-finished Completed in 3439ms
+163 timing reifyNode:node_modules/minizlib Completed in 3440ms
+164 timing reifyNode:node_modules/minipass Completed in 3441ms
+165 timing reifyNode:node_modules/mimic-fn Completed in 3441ms
+166 timing reifyNode:node_modules/mime-types Completed in 3441ms
+167 timing reifyNode:node_modules/mem Completed in 3441ms
+168 timing reifyNode:node_modules/media-typer Completed in 3441ms
+169 timing reifyNode:node_modules/methods Completed in 3442ms
+170 timing reifyNode:node_modules/merge-descriptors Completed in 3442ms
+171 timing reifyNode:node_modules/lru-cache Completed in 3442ms
+172 timing reifyNode:node_modules/lodash.includes Completed in 3442ms
+173 timing reifyNode:node_modules/lcid Completed in 3442ms
+174 timing reifyNode:node_modules/jwa Completed in 3443ms
+175 timing reifyNode:node_modules/json-parse-better-errors Completed in 3444ms
+176 timing reifyNode:node_modules/is-binary-path Completed in 3444ms
+177 timing reifyNode:node_modules/inherits Completed in 3445ms
+178 timing reifyNode:node_modules/http-errors/node_modules/inherits Completed in 3445ms
+179 timing reifyNode:node_modules/get-stream Completed in 3446ms
+180 timing reifyNode:node_modules/ftp/node_modules/string_decoder Completed in 3446ms
+181 timing reifyNode:node_modules/fresh Completed in 3447ms
+182 timing reifyNode:node_modules/forwarded Completed in 3447ms
+183 timing reifyNode:node_modules/finalhandler Completed in 3448ms
+184 timing reifyNode:node_modules/fill-range Completed in 3448ms
+185 timing reifyNode:node_modules/etag Completed in 3448ms
+186 timing reifyNode:node_modules/es6-promisify Completed in 3449ms
+187 timing reifyNode:node_modules/encodeurl Completed in 3446ms
+188 timing reifyNode:node_modules/denque Completed in 3447ms
+189 timing reifyNode:node_modules/cookie-signature Completed in 3448ms
+190 timing reifyNode:node_modules/console-control-strings Completed in 3448ms
+191 timing reifyNode:node_modules/content-type Completed in 3448ms
+192 timing reifyNode:node_modules/cli-tableau/node_modules/supports-color Completed in 3448ms
+193 timing reifyNode:node_modules/cli-tableau/node_modules/has-flag Completed in 3448ms
+194 timing reifyNode:node_modules/camelcase Completed in 3449ms
+195 timing reifyNode:node_modules/chalk/node_modules/supports-color Completed in 3449ms
+196 timing reifyNode:node_modules/bytes Completed in 3449ms
+197 timing reifyNode:node_modules/buffer/node_modules/ieee754 Completed in 3450ms
+198 timing reifyNode:node_modules/balanced-match Completed in 3450ms
+199 timing reifyNode:node_modules/base64-js Completed in 3450ms
+200 timing reifyNode:node_modules/anymatch Completed in 3452ms
+201 timing reifyNode:node_modules/accepts Completed in 3451ms
+202 timing reifyNode:node_modules/@pm2/agent/node_modules/supports-color Completed in 3454ms
+203 timing reifyNode:node_modules/@pm2/agent/node_modules/has-flag Completed in 3457ms
+204 timing reifyNode:node_modules/yallist Completed in 3486ms
+205 timing reifyNode:node_modules/util-deprecate Completed in 3493ms
+206 timing reifyNode:node_modules/tree-kill Completed in 3493ms
+207 timing reifyNode:node_modules/spdx-correct Completed in 3493ms
+208 timing reifyNode:node_modules/signal-exit Completed in 3494ms
+209 timing reifyNode:node_modules/send/node_modules/http-errors Completed in 3498ms
+210 timing reifyNode:node_modules/rimraf Completed in 3497ms
+211 timing reifyNode:node_modules/punycode Completed in 3495ms
+212 timing reifyNode:node_modules/proxy-addr Completed in 3495ms
+213 timing reifyNode:node_modules/pm2/node_modules/ansi-styles Completed in 3500ms
+214 timing reifyNode:node_modules/pause Completed in 3500ms
+215 timing reifyNode:node_modules/path-proxy Completed in 3500ms
+216 timing reifyNode:node_modules/path-parse Completed in 3501ms
+217 timing reifyNode:node_modules/pac-proxy-agent/node_modules/http-errors Completed in 3501ms
+218 timing reifyNode:node_modules/nssocket/node_modules/eventemitter2 Completed in 3501ms
+219 timing reifyNode:node_modules/nice-try Completed in 3506ms
+220 timing reifyNode:node_modules/minimatch Completed in 3506ms
+221 timing reifyNode:node_modules/memory-pager Completed in 3505ms
+222 timing reifyNode:node_modules/map-age-cleaner Completed in 3506ms
+223 timing reifyNode:node_modules/js-tokens Completed in 3508ms
+224 timing reifyNode:node_modules/http-errors Completed in 3509ms
+225 timing reifyNode:node_modules/ftp/node_modules/isarray Completed in 3510ms
+226 timing reifyNode:node_modules/fs.realpath Completed in 3510ms
+227 timing reifyNode:node_modules/escape-regexp Completed in 3511ms
+228 timing reifyNode:node_modules/emitter-listener Completed in 3509ms
+229 timing reifyNode:node_modules/cookie Completed in 3510ms
+230 timing reifyNode:node_modules/combined-stream Completed in 3511ms
+231 timing reifyNode:node_modules/co Completed in 3510ms
+232 timing reifyNode:node_modules/cli-tableau/node_modules/ansi-styles Completed in 3511ms
+233 timing reifyNode:node_modules/cliui Completed in 3511ms
+234 timing reifyNode:node_modules/@types/invariant Completed in 3512ms
+235 timing reifyNode:node_modules/@pm2/agent/node_modules/ansi-styles Completed in 3514ms
+236 timing reifyNode:node_modules/@algolia/requester-node-http Completed in 3515ms
+237 timing reifyNode:node_modules/@algolia/requester-common Completed in 3516ms
+238 timing reifyNode:node_modules/@algolia/requester-browser-xhr Completed in 3516ms
+239 timing reifyNode:node_modules/@algolia/logger-console Completed in 3516ms
+240 timing reifyNode:node_modules/@algolia/client-recommendation Completed in 3516ms
+241 timing reifyNode:node_modules/@algolia/logger-common Completed in 3516ms
+242 timing reifyNode:node_modules/@algolia/client-common Completed in 3516ms
+243 timing reifyNode:node_modules/@algolia/cache-in-memory Completed in 3516ms
+244 timing reifyNode:node_modules/@algolia/client-account Completed in 3517ms
+245 timing reifyNode:node_modules/@algolia/client-analytics Completed in 3517ms
+246 timing reifyNode:node_modules/@algolia/cache-browser-local-storage Completed in 3517ms
+247 timing reifyNode:node_modules/@algolia/cache-common Completed in 3517ms
+248 timing reifyNode:node_modules/which Completed in 3545ms
+249 timing reifyNode:node_modules/string_decoder Completed in 3546ms
+250 timing reifyNode:node_modules/string_decoder/node_modules/safe-buffer Completed in 3546ms
+251 timing reifyNode:node_modules/sparse-bitfield Completed in 3546ms
+252 timing reifyNode:node_modules/setprototypeof Completed in 3547ms
+253 timing reifyNode:node_modules/serve-static Completed in 3547ms
+254 timing reifyNode:node_modules/require-main-filename Completed in 3546ms
+255 timing reifyNode:node_modules/regenerator-runtime Completed in 3546ms
+256 timing reifyNode:node_modules/readable-stream/node_modules/safe-buffer Completed in 3544ms
+257 timing reifyNode:node_modules/readdirp Completed in 3546ms
+258 timing reifyNode:node_modules/pump Completed in 3544ms
+259 timing reifyNode:node_modules/pm2-deploy Completed in 3545ms
+260 timing reifyNode:node_modules/npmlog Completed in 3548ms
+261 timing reifyNode:node_modules/mquery/node_modules/safe-buffer Completed in 3548ms
+262 timing reifyNode:node_modules/mkdirp Completed in 3549ms
+263 timing reifyNode:node_modules/module-details-from-path Completed in 3550ms
+264 timing reifyNode:node_modules/log-driver Completed in 3549ms
+265 timing reifyNode:node_modules/is-empty Completed in 3563ms
+266 timing reifyNode:node_modules/invariant Completed in 3563ms
+267 timing reifyNode:node_modules/has Completed in 3563ms
+268 timing reifyNode:node_modules/express/node_modules/safe-buffer Completed in 3565ms
+269 timing reifyNode:node_modules/delayed-stream Completed in 3564ms
+270 timing reifyNode:node_modules/deep-extend Completed in 3563ms
+271 timing reifyNode:node_modules/content-disposition/node_modules/safe-buffer Completed in 3564ms
+272 timing reifyNode:node_modules/content-disposition Completed in 3565ms
+273 timing reifyNode:node_modules/color-name Completed in 3565ms
+274 timing reifyNode:node_modules/buffer-equal-constant-time Completed in 3565ms
+275 timing reifyNode:node_modules/binary-extensions Completed in 3565ms
+276 timing reifyNode:node_modules/async-limiter Completed in 3566ms
+277 timing reifyNode:node_modules/amp Completed in 3566ms
+278 timing reifyNode:node_modules/@types/classnames Completed in 3567ms
+279 timing reifyNode:node_modules/thunkify Completed in 3598ms
+280 timing reifyNode:node_modules/spdx-expression-parse Completed in 3597ms
+281 timing reifyNode:node_modules/sax Completed in 3597ms
+282 timing reifyNode:node_modules/send Completed in 3598ms
+283 timing reifyNode:node_modules/safe-buffer Completed in 3597ms
+284 timing reifyNode:node_modules/require-directory Completed in 3597ms
+285 timing reifyNode:node_modules/raw-body Completed in 3594ms
+286 timing reifyNode:node_modules/ps-list Completed in 3594ms
+287 timing reifyNode:node_modules/passport-strategy Completed in 3595ms
+288 timing reifyNode:node_modules/pac-proxy-agent/node_modules/raw-body Completed in 3595ms
+289 timing reifyNode:node_modules/loose-envify Completed in 3595ms
+290 timing reifyNode:node_modules/isarray Completed in 3613ms
+291 timing reifyNode:node_modules/is-arrayish Completed in 3614ms
+292 timing reifyNode:node_modules/follow-redirects Completed in 3615ms
+293 timing reifyNode:node_modules/data-uri-to-buffer Completed in 3613ms
+294 timing reifyNode:node_modules/type-check Completed in 3644ms
+295 timing reifyNode:node_modules/statuses Completed in 3644ms
+296 timing reifyNode:node_modules/require-in-the-middle/node_modules/debug Completed in 3643ms
+297 timing reifyNode:node_modules/regexp-clone Completed in 3643ms
+298 timing reifyNode:node_modules/proxy-agent/node_modules/debug Completed in 3640ms
+299 timing reifyNode:node_modules/pm2-axon/node_modules/debug Completed in 3640ms
+300 timing reifyNode:node_modules/pm2/node_modules/debug Completed in 3641ms
+301 timing reifyNode:node_modules/pm2/node_modules/color-convert Completed in 3645ms
+302 timing reifyNode:node_modules/pm2/node_modules/chalk Completed in 3645ms
+303 timing reifyNode:node_modules/pac-proxy-agent/node_modules/debug Completed in 3645ms
+304 timing reifyNode:node_modules/mailgun-js/node_modules/debug Completed in 3645ms
+305 timing reifyNode:node_modules/https-proxy-agent Completed in 3646ms
+306 timing reifyNode:node_modules/http-proxy-agent Completed in 3646ms
+307 timing reifyNode:node_modules/hosted-git-info Completed in 3647ms
+308 timing reifyNode:node_modules/fsevents Completed in 3647ms
+309 timing reifyNode:node_modules/execa Completed in 3649ms
+310 timing reifyNode:node_modules/delegates Completed in 3646ms
+311 timing reifyNode:node_modules/core-util-is Completed in 3646ms
+312 timing reifyNode:node_modules/cors Completed in 3646ms
+313 timing reifyNode:node_modules/concat-map Completed in 3647ms
+314 timing reifyNode:node_modules/color-convert Completed in 3647ms
+315 timing reifyNode:node_modules/cli-tableau/node_modules/color-convert Completed in 3646ms
+316 timing reifyNode:node_modules/cli-tableau/node_modules/chalk Completed in 3646ms
+317 timing reifyNode:node_modules/cli-tableau Completed in 3646ms
+318 timing reifyNode:node_modules/classnames Completed in 3647ms
+319 timing reifyNode:node_modules/ansi-colors Completed in 3648ms
+320 timing reifyNode:node_modules/@pm2/agent/node_modules/color-convert Completed in 3653ms
+321 timing reifyNode:node_modules/@pm2/agent/node_modules/chalk Completed in 3653ms
+322 timing reifyNode:node_modules/safer-buffer Completed in 3679ms
+323 timing reifyNode:node_modules/promptly Completed in 3675ms
+324 timing reifyNode:node_modules/pm2-axon-rpc Completed in 3676ms
+325 timing reifyNode:node_modules/nopt Completed in 3677ms
+326 timing reifyNode:node_modules/isexe Completed in 3681ms
+327 timing reifyNode:node_modules/gtoken Completed in 3681ms
+328 timing reifyNode:node_modules/extend Completed in 3682ms
+329 timing reifyNode:node_modules/estraverse Completed in 3682ms
+330 timing reifyNode:node_modules/detect-libc Completed in 3679ms
+331 timing reifyNode:node_modules/ecdsa-sig-formatter Completed in 3680ms
+332 timing reifyNode:node_modules/chalk Completed in 3679ms
+333 timing reifyNode:node_modules/@pm2/agent/node_modules/pm2-axon-rpc Completed in 3682ms
+334 timing reifyNode:node_modules/semver Completed in 3709ms
+335 timing reifyNode:node_modules/react-lifecycles-compat Completed in 3705ms
+336 timing reifyNode:node_modules/react-is Completed in 3705ms
+337 timing reifyNode:node_modules/proxy-from-env Completed in 3705ms
+338 timing reifyNode:node_modules/proxy-agent/node_modules/https-proxy-agent Completed in 3705ms
+339 timing reifyNode:node_modules/promisify-call Completed in 3705ms
+340 timing reifyNode:node_modules/pac-proxy-agent/node_modules/https-proxy-agent Completed in 3705ms
+341 timing reifyNode:node_modules/negotiator Completed in 3706ms
+342 timing reifyNode:node_modules/ipaddr.js Completed in 3707ms
+343 timing reifyNode:node_modules/file-uri-to-path Completed in 3708ms
+344 timing reifyNode:node_modules/eventemitter2 Completed in 3707ms
+345 timing reifyNode:node_modules/cross-spawn Completed in 3705ms
+346 timing reifyNode:node_modules/commander Completed in 3706ms
+347 timing reifyNode:node_modules/aws-sdk/node_modules/sax Completed in 3705ms
+348 timing reifyNode:node_modules/are-we-there-yet Completed in 3706ms
+349 timing reifyNode:node_modules/@types/react-transition-group Completed in 3706ms
+350 timing reifyNode:node_modules/@opencensus/propagation-b3 Completed in 3712ms
+351 timing reifyNode:node_modules/@algolia/transporter Completed in 3712ms
+352 timing reifyNode:node_modules/xml2js Completed in 3740ms
+353 timing reifyNode:node_modules/socks-proxy-agent Completed in 3738ms
+354 timing reifyNode:node_modules/require_optional Completed in 3738ms
+355 timing reifyNode:node_modules/proxy-agent Completed in 3734ms
+356 timing reifyNode:node_modules/optionator Completed in 3733ms
+357 timing reifyNode:node_modules/jws Completed in 3734ms
+358 timing metavuln:cache:get:security-advisory:yargs-parser:wggLna/MWf0SS4RVuOVF5G/ZiDVijxAaiM9wM/rCy1bMks+TGpf2QGl8AGla/tvYjYRp5H0QrBwyOo1m0VbBKg== Completed in 426ms
+359 timing metavuln:cache:get:security-advisory:node-forge:YhPFE2hpc5s9Wo5bBOgtQo072AKXURyjhnUBXSsPAQWdKjvKcv99X7MXuo1b8a+vqxGXVkV/MTcDSw3Gcil0/Q== Completed in 421ms
+360 timing reifyNode:node_modules/inflection Completed in 3736ms
+361 timing reifyNode:node_modules/glob Completed in 3736ms
+362 timing reifyNode:node_modules/deep-is Completed in 3734ms
+363 timing reifyNode:node_modules/@pm2/js-api/node_modules/eventemitter2 Completed in 3735ms
+364 timing reifyNode:node_modules/@pm2/io/node_modules/eventemitter2 Completed in 3735ms
+365 timing reifyNode:node_modules/yargs-parser Completed in 3765ms
+366 timing reifyNode:node_modules/spawn-command Completed in 3763ms
+367 timing reifyNode:node_modules/source-map-support Completed in 3763ms
+368 timing reifyNode:node_modules/socks-proxy-agent/node_modules/agent-base Completed in 3762ms
+369 timing reifyNode:node_modules/shimmer Completed in 3763ms
+370 timing reifyNode:node_modules/prop-types-extra Completed in 3758ms
+371 timing reifyNode:node_modules/path-proxy/node_modules/inflection Completed in 3758ms
+372 timing reifyNode:node_modules/pac-proxy-agent Completed in 3759ms
+373 timing reifyNode:node_modules/levn Completed in 3758ms
+374 timing reifyNode:node_modules/gcp-metadata Completed in 3760ms
+375 timing reifyNode:node_modules/form-data Completed in 3759ms
+376 timing reifyNode:node_modules/fast-text-encoding Completed in 3759ms
+377 timing reifyNode:node_modules/escodegen Completed in 3759ms
+378 timing reifyNode:node_modules/bl Completed in 3756ms
+379 timing reifyNode:node_modules/@pm2/io/node_modules/semver Completed in 3758ms
+380 timing reifyNode:node_modules/url Completed in 3786ms
+381 timing reifyNode:node_modules/tsscmp Completed in 3786ms
+382 timing reifyNode:node_modules/pm2-multimeter Completed in 3779ms
+383 timing reifyNode:node_modules/pm2/node_modules/mkdirp Completed in 3780ms
+384 timing reifyNode:node_modules/normalize-package-data Completed in 3786ms
+385 timing reifyNode:node_modules/ftp Completed in 3788ms
+386 timing reifyNode:node_modules/esutils Completed in 3788ms
+387 timing reifyNode:node_modules/agent-base Completed in 3785ms
+388 timing reifyNode:node_modules/prelude-ls Completed in 3810ms
+389 timing reifyNode:node_modules/picomatch Completed in 3810ms
+390 timing reifyNode:node_modules/netmask Completed in 3810ms
+391 timing reifyNode:node_modules/mime Completed in 3811ms
+392 timing reifyNode:node_modules/ip Completed in 3813ms
+393 timing reifyNode:node_modules/google-p12-pem Completed in 3813ms
+394 timing reifyNode:node_modules/function-bind Completed in 3813ms
+395 timing reifyNode:node_modules/tslib Completed in 3837ms
+396 timing reifyNode:node_modules/rc Completed in 3832ms
+397 timing reifyNode:node_modules/proxy-agent/node_modules/https-proxy-agent/node_modules/debug Completed in 3831ms
+398 timing reifyNode:node_modules/pm2-axon-rpc/node_modules/debug Completed in 3831ms
+399 timing reifyNode:node_modules/pm2/node_modules/needle/node_modules/debug Completed in 3831ms
+400 timing reifyNode:node_modules/pac-proxy-agent/node_modules/https-proxy-agent/node_modules/debug Completed in 3831ms
+401 timing reifyNode:node_modules/needle/node_modules/debug Completed in 3831ms
+402 timing reifyNode:node_modules/mailgun-js Completed in 3831ms
+403 timing reifyNode:node_modules/json-bigint Completed in 3832ms
+404 timing reifyNode:node_modules/https-proxy-agent/node_modules/debug Completed in 3832ms
+405 timing reifyNode:node_modules/gtoken/node_modules/mime Completed in 3832ms
+406 timing reifyNode:node_modules/braces Completed in 3829ms
+407 timing reifyNode:node_modules/ast-types/node_modules/tslib Completed in 3830ms
+408 timing reifyNode:node_modules/@pm2/js-api/node_modules/debug Completed in 3829ms
+409 timing reifyNode:node_modules/@pm2/agent-node/node_modules/debug Completed in 3830ms
+410 timing reifyNode:node_modules/@pm2/agent/node_modules/pm2-axon-rpc/node_modules/debug Completed in 3830ms
+411 timing reifyNode:node_modules/@pm2/agent/node_modules/pm2-axon/node_modules/debug Completed in 3830ms
+412 timing reifyNode:node_modules/sprintf-js Completed in 3857ms
+413 timing reifyNode:node_modules/pidusage Completed in 3852ms
+414 timing reifyNode:node_modules/is-core-module Completed in 3851ms
+415 timing reifyNode:node_modules/charm Completed in 3848ms
+416 timing reifyNode:node_modules/@types/react Completed in 3848ms
+417 timing reifyNode:node_modules/@pm2/agent-node Completed in 3849ms
+418 timing reifyNode:node_modules/@pm2/io/node_modules/debug Completed in 3849ms
+419 timing reifyNode:node_modules/@pm2/agent/node_modules/debug Completed in 3849ms
+420 timing reifyNode:node_modules/@algolia/client-search Completed in 3850ms
+421 timing reifyNode:node_modules/querystring Completed in 3870ms
+422 timing reifyNode:node_modules/fclone Completed in 3870ms
+423 timing reifyNode:node_modules/depd Completed in 3868ms
+424 timing reifyNode:node_modules/degenerator Completed in 3868ms
+425 timing reifyNode:node_modules/chokidar Completed in 3867ms
+426 timing reifyNode:node_modules/body-parser Completed in 3867ms
+427 timing reifyNode:node_modules/abort-controller Completed in 3887ms
+428 timing reifyNode:node_modules/@pm2/io/node_modules/tslib Completed in 3888ms
+429 timing reifyNode:node_modules/xregexp Completed in 3915ms
+430 timing reifyNode:node_modules/mime-db Completed in 3909ms
+431 timing reifyNode:node_modules/jsonwebtoken Completed in 3910ms
+432 timing reifyNode:node_modules/prop-types Completed in 3933ms
+433 timing reifyNode:node_modules/npm-normalize-package-bin Completed in 3932ms
+434 timing reifyNode:node_modules/mquery/node_modules/debug Completed in 3932ms
+435 timing reifyNode:node_modules/http-proxy-agent/node_modules/debug Completed in 3934ms
+436 timing reifyNode:node_modules/follow-redirects/node_modules/debug Completed in 3936ms
+437 timing reifyNode:node_modules/asynckit Completed in 3934ms
+438 timing reifyNode:node_modules/vizion/node_modules/async Completed in 3961ms
+439 timing reifyNode:node_modules/uncontrollable Completed in 3961ms
+440 timing reifyNode:node_modules/tv4 Completed in 3961ms
+441 timing reifyNode:node_modules/passport Completed in 3954ms
+442 timing reifyNode:node_modules/node-fetch Completed in 3954ms
+443 timing reifyNode:node_modules/mpath Completed in 3954ms
+444 timing reifyNode:node_modules/ftp/node_modules/readable-stream Completed in 3953ms
+445 timing reifyNode:node_modules/debug Completed in 3949ms
+446 timing reifyNode:node_modules/@restart/context Completed in 3949ms
+447 timing reifyNode:node_modules/googleapis-common/node_modules/uuid Completed in 3989ms
+448 timing reifyNode:node_modules/gaxios Completed in 3990ms
+449 timing reifyNode:node_modules/argparse/node_modules/sprintf-js Completed in 3986ms
+450 timing reifyNode:node_modules/minimist Completed in 4003ms
+451 timing reifyNode:node_modules/kareem Completed in 4003ms
+452 timing reifyNode:node_modules/gauge Completed in 4003ms
+453 timing reifyNode:node_modules/event-target-shim Completed in 4002ms
+454 timing reifyNode:node_modules/@pm2/agent-node/node_modules/ws Completed in 3999ms
+455 timing reifyNode:node_modules/algoliasearch Completed in 4009ms
+456 timing reifyNode:node_modules/uuid Completed in 4037ms
+457 timing reifyNode:node_modules/url-template Completed in 4038ms
+458 timing reifyNode:node_modules/events Completed in 4026ms
+459 timing reifyNode:node_modules/esprima Completed in 4043ms
+460 timing reifyNode:node_modules/escodegen/node_modules/esprima Completed in 4043ms
+461 timing reifyNode:node_modules/ws Completed in 4069ms
+462 timing reifyNode:node_modules/smart-buffer Completed in 4085ms
+463 timing reifyNode:node_modules/nssocket Completed in 4080ms
+464 timing reifyNode:node_modules/googleapis-common Completed in 4080ms
+465 timing reifyNode:node_modules/get-uri Completed in 4081ms
+466 timing reifyNode:node_modules/passport-jwt Completed in 4114ms
+467 timing reifyNode:node_modules/lazy Completed in 4113ms
+468 timing reifyNode:node_modules/qs Completed in 4131ms
+469 timing reifyNode:node_modules/express Completed in 4176ms
+470 http fetch GET 304 https://registry.npmjs.org/yargs-parser 881ms (from cache)
+471 timing metavuln:packument:yargs-parser Completed in 885ms
+472 timing metavuln:load:security-advisory:yargs-parser:1500 Completed in 2ms
+473 timing metavuln:calculate:security-advisory:yargs-parser:1500 Completed in 889ms
+474 timing reifyNode:node_modules/continuation-local-storage Completed in 4194ms
+475 timing reifyNode:node_modules/xmlbuilder Completed in 4235ms
+476 timing reifyNode:node_modules/vizion Completed in 4235ms
+477 timing reifyNode:node_modules/readable-stream Completed in 4229ms
+478 timing reifyNode:node_modules/pac-resolver Completed in 4230ms
+479 timing reifyNode:node_modules/pm2-axon Completed in 4248ms
+480 timing reifyNode:node_modules/cron Completed in 4244ms
+481 timing reifyNode:node_modules/bignumber.js Completed in 4244ms
+482 timing reifyNode:node_modules/googleapis-common/node_modules/qs Completed in 4261ms
+483 timing reifyNode:node_modules/tar Completed in 4281ms
+484 http fetch GET 304 https://registry.npmjs.org/node-forge 972ms (from cache)
+485 timing metavuln:packument:node-forge Completed in 972ms
+486 timing metavuln:load:security-advisory:node-forge:1561 Completed in 2ms
+487 timing metavuln:calculate:security-advisory:node-forge:1561 Completed in 974ms
+488 timing reifyNode:node_modules/@pm2/agent/node_modules/pm2-axon Completed in 4295ms
+489 timing reifyNode:node_modules/sift Completed in 4320ms
+490 timing reifyNode:node_modules/mquery Completed in 4328ms
+491 timing reifyNode:node_modules/bcrypt Completed in 4321ms
+492 timing reifyNode:node_modules/saslprep Completed in 4347ms
+493 timing reifyNode:node_modules/argparse Completed in 4334ms
+494 timing reifyNode:node_modules/iconv-lite Completed in 4368ms
+495 timing reifyNode:node_modules/node-pre-gyp Completed in 4378ms
+496 timing metavuln:cache:get:security-advisory:yargs:QTKvnEbkU/FlnEK4B/sNCXMPhhCd0Fk5IHfUbIH1wCqVLHjpGTpKqhR5E+6Qc9sXtWdw3O/hCUQ/VXt/gZPKxQ== Completed in 108ms
+497 timing reifyNode:node_modules/@pm2/agent Completed in 4421ms
+498 timing reifyNode:node_modules/jmespath Completed in 4464ms
+499 timing reifyNode:node_modules/es6-promise Completed in 4498ms
+500 timing reifyNode:node_modules/bcryptjs Completed in 4500ms
+501 timing reifyNode:node_modules/async-listener Completed in 4517ms
+502 timing reifyNode:node_modules/pm2/node_modules/semver Completed in 4534ms
+503 timing reifyNode:node_modules/@pm2/agent/node_modules/semver Completed in 4524ms
+504 timing reifyNode:node_modules/systeminformation Completed in 4549ms
+505 timing reifyNode:node_modules/yargs Completed in 4562ms
+506 timing reifyNode:node_modules/pm2/node_modules/needle Completed in 4562ms
+507 timing reifyNode:node_modules/busboy Completed in 4551ms
+508 timing reifyNode:node_modules/socks Completed in 4590ms
+509 timing reifyNode:node_modules/needle Completed in 4581ms
+510 timing reifyNode:node_modules/enquirer Completed in 4577ms
+511 timing reifyNode:node_modules/react-transition-group Completed in 4600ms
+512 timing reifyNode:node_modules/buffer Completed in 4592ms
+513 timing reifyNode:node_modules/csstype Completed in 4618ms
+514 http fetch GET 304 https://registry.npmjs.org/yargs 338ms (from cache)
+515 timing metavuln:packument:yargs Completed in 341ms
+516 timing metavuln:load:security-advisory:yargs:wggLna/MWf0SS4RVuOVF5G/ZiDVijxAaiM9wM/rCy1bMks+TGpf2QGl8AGla/tvYjYRp5H0QrBwyOo1m0VbBKg== Completed in 10ms
+517 timing metavuln:calculate:security-advisory:yargs:wggLna/MWf0SS4RVuOVF5G/ZiDVijxAaiM9wM/rCy1bMks+TGpf2QGl8AGla/tvYjYRp5H0QrBwyOo1m0VbBKg== Completed in 351ms
+518 timing reifyNode:node_modules/source-map Completed in 4654ms
+519 timing reifyNode:node_modules/axios Completed in 4648ms
+520 timing reifyNode:node_modules/@pm2/js-api Completed in 4669ms
+521 timing metavuln:cache:get:security-advisory:google-p12-pem:AyDQox4RNdIYBj1mgkbZp/qk2qMIqm3PmeK+rs2bHuk9AaJ+zLtsU6wHMGuk0QHw5/xD+rm8kL3iadbNwgXQjw== Completed in 71ms
+522 timing reifyNode:node_modules/bson Completed in 4728ms
+523 timing reifyNode:node_modules/google-auth-library Completed in 4752ms
+524 timing reifyNode:node_modules/bluebird Completed in 4752ms
+525 timing reifyNode:node_modules/dicer Completed in 4759ms
+526 timing reifyNode:node_modules/concurrently Completed in 4785ms
+527 timing reifyNode:node_modules/validator Completed in 4839ms
+528 timing reifyNode:node_modules/ast-types Completed in 4846ms
+529 timing reifyNode:node_modules/yamljs Completed in 4872ms
+530 timing reifyNode:node_modules/moment-timezone Completed in 4871ms
+531 http fetch GET 304 https://registry.npmjs.org/google-p12-pem 253ms (from cache)
+532 timing metavuln:packument:google-p12-pem Completed in 254ms
+533 timing metavuln:load:security-advisory:google-p12-pem:YhPFE2hpc5s9Wo5bBOgtQo072AKXURyjhnUBXSsPAQWdKjvKcv99X7MXuo1b8a+vqxGXVkV/MTcDSw3Gcil0/Q== Completed in 0ms
+534 timing metavuln:calculate:security-advisory:google-p12-pem:YhPFE2hpc5s9Wo5bBOgtQo072AKXURyjhnUBXSsPAQWdKjvKcv99X7MXuo1b8a+vqxGXVkV/MTcDSw3Gcil0/Q== Completed in 254ms
+535 timing reifyNode:node_modules/express-fileupload Completed in 4898ms
+536 timing metavuln:cache:get:security-advisory:concurrently:oMkyyda4e0Vgz4l6xRfTLKJ9P6KRRlZlN47BGdfOHDdvg1/YgJCFrQb0OVeIgN8pSmpWpqVfqw4C7UN9/0VIGw== Completed in 43ms
+537 timing reifyNode:node_modules/react-overlays Completed in 4976ms
+538 timing reifyNode:node_modules/node-addon-api Completed in 4984ms
+539 timing reifyNode:node_modules/nodemailer Completed in 4988ms
+540 http fetch GET 304 https://registry.npmjs.org/concurrently 245ms (from cache)
+541 timing metavuln:packument:concurrently Completed in 247ms
+542 timing metavuln:load:security-advisory:concurrently:QTKvnEbkU/FlnEK4B/sNCXMPhhCd0Fk5IHfUbIH1wCqVLHjpGTpKqhR5E+6Qc9sXtWdw3O/hCUQ/VXt/gZPKxQ== Completed in 0ms
+543 timing metavuln:calculate:security-advisory:concurrently:QTKvnEbkU/FlnEK4B/sNCXMPhhCd0Fk5IHfUbIH1wCqVLHjpGTpKqhR5E+6Qc9sXtWdw3O/hCUQ/VXt/gZPKxQ== Completed in 247ms
+544 timing metavuln:cache:get:security-advisory:gtoken:qlc0juQxhqDvay4+iarQsmQKXYuy47Iv2S3Cp2g80cwkNca46BBX70OwiiaEffAVdrliUXJOf/LXxY0FSanxzA== Completed in 35ms
+545 timing reifyNode:node_modules/async Completed in 5185ms
+546 timing reifyNode:node_modules/@opencensus/propagation-b3/node_modules/@opencensus/core Completed in 5184ms
+547 timing reifyNode:node_modules/resolve Completed in 5219ms
+548 timing reifyNode:node_modules/@babel/runtime Completed in 5200ms
+549 timing reifyNode:node_modules/@opencensus/core Completed in 5221ms
+550 timing reifyNode:node_modules/node-forge Completed in 5249ms
+551 timing reifyNode:node_modules/pm2/node_modules/async Completed in 5261ms
+552 timing reifyNode:node_modules/@pm2/agent/node_modules/async Completed in 5247ms
+553 http fetch GET 304 https://registry.npmjs.org/gtoken 129ms (from cache)
+554 timing metavuln:packument:gtoken Completed in 131ms
+555 timing metavuln:load:security-advisory:gtoken:AyDQox4RNdIYBj1mgkbZp/qk2qMIqm3PmeK+rs2bHuk9AaJ+zLtsU6wHMGuk0QHw5/xD+rm8kL3iadbNwgXQjw== Completed in 0ms
+556 timing metavuln:calculate:security-advisory:gtoken:AyDQox4RNdIYBj1mgkbZp/qk2qMIqm3PmeK+rs2bHuk9AaJ+zLtsU6wHMGuk0QHw5/xD+rm8kL3iadbNwgXQjw== Completed in 131ms
+557 timing metavuln:cache:get:security-advisory:google-auth-library:pB+gWC6xa7+z7tOnJQyVZI0epT4D4w1S2yf3dXP8LEMRoUIMH7a7AsRnM+tBZ1epIWvIXWet4DcTSE3TmbXWcA== Completed in 29ms
+558 timing reifyNode:node_modules/blessed Completed in 5313ms
+559 timing reifyNode:node_modules/@pm2/io Completed in 5369ms
+560 timing reifyNode:node_modules/@restart/hooks Completed in 5374ms
+561 timing reifyNode:node_modules/dom-helpers Completed in 5415ms
+562 timing reifyNode:node_modules/pm2 Completed in 5464ms
+563 timing reifyNode:node_modules/mongodb Completed in 5513ms
+564 timing reifyNode:node_modules/yarn Completed in 5586ms
+565 timing reifyNode:node_modules/mongoose Completed in 5683ms
+566 timing reifyNode:node_modules/@popperjs/core Completed in 5676ms
+567 http fetch GET 304 https://registry.npmjs.org/google-auth-library 419ms (from cache)
+568 timing metavuln:packument:google-auth-library Completed in 421ms
+569 timing metavuln:load:security-advisory:google-auth-library:qlc0juQxhqDvay4+iarQsmQKXYuy47Iv2S3Cp2g80cwkNca46BBX70OwiiaEffAVdrliUXJOf/LXxY0FSanxzA== Completed in 0ms
+570 timing metavuln:calculate:security-advisory:google-auth-library:qlc0juQxhqDvay4+iarQsmQKXYuy47Iv2S3Cp2g80cwkNca46BBX70OwiiaEffAVdrliUXJOf/LXxY0FSanxzA== Completed in 421ms
+571 timing metavuln:cache:get:security-advisory:googleapis-common:B+3mGJXi367+OBEc8M2qIgoN86mGxmUL98FWt1OrCWHi5jU3LaIM5sVLFR9sO7docgGES4flswH9I8hgZYBhYw== Completed in 18ms
+572 timing metavuln:cache:get:security-advisory:googleapis:fv1IxqgcjrX5ZC7YIow6JQ/uM6fG0agqEcp7CMWfJvF6ikNkg3dXMNj/kD8egPCTYJq80fPmmUIL9WC0iDh8Xg== Completed in 22ms
+573 http fetch GET 304 https://registry.npmjs.org/googleapis 73ms (from cache)
+574 timing metavuln:packument:googleapis Completed in 75ms
+575 timing metavuln:load:security-advisory:googleapis:pB+gWC6xa7+z7tOnJQyVZI0epT4D4w1S2yf3dXP8LEMRoUIMH7a7AsRnM+tBZ1epIWvIXWet4DcTSE3TmbXWcA== Completed in 2ms
+576 timing metavuln:calculate:security-advisory:googleapis:pB+gWC6xa7+z7tOnJQyVZI0epT4D4w1S2yf3dXP8LEMRoUIMH7a7AsRnM+tBZ1epIWvIXWet4DcTSE3TmbXWcA== Completed in 77ms
+577 http fetch GET 304 https://registry.npmjs.org/googleapis-common 90ms (from cache)
+578 timing metavuln:packument:googleapis-common Completed in 92ms
+579 timing metavuln:load:security-advisory:googleapis-common:pB+gWC6xa7+z7tOnJQyVZI0epT4D4w1S2yf3dXP8LEMRoUIMH7a7AsRnM+tBZ1epIWvIXWet4DcTSE3TmbXWcA== Completed in 1ms
+580 timing metavuln:calculate:security-advisory:googleapis-common:pB+gWC6xa7+z7tOnJQyVZI0epT4D4w1S2yf3dXP8LEMRoUIMH7a7AsRnM+tBZ1epIWvIXWet4DcTSE3TmbXWcA== Completed in 93ms
+581 timing metavuln:cache:get:security-advisory:googleapis:3vL5Vqipbz0d3lMSsbGPCnSVm062L7IeleoqzdKPbIGeex+2H0sJh9UQetJTj8rt2sPQCFxW7VigSdvMvGDTvw== Completed in 14ms
+582 timing metavuln:load:security-advisory:googleapis:B+3mGJXi367+OBEc8M2qIgoN86mGxmUL98FWt1OrCWHi5jU3LaIM5sVLFR9sO7docgGES4flswH9I8hgZYBhYw== Completed in 7ms
+583 timing metavuln:calculate:security-advisory:googleapis:B+3mGJXi367+OBEc8M2qIgoN86mGxmUL98FWt1OrCWHi5jU3LaIM5sVLFR9sO7docgGES4flswH9I8hgZYBhYw== Completed in 21ms
+584 timing auditReport:init Completed in 2542ms
+585 timing reify:audit Completed in 5874ms
+586 timing reifyNode:node_modules/dayjs Completed in 5967ms
+587 timing reifyNode:node_modules/lodash-es Completed in 6105ms
+588 timing reifyNode:node_modules/react-bootstrap Completed in 6188ms
+589 timing reifyNode:node_modules/moment Completed in 6330ms
+590 timing reifyNode:node_modules/date-fns Completed in 6556ms
+591 timing reifyNode:node_modules/lodash Completed in 6576ms
+592 timing reifyNode:node_modules/rxjs Completed in 7677ms
+593 timing reifyNode:node_modules/googleapis Completed in 7719ms
+594 timing reifyNode:node_modules/aws-sdk Completed in 7742ms
+595 timing reify:unpack Completed in 7769ms
+596 timing reify:unretire Completed in 1ms
+597 timing build:queue Completed in 20ms
+598 info run bcrypt@5.0.0 install node_modules/bcrypt node-gyp rebuild
+599 info run bcrypt@5.0.0 install { code: 1, signal: null }
+600 timing reify:rollback:createSparse Completed in 0ms
+601 timing reify:rollback:retireShallow Completed in 0ms
+602 timing command:install Completed in 9229ms
+603 verbose stack Error: command failed
+603 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/index.js:63:27)
+603 verbose stack     at ChildProcess.emit (node:events:327:20)
+603 verbose stack     at maybeClose (node:internal/child_process:1048:16)
+603 verbose stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:288:5)
+604 verbose pkgid bcrypt@5.0.0
+605 verbose cwd /home/ubuntu
+606 verbose Linux 5.4.0-1029-aws
+607 verbose argv "/home/ubuntu/.nvm/versions/node/v15.0.1/bin/node" "/home/ubuntu/.nvm/versions/node/v15.0.1/bin/npm" "i"
+608 verbose node v15.0.1
+609 verbose npm  v7.0.3
+610 error code 1
+611 error path /home/ubuntu/node_modules/bcrypt
+612 error command failed
+613 error command sh -c node-gyp rebuild
+614 error gyp info it worked if it ends with ok
+614 error gyp info using node-gyp@7.1.2
+614 error gyp info using node@15.0.1 | linux | x64
+614 error gyp info find Python using Python version 3.6.9 found at "/usr/bin/python3"
+614 error gyp info spawn /usr/bin/python3
+614 error gyp info spawn args [
+614 error gyp info spawn args   '/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/node-gyp/gyp/gyp_main.py',
+614 error gyp info spawn args   'binding.gyp',
+614 error gyp info spawn args   '-f',
+614 error gyp info spawn args   'make',
+614 error gyp info spawn args   '-I',
+614 error gyp info spawn args   '/home/ubuntu/node_modules/bcrypt/build/config.gypi',
+614 error gyp info spawn args   '-I',
+614 error gyp info spawn args   '/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/node-gyp/addon.gypi',
+614 error gyp info spawn args   '-I',
+614 error gyp info spawn args   '/home/ubuntu/.cache/node-gyp/15.0.1/include/node/common.gypi',
+614 error gyp info spawn args   '-Dlibrary=shared_library',
+614 error gyp info spawn args   '-Dvisibility=default',
+614 error gyp info spawn args   '-Dnode_root_dir=/home/ubuntu/.cache/node-gyp/15.0.1',
+614 error gyp info spawn args   '-Dnode_gyp_dir=/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/node-gyp',
+614 error gyp info spawn args   '-Dnode_lib_file=/home/ubuntu/.cache/node-gyp/15.0.1/<(target_arch)/node.lib',
+614 error gyp info spawn args   '-Dmodule_root_dir=/home/ubuntu/node_modules/bcrypt',
+614 error gyp info spawn args   '-Dnode_engine=v8',
+614 error gyp info spawn args   '--depth=.',
+614 error gyp info spawn args   '--no-parallel',
+614 error gyp info spawn args   '--generator-output',
+614 error gyp info spawn args   'build',
+614 error gyp info spawn args   '-Goutput_dir=.'
+614 error gyp info spawn args ]
+614 error gyp: Undefined variable module_name in binding.gyp while trying to load binding.gyp
+614 error gyp ERR! configure error
+614 error gyp ERR! stack Error: `gyp` failed with exit code: 1
+614 error gyp ERR! stack     at ChildProcess.onCpExit (/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/node-gyp/lib/configure.js:351:16)
+614 error gyp ERR! stack     at ChildProcess.emit (node:events:327:20)
+614 error gyp ERR! stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:277:12)
+614 error gyp ERR! System Linux 5.4.0-1029-aws
+614 error gyp ERR! command "/home/ubuntu/.nvm/versions/node/v15.0.1/bin/node" "/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/node-gyp/bin/node-gyp.js" "rebuild"
+614 error gyp ERR! cwd /home/ubuntu/node_modules/bcrypt
+614 error gyp ERR! node -v v15.0.1
+614 error gyp ERR! node-gyp -v v7.1.2
+614 error gyp ERR! not ok
+615 verbose exit 1

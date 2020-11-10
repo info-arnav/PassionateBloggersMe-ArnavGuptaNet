@@ -1,0 +1,60 @@
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+{ id: '<20201105043954.1.8E4241AB7B189024@arnavgupta.net>',
+  message: 'Queued. Thank you.' }
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+{ id: '<20201105105855.1.640278A463187E66@arnavgupta.net>',
+  message: 'Queued. Thank you.' }
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+{ id: '<20201105112120.1.C96FE59A430CA4A3@arnavgupta.net>',
+  message: 'Queued. Thank you.' }
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+MongoDB successfully connected
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+{ id: '<20201106124703.1.5C8FD2FA35DE4BCC@arnavgupta.net>',
+  message: 'Queued. Thank you.' }
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }

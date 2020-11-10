@@ -1,0 +1,15 @@
+{
+  "name": "BlogPost",
+  "version": "1.0.0",
+  "manifest_version": 2,
+  "description": "Place to post all your blogs",
+  "icons": {
+    "512": "logo.png"
+  },
+  "browser_action": {
+    "default_icon": "logo.png",
+    "default_popup": "popup.html"
+  },
+  "permissions": ["tabs"]
+}
+

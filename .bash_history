@@ -1,0 +1,392 @@
+sudo apt-get update
+sudo apt-get install update
+sudo apt-get install upgrade
+sudo apt-get install nodejs
+sudo apt-get install nginx nodejs npm 
+cd ubuntu
+ls
+npm i
+node server.js
+npm i cors
+node server.js
+sudo npm i -g pm2
+sudo pm2 start server.js
+cs /etc
+cd /etc
+ls
+cd nginx/
+ls
+nano conf.d
+cd conf.d/
+ls
+cd ..
+cd sites-
+cd sites-enabled/
+ls
+nano default
+sudo nano default 
+sudo rm default
+ls
+sudo nano default
+sudo nginx -t
+sudo nginx restart
+sudo nginx statusrestart
+sudo nginx status restart
+sudo nginx system restart
+sudo nginx service restart
+sudo nginx
+sudo nginx --help
+sudo nginx -
+sudo nano reboot
+sudo  reboot
+ls
+pm2 start server.js
+sudo pm2 start server.js
+cd /etc/nginx
+cd cof
+sudo conf.d/
+nano conf.d/
+ls
+cd conf.d/
+cat default
+ls
+cd ../sites-enabled/
+cat default
+cd /etc/nginx/sites-enabled/
+ls
+sudo nano default
+git clone https://github.com/info-arnav/HealthReactWebApplication.git
+ls
+cd HealthReactWebApplication/
+yarn 
+npm i
+npm i yarn
+yarn
+sudo npm i -g yarn
+yarn
+sudo pm2 start server.ts
+ls
+npm i pm2
+sudo pm2 start server.ts
+node server.ts
+yarn add bcrypt
+node server.ts
+npm i bcrypt
+node server.ts
+yarn add bcrypt
+yarn bcrypt
+cat package.json 
+npm i
+cd ..
+ls
+mkdir appChallengwe
+cd appChallengwe/
+git clone https://github.com/info-arnav/HealthReactWebApplication.git
+yarn 
+ls
+cd HealthReactWebApplication/
+yarn add bcrypt
+yarn 
+rm package-lock.json 
+yarn 
+sudo yarn
+ls
+node
+rm -r yarn.lock yarn-error.log 
+npm i bcrypt, parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+sudo npm i bcrypt, parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+ls
+npm
+npm i bcrypt, parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+npm i parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+sudo yarn 
+node -v
+sudo apt-get install node
+sudo apt-get install nodejs
+sudo apt update
+sudo apt-get upgrade
+node -v
+npm install -g n
+sudo apt install build-essential checkinstall libssl-dev
+curl -o- https://raw.githubusercontent.com/creationix/nvm/v0.35.1/install.sh | bash
+nvm --version
+nvm --version
+nvm ls
+nvm ls-remote
+nvm install 15.0.1
+cd appChallengwe/
+cd HealthReactWebApplication/
+yarn
+node server.ts
+yarn add bcrypt, parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+yarn add bcrypt
+yarn add bcrypt, parcel, nodemon, express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+yarn add express, express-fileupload, typescript, webpack, node, mongoose, prettier, eslint
+yarn add cors
+node server.ts
+pm2 start server.ts
+sudo pm2 start server.ts
+yarn add pm2
+sudo pm2 start server.ts
+pm2 list
+pm2 show
+cd ..
+pm2 show
+ls
+pm2 start server.js
+sudo pm2 stop server.js
+sudo pm2 start server.js
+sudo pm2 start appChallengwe/HealthReactWebApplication/server.ts 
+sudo nano server1.js
+yarn add cors
+ls
+node server1.js 
+yarn add bcrypt
+node server1.js 
+sudo pm2 start server1.js
+ls
+pm2 start server1.js
+ls
+sudo pm2 start server1.js
+sudo rm -r HealthReactWebApplication/
+ls
+node server1.js
+pm2 ls
+sudo pm2 ls
+pm2 save server1.ts
+sudo pm2 start server1.ts
+ls
+sudo pm2 start server1.js
+sudo pm2 save server1.js
+sudo pm2 ls
+pm2 logs
+sudo pm2 logs
+node server1.js
+cd appChallengwe/
+ks
+ls
+cd HealthReactWebApplication/
+ls
+pm2 start server.ts -- start
+sudo pm2 start server.ts -- start
+npm i pm2
+sudo pm2 logs
+ls
+cd appChallengwe/
+cd HealthReactWebApplication/
+ls
+sudo mv * ../
+ls
+cd ..
+ls
+rm -r HealthReactWebApplication/
+sudo rm -r HealthReactWebApplication/
+ls
+cd ...
+cd ..
+ls
+cd appChallengwe/
+sudo mv -r build/ ..
+sudo mv build/ ..
+cat package.json
+cd ..
+ls
+cd appChallengwe/
+ls
+cp server.ts sub.js
+ls
+mv sub.js ..
+cd ..
+ls
+node sub.js
+rm server1.js
+ls
+sudo rm server1.js 
+sudo rm -r appChallengwe/
+ls
+sudo pm2 start sub.js
+sudo pm2 stop server1
+cat sub.js
+sudo pm2 stop
+sudo pm2 stop server.js 
+sudo pm2 stop sub
+sudo nano server.js 
+sudo nano server.js emergency.js
+sudo cp server.js emergency.js
+sudo nano server.js
+sudo pm2 start server.js
+sudo pm2 logs
+cat server.js 
+clear
+sudo pm2 stop server.js
+sudo nano server.js 
+sudo pm2 start server.js
+sudo pm2 logs
+cat server.js 
+sudo pm2 stop server.js
+sudo nano server.js
+sudo pm2 start server.js
+sudo pm2 stop server.js
+sudo nano server.js
+sudo pm2 start server.js
+cat server.js 
+sudo pm2 stop server.js
+sudo nano server.js
+sudo pm2 start server.js
+sudo pm2 stop server.js
+node server.js
+yarn add bcrypt
+node server.js
+sudo nano server.js 
+node server.js
+sudo pm2 start server.js
+sudo pm2 logs
+sudo pm2 stop server.js
+sudo pm2 start server.js
+sudo pm2 status
+sudo reboot
+sudo pm2 status
+sudo pm2 start server.js
+sudo pm2 status
+sudo pm2 logs
+node server.js
+sudo nano /etc/nginx/sites-enabled/default
+sudo service nginx start
+sudo nano /etc/nginx/sites-enabled/default
+sudo service nginx start
+systemctl status nginx.service
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default
+sudo pm2 stop server.js
+sudo service nginx restart
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default.save
+sudo nginx -t
+ls /etc/nginx/sites-enabled/
+rm /etc/nginx/sites-enabled/default.save 
+sudo rm /etc/nginx/sites-enabled/default.save 
+sudo nginx -t
+sudo service nginx restart
+sudo pm2 start server.js 
+node server.jhs
+node server.js
+npm i pm2
+sudo pm2 start server.js 
+sudo pm2 logs
+yarn add bcrypt
+ls
+sudo pm2 logs
+sudo pm2 status
+sudo pm2 server.js start
+sudo pm2 start server.js 
+sudo pm2 logs
+nvm install v10.16.3
+node 0v
+node -v
+npm install bcrypt
+sudo pm2 start server.js 
+sudo pm2 logs
+sudo nano server.js
+sudo pm2 start server.js 
+sudo pm2 logs
+cd
+ls
+cd client
+ls
+cd public/
+ls
+cd assets/
+ls
+cd css
+ls
+sudo nano smoothproducts.css 
+cd ../../..
+yarn build
+cd ..
+sudo pm2 stop server.js
+sudo pm2 start server.js
+cd client
+cd src
+sudo nano Single.js 
+ls
+cd main
+ls
+sudo nano Feed.js 
+cd ..
+sudo nano public/assets/css/smoothproducts.css 
+yarn build
+cd ..
+sudo pm2 stop server.js
+sudo pm2 start server.js
+30080422020731017817087571441
+sudo nano client/public/assets/css/smoothproducts.css 
+cd client 
+yarn build
+cd ..
+sudo pm2 stop server.js
+sudo pm2 start server.js
+sudo nano models/eventModal.js 
+rm client/src/Single.js 
+sudo nano client/src/Single.js 
+rm client/src/main/Event.js 
+nano client/src/main/Event.js 
+cd client/ && yarn build
+sudo pm2 stop server.js
+sudo pm2 start server.js
+rm client/src/main/Feed.js client/src/main/Active.js 
+nano client/src/main/Feed.js client/src/main/Active.js
+cd client/
+yarn builf
+yarn build
+nano client/public/assets/css/smoothproducts.css 
+rm client/src/Single.js 
+sudo rm client/src/Single.js 
+nano client/src/Single.js 
+rm client/src/components/dashboard/Dashboard.js 
+nano client/src/components/dashboard/Dashboard.js 
+sudo npm i 
+cd client/
+sudo npm i --save html-to-draftjs draftjs-to-html draft-js react-draft-wysiwyg    
+npm i --save html-to-draftjs draftjs-to-html draft-js react-draft-wysiwyg    
+yarn build
+nano client/src/components/dashboard/Dashboard.js 
+nano /src/components/dashboard/Dashboard.js 
+nano src/components/dashboard/Dashboard.js 
+yarn build
+rm client/src/main/Feed.js 
+nano client/src/main/Feed.js
+cd client
+yarn build
+nano client/public/index.html
+cd clint
+cd client/
+yarn build
+sudo pm2 stop server.js
+sudo nano server.js
+sudo pm2 start server.js
+nano client/src/main/Active.js 
+cd client
+yarn build
+cd client/
+cd ..
+sudo pm2 stop server.js
+nano server.js
+pm2 start server.js
+sudo pm2 start server.js
+nano models/User.js 
+sudo pm2 stop server.js
+sudo pm2 start server.js
+nano client/public/index.html 
+nano client/src/elements/Footer.js 
+cd client
+yarn build
+cd ..
+nano client/src/elements/Footer.js 
+cd client
+yarn build
+cd ..
+nano client/src/elements/Footer.js 
+cd client
+yarn build
