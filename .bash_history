@@ -390,3 +390,66 @@ cd ..
 nano client/src/elements/Footer.js 
 cd client
 yarn build
+nano /etc/nginx/sites-enabled/
+nano /etc/nginx/sites-enabled/default 
+openssl genrsa -des3 -out www.thegeekstuff.com.key 1024
+ls
+rm www.thegeekstuff.com.key 
+openssl genrsa -des3 -out main 1024
+rm main 
+openssl req -new -newkey rsa:2048 -nodes -keyout main.key -out main.csr
+ls
+openssl req -new -newkey rsa:2048 -nodes -keyout main.key -out main.csr
+ls
+console.log main.key
+cat main.key 
+cat main.csr 
+rm main.csr main.key 
+openssl req -new -newkey rsa:2048 -nodes -keyout passionatebloggers.me.key -out passionatebloggers.me.csr
+cat passionatebloggers.me.
+cat passionatebloggers.me.csr 
+ls
+sudo nano /etc/nginx/sites-enabled/default 
+ls
+cat passionatebloggers_me.crt passionatebloggers_me.ca-bundle >> bundle.crt
+ls
+sudo nano /etc/nginx/sites-enabled/default 
+mkdir /etc/ssl
+mv passionatebloggers.me.key bundle.crt /etc/ssl/
+sudo mv passionatebloggers.me.key bundle.crt /etc/ssl/
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo status nginx.service
+systemct1 status nginx.service
+systemctl status nginx.service
+sudo server nginx -t
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nginx -t
+mv /etc/ssl/passionatebloggers.me.key /home
+sudo mv /etc/ssl/passionatebloggers.me.key /home
+ls
+mv /home/passionatebloggers.me.key /home/ubuntu/
+sudo mv /home/passionatebloggers.me.key /home/ubuntu/
+ls
+cat passionatebloggers_me.crt passionatebloggers_me.ca-bundle >> bundle.crt
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nginx -t
+sudo nano bundle.crt 
+sudo service nginx restart
+sudo nginx -t
+sudo nano bundle.crt 
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
