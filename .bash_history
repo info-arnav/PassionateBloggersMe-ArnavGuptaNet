@@ -523,3 +523,25 @@ sudo nginx -t
 sudo service nginx restart
 sudo nano /etc/nginx/sites-enabled/default 
 sudo service nginx restart
+sudo pm2 stop server.js
+git pull origin master
+cd client
+yarn build
+sudo yarn build
+cd ..
+sudo pm2 start server.js
+sudo pm2 stop server.js
+git pull origin master
+cd client
+yarn build
+sudo yarn build
+git pull origin master
+cd client/
+yarn build
+sudo pm2 status
+sudo yarn build
+git pull origin master
+cd client
+sudo yarn build
+car client/package.json 
+cat client/package.json 
