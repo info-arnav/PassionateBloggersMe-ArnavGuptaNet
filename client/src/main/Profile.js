@@ -12,6 +12,7 @@ const Profile = (props) => {
   const [data, updater] = useState({ followers: [], following: [] });
   const [feedData, feedUpdater] = useState([]);
   let { id } = useParams();
+  id = id.substring(8);
   useEffect((props) => {
     let fetcher = async () => {
       await fetch(`/user/profile/data/${id}`)
@@ -297,7 +298,7 @@ const Profile = (props) => {
                           <a
                             className="btn btn-outline-primary btn-sm"
                             type="button"
-                            href={`/posted${e._id}`}
+                            href={`/posteds?value=${e._id}`}
                           >
                             Read More
                           </a>
@@ -324,4 +325,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logoutUser })(Profile);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Profile);

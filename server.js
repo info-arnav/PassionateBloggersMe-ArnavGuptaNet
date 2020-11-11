@@ -270,7 +270,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `https://www.arnavgupta.net/posted${success._id}`,
+              loc: `https://www.arnavgupta.net/posteds?value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -311,7 +311,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `http://www.arnavgupta.net/posted${success._id}`,
+              loc: `http://www.arnavgupta.net/posteds?value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -352,7 +352,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `https://www.passionatebloggers.me/posted${success._id}`,
+              loc: `https://www.passionatebloggers.me/posteds?value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -393,7 +393,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `http://www.passionatebloggers.me/posted${success._id}`,
+              loc: `http://www.passionatebloggers.me/posteds?value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -463,7 +463,7 @@ app.post("/follower/append", (req, res) => {
     .then((e) =>
       User.findOne({ _id: body.affected }, (error, user) => {
         if (user) {
-          res.redirect(`/profile${user.name}`);
+          res.redirect(`/profiles?value=${user.name}`);
         }
       })
     );
@@ -480,7 +480,7 @@ app.post("/following/pop", (req, res) => {
     .then((e) =>
       User.findOne({ _id: body.affected }, (error, user) => {
         if (user) {
-          res.redirect(`/profile${user.name}`);
+          res.redirect(`/profiles?value=${user.name}`);
         }
       })
     );
@@ -524,7 +524,7 @@ const sport = process.env.PORT || 443;
 
 app.listen("3000");
 const applicationParams = "/";
-const serverPort = process.env.PORT || "5000";
+const serverPort = process.env.PORT || "7000";
 const serverParams = "/";
 const mongoosePort =
   process.env.MONGODB_URI ||
@@ -624,7 +624,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.arnavgupta.net/profile${body.userName}`,
+                        loc: `https://www.arnavgupta.net/profiles?value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -668,7 +668,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.arnavgupta.net/profile${body.userName}`,
+                        loc: `http://www.arnavgupta.net/profiles?value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -712,7 +712,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.passionatebloggers.me/profile${body.userName}`,
+                        loc: `https://www.passionatebloggers.me/profiles?value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -756,7 +756,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.passionatebloggers.me/profile${body.userName}`,
+                        loc: `http://www.passionatebloggers.me/profiles?value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -877,7 +877,7 @@ app2.get("/add/follower/part/:id", (req, res) => {
   let paramsCopy = req.params.id;
   userModel
     .update({ userName: paramsCopy }, { $push: { following: userData } })
-    .then(res.redirect(applicationParams + "profile/" + req.params.id));
+    .then(res.redirect(applicationParams + "profile?value=/" + req.params.id));
 });
 
 app2.post("/add/unfollower/:id", (req, res) => {
@@ -891,7 +891,7 @@ app2.get("/add/unfollower/part/:id", (req, res) => {
   let paramsCopy = req.params.id;
   userModel
     .update({ userName: paramsCopy }, { $pull: { following: userData } })
-    .then(res.redirect(applicationParams + "profile/" + req.params.id));
+    .then(res.redirect(applicationParams + "profile?value=/" + req.params.id));
 });
 
 app2.get(`/follower/boolean`, (req, res) => {

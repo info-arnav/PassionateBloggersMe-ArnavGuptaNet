@@ -189,7 +189,7 @@ app.get("/add/follower/part/:id", (req, res) => {
   let paramsCopy = req.params.id;
   userModel
     .update({ userName: paramsCopy }, { $push: { following: userData } })
-    .then(res.redirect(applicationParams + "profile/" + req.params.id));
+    .then(res.redirect(applicationParams + "profile?value=/" + req.params.id));
 });
 
 app.post("/add/unfollower/:id", (req, res) => {
@@ -203,7 +203,7 @@ app.get("/add/unfollower/part/:id", (req, res) => {
   let paramsCopy = req.params.id;
   userModel
     .update({ userName: paramsCopy }, { $pull: { following: userData } })
-    .then(res.redirect(applicationParams + "profile/" + req.params.id));
+    .then(res.redirect(applicationParams + "profile?value=/" + req.params.id));
 });
 
 app.get(`/follower/boolean`, (req, res) => {

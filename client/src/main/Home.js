@@ -152,13 +152,15 @@ const Home = (props) => {
                                   <div className="info">
                                     <span className="text-muted">
                                       {f.date} by&nbsp;
-                                      <a href={`/profile${f.name}`}>{f.name}</a>
+                                      <a href={`/profiles?value=${f.name}`}>
+                                        {f.name}
+                                      </a>
                                     </span>
                                   </div>
                                   <a
                                     className="btn btn-outline-primary btn-sm"
                                     type="button"
-                                    href={`/posted${f._id}`}
+                                    href={`/posteds?value=${f._id}`}
                                   >
                                     Read More
                                   </a>

@@ -17,7 +17,7 @@ await fs.readFile(
       }
       // add a new database to list
       const postgres = {
-        loc: `https://www.arnavgupta.net/profile${req.body.name}`,
+        loc: `https://www.arnavgupta.net/profiles?value=${req.body.name}`,
         changefreq: "monthly",
         priority: "1.0",
       };
@@ -62,7 +62,7 @@ await fs.readFile(
       }
       // add a new database to list
       const postgres = {
-        loc: `http://www.arnavgupta.net/profile${req.body.name}`,
+        loc: `http://www.arnavgupta.net/profiles?value=${req.body.name}`,
         changefreq: "monthly",
         priority: "1.0",
       };
@@ -110,7 +110,7 @@ await fs.readFile(
       }
       // add a new database to list
       const postgres = {
-        loc: `https://www.passionatebloggers.me/profile${req.body.name}`,
+        loc: `https://www.passionatebloggers.me/profiles?value=${req.body.name}`,
         changefreq: "monthly",
         priority: "1.0",
       };
@@ -158,7 +158,7 @@ await fs.readFile(
       }
       // add a new database to list
       const postgres = {
-        loc: `http://www.passionatebloggers.me/profile${req.body.name}`,
+        loc: `http://www.passionatebloggers.me/profiles?value=${req.body.name}`,
         changefreq: "monthly",
         priority: "1.0",
       };

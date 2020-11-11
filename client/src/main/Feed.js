@@ -189,7 +189,7 @@ class Feed extends Component {
                             <a
                               className="btn btn-outline-primary btn-sm"
                               type="button"
-                              href={`/posted${datas._id}`}
+                              href={`/posteds?value=${datas._id}`}
                             >
                               Read More
                             </a>
@@ -312,4 +312,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logoutUser })(Feed);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Feed);

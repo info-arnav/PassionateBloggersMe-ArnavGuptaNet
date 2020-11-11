@@ -11,6 +11,7 @@ const Single = (props) => {
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   let { id } = useParams();
+  id = id.substring(8);
   const [posts, updater] = useState({});
   useEffect(() => {
     const fetcher = async () => {
@@ -155,4 +156,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logoutUser })(Single);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Single);

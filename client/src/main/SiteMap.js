@@ -176,7 +176,7 @@ const SiteMap = (props) => {
                         <a
                           className="btn btn-outline-primary btn-sm"
                           type="button"
-                          href={`/posted`}
+                          href={`/posteds?value=`}
                         >
                           Visit
                         </a>

@@ -135,14 +135,16 @@ const Event = (props) => {
                           <div className="info">
                             <span className="text-muted">
                               {datas.date} by&nbsp;
-                              <a href={`/profile${datas.name}`}>{datas.name}</a>
+                              <a href={`/profiles?value=${datas.name}`}>
+                                {datas.name}
+                              </a>
                             </span>
                           </div>
 
                           <a
                             className="btn btn-outline-primary btn-sm"
                             type="button"
-                            href={`/posted${datas._id}`}
+                            href={`/posteds?value=${datas._id}`}
                           >
                             Read More
                           </a>
@@ -169,4 +171,7 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(mapStateToProps, { logoutUser })(Event);
+export default connect(
+  mapStateToProps,
+  { logoutUser }
+)(Event);
