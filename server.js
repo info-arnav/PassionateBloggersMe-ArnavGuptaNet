@@ -270,7 +270,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `https://www.arnavgupta.net/posteds?value=${success._id}`,
+              loc: `https://www.arnavgupta.net/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -311,7 +311,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `http://www.arnavgupta.net/posteds?value=${success._id}`,
+              loc: `http://www.arnavgupta.net/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -352,7 +352,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `https://www.passionatebloggers.me/posteds?value=${success._id}`,
+              loc: `https://www.passionatebloggers.me/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -393,7 +393,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `http://www.passionatebloggers.me/posteds?value=${success._id}`,
+              loc: `http://www.passionatebloggers.me/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -463,7 +463,7 @@ app.post("/follower/append", (req, res) => {
     .then((e) =>
       User.findOne({ _id: body.affected }, (error, user) => {
         if (user) {
-          res.redirect(`/profiles?value=${user.name}`);
+          res.redirect(`/profiles&value=${user.name}`);
         }
       })
     );
@@ -480,7 +480,7 @@ app.post("/following/pop", (req, res) => {
     .then((e) =>
       User.findOne({ _id: body.affected }, (error, user) => {
         if (user) {
-          res.redirect(`/profiles?value=${user.name}`);
+          res.redirect(`/profiles&value=${user.name}`);
         }
       })
     );
@@ -624,7 +624,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.arnavgupta.net/profiles?value=${body.userName}`,
+                        loc: `https://www.arnavgupta.net/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -668,7 +668,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.arnavgupta.net/profiles?value=${body.userName}`,
+                        loc: `http://www.arnavgupta.net/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -712,7 +712,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.passionatebloggers.me/profiles?value=${body.userName}`,
+                        loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -756,7 +756,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.passionatebloggers.me/profiles?value=${body.userName}`,
+                        loc: `http://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };

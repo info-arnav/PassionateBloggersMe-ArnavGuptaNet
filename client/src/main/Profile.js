@@ -298,7 +298,7 @@ const Profile = (props) => {
                           <a
                             className="btn btn-outline-primary btn-sm"
                             type="button"
-                            href={`/posteds?value=${e._id}`}
+                            href={`/posteds&value=${e._id}`}
                           >
                             Read More
                           </a>

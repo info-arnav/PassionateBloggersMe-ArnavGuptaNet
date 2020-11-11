@@ -135,7 +135,7 @@ const Event = (props) => {
                           <div className="info">
                             <span className="text-muted">
                               {datas.date} by&nbsp;
-                              <a href={`/profiles?value=${datas.name}`}>
+                              <a href={`/profiles&value=${datas.name}`}>
                                 {datas.name}
                               </a>
                             </span>
@@ -144,7 +144,7 @@ const Event = (props) => {
                           <a
                             className="btn btn-outline-primary btn-sm"
                             type="button"
-                            href={`/posteds?value=${datas._id}`}
+                            href={`/posteds&value=${datas._id}`}
                           >
                             Read More
                           </a>

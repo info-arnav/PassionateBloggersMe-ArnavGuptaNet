@@ -152,7 +152,7 @@ const Home = (props) => {
                                   <div className="info">
                                     <span className="text-muted">
                                       {f.date} by&nbsp;
-                                      <a href={`/profiles?value=${f.name}`}>
+                                      <a href={`/profiles&value=${f.name}`}>
                                         {f.name}
                                       </a>
                                     </span>
@@ -160,7 +160,7 @@ const Home = (props) => {
                                   <a
                                     className="btn btn-outline-primary btn-sm"
                                     type="button"
-                                    href={`/posteds?value=${f._id}`}
+                                    href={`/posteds&value=${f._id}`}
                                   >
                                     Read More
                                   </a>
