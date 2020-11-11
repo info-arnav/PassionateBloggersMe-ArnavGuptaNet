@@ -292,7 +292,7 @@ const Profile = (props) => {
                           <div className="info">
                             <span className="text-muted">
                               {e.date} by&nbsp;
-                              <a href={`/profile${e.name}`}>{e.name}</a>
+                              <a href={`/profiles&value=${e.name}`}>{e.name}</a>
                             </span>
                           </div>
                           <a

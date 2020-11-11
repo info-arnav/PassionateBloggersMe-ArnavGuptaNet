@@ -126,7 +126,7 @@ const Single = (props) => {
                         <a
                           className="btn btn-outline-primary btn-sm"
                           type="button"
-                          href={`/profile${posts.name}`}
+                          href={`/profiles&value=${posts.name}`}
                         >
                           {posts.name}
                         </a>
