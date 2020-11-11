@@ -453,3 +453,73 @@ sudo nginx -t
 sudo nano /etc/nginx/sites-enabled/default 
 sudo nginx -t
 sudo service nginx restart
+cd client
+sudo pm2 stop build-pm2.json 
+sudo pm2 start server.jjs
+sudo pm2 start server.js
+cd client
+ls
+sudo pm2 start build-pm2.json 
+cat client/public/site-map-arnavgupta.xml 
+cat client/public/site-map-arnavgupta-ssl.xml 
+cat client/public/site-map-passionatebloggers.xml 
+git pull origin master
+sudo pm2 stop server.js
+sudo pm2 start server.js
+git pull origin master
+sudo pm2 stop server.js
+git pull origin master
+sudo pm2 start server.js
+cat arnavgupta.net.key 
+ls
+crontab -e
+cat package
+cat package.json 
+cd client/
+sudo pm2 start build-pm2.json --cron "*/59 * * * *"
+openssl req -new -newkey rsa:2048 -nodes -keyout arnavgupta.net.key -out arnavgupta.net.csr
+sudo nano arnavgupta.net.key 
+sudo rm arnavgupta.net.key 
+sudo nano arnavgupta.net.key 
+sudo rm arnavgupta.net.csr 
+sudo nano arnavgupta.net.csr 
+LS
+ls
+cat USERTrust_RSA_Certification_Authority.crt 
+cat arnavgupta_net.crt 
+cat AAA_Certificate_Services.crt 
+cat passionatebloggers_me.ca-bundle 
+sudo nano build2.crt
+sudo nano bundle2.crt
+sudo nano bundle-main.crt
+sudo nano /etc/nginx/sites-enabled/default 
+sudo server nginx -t
+sudo service nginx -t
+sudo nginx -t
+sudo nano arnavgupta
+sudo nano arnavgupta.net.key 
+cat passionatebloggers.me.key 
+sudo nano arnavgupta.net.key 
+y
+sudo nano bundle-main.crt 
+sudo nginx -t
+sudo nano arnavgupta.net.key 
+sudo rm arnavgupta.net.key 
+sudo nano arnavgupta.net.key 
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart

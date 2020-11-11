@@ -58,3 +58,18 @@ MongoDB successfully connected
     at endReadableNT (_stream_readable.js:1064:12)
     at _combinedTickCallback (internal/process/next_tick.js:138:11)
     at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+MongoDB successfully connected
+MongoDB successfully connected
+{ Error: Forbidden
+    at IncomingMessage.res.on (/home/ubuntu/node_modules/mailgun-js/lib/request.js:327:17)
+    at emitNone (events.js:111:20)
+    at IncomingMessage.emit (events.js:208:7)
+    at endReadableNT (_stream_readable.js:1064:12)
+    at _combinedTickCallback (internal/process/next_tick.js:138:11)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) statusCode: 401 }
+MongoDB successfully connected
+Updated XML is written to a new file.
+Updated XML is written to a new file.
+Updated XML is written to a new file.
+Updated XML is written to a new file.
+MongoDB successfully connected

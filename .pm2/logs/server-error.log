@@ -6429,3 +6429,70 @@ Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.
 (node:19944) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
 (node:19944) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
 (node:19944) DeprecationWarning: Mongoose: `findOneAndUpdate()` and `findOneAndDelete()` without the `useFindAndModify` option set to false are deprecated. See: https://mongoosejs.com/docs/deprecations.html#findandmodify
+(node:31297) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:31297) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:1807) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:1807) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+(node:2924) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:2924) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+TypeError: (intermediate value).then is not a function
+    at User.findOne.then (/home/ubuntu/routes/api/users.js:51:14)
+    at <anonymous>
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+(node:4181) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:4181) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
