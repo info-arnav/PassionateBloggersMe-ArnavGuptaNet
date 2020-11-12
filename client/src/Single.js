@@ -5,12 +5,13 @@ import { useParams } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
+import Axios from "axios";
 
 const Single = (props) => {
   const { user } = props.auth;
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [liker, refresg] = useState("-1")
+  const [liker, refresg] = useState("-1");
   let { id } = useParams();
   id = id.substring(8);
   const [posts, updater] = useState({});
@@ -28,7 +29,6 @@ const Single = (props) => {
         .then((e) => setData(e));
     };
     secondry();
-    
   }, []);
   return (
     <div>
@@ -158,7 +158,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Single);
+export default connect(mapStateToProps, { logoutUser })(Single);

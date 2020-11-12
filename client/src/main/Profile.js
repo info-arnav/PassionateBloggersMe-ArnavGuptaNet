@@ -16,31 +16,44 @@ const Profile = (props) => {
   const [refresh, refresher] = useState(-1);
   let { id } = useParams();
   id = id.substring(8);
-  useEffect((props) => {
-    let fetcher = async () => {
-      await fetch(`/user/profile/data/${id}`)
-        .then((e) => e.json())
-        .then((e) => updater(e))
-        .then(async (e) => await fetch(`/posts/user/${id}`))
-        .then((e) => e.json())
-        .then((e) => feedUpdater(e))
-        .then((e) => setLoading(false));
-    };
-    fetcher();
-    const secondry = async () => {
-      await fetch(`/user/profile/data/${user.name}`)
-        .then((e) => e.json())
-        .then((e) => setData(e));
-    };
-    secondry();
-  }, []);
+  useEffect(
+    (props) => {
+      let fetcher = async () => {
+        await fetch(`/user/profile/data/${id}`)
+          .then((e) => e.json())
+          .then((e) => updater(e))
+          .then(async (e) => await fetch(`/posts/user/${id}`))
+          .then((e) => e.json())
+          .then((e) => feedUpdater(e))
+          .then((e) => setLoading(false));
+      };
+      fetcher();
+      const secondry = async () => {
+        await fetch(`/user/profile/data/${user.name}`)
+          .then((e) => e.json())
+          .then((e) => setData(e));
+      };
+      secondry();
+    },
+    [refresh, refresher, user, nndata, data, feedData]
+  );
   const following = (e) => {
     e.preventDefault();
-    refresher(1);
-    const users = {
-      name: [data._id, nndata.email],
+    const name = {
+      affected: data._id,
+      affector: nndata._id,
     };
-    axios.post(`/request/verification`, { users });
+    axios.post(`/follower/append`, { name });
+    refresher(1);
+  };
+  const unfollowing = (e) => {
+    e.preventDefault();
+    const name = {
+      affected: data._id,
+      affector: nndata._id,
+    };
+    axios.post(`/following/pop`, { name });
+    refresher(0);
   };
   return (
     <div>
@@ -150,7 +163,7 @@ const Profile = (props) => {
                         <p>
                           {user.name ? (
                             data.followers.indexOf(nndata._id) == -1 ? (
-                              <form action="/follower/append" method="POST">
+                              <form onClick={following}>
                                 <input
                                   value={data._id}
                                   name="affected"
@@ -170,7 +183,7 @@ const Profile = (props) => {
                                 </button>
                               </form>
                             ) : (
-                              <form action="/following/pop" method="POST">
+                              <form onClick={unfollowing}>
                                 <input
                                   value={data._id}
                                   name="affected"

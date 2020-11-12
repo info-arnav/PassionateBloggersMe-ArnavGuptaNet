@@ -471,37 +471,27 @@ app.get("/all/posts", async (req, res) => {
 });
 
 app.post("/follower/append", (req, res) => {
-  body = req.body;
+  body = req.body.name;
+  console.log(body);
   User.findByIdAndUpdate(body.affected, { $push: { followers: body.affector } })
     .then((e) =>
       User.findByIdAndUpdate(body.affector, {
         $push: { following: body.affected },
       })
     )
-    .then((e) =>
-      User.findOne({ _id: body.affected }, (error, user) => {
-        if (user) {
-          res.redirect(`/profiles&value=${user.name}`);
-        }
-      })
-    );
+    .then((e) => User.findOne({ _id: body.affected }, (error, user) => {}));
 });
 
 app.post("/following/pop", (req, res) => {
-  body = req.body;
+  body = req.body.name;
+  console.log(body);
   User.findByIdAndUpdate(body.affected, { $pull: { followers: body.affector } })
     .then((e) =>
       User.findByIdAndUpdate(body.affector, {
         $pull: { following: body.affected },
       })
     )
-    .then((e) =>
-      User.findOne({ _id: body.affected }, (error, user) => {
-        if (user) {
-          res.redirect(`/profiles&value=${user.name}`);
-        }
-      })
-    );
+    .then((e) => User.findOne({ _id: body.affected }, (error, user) => {}));
 });
 
 app.post("/likes/append", (req, res) => {
@@ -542,7 +532,7 @@ const sport = process.env.PORT || 443;
 
 app.listen("3000");
 const applicationParams = "/";
-const serverPort = process.env.PORT || "7000";
+const serverPort = process.env.PORT || "5000";
 const serverParams = "/";
 const mongoosePort =
   process.env.MONGODB_URI ||
