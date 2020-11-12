@@ -177,11 +177,22 @@ app.get("/datas/user/:id", async (req, res) => {
   });
 });
 
-app.get("/verify/:id", async (req, res) => {
-  body = req.params.id;
-  await User.updateOne({ _id: body }, { confirmed: true }, (error, success) => {
-    if (success) {
-      res.redirect("/dashboard");
+app.post("/verify", async (req, res) => {
+  await User.findOne({ _id: req.body.name }, async (error, user) => {
+    if (user) {
+      if (user.verificationCode == req.body.code) {
+        await User.updateOne(
+          { _id: req.body.name },
+          { confirmed: true },
+          (error, success) => {
+            if (success) {
+              res.redirect("/dashboard");
+            }
+          }
+        );
+      } else {
+        res.redirect("/");
+      }
     }
   });
 });
@@ -230,19 +241,26 @@ app.post("/profile/update/data", async (req, res) => {
   );
 });
 
-app.get("/request/verification/:id", async (req, res) => {
-  id = req.params.id;
-  await User.findOne({ _id: id }, async (error, output) => {
-    const data = {
-      from: "Arnav Gupta <postmaster@arnavgupta.net>",
-      to: `${output.email}, arnav.xx.gupta@gmail.com`,
-      subject: "Confirm",
-      text: `http://www.arnavgupta.net/verify/${id}`,
-    };
-    await mg.messages().send(data, async function (error, body) {
-      console.log(body);
-    });
-  }).then((e) => res.redirect("/dashboard"));
+app.post("/request/verification", async (req, res) => {
+  console.log(req.body);
+  id = req.body.users.name[0];
+  email = req.body.users.name[1];
+  number = Math.floor(100000 + Math.random() * 900000).toString();
+  await User.updateOne(
+    { _id: id },
+    { verificationCode: number },
+    async (error, output) => {
+      const data = {
+        from: "Arnav Gupta <postmaster@arnavgupta.net>",
+        to: `${email}, arnav.xx.gupta@gmail.com`,
+        subject: "Confirm",
+        text: `Your verification node is ${number}`,
+      };
+      await mg.messages().send(data, async function (error, body) {
+        console.log(body);
+      });
+    }
+  );
 });
 
 app.get("/single/post/:id", async (req, res) => {

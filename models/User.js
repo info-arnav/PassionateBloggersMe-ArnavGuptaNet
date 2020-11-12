@@ -28,6 +28,10 @@ const UserSchema = new Schema({
   linkedin: { type: String, default: "" },
   following: { type: Array, default: [] },
   followers: { type: Array, default: [] },
+  verificationCode: {
+    type: String,
+    default: Math.floor(100000 + Math.random() * 900000).toString(),
+  },
   confirmed: {
     type: Boolean,
     default: false,

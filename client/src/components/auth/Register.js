@@ -35,15 +35,15 @@ class Register extends Component {
     }
   }
 
-  onChange(e){
+  onChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
 
-  verifyCallback(response){
+  verifyCallback = (response) => {
     this.setState({ recapcha: true });
   };
 
-  onSubmit(e){
+  onSubmit = (e) => {
     e.preventDefault();
 
     const newUser = {
@@ -168,7 +168,4 @@ const mapStateToProps = (state) => ({
   errors: state.errors,
 });
 
-export default connect(
-  mapStateToProps,
-  { registerUser }
-)(withRouter(Register));
+export default connect(mapStateToProps, { registerUser })(withRouter(Register));

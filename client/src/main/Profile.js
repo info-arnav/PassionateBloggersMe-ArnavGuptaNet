@@ -4,13 +4,16 @@ import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link, useParams } from "react-router-dom";
+import axios from "axios";
 import Navigation from "../elements/Navigation";
+
 const Profile = (props) => {
   const { user } = props.auth;
   const [nndata, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [data, updater] = useState({ followers: [], following: [] });
   const [feedData, feedUpdater] = useState([]);
+  const [refresh, refresher] = useState(-1);
   let { id } = useParams();
   id = id.substring(8);
   useEffect((props) => {
@@ -31,6 +34,14 @@ const Profile = (props) => {
     };
     secondry();
   }, []);
+  const following = (e) => {
+    e.preventDefault();
+    refresher(1);
+    const users = {
+      name: [data._id, nndata.email],
+    };
+    axios.post(`/request/verification`, { users });
+  };
   return (
     <div>
       {loading ? (
@@ -325,7 +336,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Profile);
+export default connect(mapStateToProps, { logoutUser })(Profile);

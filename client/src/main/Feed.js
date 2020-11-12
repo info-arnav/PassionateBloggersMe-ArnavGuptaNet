@@ -15,7 +15,7 @@ import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
 
 class Feed extends Component {
-  onLogoutClick(e){
+  onLogoutClick = (e) => {
     e.preventDefault();
     this.props.logoutUser();
   };
@@ -33,9 +33,11 @@ class Feed extends Component {
       imagePath: "",
     };
   }
-  handleClose(){this.setState({ show: false })};
+  handleClose = () => {
+    this.setState({ show: false });
+  };
 
-  handleShow(e){
+  handleShow = (e) => {
     this.setState({
       active: e,
       show: true,
@@ -48,7 +50,7 @@ class Feed extends Component {
     });
   };
 
-  onEditorStateChange(editorState){
+  onEditorStateChange = (editorState) => {
     this.setState({
       editorState,
     });
@@ -312,7 +314,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Feed);
+export default connect(mapStateToProps, { logoutUser })(Feed);

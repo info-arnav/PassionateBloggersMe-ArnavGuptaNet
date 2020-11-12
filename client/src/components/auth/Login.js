@@ -35,11 +35,11 @@ class Login extends Component {
     }
   }
 
-  onChange(e){
+  onChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
 
-  onSubmit(e){
+  onSubmit = (e) => {
     e.preventDefault();
 
     const userData = {
@@ -133,7 +133,4 @@ const mapStateToProps = (state) => ({
   errors: state.errors,
 });
 
-export default connect(
-  mapStateToProps,
-  { loginUser }
-)(Login);
+export default connect(mapStateToProps, { loginUser })(Login);

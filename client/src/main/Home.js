@@ -24,7 +24,7 @@ const Home = (props) => {
         .then((e) => setLoading(false));
     };
     userDetails().then((e) => postDetails());
-  });
+  }, []);
   return (
     <div>
       <Navigation />
@@ -221,7 +221,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(Home);
+export default connect(mapStateToProps, { logoutUser })(Home);

@@ -90,7 +90,17 @@
     <priority>1.0</priority>
   </url>
   <url>
-  <loc>https://www.passionatebloggers.me/posted5fab91d29887690b6c5f604d</loc>
+    <loc>https://www.passionatebloggers.me/posted5fab91d29887690b6c5f604d</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.passionatebloggers.me/profiles&amp;value=test@test.abcd</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.passionatebloggers.me/profiles&amp;value=anujagupta2013@gmail.com</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
