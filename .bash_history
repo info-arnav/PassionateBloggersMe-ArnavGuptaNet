@@ -689,3 +689,23 @@ cd client
 yarn start
 cd ..
 sudo pm2 start server.js
+sudo pm2 stop server.js
+git pull
+git pull origin master
+sudo pm2 start server.js
+cd client/
+yarn build
+sudo yarn build
+sudo pm2 start build-pm2.json 
+sudo pm2 stop server.js
+git pull origin master
+sudo pm2 start server.js
+cd client/
+sudo pm2 stop build-pm2.json 
+sudo yarn build
+sudo pm2 status
+cd client
+sudo yarn build
+sudo pm2 start build-pm2.json 
+cd ..
+sudo pm2 start server.js

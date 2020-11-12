@@ -2275,3 +2275,54 @@
 2020-11-12T14:23:54: PM2 log: pid=4029 msg=process killed
 2020-11-12T14:26:11: PM2 log: App [server:1] starting in -fork mode-
 2020-11-12T14:26:11: PM2 log: App [server:1] online
+2020-11-12T18:12:15: PM2 log: Stopping app:server id:1
+2020-11-12T18:12:15: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+2020-11-12T18:12:15: PM2 log: pid=6302 msg=process killed
+2020-11-12T18:13:00: PM2 log: App [server:1] starting in -fork mode-
+2020-11-12T18:13:00: PM2 log: App [server:1] online
+2020-11-12T18:15:04: PM2 log: App [client:0] starting in -fork mode-
+2020-11-12T18:15:04: PM2 log: App [client:0] online
+2020-11-12T21:27:45: PM2 log: Stopping app:server id:1
+2020-11-12T21:27:45: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+2020-11-12T21:27:45: PM2 log: pid=7655 msg=process killed
+2020-11-12T21:28:28: PM2 log: App [server:1] starting in -fork mode-
+2020-11-12T21:28:28: PM2 log: App [server:1] online
+2020-11-12T21:28:43: PM2 log: Stopping app:client id:0
+2020-11-12T21:28:43: PM2 log: App [client:0] exited with code [0] via signal [SIGINT]
+2020-11-12T21:28:44: PM2 log: pid=7812 msg=process killed
+2020-11-12T21:35:23: PM2 log: pm2 has been killed by signal, dumping process list before exit...
+2020-11-12T21:35:23: PM2 log: Deleting process 0
+2020-11-12T21:35:23: PM2 log: Deleting process 1
+2020-11-12T21:35:23: PM2 log: Stopping app:server id:1
+2020-11-12T21:35:23: PM2 log: App [server:1] exited with code [0] via signal [SIGHUP]
+2020-11-12T21:35:24: PM2 log: pid=8272 msg=process killed
+2020-11-12T21:35:24: PM2 log: Deleting process 2
+2020-11-12T21:35:24: PM2 log: Exited peacefully
+2020-11-12T21:36:53: PM2 log: ===============================================================================
+2020-11-12T21:36:53: PM2 log: --- New PM2 Daemon started ----------------------------------------------------
+2020-11-12T21:36:53: PM2 log: Time                 : Thu Nov 12 2020 21:36:53 GMT+0000 (UTC)
+2020-11-12T21:36:53: PM2 log: PM2 version          : 4.5.0
+2020-11-12T21:36:53: PM2 log: Node.js version      : 8.10.0
+2020-11-12T21:36:53: PM2 log: Current arch         : x64
+2020-11-12T21:36:53: PM2 log: PM2 home             : /home/ubuntu/.pm2
+2020-11-12T21:36:53: PM2 log: PM2 PID file         : /home/ubuntu/.pm2/pm2.pid
+2020-11-12T21:36:53: PM2 log: RPC socket file      : /home/ubuntu/.pm2/rpc.sock
+2020-11-12T21:36:53: PM2 log: BUS socket file      : /home/ubuntu/.pm2/pub.sock
+2020-11-12T21:36:53: PM2 log: Application log path : /home/ubuntu/.pm2/logs
+2020-11-12T21:36:53: PM2 log: Worker Interval      : 30000
+2020-11-12T21:36:53: PM2 log: Process dump file    : /home/ubuntu/.pm2/dump.pm2
+2020-11-12T21:36:53: PM2 log: Concurrent actions   : 2
+2020-11-12T21:36:53: PM2 log: SIGTERM timeout      : 1600
+2020-11-12T21:36:53: PM2 log: ===============================================================================
+2020-11-12T21:37:50: PM2 log: App [client:0] starting in -fork mode-
+2020-11-12T21:37:50: PM2 log: App [client:0] online
+2020-11-12T21:37:59: PM2 log: App [server:1] starting in -fork mode-
+2020-11-12T21:37:59: PM2 log: App [server:1] online
+2020-11-12T21:39:31: PM2 log: Stopping app:server id:1
+2020-11-12T21:39:31: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+2020-11-12T21:39:31: PM2 log: pid=1557 msg=process killed
+2020-11-12T21:40:02: PM2 log: Stopping app:client id:0
+2020-11-12T21:40:02: PM2 log: App [client:0] exited with code [0] via signal [SIGINT]
+2020-11-12T21:40:02: PM2 log: pid=1519 msg=process killed
+2020-11-12T21:41:03: PM2 log: App [server:1] starting in -fork mode-
+2020-11-12T21:41:03: PM2 log: App [server:1] online
