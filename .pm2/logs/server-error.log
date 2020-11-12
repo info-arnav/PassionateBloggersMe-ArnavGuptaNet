@@ -6725,3 +6725,198 @@ TypeError: (intermediate value).then is not a function
     at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
     at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+(node:1644) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:1644) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+{ Error: listen EADDRINUSE :::3000
+    at Object._errnoException (util.js:1022:11)
+    at _exceptionWithHostPort (util.js:1044:20)
+    at Server.setupListenHandle [as _listen2] (net.js:1367:14)
+    at listenInCluster (net.js:1408:12)
+    at Server.listen (net.js:1492:7)
+    at Function.listen (/home/ubuntu/node_modules/express/lib/application.js:618:24)
+    at Object.<anonymous> (/home/ubuntu/server.js:525:5)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+    at tryModuleLoad (module.js:505:12)
+    at Function.Module._load (module.js:497:3)
+    at Object.<anonymous> (/usr/local/lib/node_modules/pm2/lib/ProcessContainerForkLegacy.js:28:21)
+    at Module._compile (module.js:652:30)
+    at Object.Module._extensions..js (module.js:663:10)
+    at Module.load (module.js:565:32)
+  code: 'EADDRINUSE',
+  errno: 'EADDRINUSE',
+  syscall: 'listen',
+  address: '::',
+  port: 3000 }
+(node:2025) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:2025) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:4029) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:4029) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+{ CastError: Cast to ObjectId failed for value "9887690b6c5f604d" at path "_id" for model "eventModel"
+    at model.Query.exec (/home/ubuntu/node_modules/mongoose/lib/query.js:4381:21)
+    at model.Query.Query.then (/home/ubuntu/node_modules/mongoose/lib/query.js:4473:15)
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  messageFormat: undefined,
+  stringValue: '"9887690b6c5f604d"',
+  kind: 'ObjectId',
+  value: '9887690b6c5f604d',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/home/ubuntu/node_modules/bson/lib/bson/objectid.js:59:11)
+    at castObjectId (/home/ubuntu/node_modules/mongoose/lib/cast/objectid.js:25:12)
+    at ObjectId.cast (/home/ubuntu/node_modules/mongoose/lib/schema/objectid.js:267:12)
+    at ObjectId.SchemaType.applySetters (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1075:12)
+    at ObjectId.SchemaType._castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1510:15)
+    at ObjectId.SchemaType.castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1500:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1477:20)
+    at cast (/home/ubuntu/node_modules/mongoose/lib/cast.js:331:32)
+    at model.Query.Query.cast (/home/ubuntu/node_modules/mongoose/lib/query.js:4782:12)
+    at model.Query.Query._castConditions (/home/ubuntu/node_modules/mongoose/lib/query.js:1874:10)
+    at model.Query.<anonymous> (/home/ubuntu/node_modules/mongoose/lib/query.js:2131:8)
+    at model.Query._wrappedThunk [as _findOne] (/home/ubuntu/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+{ CastError: Cast to ObjectId failed for value "f284c50edcaa490d" at path "_id" for model "eventModel"
+    at model.Query.exec (/home/ubuntu/node_modules/mongoose/lib/query.js:4381:21)
+    at model.Query.Query.then (/home/ubuntu/node_modules/mongoose/lib/query.js:4473:15)
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  messageFormat: undefined,
+  stringValue: '"f284c50edcaa490d"',
+  kind: 'ObjectId',
+  value: 'f284c50edcaa490d',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/home/ubuntu/node_modules/bson/lib/bson/objectid.js:59:11)
+    at castObjectId (/home/ubuntu/node_modules/mongoose/lib/cast/objectid.js:25:12)
+    at ObjectId.cast (/home/ubuntu/node_modules/mongoose/lib/schema/objectid.js:267:12)
+    at ObjectId.SchemaType.applySetters (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1075:12)
+    at ObjectId.SchemaType._castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1510:15)
+    at ObjectId.SchemaType.castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1500:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1477:20)
+    at cast (/home/ubuntu/node_modules/mongoose/lib/cast.js:331:32)
+    at model.Query.Query.cast (/home/ubuntu/node_modules/mongoose/lib/query.js:4782:12)
+    at model.Query.Query._castConditions (/home/ubuntu/node_modules/mongoose/lib/query.js:1874:10)
+    at model.Query.<anonymous> (/home/ubuntu/node_modules/mongoose/lib/query.js:2131:8)
+    at model.Query._wrappedThunk [as _findOne] (/home/ubuntu/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+{ CastError: Cast to ObjectId failed for value "f284c50edcaa490d" at path "_id" for model "eventModel"
+    at model.Query.exec (/home/ubuntu/node_modules/mongoose/lib/query.js:4381:21)
+    at model.Query.Query.then (/home/ubuntu/node_modules/mongoose/lib/query.js:4473:15)
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  messageFormat: undefined,
+  stringValue: '"f284c50edcaa490d"',
+  kind: 'ObjectId',
+  value: 'f284c50edcaa490d',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/home/ubuntu/node_modules/bson/lib/bson/objectid.js:59:11)
+    at castObjectId (/home/ubuntu/node_modules/mongoose/lib/cast/objectid.js:25:12)
+    at ObjectId.cast (/home/ubuntu/node_modules/mongoose/lib/schema/objectid.js:267:12)
+    at ObjectId.SchemaType.applySetters (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1075:12)
+    at ObjectId.SchemaType._castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1510:15)
+    at ObjectId.SchemaType.castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1500:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1477:20)
+    at cast (/home/ubuntu/node_modules/mongoose/lib/cast.js:331:32)
+    at model.Query.Query.cast (/home/ubuntu/node_modules/mongoose/lib/query.js:4782:12)
+    at model.Query.Query._castConditions (/home/ubuntu/node_modules/mongoose/lib/query.js:1874:10)
+    at model.Query.<anonymous> (/home/ubuntu/node_modules/mongoose/lib/query.js:2131:8)
+    at model.Query._wrappedThunk [as _findOne] (/home/ubuntu/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+{ CastError: Cast to ObjectId failed for value "9887690b6c5f604d" at path "_id" for model "eventModel"
+    at model.Query.exec (/home/ubuntu/node_modules/mongoose/lib/query.js:4381:21)
+    at model.Query.Query.then (/home/ubuntu/node_modules/mongoose/lib/query.js:4473:15)
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  messageFormat: undefined,
+  stringValue: '"9887690b6c5f604d"',
+  kind: 'ObjectId',
+  value: '9887690b6c5f604d',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/home/ubuntu/node_modules/bson/lib/bson/objectid.js:59:11)
+    at castObjectId (/home/ubuntu/node_modules/mongoose/lib/cast/objectid.js:25:12)
+    at ObjectId.cast (/home/ubuntu/node_modules/mongoose/lib/schema/objectid.js:267:12)
+    at ObjectId.SchemaType.applySetters (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1075:12)
+    at ObjectId.SchemaType._castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1510:15)
+    at ObjectId.SchemaType.castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1500:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1477:20)
+    at cast (/home/ubuntu/node_modules/mongoose/lib/cast.js:331:32)
+    at model.Query.Query.cast (/home/ubuntu/node_modules/mongoose/lib/query.js:4782:12)
+    at model.Query.Query._castConditions (/home/ubuntu/node_modules/mongoose/lib/query.js:1874:10)
+    at model.Query.<anonymous> (/home/ubuntu/node_modules/mongoose/lib/query.js:2131:8)
+    at model.Query._wrappedThunk [as _findOne] (/home/ubuntu/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+(node:6302) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:6302) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+{ CastError: Cast to ObjectId failed for value "f284c50edcaa490d" at path "_id" for model "eventModel"
+    at model.Query.exec (/home/ubuntu/node_modules/mongoose/lib/query.js:4381:21)
+    at model.Query.Query.then (/home/ubuntu/node_modules/mongoose/lib/query.js:4473:15)
+    at process._tickDomainCallback (internal/process/next_tick.js:228:7)
+  messageFormat: undefined,
+  stringValue: '"f284c50edcaa490d"',
+  kind: 'ObjectId',
+  value: 'f284c50edcaa490d',
+  path: '_id',
+  reason: Error: Argument passed in must be a single String of 12 bytes or a string of 24 hex characters
+    at new ObjectID (/home/ubuntu/node_modules/bson/lib/bson/objectid.js:59:11)
+    at castObjectId (/home/ubuntu/node_modules/mongoose/lib/cast/objectid.js:25:12)
+    at ObjectId.cast (/home/ubuntu/node_modules/mongoose/lib/schema/objectid.js:267:12)
+    at ObjectId.SchemaType.applySetters (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1075:12)
+    at ObjectId.SchemaType._castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1510:15)
+    at ObjectId.SchemaType.castForQuery (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1500:15)
+    at ObjectId.SchemaType.castForQueryWrapper (/home/ubuntu/node_modules/mongoose/lib/schematype.js:1477:20)
+    at cast (/home/ubuntu/node_modules/mongoose/lib/cast.js:331:32)
+    at model.Query.Query.cast (/home/ubuntu/node_modules/mongoose/lib/query.js:4782:12)
+    at model.Query.Query._castConditions (/home/ubuntu/node_modules/mongoose/lib/query.js:1874:10)
+    at model.Query.<anonymous> (/home/ubuntu/node_modules/mongoose/lib/query.js:2131:8)
+    at model.Query._wrappedThunk [as _findOne] (/home/ubuntu/node_modules/mongoose/lib/helpers/query/wrapThunk.js:16:8)
+    at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
+    at _combinedTickCallback (internal/process/next_tick.js:131:7)
+    at process._tickDomainCallback (internal/process/next_tick.js:218:9) }

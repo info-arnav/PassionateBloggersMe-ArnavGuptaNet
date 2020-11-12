@@ -6,11 +6,10 @@ import htmlToDraft from "html-to-draftjs";
 
 const fun = () => {};
 class Wysiwyg extends Component {
-  state = {
+  onEditorStateChange(editorState){
+    let state = {
     editorState: EditorState.createEmpty(),
   };
-
-  onEditorStateChange = (editorState) => {
     this.setState({
       editorState,
     });

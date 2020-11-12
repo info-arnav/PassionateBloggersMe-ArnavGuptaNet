@@ -1,0 +1,43 @@
+0 verbose cli [
+0 verbose cli   '/home/ubuntu/.nvm/versions/node/v15.0.1/bin/node',
+0 verbose cli   '/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/bin/npm-cli.js',
+0 verbose cli   'run',
+0 verbose cli   'build'
+0 verbose cli ]
+1 info using npm@7.0.3
+2 info using node@v15.0.1
+3 timing config:load:defaults Completed in 2ms
+4 timing config:load:file:/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/npmrc Completed in 13ms
+5 timing config:load:builtin Completed in 13ms
+6 timing config:load:cli Completed in 14ms
+7 timing config:load:env Completed in 1ms
+8 timing config:load:file:/home/ubuntu/client/.npmrc Completed in 0ms
+9 timing config:load:project Completed in 2ms
+10 timing config:load:file:/home/ubuntu/.npmrc Completed in 1ms
+11 timing config:load:user Completed in 1ms
+12 timing config:load:file:/home/ubuntu/.nvm/versions/node/v15.0.1/etc/npmrc Completed in 1ms
+13 timing config:load:global Completed in 2ms
+14 timing config:load:cafile Completed in 0ms
+15 timing config:load:validate Completed in 3ms
+16 timing config:load:setUserAgent Completed in 0ms
+17 timing config:load:setEnvs Completed in 3ms
+18 timing config:load Completed in 41ms
+19 verbose npm-session d31dc0b85944cb64
+20 timing npm:load Completed in 96ms
+21 timing command:run-script Completed in 3946ms
+22 verbose stack Error: command failed
+22 verbose stack     at ChildProcess.<anonymous> (/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/node_modules/@npmcli/promise-spawn/index.js:63:27)
+22 verbose stack     at ChildProcess.emit (node:events:327:20)
+22 verbose stack     at maybeClose (node:internal/child_process:1048:16)
+22 verbose stack     at Process.ChildProcess._handle.onexit (node:internal/child_process:288:5)
+23 verbose pkgid client@0.1.0
+24 verbose cwd /home/ubuntu/client
+25 verbose Linux 5.4.0-1029-aws
+26 verbose argv "/home/ubuntu/.nvm/versions/node/v15.0.1/bin/node" "/home/ubuntu/.nvm/versions/node/v15.0.1/lib/node_modules/npm/bin/npm-cli.js" "run" "build"
+27 verbose node v15.0.1
+28 verbose npm  v7.0.3
+29 error code 1
+30 error path /home/ubuntu/client
+31 error command failed
+32 error command sh -c react-scripts build
+33 verbose exit 1

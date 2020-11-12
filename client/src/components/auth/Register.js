@@ -27,7 +27,6 @@ class Register extends Component {
       this.props.history.push("/dashboard");
     }
   }
-
   componentWillReceiveProps(nextProps) {
     if (nextProps.errors) {
       this.setState({
@@ -36,15 +35,15 @@ class Register extends Component {
     }
   }
 
-  onChange = (e) => {
+  onChange(e){
     this.setState({ [e.target.id]: e.target.value });
   };
 
-  verifyCallback = (response) => {
+  verifyCallback(response){
     this.setState({ recapcha: true });
   };
 
-  onSubmit = (e) => {
+  onSubmit(e){
     e.preventDefault();
 
     const newUser = {

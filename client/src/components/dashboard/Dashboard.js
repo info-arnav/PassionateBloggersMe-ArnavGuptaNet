@@ -13,7 +13,7 @@ import Wysiwyg from "../../elements/Wysiwyg";
 
 class Dashboard extends Component {
 
-  onLogoutClick = (e) => {
+  onLogoutClick(e){
     e.preventDefault();
     this.props.logoutUser();
   };
@@ -21,7 +21,7 @@ class Dashboard extends Component {
     super(props);
     this.state = { inputValue : "", editorState: EditorState.createEmpty(),data: [], sdata: { confirmed: true }, loading: true };
   }
-  onEditorStateChange = (editorState) => {
+  onEditorStateChange(editorState){
     this.setState({
       editorState,
     });

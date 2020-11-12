@@ -545,3 +545,147 @@ cd client
 sudo yarn build
 car client/package.json 
 cat client/package.json 
+cd client/
+mksir server
+mkdir server
+nao index.js
+nano index.js
+mv index.js ./server/
+ls
+nano .babelrc.json
+nano webpack.server.js
+sudo nano package.
+sudo nano package.json 
+ls
+yarn build
+sudo yarn build
+npm run dev
+yarn add npm-run-all
+npm run dev
+yarn add nodemon
+npm run dev
+ls
+cd ..
+git add .
+git commit -am "ssr"
+git push origin master
+cd client/
+npm run dev
+sudo npm run dev
+sudo nano package
+sudo nano package.json 
+npm run dev
+yarn upgrade caniuse-lite browserslist
+sudo yarn build
+cd client/
+sudo nano package.json 
+ls
+sudo yarn run dev
+sudo pm2 start build-pm2.json 
+cd ..
+sudo pm2 start server.js
+cp server.js testing.js
+npm i ejs
+cp client/build/index.html client/build/index.ejs
+nano client/build/index.ejs
+nano testing.js 
+sudo pm2 stop server.js 
+sudo pm2 stop testing.js 
+sudo pm2 start testing.js 
+sudo pm2 status
+nano testing.js 
+sudo pm2 stop testing.js 
+nano testing.js 
+sudo rm client/src/store.js 
+sudo cp client/src/store-emergency.js 
+sudo cp client/src/store-emergency.js  store.js
+cd client/
+sudo yarn build
+cd ..
+mv store.js client/src/
+sudo yarn build
+cd client
+sudo yarn build
+mksir server
+mkdir server
+cd server
+mkdir controllers
+nano index.js
+cd .. && mkdir middleware
+cd middleware/
+nano renderer.js
+cd ..
+nano bootstrap.js
+mv middleware/ server/
+ls
+ls server/middleware/
+mv bootstrap.js server
+node server/bootstrap.js 
+yarn add babel-preset-es2015
+node server/bootstrap.js 
+export NODE_ENV=development
+export BABEL_ENV=$NODE_ENV
+node server/bootstrap.js 
+yarn add @babel/registe
+yarn add @babel/register
+node server/bootstrap.js 
+yarn add @babel/register^7.0.0
+sudo nano package
+sudo nano package.js
+sudo nano package.json 
+yarn add @babel/register^7.0.0
+node server/bootstrap.js
+sudo yarn build
+node server/bootstrap.js
+babel -V
+babel -v
+yarn add --dev babel-jest babel-core@^7.0.0-bridge.0 @babel/core regenerator-runtime
+node server/bootstrap.js
+sudo yarn build
+sudo nano .env
+sudo yarn build
+node server/bootstrap.js
+sudo rm package-lock.json yarn.lock -r node_modules/
+yarn
+sudo yarn build
+node server/bootstrap.js
+sudo rm -r server
+ls
+mkdir server
+cd server
+nano inde
+nano index.js
+NODE_ENV=development node server/index.js
+cd ..
+cd client/
+NODE_ENV=development node server/index.js
+npm install express can-zone-jsdom done-ssr --save
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+nano server/index.js
+NODE_ENV=development node server/index.js
+cd server
+ls
+rm index.js 
+nano index.js
+node index.js 
+nano index.js
+rm index.js
+cd ..
+pm2 stop serer.js
+sudo pm2 stop server.js
+cd client
+yarn start
+cd ..
+sudo pm2 start server.js

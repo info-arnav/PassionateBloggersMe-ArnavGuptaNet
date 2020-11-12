@@ -15,7 +15,7 @@ class Navigation extends Component {
     };
   }
 
-  onLogoutClick = (e) => {
+  onLogoutClick(e){
     e.preventDefault();
     this.props.logoutUser();
   };
@@ -33,12 +33,11 @@ class Navigation extends Component {
       });
     }
   }
-  onChange = (e) => {
+  onChange(e){
     this.setState({ [e.target.id]: e.target.value });
   };
-  onSubmit = (e) => {
+  onSubmit(e){
     e.preventDefault();
-
     const userData = {
       email: this.state.email,
       password: this.state.password,
