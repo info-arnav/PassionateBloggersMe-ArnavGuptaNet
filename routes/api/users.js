@@ -52,7 +52,7 @@ router.post("/register", (req, res) => {
           await fs.readFile(
             path.resolve(
               __dirname,
-              "./../../client/public/sitemap-arnavgupta.xml"
+              "./../../client/public/arnavgupta-sitemap.xml"
             ),
             "utf-8",
             (err, data) => {
@@ -67,19 +67,12 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `https://www.arnavgupta.net/profiles&value=${req.body.name}`,
-                  changefreq: "monthly",
-                  priority: "1.0",
-                };
-
-                const postgres1 = {
-                  loc: `https://arnavgupta.net/profiles&value=${req.body.name}`,
+                  loc: `www.arnavgupta.net/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
 
                 result.urlset.url.push(postgres);
-                result.urlset.url.push(postgres1);
 
                 // convert SJON objec to XML
                 const builder = new xml2js.Builder();
@@ -89,7 +82,7 @@ router.post("/register", (req, res) => {
                 fs.writeFile(
                   path.resolve(
                     __dirname,
-                    "./../../client/public/sitemap-arnavgupta.xml"
+                    "./../../client/public/arnavgupta-sitemap.xml"
                   ),
                   xml,
                   (err) => {
@@ -107,7 +100,7 @@ router.post("/register", (req, res) => {
           await fs.readFile(
             path.resolve(
               __dirname,
-              "./../../client/public/sitemap-passionatebloggers.xml"
+              "./../../client/public/passionatebloggers-sitemap.xml"
             ),
             "utf-8",
             (err, data) => {
@@ -122,18 +115,12 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `https://www.passionatebloggers.me/profiles&value=${req.body.name}`,
-                  changefreq: "monthly",
-                  priority: "1.0",
-                };
-                const postgres1 = {
-                  loc: `https://passionatebloggers.me/profiles&value=${req.body.name}`,
+                  loc: `passionatebloggers.me/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
 
                 result.urlset.url.push(postgres);
-                result.urlset.url.push(postgres1);
 
                 // convert SJON objec to XML
                 const builder = new xml2js.Builder();
@@ -143,7 +130,7 @@ router.post("/register", (req, res) => {
                 fs.writeFile(
                   path.resolve(
                     __dirname,
-                    "./../../client/public/sitemap-passionatebloggers.xml"
+                    "./../../client/public/passionatebloggers-sitemap.xml"
                   ),
                   xml,
                   (err) => {
