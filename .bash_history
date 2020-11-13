@@ -831,3 +831,14 @@ git add .
 git commit -am merge
 git push origin master
 sudo pm2 restart all
+git pull origin master
+git add .
+git commit -am "merge"
+git pull origin master
+sudo nano client/public/arnavgupta-sitemap.xml 
+sudo rm client/public/arnavgupta-sitemap.xml 
+sudo nano client/public/arnavgupta-sitemap.xml 
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo rm client/public/passionatebloggers-sitemap.xml 
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo pm2 restart all

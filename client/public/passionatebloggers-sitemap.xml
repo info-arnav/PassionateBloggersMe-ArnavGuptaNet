@@ -1,161 +1,151 @@
 <?xml version="1.0" encoding="UTF-8" standalone="yes"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
-    <loc>https://www.passionatebloggers.me/</loc>
+    <loc>passionatebloggers.me/</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/index</loc>
+    <loc>passionatebloggers.me/index</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.1</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/contact</loc>
+    <loc>passionatebloggers.me/contact</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/license</loc>
+    <loc>passionatebloggers.me/license</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/profile</loc>
+    <loc>passionatebloggers.me/profile</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/active</loc>
+    <loc>passionatebloggers.me/active</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/license</loc>
+    <loc>passionatebloggers.me/license</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>never</changefreq>
     <priority>1</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/sitemap</loc>
+    <loc>passionatebloggers.me/sitemap</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.8</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/dashboard</loc>
+    <loc>passionatebloggers.me/dashboard</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/login</loc>
+    <loc>passionatebloggers.me/login</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/register</loc>
+    <loc>passionatebloggers.me/register</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/login</loc>
+    <loc>passionatebloggers.me/login</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/projects</loc>
+    <loc>passionatebloggers.me/projects</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/feed</loc>
+    <loc>passionatebloggers.me/feed</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
     <priority>0.5</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posted5faae5aff284c50edcaa490d</loc>
+    <loc>passionatebloggers.me/posted5faae5aff284c50edcaa490d</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posted5fab91d29887690b6c5f604d</loc>
+    <loc>passionatebloggers.me/posted5fab91d29887690b6c5f604d</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/profiles&amp;value=test@test.abcd</loc>
+    <loc>passionatebloggers.me/profiles&amp;value=test@test.abcd</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/profiles&amp;value=anujagupta2013@gmail.com</loc>
+    <loc>passionatebloggers.me/profiles&amp;value=anujagupta2013@gmail.com</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada762b0d3700458c7f289</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada762b0d3700458c7f289</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada778b0d3700458c7f28a</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada778b0d3700458c7f28a</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada789b0d3700458c7f28b</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada789b0d3700458c7f28b</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada7a2b0d3700458c7f28c</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada7a2b0d3700458c7f28c</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada7bcb0d3700458c7f28d</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada7bcb0d3700458c7f28d</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada7cab0d3700458c7f28e</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada7cab0d3700458c7f28e</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada7e9b0d3700458c7f28f</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada7e9b0d3700458c7f28f</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada7fab0d3700458c7f290</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada7fab0d3700458c7f290</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
   <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada80bb0d3700458c7f291</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://www.passionatebloggers.me/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
-    <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
-  </url>
-  <url>
-    <loc>https://passionatebloggers.me/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
+    <loc>passionatebloggers.me/posteds&amp;value=5fada80bb0d3700458c7f291</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
