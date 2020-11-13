@@ -769,3 +769,58 @@ sudo nano client//home/ubuntu/client/src/main/Profile.js
 sudo nano /home/ubuntu/client/src/main/Profile.js
 cd client
 cd public
+cat /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx -t
+sudo nginx -t
+sudo service nginx restart
+sudo pm2 start server.js
+sudo pm2 server.js restart
+sudo pm2 status
+sudo pm2 restart server.js
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo rm /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo nginx -t
+sudo service nginx restart
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+cat /etc/nginx/sites-enabled/default 
+sudo rm /etc/nginx/sites-enabled/default 
+sudo nano /etc/nginx/sites-enabled/default 
+sudo service nginx restart
+sudo pm2 stop server.js
+sudo pm2 stop all
+git pull origin master
+git add .
+git commit -am forMerger
+git pull origin master
+git add .
+sudo pm2 start all
+git add .
+git pull origin master
+sudo pm2 restart all
+cd client/
+cd public/
+ls
+git pull origin master
+ls
+git pull origin master
