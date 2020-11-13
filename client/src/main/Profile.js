@@ -39,22 +39,20 @@ const Profile = (props) => {
     [refresh, refresher, user, nndata, data, feedData]
   );
   const following = (e) => {
-    refresher(1);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
-    axios.post(`/follower/append`, { name });
+    axios.post(`/follower/append`, { name }).then((e) => refresher(1));
   };
   const unfollowing = (e) => {
-    refresher(0);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
-    axios.post(`/following/pop`, { name });
+    axios.post(`/following/pop`, { name }).then((e) => refresher(0));
   };
   return (
     <div>
