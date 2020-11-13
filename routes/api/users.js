@@ -50,7 +50,10 @@ router.post("/register", (req, res) => {
             password: req.body.password,
           });
           await fs.readFile(
-            path.resolve(__dirname, "./../../client/public/sitemap.xml"),
+            path.resolve(
+              __dirname,
+              "./../../client/public/sitemap-arnavgupta.xml"
+            ),
             "utf-8",
             (err, data) => {
               if (err) {
@@ -69,7 +72,14 @@ router.post("/register", (req, res) => {
                   priority: "1.0",
                 };
 
+                const postgres1 = {
+                  loc: `https://arnavgupta.net/profiles&value=${req.body.name}`,
+                  changefreq: "monthly",
+                  priority: "1.0",
+                };
+
                 result.urlset.url.push(postgres);
+                result.urlset.url.push(postgres1);
 
                 // convert SJON objec to XML
                 const builder = new xml2js.Builder();
@@ -77,7 +87,10 @@ router.post("/register", (req, res) => {
 
                 // write updated XML string to a file
                 fs.writeFile(
-                  path.resolve(__dirname, "./../../client/public/sitemap.xml"),
+                  path.resolve(
+                    __dirname,
+                    "./../../client/public/sitemap-arnavgupta.xml"
+                  ),
                   xml,
                   (err) => {
                     if (err) {
@@ -92,7 +105,10 @@ router.post("/register", (req, res) => {
           );
 
           await fs.readFile(
-            path.resolve(__dirname, "./../../client/public/sitemap.xml"),
+            path.resolve(
+              __dirname,
+              "./../../client/public/sitemap-passionatebloggers.xml"
+            ),
             "utf-8",
             (err, data) => {
               if (err) {
@@ -110,8 +126,14 @@ router.post("/register", (req, res) => {
                   changefreq: "monthly",
                   priority: "1.0",
                 };
+                const postgres1 = {
+                  loc: `https://passionatebloggers.me/profiles&value=${req.body.name}`,
+                  changefreq: "monthly",
+                  priority: "1.0",
+                };
 
                 result.urlset.url.push(postgres);
+                result.urlset.url.push(postgres1);
 
                 // convert SJON objec to XML
                 const builder = new xml2js.Builder();
@@ -119,7 +141,10 @@ router.post("/register", (req, res) => {
 
                 // write updated XML string to a file
                 fs.writeFile(
-                  path.resolve(__dirname, "./../../client/public/sitemap.xml"),
+                  path.resolve(
+                    __dirname,
+                    "./../../client/public/sitemap-passionatebloggers.xml"
+                  ),
                   xml,
                   (err) => {
                     if (err) {

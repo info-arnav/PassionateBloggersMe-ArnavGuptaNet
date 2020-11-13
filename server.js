@@ -273,7 +273,7 @@ app.post("/teams/submit", async (req, res) => {
   body = req.body;
   await eventModel.create(req.body, async (error, success) => {
     if (success) {
-      await fs.readFile("./client/public/sitemap.xml", "utf-8", (err, data) => {
+      await fs.readFile("./client/public/sitemap-arnavgupta.xml", "utf-8", (err, data) => {
         if (err) {
           throw err;
         }
@@ -289,15 +289,21 @@ app.post("/teams/submit", async (req, res) => {
             changefreq: "monthly",
             priority: "1.0",
           };
+          const postgres1 = {
+            loc: `https://arnavgupta.net/posteds&value=${success._id}`,
+            changefreq: "monthly",
+            priority: "1.0",
+          };
 
           result.urlset.url.push(postgres);
+          result.urlset.url.push(postgres1);
 
           // convert SJON objec to XML
           const builder = new xml2js.Builder();
           const xml = builder.buildObject(result);
 
           // write updated XML string to a file
-          fs.writeFile("./client/public/sitemap.xml", xml, (err) => {
+          fs.writeFile("./client/public/sitemap-arnavgupta.xml", xml, (err) => {
             if (err) {
               throw err;
             }
@@ -307,7 +313,7 @@ app.post("/teams/submit", async (req, res) => {
         });
       });
 
-      await fs.readFile("./client/public/sitemap.xml", "utf-8", (err, data) => {
+      await fs.readFile("./client/public/sitemap-passionatebloggers.xml", "utf-8", (err, data) => {
         if (err) {
           throw err;
         }
@@ -323,15 +329,21 @@ app.post("/teams/submit", async (req, res) => {
             changefreq: "monthly",
             priority: "1.0",
           };
+          const postgres1 = {
+            loc: `https://passionatebloggers.me/posteds&value=${success._id}`,
+            changefreq: "monthly",
+            priority: "1.0",
+          };
 
           result.urlset.url.push(postgres);
+          result.urlset.url.push(postgres1);
 
           // convert SJON objec to XML
           const builder = new xml2js.Builder();
           const xml = builder.buildObject(result);
 
           // write updated XML string to a file
-          fs.writeFile("./client/public/sitemap-ssl.xml", xml, (err) => {
+          fs.writeFile("./client/public/sitemap-passionatebloggers.xml", xml, (err) => {
             if (err) {
               throw err;
             }
