@@ -1,0 +1,11 @@
+# robots.txt for https://www.arnavgupta.net/sitemap.xml and https://www.passionatebloggers.me/
+
+User-agent: * 
+Disallow: /active
+Disallow: /sitemap
+Disallow: /dashboard
+Disallow: /feed
+
+
+Sitemap: https://www.arnavgupta.net/sitemap.xml
+Sitemap: https://www.passionatebloggers.me/sitemap.xml
