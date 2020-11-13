@@ -14,6 +14,7 @@ const Profile = (props) => {
   const [data, updater] = useState({ followers: [], following: [] });
   const [feedData, feedUpdater] = useState([]);
   const [refresh, refresher] = useState(-1);
+  const [refreshs, refreshers] = useState(-1);
   let { id } = useParams();
   id = id.substring(8);
   useEffect(
@@ -36,23 +37,29 @@ const Profile = (props) => {
       };
       secondry();
     },
-    [refresh, refresher, user, nndata, data, feedData]
+    [refresh, refreshers, refreshs, refresher, user, nndata, data, feedData]
   );
   const following = (e) => {
+    refresher(1);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
-    axios.post(`/follower/append`, { name }).then((e) => refresher(1));
+    axios
+      .post(`/follower/append`, { name })
+      .then((e) => refreshers(refreshs + 1));
   };
   const unfollowing = (e) => {
+    refresher(0);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
-    axios.post(`/following/pop`, { name }).then((e) => refresher(0));
+    axios
+      .post(`/following/pop`, { name })
+      .then((e) => refreshers(refreshs + 1));
   };
   return (
     <div>
