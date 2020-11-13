@@ -26,14 +26,14 @@ const Profile = (props) => {
           .then(async (e) => await fetch(`/posts/user/${id}`))
           .then((e) => e.json())
           .then((e) => feedUpdater(e))
+          .then((e) => refresher(-1))
           .then((e) => setLoading(false));
       };
       fetcher();
       const secondry = async () => {
         await fetch(`/user/profile/data/${user.name}`)
           .then((e) => e.json())
-          .then((e) => setData(e))
-          .then((e) => refresher(-1));
+          .then((e) => setData(e));
       };
       secondry();
     },
