@@ -709,3 +709,63 @@ sudo yarn build
 sudo pm2 start build-pm2.json 
 cd ..
 sudo pm2 start server.js
+sudo pm2 stop server.js
+cd client/
+sudo pm2 stop server.js
+sudo pm2 stop build-pm2.json 
+cd .
+cd ..
+git pull origin master
+sudo yarn build
+sudo pm2 start server.js
+git pull origin master
+cd client
+sudo yarn build
+ls
+cd src
+ls
+cd ..
+git add .
+git commit -am test
+git push origin master
+cat src/components/dashboard/Dashboard.js 
+cat src/components/auth/Register.js 
+cat package.json 
+ls
+sudo rm -r build
+sudo yarn build
+ls
+sudo pm2 start build-pm2.json 
+git pull origin master
+cd client/
+sudo pm2 stop build-pm2.json 
+cd client/
+sudo yarn build
+cd client/
+sudo pm2 stop build-pm2.json
+yarn build
+sudo yarn build
+sudo pm2 start build-pm2.json
+cd client/
+sudo pm2 stop build-pm2.json 
+sudo yarn build
+sudo pm2 start build-pm2.json
+git pull origin master
+cd client/
+sudo pm2 stop build-pm2.json 
+sudo yarn build
+sudo pm2 start build-pm2.json
+git pull
+git pull origin master
+cd client/
+sudo pm2 stop build-pm2.json 
+sudo yarn build
+sudo pm2 start build-pm2.json 
+sudo pm2 restart server.js
+cd client/public
+sudo robots.txt
+nano robots.txt
+sudo nano client//home/ubuntu/client/src/main/Profile.js
+sudo nano /home/ubuntu/client/src/main/Profile.js
+cd client
+cd public
