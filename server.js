@@ -288,7 +288,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `arnavgupta.net/posteds&value=${success._id}`,
+              loc: `https://www.arnavgupta.net/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -330,7 +330,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `passionatebloggers.me/posteds&value=${success._id}`,
+              loc: `https://www.passionatebloggers.me/posteds&value=${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };

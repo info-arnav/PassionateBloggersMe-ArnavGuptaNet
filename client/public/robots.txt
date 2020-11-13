@@ -5,9 +5,11 @@ Disallow: /active
 Disallow: /sitemap
 Disallow: /dashboard
 Disallow: /feed
+Disallow: /license
+Disallow: /all/posts 
+Disallow: /user/profile/data/*
+Disallow: /single/post/*
 
 
 Sitemap: https://www.arnavgupta.net/arnavgupta-sitemap.xml
 Sitemap: https://www.passionatebloggers.me/passionatebloggers-sitemap.xml
-Sitemap: https://arnavgupta.net/arnavgupta-sitemap.xml
-Sitemap: https://passionatebloggers.me/passionatebloggers-sitemap.xml
