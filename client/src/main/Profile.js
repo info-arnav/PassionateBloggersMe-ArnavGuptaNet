@@ -26,21 +26,21 @@ const Profile = (props) => {
           .then(async (e) => await fetch(`/posts/user/${id}`))
           .then((e) => e.json())
           .then((e) => feedUpdater(e))
-          .then((e) => refresher(-1))
           .then((e) => setLoading(false));
       };
       fetcher();
       const secondry = async () => {
         await fetch(`/user/profile/data/${user.name}`)
           .then((e) => e.json())
-          .then((e) => setData(e));
+          .then((e) => setData(e))
+          .then((e) => refresher(-1));
       };
       secondry();
     },
-    [refresh, refreshers, refreshs, refresher, user, nndata, data, feedData]
+    [refreshers, refreshs, user, nndata, data, feedData]
   );
   const following = (e) => {
-    refresher(1);
+    refresher(refresh + 1);
     e.preventDefault();
     const name = {
       affected: data._id,
@@ -51,7 +51,7 @@ const Profile = (props) => {
       .then((e) => refreshers(refreshs + 1));
   };
   const unfollowing = (e) => {
-    refresher(0);
+    refresher(refresh + 1);
     e.preventDefault();
     const name = {
       affected: data._id,
