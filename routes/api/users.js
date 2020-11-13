@@ -67,7 +67,7 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `www.arnavgupta.net/profiles&value=${req.body.name}`,
+                  loc: `https://www.arnavgupta.net/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
@@ -115,7 +115,7 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `passionatebloggers.me/profiles&value=${req.body.name}`,
+                  loc: `https://www.passionatebloggers.me/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
