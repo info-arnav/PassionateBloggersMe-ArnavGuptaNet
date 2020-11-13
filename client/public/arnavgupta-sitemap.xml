@@ -143,11 +143,11 @@
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
   </url><url>
-    <loc>https://https://www.arnavgupta.net/user/profile/data/*</loc>
+    <loc>https://www.arnavgupta.net/user/profile/data/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
   </url><url>
-    <loc>https://https://www.arnavgupta.net/single/post/*</loc>
+    <loc>https://www.arnavgupta.net/single/post/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
   </url>

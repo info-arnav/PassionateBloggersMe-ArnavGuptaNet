@@ -72,8 +72,8 @@ class App extends Component {
                 <PrivateRoute exact path="/active" component={Active} />
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
                 <PrivateRoute exact path="/feed" component={Feed} />
+<Route component={NotFound} />
               </Switch>
-              <Route component={NotFound} />
             </Switch>
             <Footer />
           </div>

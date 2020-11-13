@@ -7026,3 +7026,21 @@ Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.
     at process.nextTick (/home/ubuntu/node_modules/kareem/index.js:369:33)
     at _combinedTickCallback (internal/process/next_tick.js:131:7)
     at process._tickDomainCallback (internal/process/next_tick.js:218:9) }
+(node:11733) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:11733) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:12687) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:12687) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:13070) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:13070) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+(node:13485) DeprecationWarning: current Server Discovery and Monitoring engine is deprecated, and will be removed in a future version. To use the new Server Discover and Monitoring engine, pass option { useUnifiedTopology: true } to the MongoClient constructor.
+(node:13485) DeprecationWarning: collection.ensureIndex is deprecated. Use createIndexes instead.
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'
+Error: ENOENT: no such file or directory, stat '/home/ubuntu/client/build/index.html'

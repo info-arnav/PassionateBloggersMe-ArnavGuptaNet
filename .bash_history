@@ -842,3 +842,27 @@ sudo nano client/public/passionatebloggers-sitemap.xml
 sudo rm client/public/passionatebloggers-sitemap.xml 
 sudo nano client/public/passionatebloggers-sitemap.xml 
 sudo pm2 restart all
+git add .
+git commit -am merge
+git pull origin master
+sudo rm client/public/passionatebloggers-sitemap.xml 
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo rm client/public/arnavgupta-sitemap.xml 
+git pull origin master
+git add .
+git commit -am merge
+git pull origin master
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo nano client/public/arnavgupta-sitemap.xml 
+sudo nano client/public/passionatebloggers-sitemap.xml 
+git add .
+git commit -am merge
+sudo pm2 restart all
+cat serrver.js
+cat  server.js
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo nano client/public/arnavgupta-sitemap.xml 
+sudo pm2 restart all
+sudo nano client/public/passionatebloggers-sitemap.xml 
+sudo nano client/public/arnavgupta-sitemap.xml 
+sudo pm2 restart all
