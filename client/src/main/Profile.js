@@ -13,7 +13,7 @@ const Profile = (props) => {
   const [loading, setLoading] = useState(true);
   const [data, updater] = useState({ followers: [], following: [] });
   const [feedData, feedUpdater] = useState([]);
-  const [refresh, refresher] = useState(-1);
+  const [refresh, refresher] = useState("");
   const [refreshs, refreshers] = useState(-1);
   let { id } = useParams();
   id = id.substring(8);
@@ -26,18 +26,20 @@ const Profile = (props) => {
           .then(async (e) => await fetch(`/posts/user/${id}`))
           .then((e) => e.json())
           .then((e) => feedUpdater(e))
-          .then((e) => refresher(-1))
           .then((e) => setLoading(false));
       };
-      fetcher();
       const secondry = async () => {
         await fetch(`/user/profile/data/${user.name}`)
           .then((e) => e.json())
           .then((e) => setData(e));
       };
-      secondry();
+      const run = async () => {
+        await fetcher();
+        await secondry();
+      };
+      run().then((e) => setTimeout(refresher(-1), 1000));
     },
-    [refreshers, refreshs, user, nndata, data, feedData]
+    [refreshers, refreshs]
   );
   const following = (e) => {
     refresher(refresh + 1);
@@ -145,7 +147,7 @@ const Profile = (props) => {
               <div className="container">
                 <h1>load</h1>
                 <div className="block-heading">
-                  <h2 className="text-info">About</h2>
+                  <h2 className="text-info">About {refresh}</h2>
                 </div>
                 <div className="row justify-content-center">
                   <div className="col-sm-6 col-lg-4">

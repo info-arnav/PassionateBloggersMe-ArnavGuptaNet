@@ -479,7 +479,11 @@ app.post("/follower/append", (req, res) => {
         $push: { following: body.affected },
       })
     )
-    .then((e) => User.findOne({ _id: body.affected }, (error, user) => {}));
+    .then((e) =>
+      User.findOne({ _id: body.affected }, (error, user) => {
+        res.send("done");
+      })
+    );
 });
 
 app.post("/following/pop", (req, res) => {
@@ -491,7 +495,11 @@ app.post("/following/pop", (req, res) => {
         $pull: { following: body.affected },
       })
     )
-    .then((e) => User.findOne({ _id: body.affected }, (error, user) => {}));
+    .then((e) =>
+      User.findOne({ _id: body.affected }, (error, user) => {
+        res.send("done");
+      })
+    );
 });
 
 app.post("/likes/append", (req, res) => {
