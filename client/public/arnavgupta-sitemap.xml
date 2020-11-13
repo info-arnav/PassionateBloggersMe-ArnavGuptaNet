@@ -22,7 +22,7 @@
     <loc>https://www.arnavgupta.net/license</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.5</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://www.arnavgupta.net/profile</loc>
@@ -40,19 +40,19 @@
     <loc>https://www.arnavgupta.net/license</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>never</changefreq>
-    <priority>1</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://www.arnavgupta.net/sitemap</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>0.8</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://www.arnavgupta.net/dashboard</loc>
     <lastmod>2020-10-11</lastmod>
     <changefreq>monthly</changefreq>
-    <priority>1.0</priority>
+    <priority>0.0</priority>
   </url>
   <url>
     <loc>https://www.arnavgupta.net/login</loc>
@@ -138,5 +138,17 @@
     <loc>https://www.arnavgupta.net/posteds&amp;value=5fada80bb0d3700458c7f291</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url><url>
+    <loc>https://www.arnavgupta.net/all/posts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
+  </url><url>
+    <loc>https://https://www.arnavgupta.net/user/profile/data/*</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
+  </url><url>
+    <loc>https://https://www.arnavgupta.net/single/post/*</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
   </url>
 </urlset>

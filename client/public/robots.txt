@@ -5,6 +5,10 @@ Disallow: /active
 Disallow: /sitemap
 Disallow: /dashboard
 Disallow: /feed
+Disallow: /license
+Disallow: /all/posts 
+Disallow: /user/profile/data/*
+Disallow: /single/post/*
 
 
 Sitemap: https://www.arnavgupta.net/arnavgupta-sitemap.xml

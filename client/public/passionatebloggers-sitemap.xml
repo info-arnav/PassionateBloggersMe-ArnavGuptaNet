@@ -148,5 +148,17 @@
     <loc>https://www.passionatebloggers.me/posteds&amp;value=5fada80bb0d3700458c7f291</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
+  </url><url>
+    <loc>https://www.passionatebloggers.me/all/posts</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
+  </url><url>
+    <loc>https://https://www.passionatebloggers.me/user/profile/data/*</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
+  </url><url>
+    <loc>https://https://www.passionatebloggers.me/single/post/*</loc>
+    <changefreq>monthly</changefreq>
+    <priority>0.0</priority>
   </url>
 </urlset>
