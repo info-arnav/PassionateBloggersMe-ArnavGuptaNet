@@ -25,6 +25,7 @@ const Profile = (props) => {
           .then(async (e) => await fetch(`/posts/user/${id}`))
           .then((e) => e.json())
           .then((e) => feedUpdater(e))
+          .then((e) => refresher(-1))
           .then((e) => setLoading(false));
       };
       fetcher();
@@ -38,22 +39,22 @@ const Profile = (props) => {
     [refresh, refresher, user, nndata, data, feedData]
   );
   const following = (e) => {
+    refresher(1);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
     axios.post(`/follower/append`, { name });
-    refresher(1);
   };
   const unfollowing = (e) => {
+    refresher(0);
     e.preventDefault();
     const name = {
       affected: data._id,
       affector: nndata._id,
     };
     axios.post(`/following/pop`, { name });
-    refresher(0);
   };
   return (
     <div>
@@ -162,28 +163,50 @@ const Profile = (props) => {
                         <p>following - {data.following.length}</p>
                         <p>
                           {user.name ? (
-                            data.followers.indexOf(nndata._id) == -1 ? (
-                              <form onClick={following}>
-                                <input
-                                  value={data._id}
-                                  name="affected"
-                                  hidden
-                                />
-                                <input
-                                  value={nndata._id}
-                                  name="affector"
-                                  hidden
-                                />
-                                <input value="/projects" name="path" hidden />
-                                <button
-                                  className="btn btn-outline-primary btn-sm"
-                                  type="submit"
-                                >
-                                  follow
-                                </button>
-                              </form>
+                            refresh == -1 ? (
+                              data.followers.indexOf(nndata._id) == -1 ? (
+                                <form onClick={following}>
+                                  <input
+                                    value={data._id}
+                                    name="affected"
+                                    hidden
+                                  />
+                                  <input
+                                    value={nndata._id}
+                                    name="affector"
+                                    hidden
+                                  />
+                                  <input value="/projects" name="path" hidden />
+                                  <button
+                                    className="btn btn-outline-primary btn-sm"
+                                    type="submit"
+                                  >
+                                    follow
+                                  </button>
+                                </form>
+                              ) : (
+                                <form onClick={unfollowing}>
+                                  <input
+                                    value={data._id}
+                                    name="affected"
+                                    hidden
+                                  />
+                                  <input
+                                    value={nndata._id}
+                                    name="affector"
+                                    hidden
+                                  />
+                                  <input value="/projects" name="path" hidden />
+                                  <button
+                                    type="submit"
+                                    className="btn btn-outline-primary btn-sm"
+                                  >
+                                    unfollow
+                                  </button>
+                                </form>
+                              )
                             ) : (
-                              <form onClick={unfollowing}>
+                              <form>
                                 <input
                                   value={data._id}
                                   name="affected"
@@ -198,8 +221,9 @@ const Profile = (props) => {
                                 <button
                                   type="submit"
                                   className="btn btn-outline-primary btn-sm"
+                                  disabled
                                 >
-                                  unfollow
+                                  <i class="fa fa-refresh fa-spin"></i>Loading
                                 </button>
                               </form>
                             )
