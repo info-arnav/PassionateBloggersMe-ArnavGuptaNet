@@ -149,4 +149,14 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.passionatebloggers.me/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://passionatebloggers.me/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>

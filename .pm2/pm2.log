@@ -2388,3 +2388,23 @@
 2020-11-13T19:48:33: PM2 log: pid=9215 msg=process killed
 2020-11-13T19:48:33: PM2 log: App [server:1] starting in -fork mode-
 2020-11-13T19:48:33: PM2 log: App [server:1] online
+2020-11-13T19:56:26: PM2 log: Stopping app:client id:0
+2020-11-13T19:56:26: PM2 log: App [client:0] exited with code [0] via signal [SIGINT]
+2020-11-13T19:56:26: PM2 log: pid=9318 msg=process killed
+2020-11-13T19:56:26: PM2 log: App [client:0] starting in -fork mode-
+2020-11-13T19:56:26: PM2 log: App [client:0] online
+2020-11-13T19:56:26: PM2 log: Stopping app:server id:1
+2020-11-13T19:56:26: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+2020-11-13T19:56:26: PM2 log: pid=9324 msg=process killed
+2020-11-13T19:56:26: PM2 log: App [server:1] starting in -fork mode-
+2020-11-13T19:56:26: PM2 log: App [server:1] online
+2020-11-13T20:04:23: PM2 log: Stopping app:client id:0
+2020-11-13T20:04:23: PM2 log: App [client:0] exited with code [0] via signal [SIGINT]
+2020-11-13T20:04:23: PM2 log: pid=10105 msg=process killed
+2020-11-13T20:04:23: PM2 log: App [client:0] starting in -fork mode-
+2020-11-13T20:04:23: PM2 log: App [client:0] online
+2020-11-13T20:04:23: PM2 log: Stopping app:server id:1
+2020-11-13T20:04:23: PM2 log: App [server:1] exited with code [0] via signal [SIGINT]
+2020-11-13T20:04:24: PM2 log: pid=10111 msg=process killed
+2020-11-13T20:04:24: PM2 log: App [server:1] starting in -fork mode-
+2020-11-13T20:04:24: PM2 log: App [server:1] online

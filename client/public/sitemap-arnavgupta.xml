@@ -139,4 +139,14 @@
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
   </url>
+  <url>
+    <loc>https://www.arnavgupta.net/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://arnavgupta.net/posteds&amp;value=5faee69b41fc6d277f69a20b</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
 </urlset>

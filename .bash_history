@@ -824,3 +824,10 @@ ls
 git pull origin master
 ls
 git pull origin master
+git add .
+git commit -am changes
+git pull origin master
+git add .
+git commit -am merge
+git push origin master
+sudo pm2 restart all
