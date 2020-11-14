@@ -176,7 +176,7 @@ const SiteMap = (props) => {
                         <a
                           className="btn btn-outline-primary btn-sm"
                           type="button"
-                          href={`/posteds&value=`}
+                          href={`/posted/@username/subject/id`}
                         >
                           Visit
                         </a>
@@ -258,7 +258,4 @@ const mapStateToProps = (state) => ({
   auth: state.auth,
 });
 
-export default connect(
-  mapStateToProps,
-  { logoutUser }
-)(SiteMap);
+export default connect(mapStateToProps, { logoutUser })(SiteMap);

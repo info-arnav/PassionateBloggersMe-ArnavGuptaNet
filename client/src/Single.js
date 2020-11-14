@@ -13,7 +13,6 @@ const Single = (props) => {
   const [loading, setLoading] = useState(true);
   const [liker, refresg] = useState("-1");
   let { id } = useParams();
-  id = id.substring(8);
   const [posts, updater] = useState({});
   useEffect(() => {
     const fetcher = async () => {
@@ -79,7 +78,7 @@ const Single = (props) => {
                       class="post-image"
                       style={{
                         backgroundImage:
-                          "url('blog-teaser-default-full_5.jpg')",
+                          "url('http://www.arnavgupta.net/blog-teaser-default-full_5.jpg')",
                       }}
                     />
                   )}
@@ -91,7 +90,7 @@ const Single = (props) => {
                           <input value={posts._id} name="affected" hidden />
                           <input value={data._id} name="affector" hidden />
                           <input
-                            value={`/posted${posts._id}`}
+                            value={`/posted/@${user.name}/${posts.subject}/${posts._id}`}
                             name="path"
                             hidden
                           />
@@ -107,7 +106,7 @@ const Single = (props) => {
                           <input value={posts._id} name="affected" hidden />
                           <input value={data._id} name="affector" hidden />
                           <input
-                            value={`/posted${posts._id}`}
+                            value={`/posted/@${user._name}/${posts.subject}/${posts._id}`}
                             name="path"
                             hidden
                           />

@@ -92,7 +92,7 @@ const Home = (props) => {
                                       height="305.76px"
                                       class="rounded img-fluid"
                                       id="yaya"
-                                      src="blog-teaser-default-full_5.jpg"
+                                      src="http://www.arnavgupta.net/blog-teaser-default-full_5.jpg"
                                     />
                                   </div>
                                 )}
@@ -167,7 +167,7 @@ const Home = (props) => {
                                   <a
                                     className="btn btn-outline-primary btn-sm"
                                     type="button"
-                                    href={`/posteds&value=${f._id}`}
+                                    href={`/posted/@${f.name}/${f.subject}/${f._id}`}
                                   >
                                     Read More
                                   </a>
