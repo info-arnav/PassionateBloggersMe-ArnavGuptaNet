@@ -2,12 +2,14 @@ const express = require("express");
 const router = express.Router();
 const bcrypt = require("bcryptjs");
 const jwt = require("jsonwebtoken");
+const expressip = require("express-ip");
 const keys = require("../../config/keys");
 const passport = require("passport");
 const mailgun = require("mailgun-js");
 const fs = require("fs");
 const xml2js = require("xml2js");
 const path = require("path");
+const ipmodel = require("../../models/ipmodel");
 
 //mail
 const DOMAIN = "arnavgupta.net";
@@ -26,6 +28,7 @@ const User = require("../../models/User");
 // @route POST api/users/register
 // @desc Register user
 // @access Public
+router.use(expressip().getIpInfoMiddleware);
 router.post("/register", (req, res) => {
   // Form validation
 
@@ -190,7 +193,6 @@ router.post("/login", (req, res) => {
 
   const email = req.body.email;
   const password = req.body.password;
-
   // Find user by email
   User.findOne({ email }).then((user) => {
     // Check if user exists
@@ -216,10 +218,22 @@ router.post("/login", (req, res) => {
             expiresIn: 31556926, // 1 year in seconds
           },
           (err, token) => {
-            res.json({
-              success: true,
-              token: "Bearer " + token,
-            });
+            const datasource = { ip: req.ipInfo, user: user.name };
+            ipmodel.findByIdAndUpdate(
+              { _id: "5fb12cb06033c907c2902cd1" },
+              { $push: datasource },
+              (error, success) => {
+                if (success) {
+                  console.log(success);
+                  res.json({
+                    success: true,
+                    token: "Bearer " + token,
+                  });
+                } else {
+                  console.log(error);
+                }
+              }
+            );
           }
         );
       } else {
