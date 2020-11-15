@@ -10,9 +10,7 @@ testing.js.save
 .bashrc
 .bash_logout
 .bash_history
-.ssh
 .pm2
 .nvm
 .npm
-.config
 /.cache
