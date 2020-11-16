@@ -206,9 +206,10 @@ const Home = (props) => {
               <div className="block-heading">
                 <h2 className="text-info">About</h2>
                 <p>
-                  CloudBlog is a platform where various people can share their
-                  blogs with each other they can als follow the users they like.
-                  We will be adding additional features in the future.
+                  PassionateBloggers is a platform where various people can
+                  share their blogs with each other they can als follow the
+                  users they like. We will be adding additional features in the
+                  future.
                 </p>
               </div>
             </div>
