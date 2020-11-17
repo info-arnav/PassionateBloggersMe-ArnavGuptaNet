@@ -49,21 +49,20 @@ class Footer extends Component {
               </ul>
             </div>
             <div className="col-sm-3">
-              <h5>Webpages</h5>
+              <h5>Social Media</h5>
               <ul>
                 <li>
-                  <a href="https://www.passionatebloggers.me/">
-                    PassionateBlogger
+                  <a href="https://www.Instagram.com/passionatebloggers">
+                    Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://arnavgupta.net/">ArnavGuptaNet</a>
+                  <a href="https://m.facebook.com/PassionateBloggers-102618438341599/?ref=page_internal">
+                    Facebook
+                  </a>
                 </li>
                 <li>
-                  <a href="https://cancerya.passionatebloggers.me/">Cancerya</a>
-                </li>
-                <li>
-                  <a href="https://cancerya.arnavgupta.net/">Cancerya</a>
+                  <a href="https://twitter.com/PassionateBlogs/">Twitter</a>
                 </li>
               </ul>
             </div>
