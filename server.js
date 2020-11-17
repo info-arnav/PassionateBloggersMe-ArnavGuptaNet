@@ -604,7 +604,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.arnavgupta.net/profiles&value=${body.userName}`,
+                        loc: `https://www.arnavgupta.net/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -692,7 +692,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `http://www.passionatebloggers.me/profiles&value=${body.userName}`,
+                        loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };

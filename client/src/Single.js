@@ -78,7 +78,7 @@ const Single = (props) => {
                       class="post-image"
                       style={{
                         backgroundImage:
-                          "url('http://www.arnavgupta.net/blog-teaser-default-full_5.jpg')",
+                          "url('https://www.arnavgupta.net/blog-teaser-default-full_5.jpg')",
                       }}
                     />
                   )}

@@ -52,18 +52,18 @@ class Footer extends Component {
               <h5>Webpages</h5>
               <ul>
                 <li>
-                  <a href="http://www.passionatebloggers.me/">
+                  <a href="https://www.passionatebloggers.me/">
                     PassionateBlogger
                   </a>
                 </li>
                 <li>
-                  <a href="http://arnavgupta.net/">ArnavGuptaNet</a>
+                  <a href="https://arnavgupta.net/">ArnavGuptaNet</a>
                 </li>
                 <li>
-                  <a href="http://cancerya.passionatebloggers.me/">Cancerya</a>
+                  <a href="https://cancerya.passionatebloggers.me/">Cancerya</a>
                 </li>
                 <li>
-                  <a href="http://cancerya.arnavgupta.net/">Cancerya</a>
+                  <a href="https://cancerya.arnavgupta.net/">Cancerya</a>
                 </li>
               </ul>
             </div>
@@ -86,4 +86,3 @@ class Footer extends Component {
 }
 
 export default Footer;
-

@@ -9,7 +9,6 @@ Disallow: /license
 Disallow: /all/posts 
 Disallow: /user/profile/data/*
 Disallow: /single/post/*
-Disallow: /assets/*
 
 
 Sitemap: https://www.arnavgupta.net/arnavgupta-sitemap.xml

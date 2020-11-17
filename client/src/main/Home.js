@@ -92,7 +92,7 @@ const Home = (props) => {
                                       height="305.76px"
                                       class="rounded img-fluid"
                                       id="yaya"
-                                      src="http://www.arnavgupta.net/blog-teaser-default-full_5.jpg"
+                                      src="https://www.arnavgupta.net/blog-teaser-default-full_5.jpg"
                                     />
                                   </div>
                                 )}
