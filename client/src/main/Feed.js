@@ -197,7 +197,8 @@ class Feed extends Component {
                             </a>
                             <div className="info">
                               <span className="text-muted">
-                                {datas.date} by&nbsp;
+                                <time datetime={datas.date}>{datas.date}</time>{" "}
+                                by&nbsp;
                                 <a href="/active">{datas.name}</a>
                               </span>
                             </div>

@@ -114,7 +114,12 @@ const Single = (props) => {
                             type="submit"
                             className="btn btn-outline-primary btn-sm"
                           >
-                            unlike - {posts.likes.length}
+                            unlike -{" "}
+                            <meta
+                              itemprop="ratingValue"
+                              content={posts.likes.length}
+                            />
+                            {posts.likes.length}
                           </button>
                         </form>
                       )
@@ -132,7 +137,9 @@ const Single = (props) => {
                           {posts.name}
                         </a>
                       </span>
-                      <span>{posts.date}</span>
+                      <span>
+                        <time datetime={posts.date}>{posts.date}</time>
+                      </span>
                     </div>
                     <p>
                       <div dangerouslySetInnerHTML={{ __html: posts.blog }} />

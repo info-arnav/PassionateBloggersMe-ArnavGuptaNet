@@ -336,7 +336,12 @@ const Profile = (props) => {
                                     type="submit"
                                     className="btn btn-outline-primary btn-sm"
                                   >
-                                    unlike - {e.likes.length}
+                                    unlike -{" "}
+                                    <meta
+                                      itemprop="ratingValue"
+                                      content={e.likes.length}
+                                    />
+                                    {e.likes.length}
                                   </button>
                                 </form>
                               )
@@ -346,7 +351,7 @@ const Profile = (props) => {
                           </p>
                           <div className="info">
                             <span className="text-muted">
-                              {e.date} by&nbsp;
+                              <time datetime={e.date}>{e.date}</time> by&nbsp;
                               <a href={`/profiles&value=${e.name}`}>{e.name}</a>
                             </span>
                           </div>

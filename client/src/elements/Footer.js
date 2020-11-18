@@ -64,6 +64,14 @@ class Footer extends Component {
                 <li>
                   <a href="https://twitter.com/PassionateBlogs/">Twitter</a>
                 </li>
+                <li>
+                  <a
+                    href="
+                https://www.linkedin.com/in/arnav-gupta-0922341a9/"
+                  >
+                    Linkedin
+                  </a>
+                </li>
               </ul>
             </div>
             <div className="col-sm-3">

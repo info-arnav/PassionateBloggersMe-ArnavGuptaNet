@@ -125,6 +125,10 @@ const Event = (props) => {
                                   type="submit"
                                   className="btn btn-outline-primary btn-sm"
                                 >
+                                  <meta
+                                    itemprop="ratingValue"
+                                    content={datas.likes.length}
+                                  />
                                   unlike - {datas.likes.length}
                                 </button>
                               </form>
@@ -134,7 +138,8 @@ const Event = (props) => {
                           )}
                           <div className="info">
                             <span className="text-muted">
-                              {datas.date} by&nbsp;
+                              <time datetime={datas.date}>{datas.date}</time>{" "}
+                              by&nbsp;
                               <a href={`/profiles&value=${datas.name}`}>
                                 {datas.name}
                               </a>

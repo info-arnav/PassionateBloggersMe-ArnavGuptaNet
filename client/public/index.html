@@ -50,7 +50,7 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root"></div>
+  <div id="root" itemprop="main"></div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
@@ -80,7 +80,28 @@
       r.customerly = n, r.attachEvent ? r.attachEvent("onload", e) : r.addEventListener("load", e, !1)
   }();*/
 </script>
-
+</script>
+<script type="application/ld+json">
+  {
+    "@context": "http://schema.org",
+    "@type": "Blogs",
+    "name": "Passionate Bloggers",
+    "url": "https://www.arnavgupta.net/",
+    "url": "https://www.passionatebloggers.me/",
+    "sameAs" : [
+    "https://www.Instagram.com/passionatebloggers", 
+    "https://m.facebook.com/PassionateBloggers-102618438341599/?ref=page_internal",
+    "https://twitter.com/PassionateBlogs/",
+    "https://www.linkedin.com/in/arnav-gupta-0922341a9/"]
+    "address": {
+      "@type":"PostalAddress",
+      "streetAddress":"GK2",
+      "addressRegion":"DELHI",
+      "postalCode":"110048",
+      "addressCountry": "IN"
+    },
+    "sameAs": []
+  }
 </script>
 <script src="%PUBLIC_URL%/scripts.js"></script>
 <script src="%PUBLIC_URL%/assets/js/jquery.min.js"></script>
