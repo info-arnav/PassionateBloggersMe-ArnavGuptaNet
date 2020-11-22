@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../elements/Footer";
+import MetaTags from "react-meta-tags";
 import Navigation from "../elements/Navigation";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
@@ -27,6 +28,40 @@ const Home = (props) => {
   }, []);
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
+          />
+          <meta
+            name="description"
+            content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            property="twitter:decription"
+            content={`Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - Home`}
+          />
+          <meta property="og:type" content={`All Blogs`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       <Navigation />
       <h1>load</h1>
       {user.name ? (

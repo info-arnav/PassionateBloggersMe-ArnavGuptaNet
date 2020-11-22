@@ -3,6 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Recaptcha from "react-grecaptcha";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
+import MetaTags from "react-meta-tags";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
@@ -61,6 +62,40 @@ class Register extends Component {
 
     return (
       <div>
+        <div>
+          <MetaTags>
+            <meta
+              property="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - Registeration page`}
+            />
+            <meta
+              name="description"
+              content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
+            />
+            <meta
+              property="twitter:decription"
+              content={`Passionate Bloggers by Arnav Gupta - Register here now for additional features`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/Registeration`}
+            />
+            <meta
+              property="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - Registeration`}
+            />
+            <meta property="og:type" content={`Registeration`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
+        </div>
         <Navigation />
         <h1>load</h1>
         <main className="page registration-page">

@@ -2,6 +2,7 @@ import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import Navigation from "./elements/Navigation";
 import { useParams } from "react-router-dom";
+import MetaTags from "react-meta-tags";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
@@ -31,6 +32,44 @@ const Single = (props) => {
   }, []);
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+          />
+          <meta
+            name="description"
+            content={`Passionate Bloggers - ${
+              posts.subject
+            } - ${posts.blog.substring(0, 30)}`}
+          />
+          <meta
+            property="twitter:decription"
+            content={`Passionate Bloggers - ${
+              posts.subject
+            } - ${posts.blog.substring(0, 30)}`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+          />
+          <meta property="og:type" content={`Blog Post`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       {loading ? (
         <div>
           <Navigation />

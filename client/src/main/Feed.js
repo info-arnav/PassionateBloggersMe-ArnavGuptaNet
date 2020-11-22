@@ -2,6 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
+import MetaTags from "react-meta-tags";
 import { Editor } from "react-draft-wysiwyg";
 import "../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
@@ -86,6 +87,40 @@ class Feed extends Component {
     data = reversed;
     return (
       <div>
+        <div>
+          <MetaTags>
+            <meta
+              property="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - Feed`}
+            />
+            <meta
+              name="description"
+              content="YOu can view and edit all your new and old posts here"
+            />
+            <meta
+              property="twitter:decription"
+              content={`YOu can view and edit all your new and old posts here`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/feed`}
+            />
+            <meta
+              property="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - Feed`}
+            />
+            <meta property="og:type" content={`Feed`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
+        </div>
         {loading ? (
           <div>
             <Navigation />

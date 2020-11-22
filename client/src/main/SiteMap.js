@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Component } from "react";
 import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
+import MetaTags from "react-meta-tags";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
@@ -27,6 +28,40 @@ const SiteMap = (props) => {
   }, []);
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map`}
+          />
+          <meta
+            name="description"
+            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
+          />
+          <meta
+            property="twitter:decription"
+            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/sitemap`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Ma`}
+          />
+          <meta property="og:type" content={`User Friendly Site Map`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       {loading ? (
         <div>
           <Navigation />

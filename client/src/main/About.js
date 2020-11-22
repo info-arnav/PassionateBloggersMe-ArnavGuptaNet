@@ -1,10 +1,47 @@
 import React from "react";
+import MetaTags from "react-meta-tags";
 import Footer from "../elements/Footer";
 import Navigation from "../elements/Navigation";
 
 const About = () => {
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - About`}
+          />
+          <meta
+            name="description"
+            content="
+Passionate Bloggers is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            property="twitter:decription"
+            content={`
+Passionate Bloggers is a platform for various bloggers to share their posts with various people`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/about`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - About`}
+          />
+          <meta property="og:type" content={`About`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       <Navigation />
       <h1>load</h1>
       <main className="page landing-page">

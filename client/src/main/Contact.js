@@ -1,10 +1,47 @@
 import React from "react";
 import Navigation from "../elements/Navigation";
+import MetaTags from "react-meta-tags";
 import Footer from "../elements/Footer";
 
 const Contact = () => {
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - Contact`}
+          />
+          <meta
+            name="description"
+            content="
+You can share your queries with Arnav or Passionate Bloggers Team here"
+          />
+          <meta
+            property="twitter:decription"
+            content={`
+You can share your queries with Arnav or Passionate Bloggers Team here`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/contact`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - Contact`}
+          />
+          <meta property="og:type" content={`Contact`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       <Navigation />
       <main className="page contact-us-page">
         <section className="clean-block clean-form dark">

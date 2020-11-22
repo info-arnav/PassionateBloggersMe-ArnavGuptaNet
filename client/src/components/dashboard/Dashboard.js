@@ -7,6 +7,7 @@ import { EditorState, convertToRaw } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
 import "../../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
+import MetaTags from "react-meta-tags";
 import htmlToDraft from "html-to-draftjs";
 import axios from "axios";
 import Navigation from "../../elements/Navigation";
@@ -60,6 +61,40 @@ class Dashboard extends Component {
     const { user } = this.props.auth;
     return (
       <div>
+        <div>
+          <MetaTags>
+            <meta
+              property="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - Dashboard`}
+            />
+            <meta
+              name="description"
+              content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
+            />
+            <meta
+              property="twitter:decription"
+              content={`Passionate Bloggers by Arnav Gupta - Post your blogs on our website here`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/Dashboard`}
+            />
+            <meta
+              property="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - Dashboard`}
+            />
+            <meta property="og:type" content={`Dashboard`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
+        </div>
         {loading ? (
           <div>
             <Navigation />

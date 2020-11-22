@@ -4,6 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
+import MetaTags from "react-meta-tags";
 import Navigation from "../../elements/Navigation";
 
 class Login extends Component {
@@ -55,6 +56,40 @@ class Login extends Component {
 
     return (
       <div>
+        <div>
+          <MetaTags>
+            <meta
+              property="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - login page`}
+            />
+            <meta
+              name="description"
+              content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
+            />
+            <meta
+              property="twitter:decription"
+              content={`Passionate Bloggers by Arnav Gupta - login here to make your own posts.`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/login`}
+            />
+            <meta
+              property="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - Login`}
+            />
+            <meta property="og:type" content={`Login`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
+        </div>
         <Navigation />
         <h1>load</h1>
         <main className="page login-page">

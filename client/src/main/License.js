@@ -1,10 +1,45 @@
 import React from "react";
+import MetaTags from "react-meta-tags";
 import Footer from "../elements/Footer";
 import Navigation from "../elements/Navigation";
 
 const License = () => {
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - License`}
+          />
+          <meta
+            name="description"
+            content="Passionate Bloggers by Arnav Gupta sticks to a MIT license"
+          />
+          <meta
+            property="twitter:decription"
+            content={`Passionate Bloggers by Arnav Gupta sticks to a MIT license`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/license`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - Home`}
+          />
+          <meta property="og:type" content={`License`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       <Navigation />
       <h1>load</h1>
       <main className="page landing-page">

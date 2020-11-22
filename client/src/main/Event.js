@@ -2,6 +2,7 @@ import React, { useEffect, useState, Component } from "react";
 import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import PropTypes from "prop-types";
+import MetaTags from "react-meta-tags";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
@@ -27,6 +28,40 @@ const Event = (props) => {
   }, []);
   return (
     <div>
+      <div>
+        <MetaTags>
+          <meta
+            property="twitter:title"
+            content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
+          />
+          <meta
+            name="description"
+            content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
+          />
+          <meta
+            property="twitter:decription"
+            content={`All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta`}
+          />
+
+          <meta
+            property="og:url"
+            content={`https://www.passionatebloggers.me/projects`}
+          />
+          <meta
+            property="twitter:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
+          />
+          <meta property="og:type" content={`All Blogs`} />
+          <meta
+            property="og:image"
+            content="https://www.passionatebloggers.me/logo.png"
+          />
+        </MetaTags>
+      </div>
       {loading ? (
         <div>
           <Navigation />

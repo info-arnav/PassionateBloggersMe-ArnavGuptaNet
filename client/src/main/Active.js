@@ -1,6 +1,7 @@
 import React, { useEffect, useState, Component } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
+import MetaTags from "react-meta-tags";
 import Skeleton from "react-loading-skeleton";
 import Button from "react-bootstrap/Button";
 import { connect } from "react-redux";
@@ -96,6 +97,40 @@ class Active extends Component {
     const status = this.state.status;
     return (
       <div>
+        <div>
+          <MetaTags>
+            <meta
+              property="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
+            />
+            <meta
+              name="description"
+              content="You can view and edit your profile here"
+            />
+            <meta
+              property="twitter:decription"
+              content={`You can view and edit your profile here`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/active`}
+            />
+            <meta
+              property="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
+            />
+            <meta property="og:type" content={`Profile`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
+        </div>
         {loading ? (
           <div>
             {" "}
@@ -275,13 +310,12 @@ class Active extends Component {
                                     type="text"
                                     id="imagePath"
                                     value={imagePath}
-name = "imagePath"
+                                    name="imagePath"
                                     onChange={(e) =>
                                       this.setState({
                                         imagePath: e.target.value,
                                       })
                                     }
-                                    
                                   />
                                 </div>
                                 <div className="form-group">
