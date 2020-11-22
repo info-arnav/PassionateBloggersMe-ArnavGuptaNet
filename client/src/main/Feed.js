@@ -102,7 +102,7 @@ class Feed extends Component {
               content="YOu can view and edit all your new and old posts here"
             />
             <meta
-              name="twitter:decription"
+              name="twitter:description"
               content={`YOu can view and edit all your new and old posts here`}
             />
 

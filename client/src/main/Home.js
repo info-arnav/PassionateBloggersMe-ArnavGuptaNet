@@ -43,7 +43,7 @@ const Home = (props) => {
             content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
           />
           <meta
-            name="twitter:decription"
+            name="twitter:description"
             content={`Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people`}
           />
 

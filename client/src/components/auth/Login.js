@@ -71,7 +71,7 @@ class Login extends Component {
               content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
             />
             <meta
-              name="twitter:decription"
+              name="twitter:description"
               content={`Passionate Bloggers by Arnav Gupta - login here to make your own posts.`}
             />
 

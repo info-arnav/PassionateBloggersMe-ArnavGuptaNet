@@ -66,50 +66,7 @@ const Profile = (props) => {
   };
   return (
     <div>
-      <div>
-        <MetaTags>
-          <meta
-            name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - Profile - ${data.name}`}
-          />
-          <meta
-            name="description"
-            content={`Passionate Bloggers by Arnav Gupta - Profile - ${
-              data.name
-            } - ${data.biology.substring(0, 30)}`}
-          />
-          <meta
-            property="og:description"
-            content={`Passionate Bloggers by Arnav Gupta - Profile - ${
-              data.name
-            } - ${data.biology.substring(0, 30)}`}
-          />
-          <meta
-            name="twitter:decription"
-            content={`Passionate Bloggers by Arnav Gupta - Profile - ${
-              data.name
-            } - ${data.biology.substring(0, 30)}`}
-          />
-
-          <meta
-            property="og:url"
-            content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
-          />
-          <meta
-            name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
-          />
-          <meta
-            property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - Profile ${data.name}`}
-          />
-          <meta property="og:type" content={`Profile - ${data.name}`} />
-          <meta
-            property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
-          />
-        </MetaTags>
-      </div>
+      <div></div>
       {loading ? (
         <div>
           <Navigation />
@@ -186,6 +143,48 @@ const Profile = (props) => {
         </div>
       ) : (
         <div>
+          <MetaTags>
+            <meta
+              name="twitter:title"
+              content={`Passionate Bloggers by Arnav Gupta - Profile - ${data.name}`}
+            />
+            <meta
+              name="description"
+              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+                data.name
+              } - ${data.biology.substring(0, 30)}`}
+            />
+            <meta
+              property="og:description"
+              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+                data.name
+              } - ${data.biology.substring(0, 30)}`}
+            />
+            <meta
+              name="twitter:description"
+              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+                data.name
+              } - ${data.biology.substring(0, 30)}`}
+            />
+
+            <meta
+              property="og:url"
+              content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
+            />
+            <meta
+              name="twitter:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+            <meta
+              property="og:title"
+              content={`Passionate Bloggers by Arnav Gupta - Profile ${data.name}`}
+            />
+            <meta property="og:type" content={`Profile - ${data.name}`} />
+            <meta
+              property="og:image"
+              content="https://www.passionatebloggers.me/logo.png"
+            />
+          </MetaTags>
           <Navigation />
           <main className="page">
             <section className="clean-block about-us">

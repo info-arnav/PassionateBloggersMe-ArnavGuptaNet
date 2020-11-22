@@ -112,7 +112,7 @@ class Active extends Component {
               content="You can view and edit your profile here"
             />
             <meta
-              name="twitter:decription"
+              name="twitter:description"
               content={`You can view and edit your profile here`}
             />
 

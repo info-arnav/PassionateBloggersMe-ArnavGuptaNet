@@ -32,50 +32,6 @@ const Single = (props) => {
   }, []);
   return (
     <div>
-      <div>
-        <MetaTags>
-          <meta
-            name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
-          />
-          <meta
-            name="description"
-            content={`Passionate Bloggers - ${
-              posts.subject
-            } - ${posts.blog.substring(0, 30)}`}
-          />
-          <meta
-            property="og:description"
-            content={`Passionate Bloggers - ${
-              posts.subject
-            } - ${posts.blog.substring(0, 30)}`}
-          />
-          <meta
-            name="twitter:decription"
-            content={`Passionate Bloggers - ${
-              posts.subject
-            } - ${posts.blog.substring(0, 30)}`}
-          />
-
-          <meta
-            property="og:url"
-            content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
-          />
-          <meta
-            name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
-          />
-          <meta
-            property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
-          />
-          <meta property="og:type" content={`Blog Post`} />
-          <meta
-            property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
-          />
-        </MetaTags>
-      </div>
       {loading ? (
         <div>
           <Navigation />
@@ -106,6 +62,51 @@ const Single = (props) => {
         </div>
       ) : (
         <div>
+          {" "}
+          <div>
+            <MetaTags>
+              <meta
+                name="twitter:title"
+                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+              />
+              <meta
+                name="description"
+                content={`Passionate Bloggers - ${
+                  posts.subject
+                } - ${posts.blog.substring(0, 30)}`}
+              />
+              <meta
+                property="og:description"
+                content={`Passionate Bloggers - ${
+                  posts.subject
+                } - ${posts.blog.substring(0, 30)}`}
+              />
+              <meta
+                name="twitter:description"
+                content={`Passionate Bloggers - ${
+                  posts.subject
+                } - ${posts.blog.substring(0, 30)}`}
+              />
+
+              <meta
+                property="og:url"
+                content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
+              />
+              <meta
+                name="twitter:image"
+                content="https://www.passionatebloggers.me/logo.png"
+              />
+              <meta
+                property="og:title"
+                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+              />
+              <meta property="og:type" content={`Blog Post`} />
+              <meta
+                property="og:image"
+                content="https://www.passionatebloggers.me/logo.png"
+              />
+            </MetaTags>
+          </div>
           <Navigation />
           <main className="page blog-post">
             <section className="clean-block clean-post dark">

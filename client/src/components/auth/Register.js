@@ -77,7 +77,7 @@ class Register extends Component {
               content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
             />
             <meta
-              name="twitter:decription"
+              name="twitter:description"
               content={`Passionate Bloggers by Arnav Gupta - Register here now for additional features`}
             />
 

@@ -76,7 +76,7 @@ class Dashboard extends Component {
               content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
             />
             <meta
-              name="twitter:decription"
+              name="twitter:description"
               content={`Passionate Bloggers by Arnav Gupta - Post your blogs on our website here`}
             />
 

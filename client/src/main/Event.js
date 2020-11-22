@@ -43,7 +43,7 @@ const Event = (props) => {
             content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
           />
           <meta
-            name="twitter:decription"
+            name="twitter:description"
             content={`All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta`}
           />
 

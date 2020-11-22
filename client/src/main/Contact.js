@@ -23,7 +23,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here"
 You can share your queries with Arnav or Passionate Bloggers Team here"
           />
           <meta
-            name="twitter:decription"
+            name="twitter:description"
             content={`
 You can share your queries with Arnav or Passionate Bloggers Team here`}
           />
