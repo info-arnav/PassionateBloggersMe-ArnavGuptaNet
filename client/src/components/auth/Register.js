@@ -65,7 +65,7 @@ class Register extends Component {
         <div>
           <MetaTags>
             <meta
-              property="twitter:title"
+              name="twitter:title"
               content={`Passionate Bloggers by Arnav Gupta - Registeration page`}
             />
             <meta
@@ -73,7 +73,11 @@ class Register extends Component {
               content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
             />
             <meta
-              property="twitter:decription"
+              property="og:description"
+              content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
+            />
+            <meta
+              name="twitter:decription"
               content={`Passionate Bloggers by Arnav Gupta - Register here now for additional features`}
             />
 
@@ -82,7 +86,7 @@ class Register extends Component {
               content={`https://www.passionatebloggers.me/Registeration`}
             />
             <meta
-              property="twitter:image"
+              name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta

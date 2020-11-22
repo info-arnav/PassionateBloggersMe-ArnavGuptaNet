@@ -35,7 +35,7 @@ const Single = (props) => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
           />
           <meta
@@ -45,7 +45,13 @@ const Single = (props) => {
             } - ${posts.blog.substring(0, 30)}`}
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content={`Passionate Bloggers - ${
+              posts.subject
+            } - ${posts.blog.substring(0, 30)}`}
+          />
+          <meta
+            name="twitter:decription"
             content={`Passionate Bloggers - ${
               posts.subject
             } - ${posts.blog.substring(0, 30)}`}
@@ -56,7 +62,7 @@ const Single = (props) => {
             content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

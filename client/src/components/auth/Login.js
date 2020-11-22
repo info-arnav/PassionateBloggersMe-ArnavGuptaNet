@@ -59,7 +59,7 @@ class Login extends Component {
         <div>
           <MetaTags>
             <meta
-              property="twitter:title"
+              name="twitter:title"
               content={`Passionate Bloggers by Arnav Gupta - login page`}
             />
             <meta
@@ -67,7 +67,11 @@ class Login extends Component {
               content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
             />
             <meta
-              property="twitter:decription"
+              property="og:description"
+              content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
+            />
+            <meta
+              name="twitter:decription"
               content={`Passionate Bloggers by Arnav Gupta - login here to make your own posts.`}
             />
 
@@ -76,7 +80,7 @@ class Login extends Component {
               content={`https://www.passionatebloggers.me/login`}
             />
             <meta
-              property="twitter:image"
+              name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta

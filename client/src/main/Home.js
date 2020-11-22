@@ -31,7 +31,7 @@ const Home = (props) => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
           />
           <meta
@@ -39,7 +39,11 @@ const Home = (props) => {
             content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            name="twitter:decription"
             content={`Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people`}
           />
 
@@ -48,7 +52,7 @@ const Home = (props) => {
             content={`https://www.passionatebloggers.me/`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

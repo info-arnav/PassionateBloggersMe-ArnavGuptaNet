@@ -9,7 +9,7 @@ const License = () => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - License`}
           />
           <meta
@@ -17,7 +17,11 @@ const License = () => {
             content="Passionate Bloggers by Arnav Gupta sticks to a MIT license"
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content="Passionate Bloggers by Arnav Gupta sticks to a MIT license"
+          />
+          <meta
+            name="twitter:decription"
             content={`Passionate Bloggers by Arnav Gupta sticks to a MIT license`}
           />
 
@@ -26,7 +30,7 @@ const License = () => {
             content={`https://www.passionatebloggers.me/license`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

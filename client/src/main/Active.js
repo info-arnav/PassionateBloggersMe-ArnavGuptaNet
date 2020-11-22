@@ -100,7 +100,7 @@ class Active extends Component {
         <div>
           <MetaTags>
             <meta
-              property="twitter:title"
+              name="twitter:title"
               content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
             />
             <meta
@@ -108,7 +108,11 @@ class Active extends Component {
               content="You can view and edit your profile here"
             />
             <meta
-              property="twitter:decription"
+              propert="og:description"
+              content="You can view and edit your profile here"
+            />
+            <meta
+              name="twitter:decription"
               content={`You can view and edit your profile here`}
             />
 
@@ -117,7 +121,7 @@ class Active extends Component {
               content={`https://www.passionatebloggers.me/active`}
             />
             <meta
-              property="twitter:image"
+              name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta

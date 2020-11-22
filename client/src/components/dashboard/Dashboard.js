@@ -64,7 +64,7 @@ class Dashboard extends Component {
         <div>
           <MetaTags>
             <meta
-              property="twitter:title"
+              name="twitter:title"
               content={`Passionate Bloggers by Arnav Gupta - Dashboard`}
             />
             <meta
@@ -72,7 +72,11 @@ class Dashboard extends Component {
               content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
             />
             <meta
-              property="twitter:decription"
+              property="og:description"
+              content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
+            />
+            <meta
+              name="twitter:decription"
               content={`Passionate Bloggers by Arnav Gupta - Post your blogs on our website here`}
             />
 
@@ -81,7 +85,7 @@ class Dashboard extends Component {
               content={`https://www.passionatebloggers.me/Dashboard`}
             />
             <meta
-              property="twitter:image"
+              name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta

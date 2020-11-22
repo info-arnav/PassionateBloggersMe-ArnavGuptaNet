@@ -90,7 +90,7 @@ class Feed extends Component {
         <div>
           <MetaTags>
             <meta
-              property="twitter:title"
+              name="twitter:title"
               content={`Passionate Bloggers by Arnav Gupta - Feed`}
             />
             <meta
@@ -98,7 +98,11 @@ class Feed extends Component {
               content="YOu can view and edit all your new and old posts here"
             />
             <meta
-              property="twitter:decription"
+              property="og:description"
+              content="YOu can view and edit all your new and old posts here"
+            />
+            <meta
+              name="twitter:decription"
               content={`YOu can view and edit all your new and old posts here`}
             />
 
@@ -107,7 +111,7 @@ class Feed extends Component {
               content={`https://www.passionatebloggers.me/feed`}
             />
             <meta
-              property="twitter:image"
+              name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta

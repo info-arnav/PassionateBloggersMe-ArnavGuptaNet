@@ -9,7 +9,7 @@ const About = () => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - About`}
           />
           <meta
@@ -18,7 +18,12 @@ const About = () => {
 Passionate Bloggers is a platform for various bloggers to share their posts with various people"
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content="
+Passionate Bloggers is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            name="twitter:decription"
             content={`
 Passionate Bloggers is a platform for various bloggers to share their posts with various people`}
           />
@@ -28,7 +33,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
             content={`https://www.passionatebloggers.me/about`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

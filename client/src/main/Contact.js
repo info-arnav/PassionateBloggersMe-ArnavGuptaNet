@@ -9,7 +9,7 @@ const Contact = () => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - Contact`}
           />
           <meta
@@ -18,7 +18,12 @@ const Contact = () => {
 You can share your queries with Arnav or Passionate Bloggers Team here"
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content="
+You can share your queries with Arnav or Passionate Bloggers Team here"
+          />
+          <meta
+            name="twitter:decription"
             content={`
 You can share your queries with Arnav or Passionate Bloggers Team here`}
           />
@@ -28,7 +33,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
             content={`https://www.passionatebloggers.me/contact`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

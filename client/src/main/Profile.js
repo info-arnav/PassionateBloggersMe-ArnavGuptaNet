@@ -69,7 +69,7 @@ const Profile = (props) => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - Profile - ${data.name}`}
           />
           <meta
@@ -79,7 +79,13 @@ const Profile = (props) => {
             } - ${data.biology.substring(0, 30)}`}
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+              data.name
+            } - ${data.biology.substring(0, 30)}`}
+          />
+          <meta
+            name="twitter:decription"
             content={`Passionate Bloggers by Arnav Gupta - Profile - ${
               data.name
             } - ${data.biology.substring(0, 30)}`}
@@ -90,7 +96,7 @@ const Profile = (props) => {
             content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta

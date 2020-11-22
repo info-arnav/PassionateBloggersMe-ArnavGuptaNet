@@ -31,7 +31,7 @@ const Event = (props) => {
       <div>
         <MetaTags>
           <meta
-            property="twitter:title"
+            name="twitter:title"
             content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
           />
           <meta
@@ -39,7 +39,11 @@ const Event = (props) => {
             content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
           />
           <meta
-            property="twitter:decription"
+            property="og:description"
+            content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
+          />
+          <meta
+            name="twitter:decription"
             content={`All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta`}
           />
 
@@ -48,7 +52,7 @@ const Event = (props) => {
             content={`https://www.passionatebloggers.me/projects`}
           />
           <meta
-            property="twitter:image"
+            name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
