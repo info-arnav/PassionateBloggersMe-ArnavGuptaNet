@@ -18,7 +18,7 @@ const Contact = () => {
 You can share your queries with Arnav or Passionate Bloggers Team here"
           />
           <meta
-            name="og:description"
+            property="og:description"
             content="
 You can share your queries with Arnav or Passionate Bloggers Team here"
           />
@@ -29,7 +29,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
           />
 
           <meta
-            name="og:url"
+            property="og:url"
             content={`https://www.passionatebloggers.me/contact`}
           />
           <meta
@@ -37,12 +37,12 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
-            name="og:title"
+            property="og:title"
             content={`Passionate Bloggers by Arnav Gupta - Contact`}
           />
-          <meta name="og:type" content={`Contact`} />
+          <meta property="og:type" content={`Contact`} />
           <meta
-            name="og:image"
+            property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>

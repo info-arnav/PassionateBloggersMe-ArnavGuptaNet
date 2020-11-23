@@ -39,7 +39,7 @@ const Event = (props) => {
             content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
           />
           <meta
-            name="og:description"
+            property="og:description"
             content="All the blogs shared by various people in the world on the website Passionate Bloggers by Arnav Gupta"
           />
           <meta
@@ -48,7 +48,7 @@ const Event = (props) => {
           />
 
           <meta
-            name="og:url"
+            property="og:url"
             content={`https://www.passionatebloggers.me/projects`}
           />
           <meta
@@ -56,12 +56,12 @@ const Event = (props) => {
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
-            name="og:title"
+            property="og:title"
             content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
           />
-          <meta name="og:type" content={`All Blogs`} />
+          <meta property="og:type" content={`All Blogs`} />
           <meta
-            name="og:image"
+            property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>
