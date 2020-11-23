@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useState } from "react";
 import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import MetaTags from "react-meta-tags";
@@ -8,21 +8,16 @@ import { logoutUser } from "../actions/authActions";
 
 const SiteMap = (props) => {
   const { user } = props.auth;
-  const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
-  const [posts, updater] = useState([]);
   useEffect(() => {
     const fetcher = async () => {
       await fetch("/all/posts")
         .then((e) => e.json())
-        .then((e) => updater(e))
         .then((e) => setLoading(false));
     };
     fetcher();
     const secondry = async () => {
-      await fetch(`/user/profile/data/${user.name}`)
-        .then((e) => e.json())
-        .then((e) => setData(e));
+      await fetch(`/user/profile/data/${user.name}`).then((e) => e.json());
     };
     secondry();
   }, []);

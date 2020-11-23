@@ -2,8 +2,8 @@ server {
   listen 443;
 server_name *.arnavgupta.net;
     ssl on;
-    ssl_certificate /home/ubuntu/bundle-main.crt;
-  ssl_certificate_key /home/ubuntu/arnavgupta.net.key;
+    ssl_certificate /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/bundle-main.crt;
+  ssl_certificate_key /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/arnavgupta.net.key;
       server_name    localhost;
    root           /usr/share/nginx/html;
 location / {
@@ -19,8 +19,8 @@ server {
   listen 443;
 server_name arnavgupta.net;
     ssl on;
-    ssl_certificate /home/ubuntu/bundle-main.crt;
-  ssl_certificate_key /home/ubuntu/arnavgupta.net.key;
+    ssl_certificate /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/bundle-main.crt;
+  ssl_certificate_key /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/arnavgupta.net.key;
       server_name    localhost;
    root           /usr/share/nginx/html;
 location / {
@@ -37,8 +37,8 @@ server {
 server_name passionatebloggers.me;
     ssl on;
 
-    ssl_certificate /home/ubuntu/bundle.crt;
-  ssl_certificate_key /home/ubuntu/passionatebloggers.me.key;
+    ssl_certificate /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/bundle.crt;
+  ssl_certificate_key /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/passionatebloggers.me.key;
       server_name    localhost;
    root           /usr/share/nginx/html;
 location / {
@@ -55,8 +55,8 @@ server {
 server_name *.passionatebloggers.me;
     ssl on;
 
-    ssl_certificate /home/ubuntu/bundle.crt;
-  ssl_certificate_key /home/ubuntu/passionatebloggers.me.key;
+    ssl_certificate /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/bundle.crt;
+  ssl_certificate_key /home/ubuntu/PassionateBloggersMe-ArnavGuptaNet/passionatebloggers.me.key;
       server_name    localhost;
    root           /usr/share/nginx/html;
 location / {

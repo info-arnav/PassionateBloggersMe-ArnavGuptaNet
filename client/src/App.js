@@ -7,15 +7,12 @@ import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
 
-import Navbar from "./components/layout/Navbar";
-import Landing from "./components/layout/Landing";
 import Register from "./components/auth/Register";
 import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 import Dashboard from "./components/dashboard/Dashboard";
 
 import "./App.css";
-import Navigation from "./elements/Navigation";
 import Home from "./main/Home";
 import Footer from "./elements/Footer";
 import Event from "./main/Event";
@@ -73,7 +70,8 @@ class App extends Component {
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
                 <PrivateRoute exact path="/feed" component={Feed} />
                 <Route component={NotFound} status={404} />
-              </Switch><Route component={NotFound} status={404} />
+              </Switch>
+              <Route component={NotFound} status={404} />
             </Switch>
             <Footer />
           </div>
