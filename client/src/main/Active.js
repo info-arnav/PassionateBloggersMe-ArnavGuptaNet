@@ -117,7 +117,7 @@ class Active extends Component {
             />
 
             <meta
-              property="og:url"
+              name="og:url"
               content={`https://www.passionatebloggers.me/active`}
             />
             <meta
@@ -125,12 +125,12 @@ class Active extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
-              property="og:title"
+              name="og:title"
               content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
             />
-            <meta property="og:type" content={`Profile`} />
+            <meta name="og:type" content={`Profile`} />
             <meta
-              property="og:image"
+              name="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>

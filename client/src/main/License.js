@@ -17,7 +17,7 @@ const License = () => {
             content="Passionate Bloggers by Arnav Gupta sticks to a MIT license"
           />
           <meta
-            property="og:description"
+            name="og:description"
             content="Passionate Bloggers by Arnav Gupta sticks to a MIT license"
           />
           <meta
@@ -26,7 +26,7 @@ const License = () => {
           />
 
           <meta
-            property="og:url"
+            name="og:url"
             content={`https://www.passionatebloggers.me/license`}
           />
           <meta
@@ -34,12 +34,12 @@ const License = () => {
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
-            property="og:title"
+            name="og:title"
             content={`Passionate Bloggers by Arnav Gupta - Home`}
           />
-          <meta property="og:type" content={`License`} />
+          <meta name="og:type" content={`License`} />
           <meta
-            property="og:image"
+            name="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>

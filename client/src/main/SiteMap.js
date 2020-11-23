@@ -34,7 +34,7 @@ const SiteMap = (props) => {
             content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
           />
           <meta
-            property="og:description"
+            name="og:description"
             content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
           />
           <meta
@@ -43,7 +43,7 @@ const SiteMap = (props) => {
           />
 
           <meta
-            property="og:url"
+            name="og:url"
             content={`https://www.passionatebloggers.me/sitemap`}
           />
           <meta
@@ -51,12 +51,12 @@ const SiteMap = (props) => {
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
-            property="og:title"
+            name="og:title"
             content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Ma`}
           />
-          <meta property="og:type" content={`User Friendly Site Map`} />
+          <meta name="og:type" content={`User Friendly Site Map`} />
           <meta
-            property="og:image"
+            name="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>

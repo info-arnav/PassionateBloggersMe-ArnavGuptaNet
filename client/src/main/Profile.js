@@ -155,7 +155,7 @@ const Profile = (props) => {
               } - ${data.biology.substring(0, 30)}`}
             />
             <meta
-              property="og:description"
+              name="og:description"
               content={`Passionate Bloggers by Arnav Gupta - Profile - ${
                 data.name
               } - ${data.biology.substring(0, 30)}`}
@@ -168,7 +168,7 @@ const Profile = (props) => {
             />
 
             <meta
-              property="og:url"
+              name="og:url"
               content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
             />
             <meta
@@ -176,12 +176,12 @@ const Profile = (props) => {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
-              property="og:title"
+              name="og:title"
               content={`Passionate Bloggers by Arnav Gupta - Profile ${data.name}`}
             />
-            <meta property="og:type" content={`Profile - ${data.name}`} />
+            <meta name="og:type" content={`Profile - ${data.name}`} />
             <meta
-              property="og:image"
+              name="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>

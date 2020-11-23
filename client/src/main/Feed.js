@@ -98,7 +98,7 @@ class Feed extends Component {
               content="YOu can view and edit all your new and old posts here"
             />
             <meta
-              property="og:description"
+              name="og:description"
               content="YOu can view and edit all your new and old posts here"
             />
             <meta
@@ -107,7 +107,7 @@ class Feed extends Component {
             />
 
             <meta
-              property="og:url"
+              name="og:url"
               content={`https://www.passionatebloggers.me/feed`}
             />
             <meta
@@ -115,12 +115,12 @@ class Feed extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
-              property="og:title"
+              name="og:title"
               content={`Passionate Bloggers by Arnav Gupta - Feed`}
             />
-            <meta property="og:type" content={`Feed`} />
+            <meta name="og:type" content={`Feed`} />
             <meta
-              property="og:image"
+              name="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>

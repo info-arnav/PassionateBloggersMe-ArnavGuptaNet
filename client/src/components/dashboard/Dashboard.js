@@ -72,7 +72,7 @@ class Dashboard extends Component {
               content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
             />
             <meta
-              property="og:description"
+              name="og:description"
               content="Passionate Bloggers by Arnav Gupta - Post your blogs on our website here"
             />
             <meta
@@ -81,7 +81,7 @@ class Dashboard extends Component {
             />
 
             <meta
-              property="og:url"
+              name="og:url"
               content={`https://www.passionatebloggers.me/Dashboard`}
             />
             <meta
@@ -89,12 +89,12 @@ class Dashboard extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
-              property="og:title"
+              name="og:title"
               content={`Passionate Bloggers by Arnav Gupta - Dashboard`}
             />
-            <meta property="og:type" content={`Dashboard`} />
+            <meta name="og:type" content={`Dashboard`} />
             <meta
-              property="og:image"
+              name="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>

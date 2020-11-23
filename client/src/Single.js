@@ -76,7 +76,7 @@ const Single = (props) => {
                 } - ${posts.blog.substring(0, 30)}`}
               />
               <meta
-                property="og:description"
+                name="og:description"
                 content={`Passionate Bloggers - ${
                   posts.subject
                 } - ${posts.blog.substring(0, 30)}`}
@@ -89,7 +89,7 @@ const Single = (props) => {
               />
 
               <meta
-                property="og:url"
+                name="og:url"
                 content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
               />
               <meta
@@ -97,12 +97,12 @@ const Single = (props) => {
                 content="https://www.passionatebloggers.me/logo.png"
               />
               <meta
-                property="og:title"
+                name="og:title"
                 content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
               />
-              <meta property="og:type" content={`Blog Post`} />
+              <meta name="og:type" content={`Blog Post`} />
               <meta
-                property="og:image"
+                name="og:image"
                 content="https://www.passionatebloggers.me/logo.png"
               />
             </MetaTags>

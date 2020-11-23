@@ -18,7 +18,7 @@ const About = () => {
 Passionate Bloggers is a platform for various bloggers to share their posts with various people"
           />
           <meta
-            property="og:description"
+            name="og:description"
             content="
 Passionate Bloggers is a platform for various bloggers to share their posts with various people"
           />
@@ -29,7 +29,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
           />
 
           <meta
-            property="og:url"
+            name="og:url"
             content={`https://www.passionatebloggers.me/about`}
           />
           <meta
@@ -37,12 +37,12 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
-            property="og:title"
+            name="og:title"
             content={`Passionate Bloggers by Arnav Gupta - About`}
           />
-          <meta property="og:type" content={`About`} />
+          <meta name="og:type" content={`About`} />
           <meta
-            property="og:image"
+            name="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>

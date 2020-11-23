@@ -73,7 +73,7 @@ class Register extends Component {
               content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
             />
             <meta
-              property="og:description"
+              name="og:description"
               content="Passionate Bloggers by Arnav Gupta - Register here now for additional features"
             />
             <meta
@@ -82,7 +82,7 @@ class Register extends Component {
             />
 
             <meta
-              property="og:url"
+              name="og:url"
               content={`https://www.passionatebloggers.me/Registeration`}
             />
             <meta
@@ -90,12 +90,12 @@ class Register extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
-              property="og:title"
+              name="og:title"
               content={`Passionate Bloggers by Arnav Gupta - Registeration`}
             />
-            <meta property="og:type" content={`Registeration`} />
+            <meta name="og:type" content={`Registeration`} />
             <meta
-              property="og:image"
+              name="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>
