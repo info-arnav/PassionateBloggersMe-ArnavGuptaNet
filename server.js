@@ -1,28 +1,28 @@
-letbcrypt = require("bcryptjs");
-letexpress = require("express");
-letmongoose = require("mongoose");
-letbodyParser = require("body-parser");
-letxml2js = require("xml2js");
-letmailgun = require("mailgun-js");
-letpath = require("path");
-letpassport = require("passport");
-letAWS = require("aws-sdk");
-letfs = require("fs");
-letalgoliasearch = require("algoliasearch");
-letfileUpload = require("express-fileupload");
+let bcrypt = require("bcryptjs");
+let express = require("express");
+let mongoose = require("mongoose");
+let bodyParser = require("body-parser");
+let xml2js = require("xml2js");
+let mailgun = require("mailgun-js");
+let path = require("path");
+let passport = require("passport");
+let AWS = require("aws-sdk");
+let fs = require("fs");
+let algoliasearch = require("algoliasearch");
+let fileUpload = require("express-fileupload");
 var cors = require("cors");
-lethttps = require("https");
-lethttp = require("http");
+let https = require("https");
+let http = require("http");
 
-letUser = require("./models/User");
+let User = require("./models/User");
 
-letusers = require("./routes/api/users");
+let users = require("./routes/api/users");
 
-leteventModel = require("./models/eventModal");
+let eventModel = require("./models/eventModal");
 
-letextra = "";
+let extra = "";
 
-lettinkerFest = mongoose.Schema({
+let tinkerFest = mongoose.Schema({
   name: String,
   codingsr: String,
   codingjs: String,
@@ -38,22 +38,22 @@ lettinkerFest = mongoose.Schema({
   date: { type: Object, default: new Date() },
 });
 
-letfest = mongoose.model("tinkerFest", tinkerFest);
+let fest = mongoose.model("tinkerFest", tinkerFest);
 
 //aws
 
 //mails
 
-letDOMAIN = "arnavgupta.net";
-letmg = mailgun({
+let DOMAIN = "arnavgupta.net";
+let mg = mailgun({
   apiKey: "key-bc4ce8949101e064ebc107d55b9c1e81",
   domain: DOMAIN,
 });
 
 //algolia
 
-letclient = algoliasearch("8PCXEU15SU", "fc652d91b2d6db2718b47254be4c5d6e");
-letindex = client.initIndex("dev_Name");
+let client = algoliasearch("8PCXEU15SU", "fc652d91b2d6db2718b47254be4c5d6e");
+let index = client.initIndex("dev_Name");
 
 //ssl
 var app = express();
@@ -72,7 +72,7 @@ app.use(
 app.use(bodyParser.json());
 
 // DB Config
-letdb = require("./config/keys").mongoURI;
+let db = require("./config/keys").mongoURI;
 
 // Connect to MongoDB
 mongoose
@@ -88,7 +88,7 @@ require("./config/passport")(passport);
 
 //invites
 app.post("/request/invite", (req, res) => {
-  letdata = {
+  let data = {
     from: "Mailgun Sandbox <postmaster@arnavgupta.net>",
     to: `info@arnavgupta.net, ${req.body.email}`,
     subject: "Invitation For Tinker Fest 2020",
@@ -107,7 +107,7 @@ app.use("/api/users", users);
 
 app.post("/contact/messages", async (req, res) => {
   body = req.body;
-  letqueryData = {
+  let queryData = {
     from: "Arnav Gupta <no-reply@arnavgupta.net>",
     to: `arnav.xx.gupta@gmail.com,info@arnavgupta.net`,
     subject: "Queries",
@@ -287,7 +287,7 @@ app.post("/teams/submit", async (req, res) => {
               throw err;
             }
             // add a new database to list
-            letpostgres = {
+            let postgres = {
               loc: `https://www.arnavgupta.net/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
@@ -296,8 +296,8 @@ app.post("/teams/submit", async (req, res) => {
             result.urlset.url.push(postgres);
 
             // convert SJON objec to XML
-            letbuilder = new xml2js.Builder();
-            letxml = builder.buildObject(result);
+            let builder = new xml2js.Builder();
+            let xml = builder.buildObject(result);
 
             // write updated XML string to a file
             fs.writeFile(
@@ -328,7 +328,7 @@ app.post("/teams/submit", async (req, res) => {
               throw err;
             }
             // add a new database to list
-            letpostgres = {
+            let postgres = {
               loc: `https://www.passionatebloggers.me/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
@@ -337,8 +337,8 @@ app.post("/teams/submit", async (req, res) => {
             result.urlset.url.push(postgres);
 
             // convert SJON objec to XML
-            letbuilder = new xml2js.Builder();
-            letxml = builder.buildObject(result);
+            let builder = new xml2js.Builder();
+            let xml = builder.buildObject(result);
 
             // write updated XML string to a file
             fs.writeFile(
@@ -454,19 +454,19 @@ app.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client/build", "index.html"));
 });
 
-letport = process.env.PORT || 5000;
-letsport = process.env.PORT || 443;
+let port = process.env.PORT || 5000;
+let sport = process.env.PORT || 443;
 
 app.listen("3000");
-letapplicationParams = "/";
-letserverPort = process.env.PORT || "5000";
-letserverParams = "/";
-letmongoosePort =
+let applicationParams = "/";
+let serverPort = process.env.PORT || "5000";
+let serverParams = "/";
+let mongoosePort =
   process.env.MONGODB_URI ||
   "mongodb+srv://Arnav:Arnav300804@cluster0.ahuqv.mongodb.net/health?retryWrites=true&w=majority";
 
 //*creation
-letapp2 = express();
+let app2 = express();
 
 //*connections
 app2.listen(serverPort, (req, res) => {});
@@ -479,7 +479,7 @@ app2.use(bodyParser.urlencoded({ extended: true }));
 app2.use(fileUpload());
 
 //*Schemas
-letuserDatas = new mongoose.Schema({
+let userDatas = new mongoose.Schema({
   userName: { unique: true, type: String },
   email: { unique: true, type: String },
   name: String,
@@ -494,11 +494,11 @@ letuserDatas = new mongoose.Schema({
   approved: { type: Boolean, default: false },
   requests: { type: Array, default: [] },
 });
-letmainSchemas = new mongoose.Schema({});
+let mainSchemas = new mongoose.Schema({});
 
 //*pres
 userDatas.pre("save", function (next) {
-  letuser = this;
+  let user = this;
   bcrypt.hash(user.password, 10, (error, hash) => {
     user.password = hash;
     next();
@@ -506,16 +506,16 @@ userDatas.pre("save", function (next) {
 });
 
 //*modles
-letmainModel = mongoose.model("mainModel", mainSchemas);
-letuserModel = mongoose.model("userDatas", userDatas);
+let mainModel = mongoose.model("mainModel", mainSchemas);
+let userModel = mongoose.model("userDatas", userDatas);
 
 //*declarations
 let error = { status: false, boundry: "" };
 error.status = false;
 error.boundry = "";
 let userData = "";
-letetra = "";
-letlogin = { error: "" };
+let etra = "";
+let login = { error: "" };
 
 //*routes
 app2.get("/", (req, res) => {
@@ -558,7 +558,7 @@ app2.post("/user", async (req, res) => {
                         throw err;
                       }
                       // add a new database to list
-                      letpostgres = {
+                      let postgres = {
                         loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
@@ -567,8 +567,8 @@ app2.post("/user", async (req, res) => {
                       result.urlset.url.push(postgres);
 
                       // convert SJON objec to XML
-                      letbuilder = new xml2js.Builder();
-                      letxml = builder.buildObject(result);
+                      let builder = new xml2js.Builder();
+                      let xml = builder.buildObject(result);
 
                       // write updated XML string to a file
                       fs.writeFile(
@@ -602,7 +602,7 @@ app2.post("/user", async (req, res) => {
                         throw err;
                       }
                       // add a new database to list
-                      letpostgres = {
+                      let postgres = {
                         loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
@@ -611,8 +611,8 @@ app2.post("/user", async (req, res) => {
                       result.urlset.url.push(postgres);
 
                       // convert SJON objec to XML
-                      letbuilder = new xml2js.Builder();
-                      letxml = builder.buildObject(result);
+                      let builder = new xml2js.Builder();
+                      let xml = builder.buildObject(result);
 
                       // write updated XML string to a file
                       fs.writeFile(
@@ -646,7 +646,7 @@ app2.post("/user", async (req, res) => {
                         throw err;
                       }
                       // add a new database to list
-                      letpostgres = {
+                      let postgres = {
                         loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
@@ -655,8 +655,8 @@ app2.post("/user", async (req, res) => {
                       result.urlset.url.push(postgres);
 
                       // convert SJON objec to XML
-                      letbuilder = new xml2js.Builder();
-                      letxml = builder.buildObject(result);
+                      let builder = new xml2js.Builder();
+                      let xml = builder.buildObject(result);
 
                       // write updated XML string to a file
                       fs.writeFile(
@@ -690,7 +690,7 @@ app2.post("/user", async (req, res) => {
                         throw err;
                       }
                       // add a new database to list
-                      letpostgres = {
+                      let postgres = {
                         loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
@@ -699,8 +699,8 @@ app2.post("/user", async (req, res) => {
                       result.urlset.url.push(postgres);
 
                       // convert SJON objec to XML
-                      letbuilder = new xml2js.Builder();
-                      letxml = builder.buildObject(result);
+                      let builder = new xml2js.Builder();
+                      let xml = builder.buildObject(result);
 
                       // write updated XML string to a file
                       fs.writeFile(
@@ -934,10 +934,6 @@ app2.get("/privacy", (req, res) => {
 app2.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./build", "index.html"));
 });
-
-letclient = algoliasearch("8PCXEU15SU", "fc652d91b2d6db2718b47254be4c5d6e");
-letindex = client.initIndex("dev_Name");
-
 //ssl
 var app3 = express();
 
@@ -955,8 +951,6 @@ app3.use(
 app3.use(bodyParser.json());
 
 // DB Config
-letdb = require("./config/keys").mongoURI;
-
 // Connect to MongoDB
 mongoose
   .connect(db, { useNewUrlParser: true })
@@ -971,7 +965,7 @@ require("./config/passport")(passport);
 
 //invites
 app3.post("/request/invite", (req, res) => {
-  letdata = {
+  let data = {
     from: "Mailgun Sandbox <postmaster@arnavgupta.net>",
     to: `info@arnavgupta.net, ${req.body.email}`,
     subject: "Invitation For Tinker Fest 2020",
@@ -990,7 +984,7 @@ app3.use("/api/users", users);
 
 app3.post("/contact/messages", async (req, res) => {
   body = req.body;
-  letqueryData = {
+  let queryData = {
     from: "Arnav Gupta <no-reply@arnavgupta.net>",
     to: `arnav.xx.gupta@gmail.com,info@arnavgupta.net`,
     subject: "Queries",
@@ -1133,7 +1127,7 @@ app3.post("/request/verification", async (req, res) => {
     { _id: id },
     { verificationCode: number },
     async (error, output) => {
-      letdata = {
+      let data = {
         from: "Arnav Gupta <postmaster@arnavgupta.net>",
         to: `${email}, arnav.xx.gupta@gmail.com`,
         subject: "Confirm",
@@ -1170,7 +1164,7 @@ app3.post("/teams/submit", async (req, res) => {
               throw err;
             }
             // add a new database to list
-            letpostgres = {
+            let postgres = {
               loc: `https://www.passionatebloggers.me/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
@@ -1179,8 +1173,8 @@ app3.post("/teams/submit", async (req, res) => {
             result.urlset.url.push(postgres);
 
             // convert SJON objec to XML
-            letbuilder = new xml2js.Builder();
-            letxml = builder.buildObject(result);
+            let builder = new xml2js.Builder();
+            let xml = builder.buildObject(result);
 
             // write updated XML string to a file
             fs.writeFile(
@@ -1211,7 +1205,7 @@ app3.post("/teams/submit", async (req, res) => {
               throw err;
             }
             // add a new database to list
-            letpostgres = {
+            let postgres = {
               loc: `https://www.arnavgupta.net/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
@@ -1220,8 +1214,8 @@ app3.post("/teams/submit", async (req, res) => {
             result.urlset.url.push(postgres);
 
             // convert SJON objec to XML
-            letbuilder = new xml2js.Builder();
-            letxml = builder.buildObject(result);
+            let builder = new xml2js.Builder();
+            let xml = builder.buildObject(result);
 
             // write updated XML string to a file
             fs.writeFile(
@@ -1241,7 +1235,7 @@ app3.post("/teams/submit", async (req, res) => {
 
       await User.findOne({ name: body.name }, async (error, user) => {
         if (user) {
-          letteamdata = {
+          let teamdata = {
             from: "Arnav Gupta <postmaster@arnavgupta.net>",
             to: `${user.email}, arnav.xx.gupta@gmail.com`,
             subject: "New Post",
@@ -1337,15 +1331,6 @@ app3.get("*", (req, res) => {
   res.sendFile(path.join(__dirname, "./client-arnav/build", "index.html"));
 });
 
-letport = process.env.PORT || 5000;
-letsport = process.env.PORT || 443;
-
 app3.listen("7000");
-letapplicationParams = "/";
-letserverPort = process.env.PORT || "5000";
-letserverParams = "/";
-letmongoosePort =
-  process.env.MONGODB_URI ||
-  "mongodb+srv://Arnav:Arnav300804@cluster0.ahuqv.mongodb.net/health?retryWrites=true&w=majority";
 
 //*creation
