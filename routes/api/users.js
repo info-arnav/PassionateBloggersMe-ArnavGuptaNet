@@ -70,7 +70,7 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `https://www.arnavgupta.net/profiles&value=${req.body.name}`,
+                  loc: `https://www.passionatebloggers.me/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
@@ -152,7 +152,7 @@ router.post("/register", (req, res) => {
             from: "Arnav Gupta <postmaster@arnavgupta.net>",
             to: `${req.body.email}, arnav.xx.gupta@gmail.com`,
             subject: "registered",
-            text: `you were registered to https://www.arnavgupta.net/ if it was you tthen ignore else contact us by https://www.arnavgupta.net/contact-us`,
+            text: `you were registered to https://www.passionatebloggers.me/ if it was you tthen ignore else contact us by https://www.passionatebloggers.me/contact-us`,
           };
           mg.messages().send(userMailData, function (error, body) {
             if (user) {

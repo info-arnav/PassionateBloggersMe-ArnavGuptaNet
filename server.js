@@ -288,7 +288,7 @@ app.post("/teams/submit", async (req, res) => {
             }
             // add a new database to list
             const postgres = {
-              loc: `https://www.arnavgupta.net/posted/@${success.name}/${success.subject}/${success._id}`,
+              loc: `https://www.passionatebloggers.me/posted/@${success.name}/${success.subject}/${success._id}`,
               changefreq: "monthly",
               priority: "1.0",
             };
@@ -560,7 +560,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.arnavgupta.net/profiles&value=${body.userName}`,
+                        loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
@@ -604,7 +604,7 @@ app2.post("/user", async (req, res) => {
                       }
                       // add a new database to list
                       const postgres = {
-                        loc: `https://www.arnavgupta.net/profiles&value=${body.userName}`,
+                        loc: `https://www.passionatebloggers.me/profiles&value=${body.userName}`,
                         changefreq: "monthly",
                         priority: "1.0",
                       };
