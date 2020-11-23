@@ -274,6 +274,47 @@ app.post("/teams/submit", async (req, res) => {
   await eventModel.create(req.body, async (error, success) => {
     if (success) {
       await fs.readFile(
+        "./client-arnav/public/passionatebloggers-sitemap.xml",
+        "utf-8",
+        (err, data) => {
+          if (err) {
+            throw err;
+          }
+
+          // convert XML data to JSON object
+          xml2js.parseString(data, async (err, result) => {
+            if (err) {
+              throw err;
+            }
+            // add a new database to list
+            const postgres = {
+              loc: `https://www.passionatebloggers.me/posted/@${success.name}/${success.subject}/${success._id}`,
+              changefreq: "monthly",
+              priority: "1.0",
+            };
+
+            result.urlset.url.push(postgres);
+
+            // convert SJON objec to XML
+            const builder = new xml2js.Builder();
+            const xml = builder.buildObject(result);
+
+            // write updated XML string to a file
+            fs.writeFile(
+              "./client/public/passionatebloggers-sitemap.xml",
+              xml,
+              (err) => {
+                if (err) {
+                  throw err;
+                }
+
+                console.log(`Updated XML is written to a new file.`);
+              }
+            );
+          });
+        }
+      );
+      await fs.readFile(
         "./client-arnav/public/arnavgupta-sitemap.xml",
         "utf-8",
         (err, data) => {
@@ -416,7 +457,7 @@ app.get("*", (req, res) => {
 const port = process.env.PORT || 5000;
 const sport = process.env.PORT || 443;
 
-app.listen("8080");
+app.listen("7000");
 const applicationParams = "/";
 const serverPort = process.env.PORT || "5000";
 const serverParams = "/";

@@ -47,7 +47,7 @@
     "dev:start": "nodemon ./server-build/index.js",
     "dev": "npm-run-all --parallel build dev:*"
   },
-  "proxy": "http://localhost:3000",
+  "proxy": "http://localhost:7000",
   "eslintConfig": {
     "extends": "react-app"
   },

@@ -55,7 +55,7 @@ router.post("/register", (req, res) => {
           await fs.readFile(
             path.resolve(
               __dirname,
-              "./../../client/public/arnavgupta-sitemap.xml"
+              "./../../client-arnav/public/arnavgupta-sitemap.xml"
             ),
             "utf-8",
             (err, data) => {
@@ -70,7 +70,7 @@ router.post("/register", (req, res) => {
                 }
                 // add a new database to list
                 const postgres = {
-                  loc: `https://www.passionatebloggers.me/profiles&value=${req.body.name}`,
+                  loc: `https://www.arnavgupta.net/profiles&value=${req.body.name}`,
                   changefreq: "monthly",
                   priority: "1.0",
                 };
@@ -85,7 +85,7 @@ router.post("/register", (req, res) => {
                 fs.writeFile(
                   path.resolve(
                     __dirname,
-                    "./../../client/public/arnavgupta-sitemap.xml"
+                    "./../../client-arnav/public/arnavgupta-sitemap.xml"
                   ),
                   xml,
                   (err) => {
