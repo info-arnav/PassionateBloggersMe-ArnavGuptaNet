@@ -118,11 +118,15 @@ class Active extends Component {
 
             <meta
               property="og:url"
-              content={`https://www.passionatebloggers.me/active`}
+              content={`https://www.arnavgupta.net/active`}
+            />
+            <meta
+              property="og:url"
+              content={`https://www.arnavgupta.net/active`}
             />
             <meta
               name="twitter:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.arnavgupta.net/logo.png"
             />
             <meta
               property="og:title"
@@ -131,7 +135,7 @@ class Active extends Component {
             <meta property="og:type" content={`Profile`} />
             <meta
               property="og:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.arnavgupta.net/logo.png"
             />
           </MetaTags>
         </div>

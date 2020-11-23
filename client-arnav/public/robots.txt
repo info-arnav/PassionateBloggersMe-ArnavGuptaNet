@@ -1,4 +1,4 @@
-# robots.txt for https://www.passionatebloggers.me/
+# robots.txt for https://www.arnavgupta.net/
 
 User-agent: * 
 Disallow: /active
@@ -10,4 +10,4 @@ Disallow: /all/posts
 Disallow: /user/profile/data/*
 Disallow: /single/post/*
 
-Sitemap: https://www.passionatebloggers.me/passionatebloggers-sitemap.xml
+Sitemap: https://www.arnavgupta.net/passionatebloggers-sitemap.xml

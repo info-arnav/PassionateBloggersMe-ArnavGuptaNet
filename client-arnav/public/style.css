@@ -1,0 +1,12 @@
+#img1 {
+  background-image: url("assets/img/logo/logo.png");
+}
+
+#img2 {
+  background-image: url("assets/img/tech/image6.png");
+}
+
+#homeImage {
+  background-image: url("assets/img/background/main.jpg");
+  color: rgba(0, 0, 0, 0.85);
+}
