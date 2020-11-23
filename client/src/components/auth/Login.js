@@ -80,6 +80,10 @@ class Login extends Component {
               content={`https://www.passionatebloggers.me/login`}
             />
             <meta
+              property="og:url"
+              content={`https://www.arnavgupta.net/login`}
+            />
+            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />

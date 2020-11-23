@@ -27,8 +27,9 @@ const License = () => {
 
           <meta
             property="og:url"
-            content={`https://www.passionatebloggers.me/license`}
+            content={`https://www.passionatebloggers.me/feed`}
           />
+          <meta property="og:url" content={`https://arnavgupta.net/feed`} />
           <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"

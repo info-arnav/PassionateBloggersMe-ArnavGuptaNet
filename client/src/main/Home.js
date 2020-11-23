@@ -49,8 +49,9 @@ const Home = (props) => {
 
           <meta
             property="og:url"
-            content={`https://www.passionatebloggers.me/`}
+            content={`https://www.passionatebloggers.me/feed`}
           />
+          <meta property="og:url" content={`https://www.arnavgupta.net/feed`} />
           <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"

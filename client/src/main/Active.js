@@ -121,6 +121,10 @@ class Active extends Component {
               content={`https://www.passionatebloggers.me/active`}
             />
             <meta
+              property="og:url"
+              content={`https://www.arnavgupta.net/active`}
+            />
+            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />

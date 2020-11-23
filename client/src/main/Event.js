@@ -52,6 +52,10 @@ const Event = (props) => {
             content={`https://www.passionatebloggers.me/projects`}
           />
           <meta
+            property="og:url"
+            content={`https://www.arnavgupta.net/projects`}
+          />
+          <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />

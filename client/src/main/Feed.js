@@ -111,6 +111,10 @@ class Feed extends Component {
               content={`https://www.passionatebloggers.me/feed`}
             />
             <meta
+              property="og:url"
+              content={`https://www.arnavgupta.net/feed`}
+            />
+            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />

@@ -85,6 +85,10 @@ class Dashboard extends Component {
               content={`https://www.passionatebloggers.me/Dashboard`}
             />
             <meta
+              property="og:url"
+              content={`https://www.arnavgupta.net/Dashboard`}
+            />
+            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
