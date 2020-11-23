@@ -47,10 +47,6 @@ const SiteMap = (props) => {
             content={`https://www.passionatebloggers.me/sitemap`}
           />
           <meta
-            property="og:url"
-            content={`https://www.arnavgupta.net/sitemap`}
-          />
-          <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />

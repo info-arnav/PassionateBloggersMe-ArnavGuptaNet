@@ -33,10 +33,6 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
             content={`https://www.passionatebloggers.me/about`}
           />
           <meta
-            property="og:url"
-            content={`https://www.arnavgupta.net/about`}
-          />
-          <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />

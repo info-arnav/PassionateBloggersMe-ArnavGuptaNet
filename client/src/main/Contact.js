@@ -33,10 +33,6 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
             content={`https://www.passionatebloggers.me/contact`}
           />
           <meta
-            property="og:url"
-            content={`https://www.arnavgupta.net/contact`}
-          />
-          <meta
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />

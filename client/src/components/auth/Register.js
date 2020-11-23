@@ -86,10 +86,6 @@ class Register extends Component {
               content={`https://www.passionatebloggers.me/Registeration`}
             />
             <meta
-              property="og:url"
-              content={`https://www.arnavgupta.net/Registeration`}
-            />
-            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />

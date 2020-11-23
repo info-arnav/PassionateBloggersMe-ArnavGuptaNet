@@ -172,10 +172,6 @@ const Profile = (props) => {
               content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
             />
             <meta
-              property="og:url"
-              content={`https://www.arnavgupta.net/profiles&value=${data.name}`}
-            />
-            <meta
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />

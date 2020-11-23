@@ -90,10 +90,6 @@ const Single = (props) => {
 
               <meta
                 property="og:url"
-                content={`https://www.arnavgupta.net/posted/@${user.name}/${posts.subject}/${posts._id}`}
-              />
-              <meta
-                property="og:url"
                 content={`https://www.passionatebloggers.me/posted/@${user.name}/${posts.subject}/${posts._id}`}
               />
               <meta
