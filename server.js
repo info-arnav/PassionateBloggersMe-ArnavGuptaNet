@@ -13,6 +13,7 @@ let fileUpload = require("express-fileupload");
 var cors = require("cors");
 let https = require("https");
 let http = require("http");
+var compression = require("compression");
 
 let User = require("./models/User");
 
@@ -57,6 +58,8 @@ let index = client.initIndex("dev_Name");
 
 //ssl
 var app = express();
+
+app.use(compression());
 
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -936,6 +939,8 @@ app2.get("*", (req, res) => {
 });
 //ssl
 var app3 = express();
+
+app3.use(compression());
 
 app3.use(express.static(path.join(__dirname, "./client-arnav/build")));
 app3.use(bodyParser.urlencoded({ extended: false }));
