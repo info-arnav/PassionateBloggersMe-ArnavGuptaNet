@@ -58,10 +58,6 @@ let index = client.initIndex("dev_Name");
 //ssl
 var app = express();
 
-var compression = require(‘compression’)
-
-app.use(compression());
-
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -940,8 +936,6 @@ app2.get("*", (req, res) => {
 });
 //ssl
 var app3 = express();
-
-app3.use(compression());
 
 app3.use(express.static(path.join(__dirname, "./client-arnav/build")));
 app3.use(bodyParser.urlencoded({ extended: false }));
