@@ -58,6 +58,10 @@ let index = client.initIndex("dev_Name");
 //ssl
 var app = express();
 
+var compression = require(‘compression’)
+
+app.use(compression());
+
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
@@ -250,7 +254,7 @@ app.post("/request/verification", async (req, res) => {
     { _id: id },
     { verificationCode: number },
     async (error, output) => {
-      letdata = {
+      let data = {
         from: "Arnav Gupta <postmaster@arnavgupta.net>",
         to: `${email}, arnav.xx.gupta@gmail.com`,
         subject: "Confirm",
@@ -358,7 +362,7 @@ app.post("/teams/submit", async (req, res) => {
 
       await User.findOne({ name: body.name }, async (error, user) => {
         if (user) {
-          letteamdata = {
+          let teamdata = {
             from: "Arnav Gupta <postmaster@arnavgupta.net>",
             to: `${user.email}, arnav.xx.gupta@gmail.com`,
             subject: "New Post",
@@ -936,6 +940,8 @@ app2.get("*", (req, res) => {
 });
 //ssl
 var app3 = express();
+
+app3.use(compression());
 
 app3.use(express.static(path.join(__dirname, "./client-arnav/build")));
 app3.use(bodyParser.urlencoded({ extended: false }));
