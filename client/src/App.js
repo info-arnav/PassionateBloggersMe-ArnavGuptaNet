@@ -1,5 +1,11 @@
 import React, { Component } from "react";
-import { BrowserRouter as Router, Route, Switch } from "react-router-dom";
+import {
+  BrowserRouter as Router,
+  IndexRoute,
+  Route,
+  Switch,
+  Redirect,
+} from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 
@@ -52,6 +58,7 @@ class App extends Component {
         <Router>
           <div className="App">
             <Switch>
+              <IndexRoute component={Home}></IndexRoute>
               <Route exact path="/" component={Home} />
               <Route path="/license" component={License} />
               <Route path="/index" component={Home} />
@@ -65,13 +72,18 @@ class App extends Component {
               <Route path="/contact-us" component={Contact} />
               <Route path="/about" component={About} />
               <Route path="/posted/:username/:subject/:id" component={Single} />
+              <Route
+                path="/error-page-not-found"
+                component={NotFound}
+                status={404}
+              />
               <Switch>
                 <PrivateRoute exact path="/active" component={Active} />
                 <PrivateRoute exact path="/dashboard" component={Dashboard} />
                 <PrivateRoute exact path="/feed" component={Feed} />
-                <Route component={NotFound} status={404} />
+                <Redirect to="/error-page-not-found" />
               </Switch>
-              <Route component={NotFound} status={404} />
+              <Redirect to="/error-page-not-found" />
             </Switch>
             <Footer />
           </div>
