@@ -1,7 +1,6 @@
 import React, { Component } from "react";
 import {
   BrowserRouter as Router,
-  IndexRoute,
   Route,
   Switch,
   Redirect,
@@ -58,7 +57,6 @@ class App extends Component {
         <Router>
           <div className="App">
             <Switch>
-              <IndexRoute component={Home}></IndexRoute>
               <Route exact path="/" component={Home} />
               <Route path="/license" component={License} />
               <Route path="/index" component={Home} />
