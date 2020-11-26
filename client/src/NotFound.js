@@ -1,15 +1,18 @@
-import React from "react"
-import Navigation from "./elements/Navigation"
+import React from "react";
+import Navigation from "./elements/Navigation";
 
-const NotFound = () => { 
-    return (
-        <div>
+const NotFound = () => {
+  return (
+    <div>
       <Navigation />
       <h1>load</h1>
       <main className="page landing-page">
         <section className="clean-block clean-hero">
           <div className="text">
-            <h1>error 404 page was not found please click appropriate option from above</h1>
+            <h1>
+              error 404 page was not found please click appropriate option from
+              above
+            </h1>
           </div>
         </section>
         {/*<section className="clean-block about-us">
@@ -77,7 +80,7 @@ const NotFound = () => {
         </section>*/}
       </main>
     </div>
-    )
-}
+  );
+};
 
-export default NotFound
+export default NotFound;
