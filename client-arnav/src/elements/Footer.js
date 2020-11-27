@@ -78,7 +78,7 @@ class Footer extends Component {
               <h5>Legal</h5>
               <ul>
                 <li>
-                  <a href="/License">Licence</a>
+                  <a href="/License">License</a>
                 </li>
               </ul>
             </div>

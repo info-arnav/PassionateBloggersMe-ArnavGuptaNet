@@ -79,11 +79,8 @@ class Feed extends Component {
       editorState,
       inputValue,
     } = this.state;
-    const reversed = [];
+    const reversed = data;
     const lenth = data.length - 1;
-    for (let i = lenth; i >= 0; i--) {
-      reversed.push(data[i]);
-    }
     data = reversed;
     return (
       <div>

@@ -387,7 +387,7 @@ app.post("/teams/submit", async (req, res) => {
 app.get("/all/posts", async (req, res) => {
   await eventModel.find({}, (error, data) => {
     if (data) {
-      res.json(data);
+      res.json(data.reverse());
     }
   });
 });
