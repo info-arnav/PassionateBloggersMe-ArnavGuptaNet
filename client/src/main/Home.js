@@ -67,14 +67,12 @@ const Home = (props) => {
         </MetaTags>
       </div>
       <Navigation />
-      <h1>load</h1>
       {user.name ? (
         loading ? (
           <div>
-            <Navigation />
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
-                <h1>load{}</h1>
+                <h1>load</h1>
                 <div className="container">
                   <div className="block-heading">
                     <h2 className="text-info">Blog Post List</h2>
@@ -106,6 +104,7 @@ const Home = (props) => {
           <div>
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
+                <h1>load</h1>
                 <div className="container">
                   <div className="block-heading">
                     <h2 className="text-info">Home</h2>
@@ -234,6 +233,7 @@ const Home = (props) => {
       ) : (
         <main className="page landing-page">
           <section className="clean-block clean-hero" id="homeImage">
+            <h1>load</h1>
             <div className="text">
               <h2>Blogs for all </h2>
               <p>share your blogs with the world</p>
