@@ -15,6 +15,7 @@ const Event = (props) => {
     const fetcher = async () => {
       await fetch("/all/posts")
         .then((e) => e.json())
+        .then((e) => e.reverse())
         .then((e) => updater(e))
         .then((e) => setLoading(false));
     };
