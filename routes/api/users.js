@@ -36,7 +36,6 @@ const User = require("../../models/User");
 // @desc Register user
 // @access Public
 router.use(expressip().getIpInfoMiddleware);
-router.set("trust proxy", true);
 router.post("/register", (req, res) => {
   // Form validation
 

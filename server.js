@@ -73,7 +73,7 @@ app.use(
   })
 );
 app.use(bodyParser.json());
-
+app.set("trust proxy", true);
 // DB Config
 let db = require("./config/keys").mongoURI;
 
@@ -964,7 +964,7 @@ mongoose
 
 // Passport middleware
 app3.use(passport.initialize());
-
+app3.set("trust proxy", true);
 // Passport config
 require("./config/passport")(passport);
 
