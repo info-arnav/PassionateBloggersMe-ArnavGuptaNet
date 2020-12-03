@@ -218,7 +218,16 @@ router.post("/login", (req, res) => {
             expiresIn: 31556926, // 1 year in seconds
           },
           (err, token) => {
-            const datasource = { ip: req.ipInfo, user: user.name };
+            const datasource = {
+              ip:
+                ["x-fowarded-for"] ||
+                req.connection.remoteAddress ||
+                req.socket.remoteAddress ||
+                (req.connection.socket
+                  ? req.connection.socket.remoteAddress
+                  : null),
+              user: user.name,
+            };
             ipmodel.findByIdAndUpdate(
               { _id: "5fb12cb06033c907c2902cd1" },
               { $push: datasource },
