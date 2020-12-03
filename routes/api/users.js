@@ -220,7 +220,7 @@ router.post("/login", (req, res) => {
           (err, token) => {
             const datasource = {
               ip:
-                ["x-fowarded-for"] ||
+                (req.headers["x-fowarded-for"] || "").split(",").pop().trim() ||
                 req.connection.remoteAddress ||
                 req.socket.remoteAddress ||
                 (req.connection.socket
@@ -229,11 +229,11 @@ router.post("/login", (req, res) => {
               user: user.name,
             };
             ipmodel.findByIdAndUpdate(
-              { _id: "5fb12cb06033c907c2902cd1" },
+              "5fb12cb06033c907c2902cd1",
               { $push: datasource },
               (error, success) => {
                 if (success) {
-                  console.log(success);
+                  console.log(datasource);
                   res.json({
                     success: true,
                     token: "Bearer " + token,
