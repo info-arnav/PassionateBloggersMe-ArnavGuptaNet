@@ -36,6 +36,7 @@ const User = require("../../models/User");
 // @desc Register user
 // @access Public
 router.use(expressip().getIpInfoMiddleware);
+router.set("trust proxy", true);
 router.post("/register", (req, res) => {
   // Form validation
 
@@ -228,16 +229,9 @@ router.post("/login", (req, res) => {
             mainModel.create(
               {
                 name: user.name,
-                ipAddress:
-                  (req.headers["x-fowarded-for"] || "")
-                    .split(",")
-                    .pop()
-                    .trim() ||
-                  req.connection.remoteAddress ||
-                  req.socket.remoteAddress ||
-                  (req.connection.socket
-                    ? req.connection.socket.remoteAddress
-                    : null),
+                ipAddress: req.headers["x-forwarded-for"]
+                  ? req.headers["x-forwarded-for"].split(/, /)[0]
+                  : req.connection.remoteAddress,
               },
               (error, success) => {
                 if (success) {
