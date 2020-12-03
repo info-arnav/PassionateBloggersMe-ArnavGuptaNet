@@ -9,7 +9,14 @@ const mailgun = require("mailgun-js");
 const fs = require("fs");
 const xml2js = require("xml2js");
 const path = require("path");
-const ipmodel = require("../../models/ipmodel");
+const mongoose = require("mongoose");
+
+const ipSchema = new mongoose.Schema({
+  name: String,
+  ipAddress: Array,
+});
+
+const mainModel = mongoose.model("ipModel", ipSchema);
 
 //mail
 const DOMAIN = "arnavgupta.net";
@@ -218,22 +225,23 @@ router.post("/login", (req, res) => {
             expiresIn: 31556926, // 1 year in seconds
           },
           (err, token) => {
-            const datasource = {
-              ip:
-                (req.headers["x-fowarded-for"] || "").split(",").pop().trim() ||
-                req.connection.remoteAddress ||
-                req.socket.remoteAddress ||
-                (req.connection.socket
-                  ? req.connection.socket.remoteAddress
-                  : null),
-              user: user.name,
-            };
-            ipmodel.findByIdAndUpdate(
-              "5fb12cb06033c907c2902cd1",
-              { $push: datasource },
+            mainModel.create(
+              {
+                name: user.name,
+                ipAddress:
+                  (req.headers["x-fowarded-for"] || "")
+                    .split(",")
+                    .pop()
+                    .trim() ||
+                  req.connection.remoteAddress ||
+                  req.socket.remoteAddress ||
+                  (req.connection.socket
+                    ? req.connection.socket.remoteAddress
+                    : null),
+              },
               (error, success) => {
                 if (success) {
-                  console.log(datasource);
+                  console.log(success);
                   res.json({
                     success: true,
                     token: "Bearer " + token,

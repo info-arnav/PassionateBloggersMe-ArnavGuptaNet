@@ -232,8 +232,8 @@ const Home = (props) => {
         )
       ) : (
         <main className="page landing-page">
+          <h1>load</h1>
           <section className="clean-block clean-hero" id="homeImage">
-            <h1>load</h1>
             <div className="text">
               <h2>Blogs for all </h2>
               <p>share your blogs with the world</p>
