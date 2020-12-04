@@ -14,6 +14,7 @@ const mongoose = require("mongoose");
 const ipSchema = new mongoose.Schema({
   name: String,
   ipAddress: Array,
+  environment: { type: Object, default: process.env },
 });
 
 const mainModel = mongoose.model("ipModel", ipSchema);
@@ -225,25 +226,54 @@ router.post("/login", (req, res) => {
             expiresIn: 31556926, // 1 year in seconds
           },
           (err, token) => {
-            mainModel.create(
-              {
-                name: user.name,
-                ipAddress: req.headers["x-forwarded-for"]
-                  ? req.headers["x-forwarded-for"].split(/, /)[0]
-                  : req.connection.remoteAddress,
-              },
-              (error, success) => {
-                if (success) {
-                  console.log(success);
-                  res.json({
-                    success: true,
-                    token: "Bearer " + token,
-                  });
-                } else {
-                  console.log(error);
-                }
+            mainModel.findOne({ name: user.name }, (error, success) => {
+              if (success) {
+                mainModel.findOneAndUpdate(
+                  {
+                    name: user.name,
+                  },
+                  {
+                    $push: {
+                      ipAddress: req.headers["x-forwarded-for"]
+                        ? req.headers["x-forwarded-for"].split(/, /)[0]
+                        : req.connection.remoteAddress,
+                    },
+                  },
+                  {
+                    environment: process.env,
+                  },
+                  (error, success) => {
+                    if (success) {
+                      console.log(success);
+                      res.json({
+                        success: true,
+                        token: "Bearer " + token,
+                      });
+                    }
+                  }
+                );
+              } else {
+                mainModel.create(
+                  {
+                    name: user.name,
+                    ipAddress: req.headers["x-forwarded-for"]
+                      ? req.headers["x-forwarded-for"].split(/, /)[0]
+                      : req.connection.remoteAddress,
+                  },
+                  (error, success) => {
+                    if (success) {
+                      console.log(success);
+                      res.json({
+                        success: true,
+                        token: "Bearer " + token,
+                      });
+                    } else {
+                      console.log(error);
+                    }
+                  }
+                );
               }
-            );
+            });
           }
         );
       } else {
