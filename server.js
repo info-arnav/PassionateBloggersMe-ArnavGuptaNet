@@ -1404,7 +1404,10 @@ app3.get("*", (req, res) => {
       if (success) {
         sessions.findByIdAndUpdate(
           success._id,
-          { url1: "arnavgupta.net", url2: url.parse(req.url) },
+          {
+            url1: "arnavgupta.net",
+            url2: url.parse(req.url),
+          },
           (error, success) => {
             if (success) {
               res.sendFile(

@@ -227,7 +227,7 @@ class Feed extends Component {
                             <a
                               className="btn btn-outline-primary btn-sm"
                               type="button"
-                              href={`/posteds&value=${datas._id}`}
+                              href={`/posted/@${user._name}/${datas.subject}/${datas._id}`}
                             >
                               Read More
                             </a>
