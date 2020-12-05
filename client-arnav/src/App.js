@@ -69,7 +69,6 @@ class App extends Component {
               <Route path="/contact" component={Contact} />
               <Route path="/contact-us" component={Contact} />
               <Route path="/about" component={About} />
-              <Route path="/posted&value=:id" component={Single} />
               <Route path="/posted/:username/:subject/:id" component={Single} />
               <Route
                 path="/error-page-not-found"
