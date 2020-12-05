@@ -531,7 +531,7 @@ var app3 = express();
 
 app3.use(compression());
 
-app3.use(express.static(path.join(__dirname, "./client/build")));
+app3.use(express.static(path.join(__dirname, "./client-arnav/build")));
 app3.use(bodyParser.urlencoded({ extended: false }));
 app3.use(bodyParser.json());
 app3.use(cors());
@@ -941,7 +941,7 @@ app3.get("*", (req, res) => {
           (error, success) => {
             if (success) {
               res.sendFile(
-                path.join(__dirname, "./client/build", "index.html")
+                path.join(__dirname, "./client-arnav/build", "index.html")
               );
             } else {
               console.log(error);
@@ -960,7 +960,7 @@ app3.get("*", (req, res) => {
           (error, success) => {
             if (success) {
               res.sendFile(
-                path.join(__dirname, "./client/build", "index.html")
+                path.join(__dirname, "./client-arnav/build", "index.html")
               );
             } else {
               console.log(error);
