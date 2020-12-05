@@ -11,6 +11,7 @@ let fs = require("fs");
 let algoliasearch = require("algoliasearch");
 let fileUpload = require("express-fileupload");
 var cors = require("cors");
+var url = require("url");
 let https = require("https");
 let http = require("http");
 var compression = require("compression");
@@ -38,6 +39,17 @@ let tinkerFest = mongoose.Schema({
   designing: String,
   date: { type: Object, default: new Date() },
 });
+
+const sessionsSchema = new mongoose.Schema({
+  ipAddress: {
+    type: String,
+  },
+  url1: String,
+  url2: Object,
+  environment: { type: Object, default: process.env },
+});
+
+const sessions = mongoose.model("sessions", sessionsSchema);
 
 let fest = mongoose.model("tinkerFest", tinkerFest);
 
@@ -454,7 +466,54 @@ app.post("/likes/pop", (req, res) => {
 
 /* renders the react components from port 5000 */
 app.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client/build", "index.html"));
+  let header = req.headers;
+  let connection = req.connection;
+  sessions.findOne(
+    {
+      ipAddress: header["x-forwarded-for"]
+        ? header["x-forwarded-for"].split(/, /)[0]
+        : connection.remoteAddress,
+    },
+    (error, success) => {
+      if (success) {
+        sessions.findByIdAndUpdate(
+          success._id,
+          {
+            url1: "passionatebloggers.me",
+            url2: url.parse(req.url),
+          },
+          (error, success) => {
+            if (success) {
+              res.sendFile(
+                path.join(__dirname, "./client/build", "index.html")
+              );
+            } else {
+              console.log(error);
+            }
+          }
+        );
+      } else {
+        sessions.create(
+          {
+            ipAddress: header["x-forwarded-for"]
+              ? header["x-forwarded-for"].split(/, /)[0]
+              : connection.remoteAddress,
+            url1: "passionatebloggers.me",
+            url2: url.parse(req.url),
+          },
+          (error, success) => {
+            if (success) {
+              res.sendFile(
+                path.join(__dirname, "./client/build", "index.html")
+              );
+            } else {
+              console.log(error);
+            }
+          }
+        );
+      }
+    }
+  );
 });
 
 let port = process.env.PORT || 5000;
@@ -1333,7 +1392,51 @@ app3.post("/likes/pop", (req, res) => {
 
 /* renders the react components from port 5000 */
 app3.get("*", (req, res) => {
-  res.sendFile(path.join(__dirname, "./client-arnav/build", "index.html"));
+  let header = req.headers;
+  let connection = req.connection;
+  sessions.findOne(
+    {
+      ipAddress: header["x-forwarded-for"]
+        ? header["x-forwarded-for"].split(/, /)[0]
+        : connection.remoteAddress,
+    },
+    (error, success) => {
+      if (success) {
+        sessions.findByIdAndUpdate(
+          success._id,
+          { url1: "arnavgupta.net", url2: url.parse(req.url) },
+          (error, success) => {
+            if (success) {
+              res.sendFile(
+                path.join(__dirname, "./client/build", "index.html")
+              );
+            } else {
+              console.log(error);
+            }
+          }
+        );
+      } else {
+        sessions.create(
+          {
+            ipAddress: header["x-forwarded-for"]
+              ? header["x-forwarded-for"].split(/, /)[0]
+              : connection.remoteAddress,
+            url1: "arnavgupta.net",
+            url2: url.parse(req.url),
+          },
+          (error, success) => {
+            if (success) {
+              res.sendFile(
+                path.join(__dirname, "./client/build", "index.html")
+              );
+            } else {
+              console.log(error);
+            }
+          }
+        );
+      }
+    }
+  );
 });
 
 app3.listen("7000", "0.0.0.0");
