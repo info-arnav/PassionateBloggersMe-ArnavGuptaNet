@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import Skeleton from "react-loading-skeleton";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
@@ -10,8 +10,8 @@ import draftToHtml from "draftjs-to-html";
 import MetaTags from "react-meta-tags";
 import htmlToDraft from "html-to-draftjs";
 import axios from "axios";
-import Navigation from "../../elements/Navigation";
-import Wysiwyg from "../../elements/Wysiwyg";
+const Navigation = lazy(() => "../../elements/Navigation");
+const Wysiwyg = lazy(() => "../../elements/Wysiwyg");
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {
@@ -56,6 +56,13 @@ class Dashboard extends Component {
   }
 
   render() {
+    const renderLoader = () => (
+      <p>
+        <h2>
+          <Skeleton></Skeleton>
+        </h2>
+      </p>
+    );
     const { requested, sdata, editorState, inputValue } = this.state;
     const { data, loading } = this.state;
     const { user } = this.props.auth;
@@ -102,7 +109,9 @@ class Dashboard extends Component {
         </div>
         {loading ? (
           <div>
-            <Navigation />
+            <Suspense fallback={renderLoader()}>
+              <Navigation />
+            </Suspense>
             <main className="page registration-page">
               <section className="clean-block clean-form dark">
                 <h1>load</h1>
@@ -144,7 +153,9 @@ class Dashboard extends Component {
           <div>
             {sdata.confirmed == true ? (
               <div>
-                <Navigation />
+                <Suspense fallback={renderLoader()}>
+                  <Navigation />
+                </Suspense>
                 <main className="page registration-page">
                   <section className="clean-block clean-form dark">
                     <h1>load</h1>
@@ -194,15 +205,17 @@ class Dashboard extends Component {
                               convertToRaw(editorState.getCurrentContent())
                             )}
                           />
-                          <div class="wysiwyg">
-                            <Editor
-                              className="wsiwyg"
-                              editorState={editorState}
-                              wrapperClassName="demo-wrapper"
-                              editorClassName="demo-editor"
-                              onEditorStateChange={this.onEditorStateChange}
-                            />
-                          </div>
+                          <Suspense fallback={renderLoader()}>
+                            <div class="wysiwyg">
+                              <Editor
+                                className="wsiwyg"
+                                editorState={editorState}
+                                wrapperClassName="demo-wrapper"
+                                editorClassName="demo-editor"
+                                onEditorStateChange={this.onEditorStateChange}
+                              />
+                            </div>
+                          </Suspense>
                         </div>
                         <div className="form-group">
                           <button
@@ -219,7 +232,9 @@ class Dashboard extends Component {
               </div>
             ) : (
               <div>
-                <Navigation />
+                <Suspense fallback={renderLoader()}>
+                  <Navigation />
+                </Suspense>
                 <main className="page registration-page">
                   <section className="clean-block clean-form dark">
                     <h1>load</h1>
