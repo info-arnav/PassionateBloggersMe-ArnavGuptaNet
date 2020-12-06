@@ -486,7 +486,7 @@ app.post("/likes/pop", (req, res) => {
 });
 
 /* renders the react components from port 5000 */
-app.get("*", (req, res) => {
+app.get("*", function rootHandler(req, res) {
   let header = req.headers;
   let connection = req.connection;
   sessions.findOne(
