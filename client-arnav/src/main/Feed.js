@@ -109,7 +109,7 @@ class Feed extends Component {
             />
             <meta
               name="twitter:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.arnavgupta.net/logo.png"
             />
             <meta
               property="og:title"
@@ -118,7 +118,7 @@ class Feed extends Component {
             <meta property="og:type" content={`Feed`} />
             <meta
               property="og:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.arnavgupta.net/logo.png"
             />
           </MetaTags>
         </div>

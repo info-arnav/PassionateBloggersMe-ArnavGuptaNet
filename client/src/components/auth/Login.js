@@ -81,7 +81,7 @@ class Login extends Component {
             />
             <meta
               name="twitter:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.passionatebloggers.me/logo.png"
             />
             <meta
               property="og:title"
@@ -90,7 +90,7 @@ class Login extends Component {
             <meta property="og:type" content={`Login`} />
             <meta
               property="og:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.passionatebloggers.me/logo.png"
             />
           </MetaTags>
         </div>

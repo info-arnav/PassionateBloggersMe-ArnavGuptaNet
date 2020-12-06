@@ -48,7 +48,7 @@ const SiteMap = (props) => {
           />
           <meta
             name="twitter:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
             property="og:title"
@@ -57,7 +57,7 @@ const SiteMap = (props) => {
           <meta property="og:type" content={`User Friendly Site Map`} />
           <meta
             property="og:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>
       </div>

@@ -34,7 +34,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
           />
           <meta
             name="twitter:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.passionatebloggers.me/logo.png"
           />
           <meta
             property="og:title"
@@ -43,7 +43,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
           <meta property="og:type" content={`Contact`} />
           <meta
             property="og:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.passionatebloggers.me/logo.png"
           />
         </MetaTags>
       </div>

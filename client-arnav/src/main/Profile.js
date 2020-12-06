@@ -173,7 +173,7 @@ const Profile = (props) => {
             />
             <meta
               name="twitter:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.arnavgupta.net/logo.png"
             />
             <meta
               property="og:title"
@@ -182,7 +182,7 @@ const Profile = (props) => {
             <meta property="og:type" content={`Profile - ${data.name}`} />
             <meta
               property="og:image"
-              content={process.env.PUBLIC_URL + "/logo.png"}
+              content="https://www.arnavgupta.net/logo.png"
             />
           </MetaTags>
           <Navigation />
