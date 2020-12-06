@@ -94,7 +94,7 @@ const Single = (props) => {
               />
               <meta
                 name="twitter:image"
-                content={process.env.PUBLIC_URL + "/logo.png"}
+                content="https://www.passionatebloggers.me/logo.png"
               />
               <meta
                 property="og:title"
@@ -103,7 +103,7 @@ const Single = (props) => {
               <meta property="og:type" content={`Blog Post`} />
               <meta
                 property="og:image"
-                content={process.env.PUBLIC_URL + "/logo.png"}
+                content="https://www.passionatebloggers.me/logo.png"
               />
             </MetaTags>
           </div>

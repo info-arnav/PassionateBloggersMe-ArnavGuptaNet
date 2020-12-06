@@ -28,7 +28,7 @@ const License = () => {
           <meta property="og:url" content={`https://www.arnavgupta.net/feed`} />
           <meta
             name="twitter:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.arnavgupta.net/logo.png"
           />
           <meta
             property="og:title"
@@ -37,7 +37,7 @@ const License = () => {
           <meta property="og:type" content={`License`} />
           <meta
             property="og:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.arnavgupta.net/logo.png"
           />
         </MetaTags>
       </div>

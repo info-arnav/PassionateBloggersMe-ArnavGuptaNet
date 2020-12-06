@@ -50,7 +50,7 @@ const Home = (props) => {
           <meta property="og:url" content={`https://www.arnavgupta.net/feed`} />
           <meta
             name="twitter:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.arnavgupta.net/logo.png"
           />
           <meta
             property="og:title"
@@ -59,7 +59,7 @@ const Home = (props) => {
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"
-            content={process.env.PUBLIC_URL + "/logo.png"}
+            content="https://www.arnavgupta.net/logo.png"
           />
         </MetaTags>
       </div>
