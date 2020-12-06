@@ -45,7 +45,120 @@
 
 <body>
   <noscript>You need to enable JavaScript to run this app.</noscript>
-  <div id="root" itemprop="main">Welcome</div>
+  <div id="root" itemprop="main">
+    <div class="loading">
+      <div class="pills"></div>
+      <div class="paco">
+        <div class="head"></div>
+      </div>
+    </div>
+    <style>
+      .loading {
+        overflow: hidden;
+        height: 500px;
+      }
+
+      .pills {
+        position: absolute;
+        width: 100%;
+        height: 10em;
+        left: 0;
+        top: 55px;
+        background: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='10' height='10'><circle cx='9' cy='5' r='1' /></svg>") repeat-x center;
+        background-size: contain;
+      }
+
+      .paco {
+        position: relative;
+        left: 0;
+        top: 50px;
+        height: 10em;
+        animation: pacoMoving 5s linear infinite;
+
+        z-index: 1;
+      }
+
+      .paco::before {
+        content: '';
+        position: absolute;
+        width: 10000px;
+        height: 10em;
+        right: 5em;
+        background: white;
+
+        z-index: 0;
+      }
+
+      .paco .head {
+        position: absolute;
+        width: 10em;
+        height: 10em;
+        transform-origin: center center;
+        right: 0;
+
+        transform: rotate(95deg);
+        animation: pacoEatingBody 0.3s linear alternate infinite;
+      }
+
+      .paco .head::before {
+        content: "";
+        position: absolute;
+        width: 5em;
+        height: 10em;
+        left: 0;
+        border-radius: 5em 0 0 5em;
+        transform-origin: right center;
+
+        transform: rotate(350deg);
+        animation: pacoEatingMouth 0.3s linear alternate infinite;
+      }
+
+      .paco .head::after {
+        content: "";
+        position: absolute;
+        width: 5em;
+        height: 10em;
+        left: 5em;
+        border-radius: 0 5em 5em 0;
+      }
+
+      .paco .head::before,
+      .paco .head::after {
+        /*background-image: radial-gradient(45px 45px 45deg, circle cover, yellow 0%, orange 100%, red 95%);*/
+        background-color: #ee0;
+      }
+
+      @keyframes pacoEatingBody {
+        from {
+          transform: rotate(120deg)
+        }
+
+        to {
+          transform: rotate(95deg)
+        }
+      }
+
+      @keyframes pacoEatingMouth {
+        from {
+          transform: rotate(300deg)
+        }
+
+        to {
+          transform: rotate(350deg)
+        }
+      }
+
+      @keyframes pacoMoving {
+        from {
+          left: -100%;
+        }
+
+        to {
+          left: 200px;
+        }
+      }
+    </style>
+  </div>
   <!--
       This HTML file is a template.
       If you open it directly in the browser, you will see an empty page.
