@@ -965,9 +965,6 @@ app3.post("/likes/pop", (req, res) => {
     )
     .then((e) => res.redirect(body.path));
 });
-app3.get("/debug-sentry", function mainHandler(req, res) {
-  throw new Error("My first Sentry error!");
-});
 
 /* renders the react components from port 5000 */
 app3.get("*", (req, res) => {
