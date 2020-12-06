@@ -102,7 +102,7 @@ class Login extends Component {
           </MetaTags>
         </div>
         <Suspense fallback={renderLoader()}>
-          <Navigation />
+          <Navigation></Navigation>
         </Suspense>
         <h1>load</h1>
         <main className="page login-page">
