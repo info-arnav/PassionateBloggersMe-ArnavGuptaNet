@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
-import Pacman from "./pacman";
+import "./loading.css";
 import {
   BrowserRouter as Router,
   Route,
@@ -54,11 +54,25 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     const renderLoader = () => (
-      <Pacman
-        size="60"
-        color="#6b5ce7"
-        css={{ width: "260px !important", height: "130px !important" }}
-      />
+      <div class="loader">
+        <div class="loader-inner">
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+          <div class="loader-line-wrap">
+            <div class="loader-line"></div>
+          </div>
+        </div>
+      </div>
     );
     return (
       <Provider store={store}>
