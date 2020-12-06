@@ -1,5 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
-import BarLoader from "@bit/davidhu2000.react-spinners.bar-loader";
+import Pacman from "./pacman";
 import {
   BrowserRouter as Router,
   Route,
@@ -53,7 +53,13 @@ if (localStorage.jwtToken) {
 }
 class App extends Component {
   render() {
-    const renderLoader = () => <BarLoader />;
+    const renderLoader = () => (
+      <Pacman
+        size="60"
+        color="#6b5ce7"
+        css={{ width: "260px !important", height: "130px !important" }}
+      />
+    );
     return (
       <Provider store={store}>
         <Router>

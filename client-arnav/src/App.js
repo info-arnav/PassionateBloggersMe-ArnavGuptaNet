@@ -7,7 +7,6 @@ import {
 } from "react-router-dom";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
-import BarLoader from "@bit/davidhu2000.react-spinners.bar-loader";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
@@ -15,6 +14,7 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 
 import "./App.css";
 import Skeleton from "react-loading-skeleton";
+import Pacman from "./pacman";
 const Home = lazy(() => import("./main/Home"));
 const Footer = lazy(() => import("./elements/Footer"));
 const Event = lazy(() => import("./main/Event"));
@@ -52,7 +52,13 @@ if (localStorage.jwtToken) {
 }
 class App extends Component {
   render() {
-    const renderLoader = () => <BarLoader />;
+    const renderLoader = () => (
+      <Pacman
+        size="60"
+        color="#6b5ce7"
+        css={{ width: "260px !important", height: "130px !important" }}
+      />
+    );
     return (
       <Provider store={store}>
         <Router>
