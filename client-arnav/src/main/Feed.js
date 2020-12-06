@@ -109,7 +109,7 @@ class Feed extends Component {
             />
             <meta
               name="twitter:image"
-              content="https://www.arnavgupta.net/logo.png"
+              content={process.env.PUBLIC_URL + "/logo.png"}
             />
             <meta
               property="og:title"
@@ -118,7 +118,7 @@ class Feed extends Component {
             <meta property="og:type" content={`Feed`} />
             <meta
               property="og:image"
-              content="https://www.arnavgupta.net/logo.png"
+              content={process.env.PUBLIC_URL + "/logo.png"}
             />
           </MetaTags>
         </div>
@@ -218,7 +218,10 @@ class Feed extends Component {
                                 height="305.76px"
                                 class="rounded img-fluid"
                                 id="yaya"
-                                src="https://www.arnavgupta.net/blog-teaser-default-full_5.jpg"
+                                src={
+                                  process.env.PUBLIC_URL +
+                                  "/blog-teaser-default-full_5.jpg"
+                                }
                               />
                             </div>
                           )}

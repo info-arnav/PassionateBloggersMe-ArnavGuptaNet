@@ -55,7 +55,7 @@ class App extends Component {
     const renderLoader = () => (
       <img
         alt="loading"
-        src="https://www.passionatebloggers.me/loading.gif/"
+        src={process.env.PUBLIC_URL + "/loading.gif"}
         style={{
           resizeMode: "contain",
           height: "100%",

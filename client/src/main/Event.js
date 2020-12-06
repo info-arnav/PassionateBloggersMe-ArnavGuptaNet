@@ -53,7 +53,7 @@ const Event = (props) => {
           />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
           <meta
             property="og:title"
@@ -62,7 +62,7 @@ const Event = (props) => {
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
         </MetaTags>
       </div>
@@ -128,7 +128,7 @@ const Event = (props) => {
                               height="305.76px"
                               class="rounded img-fluid"
                               id="yaya"
-                              src="https://www.passionatebloggers.me/blog-teaser-default-full_5.jpg"
+                              src="%PUBLIC_URL%/blog-teaser-default-full_5.jpg"
                             />
                           </div>
                         )}

@@ -34,7 +34,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
           />
           <meta
             name="twitter:image"
-            content="https://www.arnavgupta.net/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
           <meta
             property="og:title"
@@ -43,7 +43,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
           <meta property="og:type" content={`About`} />
           <meta
             property="og:image"
-            content="https://www.arnavgupta.net/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
         </MetaTags>
       </div>

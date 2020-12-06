@@ -31,7 +31,7 @@ const License = () => {
           />
           <meta
             name="twitter:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
           <meta
             property="og:title"
@@ -40,7 +40,7 @@ const License = () => {
           <meta property="og:type" content={`License`} />
           <meta
             property="og:image"
-            content="https://www.passionatebloggers.me/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
         </MetaTags>
       </div>

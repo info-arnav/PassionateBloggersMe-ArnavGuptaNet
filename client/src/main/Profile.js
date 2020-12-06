@@ -169,11 +169,11 @@ const Profile = (props) => {
 
             <meta
               property="og:url"
-              content={`https://www.passionatebloggers.me/profiles&value=${data.name}`}
+              content={`https://www.arnavgupta.net/profiles&value=${data.name}`}
             />
             <meta
               name="twitter:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.arnavgupta.net/logo.png"
             />
             <meta
               property="og:title"
@@ -182,7 +182,7 @@ const Profile = (props) => {
             <meta property="og:type" content={`Profile - ${data.name}`} />
             <meta
               property="og:image"
-              content="https://www.passionatebloggers.me/logo.png"
+              content="https://www.arnavgupta.net/logo.png"
             />
           </MetaTags>
           <Navigation />
@@ -343,7 +343,10 @@ const Profile = (props) => {
                               height="305.76px"
                               class="rounded img-fluid"
                               id="yaya"
-                              src="https://www.passionatebloggers.me/blog-teaser-default-full_5.jpg"
+                              src={
+                                process.env.PUBLIC_URL +
+                                "/blog-teaser-default-full_5.jpg"
+                              }
                             />
                           </div>
                         )}

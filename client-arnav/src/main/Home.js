@@ -50,7 +50,7 @@ const Home = (props) => {
           <meta property="og:url" content={`https://www.arnavgupta.net/feed`} />
           <meta
             name="twitter:image"
-            content="https://www.arnavgupta.net/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
           <meta
             property="og:title"
@@ -59,7 +59,7 @@ const Home = (props) => {
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"
-            content="https://www.arnavgupta.net/logo.png"
+            content={process.env.PUBLIC_URL + "/logo.png"}
           />
         </MetaTags>
       </div>
@@ -127,7 +127,10 @@ const Home = (props) => {
                                       height="305.76px"
                                       class="rounded img-fluid"
                                       id="yaya"
-                                      src="https://www.arnavgupta.net/blog-teaser-default-full_5.jpg"
+                                      src={
+                                        process.env.PUBLIC_URL +
+                                        "/blog-teaser-default-full_5.jpg"
+                                      }
                                     />
                                   </div>
                                 )}

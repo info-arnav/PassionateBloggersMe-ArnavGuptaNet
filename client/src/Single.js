@@ -94,7 +94,7 @@ const Single = (props) => {
               />
               <meta
                 name="twitter:image"
-                content="https://www.passionatebloggers.me/logo.png"
+                content={process.env.PUBLIC_URL + "/logo.png"}
               />
               <meta
                 property="og:title"
@@ -103,7 +103,7 @@ const Single = (props) => {
               <meta property="og:type" content={`Blog Post`} />
               <meta
                 property="og:image"
-                content="https://www.passionatebloggers.me/logo.png"
+                content={process.env.PUBLIC_URL + "/logo.png"}
               />
             </MetaTags>
           </div>
@@ -124,7 +124,7 @@ const Single = (props) => {
                       class="post-image"
                       style={{
                         backgroundImage:
-                          "url('https://www.passionatebloggers.me/blog-teaser-default-full_5.jpg')",
+                          "url('%PUBLIC_URL%/blog-teaser-default-full_5.jpg')",
                       }}
                     />
                   )}

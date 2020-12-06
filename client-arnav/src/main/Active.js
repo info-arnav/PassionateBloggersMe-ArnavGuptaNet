@@ -126,7 +126,7 @@ class Active extends Component {
             />
             <meta
               name="twitter:image"
-              content="https://www.arnavgupta.net/logo.png"
+              content={process.env.PUBLIC_URL + "/logo.png"}
             />
             <meta
               property="og:title"
@@ -135,7 +135,7 @@ class Active extends Component {
             <meta property="og:type" content={`Profile`} />
             <meta
               property="og:image"
-              content="https://www.arnavgupta.net/logo.png"
+              content={process.env.PUBLIC_URL + "/logo.png"}
             />
           </MetaTags>
         </div>
