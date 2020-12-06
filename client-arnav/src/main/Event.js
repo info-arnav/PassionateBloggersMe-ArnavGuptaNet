@@ -1,12 +1,20 @@
-import React, { useEffect, useState, Component } from "react";
-import Navigation from "../elements/Navigation";
+import React, { useEffect, useState, Component, lazy, Suspense } from "react";
 import Skeleton from "react-loading-skeleton";
 import PropTypes from "prop-types";
 import MetaTags from "react-meta-tags";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
+const Navigation = lazy(() => import("../elements/Navigation"));
+
 const Event = (props) => {
+  const renderLoader = () => (
+    <p>
+      <h2>
+        <Skeleton></Skeleton>
+      </h2>
+    </p>
+  );
   const { user } = props.auth;
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -68,7 +76,9 @@ const Event = (props) => {
       </div>
       {loading ? (
         <div>
-          <Navigation />
+          <Suspense fallback={renderLoader()}>
+            <Navigation />
+          </Suspense>
           <main className="page blog-post-list">
             <section className="clean-block clean-blog-list dark">
               <h1>load</h1>
@@ -101,7 +111,9 @@ const Event = (props) => {
         </div>
       ) : (
         <div>
-          <Navigation />
+          <Suspense fallback={renderLoader()}>
+            <Navigation />
+          </Suspense>
           <main className="page blog-post-list">
             <section className="clean-block clean-blog-list dark">
               <h1>load</h1>

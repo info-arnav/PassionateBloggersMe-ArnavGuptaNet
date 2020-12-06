@@ -1,13 +1,20 @@
-import React, { useEffect, useState } from "react";
-import Footer from "../elements/Footer";
+import React, { useEffect, useState, lazy, Suspense } from "react";
 import MetaTags from "react-meta-tags";
-import Navigation from "../elements/Navigation";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
+const Navigation = lazy(() => import("../elements/Navigation"));
+
 const Home = (props) => {
+  const renderLoader = () => (
+    <p>
+      <h2>
+        <Skeleton></Skeleton>
+      </h2>
+    </p>
+  );
   const [loading, setLoading] = useState(true);
   const [userData, userUpdater] = useState({ following: [] });
   const [postData, postUpdater] = useState({});
@@ -63,7 +70,9 @@ const Home = (props) => {
           />
         </MetaTags>
       </div>
-      <Navigation />
+      <Suspense fallback={renderLoader()}>
+        <Navigation />
+      </Suspense>
       {user.name ? (
         loading ? (
           <div>

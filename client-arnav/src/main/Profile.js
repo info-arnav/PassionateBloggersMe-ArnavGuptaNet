@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useState, Component, lazy, Suspense } from "react";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
@@ -6,9 +6,16 @@ import { logoutUser } from "../actions/authActions";
 import MetaTags from "react-meta-tags";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import Navigation from "../elements/Navigation";
+const Navigation = lazy(() => import("../elements/Navigation"));
 
 const Profile = (props) => {
+  const renderLoader = () => (
+    <p>
+      <h2>
+        <Skeleton></Skeleton>
+      </h2>
+    </p>
+  );
   const { user } = props.auth;
   const [nndata, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -69,7 +76,9 @@ const Profile = (props) => {
       <div></div>
       {loading ? (
         <div>
-          <Navigation />
+          <Suspense fallback={renderLoader()}>
+            <Navigation />
+          </Suspense>
           <main className="page">
             <section className="clean-block about-us">
               <div className="container">
@@ -185,7 +194,9 @@ const Profile = (props) => {
               content="https://www.arnavgupta.net/logo.png"
             />
           </MetaTags>
-          <Navigation />
+          <Suspense fallback={renderLoader()}>
+            <Navigation />
+          </Suspense>
           <main className="page">
             <section className="clean-block about-us">
               <div className="container">

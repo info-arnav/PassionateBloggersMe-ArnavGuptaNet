@@ -1,4 +1,4 @@
-import React, { useEffect, useState, Component } from "react";
+import React, { useEffect, useState, Component, lazy, Suspense } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
 import MetaTags from "react-meta-tags";
@@ -7,7 +7,7 @@ import Button from "react-bootstrap/Button";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link } from "react-router-dom";
-import Navigation from "../elements/Navigation";
+const Navigation = lazy(() => import("../elements/Navigation"));
 
 class Active extends Component {
   constructor() {
@@ -82,6 +82,13 @@ class Active extends Component {
   }
 
   render() {
+    const renderLoader = () => (
+      <p>
+        <h2>
+          <Skeleton></Skeleton>
+        </h2>
+      </p>
+    );
     const { data, show, loading } = this.state;
     const {
       datass,
@@ -142,7 +149,9 @@ class Active extends Component {
         {loading ? (
           <div>
             {" "}
-            <Navigation />
+            <Suspense fallback={renderLoader()}>
+              <Navigation />
+            </Suspense>
             <main className="page">
               <section className="clean-block about-us">
                 <div className="container">
@@ -239,7 +248,9 @@ class Active extends Component {
         ) : (
           <div>
             {" "}
-            <Navigation />
+            <Suspense fallback={renderLoader()}>
+              <Navigation />
+            </Suspense>
             <main className="page">
               <section className="clean-block about-us">
                 <div className="container">
