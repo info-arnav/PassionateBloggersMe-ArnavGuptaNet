@@ -138,17 +138,30 @@
     <loc>https://www.arnavgupta.net/posted/@username/title/5fada80bb0d3700458c7f291</loc>
     <changefreq>monthly</changefreq>
     <priority>1.0</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>https://www.arnavgupta.net/all/posts</loc>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>https://www.arnavgupta.net/user/profile/data/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
-  </url><url>
+  </url>
+  <url>
     <loc>https://www.arnavgupta.net/single/post/</loc>
     <changefreq>monthly</changefreq>
     <priority>0.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arnavgupta.net/profiles&amp;value=abcd@abcd.abcd</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
+  </url>
+  <url>
+    <loc>https://www.arnavgupta.net/profiles&amp;value=nice</loc>
+    <changefreq>monthly</changefreq>
+    <priority>1.0</priority>
   </url>
 </urlset>
