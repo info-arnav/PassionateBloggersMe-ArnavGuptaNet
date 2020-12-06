@@ -76,20 +76,6 @@
   }();*/
 </script>
 </script>
-<script src="https://browser.sentry-cdn.com/5.28.0/bundle.min.js"
-  integrity="sha384-1HcgUzJmxPL9dRnZD2wMIj5+xsJfHS+WR+pT2yJNEldbOr9ESTzgHMQOcsb2yyDl" crossorigin="anonymous"></script>
-<script>
-  Sentry.init({
-    dsn: "https://c26ed687b6cc4a2a9b8adef70f3372f7@o487448.ingest.sentry.io/5546239",
-    beforeSend(event, hint) {
-      // Check if it is an exception, and if so, show the report dialog
-      if (event.exception) {
-        Sentry.showReportDialog({ eventId: event.event_id });
-      }
-      return event;
-    },
-  });
-</script>
 <script type="application/ld+json">
   {
     "@context": "http://schema.org",
