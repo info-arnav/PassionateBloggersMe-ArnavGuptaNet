@@ -1,4 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
+import BarLoader from "@bit/davidhu2000.react-spinners.bar-loader";
 import {
   BrowserRouter as Router,
   Route,
@@ -52,17 +53,7 @@ if (localStorage.jwtToken) {
 }
 class App extends Component {
   render() {
-    const renderLoader = () => (
-      <img
-        alt="loading"
-        src={process.env.PUBLIC_URL + "/loading.gif"}
-        style={{
-          resizeMode: "contain",
-          height: "100%",
-          width: "100%",
-        }}
-      ></img>
-    );
+    const renderLoader = () => <BarLoader />;
     return (
       <Provider store={store}>
         <Router>
