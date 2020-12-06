@@ -218,7 +218,7 @@ class Feed extends Component {
                                 height="305.76px"
                                 class="rounded img-fluid"
                                 id="yaya"
-                                src="https://www.passionatebloggers.me/blog-teaser-default-full_5.jpg"
+                                src="%PUBLIC_URL%/blog-teaser-default-full_5.jpg"
                               />
                             </div>
                           )}
