@@ -5,6 +5,8 @@ let bodyParser = require("body-parser");
 let xml2js = require("xml2js");
 let mailgun = require("mailgun-js");
 let path = require("path");
+var Sentry = require("@sentry/node");
+var Tracing = require("@sentry/tracing");
 let passport = require("passport");
 let AWS = require("aws-sdk");
 let fs = require("fs");
@@ -100,6 +102,25 @@ app.use(passport.initialize());
 
 // Passport config
 require("./config/passport")(passport);
+
+Sentry.init({
+  dsn:
+    "https://33ec29c28a1647e59e69b8ddf5878c64@o487448.ingest.sentry.io/5546227",
+  integrations: [
+    // enable HTTP calls tracing
+    new Sentry.Integrations.Http({ tracing: true }),
+    // enable Express.js middleware tracing
+    new Tracing.Integrations.Express({ app }),
+  ],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
+
+app.use(Sentry.Handlers.requestHandler());
+// TracingHandler creates a trace for every incoming request
+app.use(Sentry.Handlers.tracingHandler());
 
 //invites
 app.post("/request/invite", (req, res) => {
@@ -518,6 +539,13 @@ app.get("*", (req, res) => {
 
 let port = process.env.PORT || 5000;
 let sport = process.env.PORT || 443;
+app.use(Sentry.Handlers.errorHandler());
+app.use(function onError(err, req, res, next) {
+  // The error id is attached to `res.sentry` to be returned
+  // and optionally displayed to the user for support.
+  res.statusCode = 500;
+  res.end(res.sentry + "\n");
+});
 
 app.listen("3000", "0.0.0.0");
 let applicationParams = "/";
