@@ -1,12 +1,11 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 import { Link } from "react-router-dom";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
 import MetaTags from "react-meta-tags";
-import Skeleton from "react-loading-skeleton";
-const Navigation = lazy(() => import("../../elements/Navigation"));
+import Navigation from "../../elements/Navigation";
 
 class Login extends Component {
   constructor() {
@@ -54,13 +53,7 @@ class Login extends Component {
 
   render() {
     const { errors } = this.state;
-    const renderLoader = () => (
-      <p>
-        <h2>
-          <Skeleton></Skeleton>
-        </h2>
-      </p>
-    );
+
     return (
       <div>
         <div>
@@ -101,9 +94,7 @@ class Login extends Component {
             />
           </MetaTags>
         </div>
-        <Suspense fallback={renderLoader()}>
-          <Navigation></Navigation>
-        </Suspense>
+        <Navigation />
         <h1>load</h1>
         <main className="page login-page">
           <section className="clean-block clean-form dark">

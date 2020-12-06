@@ -1,16 +1,9 @@
-import React, { lazy, Suspense } from "react";
-import Skeleton from "react-loading-skeleton";
+import React from "react";
 import MetaTags from "react-meta-tags";
-const Navigation = lazy(() => import("../elements/Navigation"));
+import Footer from "../elements/Footer";
+import Navigation from "../elements/Navigation";
 
 const About = () => {
-  const renderLoader = () => (
-    <p>
-      <h2>
-        <Skeleton></Skeleton>
-      </h2>
-    </p>
-  );
   return (
     <div>
       <div>
@@ -54,9 +47,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
           />
         </MetaTags>
       </div>
-      <Suspense fallback={renderLoader()}>
-        <Navigation />
-      </Suspense>
+      <Navigation />
       <h1>load</h1>
       <main className="page landing-page">
         <section className="clean-block clean-hero" id="homeImage">

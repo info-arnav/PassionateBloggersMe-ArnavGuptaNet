@@ -1,17 +1,9 @@
-import React, { lazy, Suspense } from "react";
-import Skeleton from "react-loading-skeleton";
+import React from "react";
+import Navigation from "../elements/Navigation";
 import MetaTags from "react-meta-tags";
-
-const Navigation = lazy(() => import("../elements/Navigation"));
+import Footer from "../elements/Footer";
 
 const Contact = () => {
-  const renderLoader = () => (
-    <p>
-      <h2>
-        <Skeleton></Skeleton>
-      </h2>
-    </p>
-  );
   return (
     <div>
       <div>
@@ -55,9 +47,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
           />
         </MetaTags>
       </div>
-      <Suspense fallback={renderLoader()}>
-        <Navigation />
-      </Suspense>
+      <Navigation />
       <main className="page contact-us-page">
         <section className="clean-block clean-form dark">
           <div className="container">

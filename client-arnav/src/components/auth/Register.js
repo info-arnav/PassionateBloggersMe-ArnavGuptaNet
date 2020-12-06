@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 import ReCAPTCHA from "react-google-recaptcha";
 import Recaptcha from "react-grecaptcha";
 import { Link, withRouter } from "react-router-dom";
@@ -7,8 +7,7 @@ import MetaTags from "react-meta-tags";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
-import Skeleton from "react-loading-skeleton";
-const Navigation = lazy(() => import("../../elements/Navigation"));
+import Navigation from "../../elements/Navigation";
 
 class Register extends Component {
   constructor() {
@@ -59,13 +58,6 @@ class Register extends Component {
   };
 
   render() {
-    const renderLoader = () => (
-      <p>
-        <h2>
-          <Skeleton></Skeleton>
-        </h2>
-      </p>
-    );
     const { errors, recapcha } = this.state;
 
     return (
@@ -108,9 +100,7 @@ class Register extends Component {
             />
           </MetaTags>
         </div>
-        <Suspense fallback={renderLoader()}>
-          <Navigation />
-        </Suspense>
+        <Navigation />
         <h1>load</h1>
         <main className="page registration-page">
           <section className="clean-block clean-form dark">

@@ -1,4 +1,4 @@
-import React, { Component, lazy, Suspense } from "react";
+import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
@@ -11,9 +11,10 @@ import { connect } from "react-redux";
 import { convertFromRaw, ContentState } from "draft-js";
 import { EditorState, convertToRaw } from "draft-js";
 import { logoutUser } from "../actions/authActions";
+import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
-const Navigation = lazy(() => import("../elements/Navigation"));
+
 class Feed extends Component {
   onLogoutClick = (e) => {
     e.preventDefault();
@@ -66,13 +67,6 @@ class Feed extends Component {
   }
 
   render() {
-    const renderLoader = () => (
-      <p>
-        <h2>
-          <Skeleton></Skeleton>
-        </h2>
-      </p>
-    );
     const { user } = this.props.auth;
     let {
       show,
@@ -130,9 +124,7 @@ class Feed extends Component {
         </div>
         {loading ? (
           <div>
-            <Suspense fallback={renderLoader()}>
-              <Navigation />
-            </Suspense>
+            <Navigation />
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
                 <h1>load</h1>
@@ -199,9 +191,7 @@ class Feed extends Component {
           </div>
         ) : (
           <div>
-            <Suspense fallback={renderLoader()}>
-              <Navigation />
-            </Suspense>
+            <Navigation />
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
                 <h1>load</h1>

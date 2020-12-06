@@ -1,4 +1,4 @@
-import React, { Component } from "react";
+import React, { Component, lazy, Suspense } from "react";
 import {
   BrowserRouter as Router,
   Route,
@@ -11,25 +11,25 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
-
-import Register from "./components/auth/Register";
-import Login from "./components/auth/Login";
 import PrivateRoute from "./components/private-route/PrivateRoute";
-import Dashboard from "./components/dashboard/Dashboard";
 
 import "./App.css";
-import Home from "./main/Home";
-import Footer from "./elements/Footer";
-import Event from "./main/Event";
-import Contact from "./main/Contact";
-import Feed from "./main/Feed";
-import Single from "./Single";
-import Profile from "./main/Profile";
-import SiteMap from "./main/SiteMap";
-import Active from "./main/Active";
-import NotFound from "./NotFound";
-import About from "./main/About";
-import License from "./main/License";
+import Skeleton from "react-loading-skeleton";
+const Home = lazy(() => import("./main/Home"));
+const Footer = lazy(() => import("./elements/Footer"));
+const Event = lazy(() => import("./main/Event"));
+const Contact = lazy(() => import("./main/Contact"));
+const Feed = lazy(() => import("./main/Feed"));
+const Single = lazy(() => import("./Single"));
+const Profile = lazy(() => import("./main/Profile"));
+const Register = lazy(() => import("./components/auth/Register"));
+const Login = lazy(() => import("./components/auth/Login"));
+const Dashboard = lazy(() => import("./components/dashboard/Dashboard"));
+const SiteMap = lazy(() => import("./main/SiteMap"));
+const Active = lazy(() => import("./main/Active"));
+const NotFound = lazy(() => import("./NotFound"));
+const About = lazy(() => import("./main/About"));
+const License = lazy(() => import("./main/License"));
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -52,39 +52,55 @@ if (localStorage.jwtToken) {
 }
 class App extends Component {
   render() {
+    const renderLoader = () => (
+      <img
+        alt="loading"
+        src="https://www.passionatebloggers.me/loading.gif/"
+        style={{
+          resizeMode: "contain",
+          height: "100%",
+          width: "100%",
+        }}
+      ></img>
+    );
     return (
       <Provider store={store}>
         <Router>
-          <div className="App">
-            <Switch>
-              <Route exact path="/" component={Home} />
-              <Route path="/license" component={License} />
-              <Route path="/index" component={Home} />
-              <Route path="/sitemap" component={SiteMap} />
-              <Route exact path="/register" component={Register} />
-              <Route exact path="/registration" component={Register} />
-              <Route exact path="/login" component={Login} />
-              <Route path="/projects" component={Event} />
-              <Route path="/profile:id" component={Profile} />
-              <Route path="/contact" component={Contact} />
-              <Route path="/contact-us" component={Contact} />
-              <Route path="/about" component={About} />
-              <Route path="/posted/:username/:subject/:id" component={Single} />
-              <Route
-                path="/error-page-not-found"
-                component={NotFound}
-                status={404}
-              />
+          <Suspense fallback={renderLoader()}>
+            <div className="App">
               <Switch>
-                <PrivateRoute exact path="/active" component={Active} />
-                <PrivateRoute exact path="/dashboard" component={Dashboard} />
-                <PrivateRoute exact path="/feed" component={Feed} />
+                <Route exact path="/" component={Home} />
+                <Route path="/license" component={License} />
+                <Route path="/index" component={Home} />
+                <Route path="/sitemap" component={SiteMap} />
+                <Route exact path="/register" component={Register} />
+                <Route exact path="/registration" component={Register} />
+                <Route exact path="/login" component={Login} />
+                <Route path="/projects" component={Event} />
+                <Route path="/profile:id" component={Profile} />
+                <Route path="/contact" component={Contact} />
+                <Route path="/contact-us" component={Contact} />
+                <Route path="/about" component={About} />
+                <Route
+                  path="/posted/:username/:subject/:id"
+                  component={Single}
+                />
+                <Route
+                  path="/error-page-not-found"
+                  component={NotFound}
+                  status={404}
+                />
+                <Switch>
+                  <PrivateRoute exact path="/active" component={Active} />
+                  <PrivateRoute exact path="/dashboard" component={Dashboard} />
+                  <PrivateRoute exact path="/feed" component={Feed} />
+                  <Redirect to="/error-page-not-found" />
+                </Switch>
                 <Redirect to="/error-page-not-found" />
               </Switch>
-              <Redirect to="/error-page-not-found" />
-            </Switch>
-            <Footer />
-          </div>
+              <Footer />
+            </div>
+          </Suspense>
         </Router>
       </Provider>
     );

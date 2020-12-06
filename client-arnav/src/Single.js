@@ -1,5 +1,6 @@
-import React, { useEffect, useState, lazy, Suspense } from "react";
+import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
+import Navigation from "./elements/Navigation";
 import { useParams } from "react-router-dom";
 import MetaTags from "react-meta-tags";
 import PropTypes from "prop-types";
@@ -7,15 +8,7 @@ import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
 import Axios from "axios";
 
-const Navigation = lazy(() => import("./elements/Navigation"));
 const Single = (props) => {
-  const renderLoader = () => (
-    <p>
-      <h3>
-        <Skeleton />
-      </h3>
-    </p>
-  );
   const { user } = props.auth;
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
@@ -41,9 +34,7 @@ const Single = (props) => {
     <div>
       {loading ? (
         <div>
-          <Suspense fallback={renderLoader()}>
-            <Navigation></Navigation>
-          </Suspense>
+          <Navigation />
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
               <div className="container">
@@ -116,9 +107,7 @@ const Single = (props) => {
               />
             </MetaTags>
           </div>
-          <Suspense fallback={renderLoader()}>
-            <Navigation></Navigation>
-          </Suspense>
+          <Navigation />
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
               <div className="container">

@@ -53,11 +53,15 @@ if (localStorage.jwtToken) {
 class App extends Component {
   render() {
     const renderLoader = () => (
-      <p>
-        <h2>
-          <Skeleton></Skeleton>
-        </h2>
-      </p>
+      <img
+        alt="loading"
+        src="https://www.arnavgupta.net/loading.gif/"
+        style={{
+          resizeMode: "contain",
+          height: "100%",
+          width: "100%",
+        }}
+      ></img>
     );
     return (
       <Provider store={store}>

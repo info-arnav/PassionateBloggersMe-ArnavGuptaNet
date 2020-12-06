@@ -1,16 +1,9 @@
-import React, { lazy, Suspense } from "react";
-import Skeleton from "react-loading-skeleton";
+import React from "react";
 import MetaTags from "react-meta-tags";
-const Navigation = lazy(() => import("../elements/Navigation"));
+import Footer from "../elements/Footer";
+import Navigation from "../elements/Navigation";
 
 const License = () => {
-  const renderLoader = () => (
-    <p>
-      <h2>
-        <Skeleton></Skeleton>
-      </h2>
-    </p>
-  );
   return (
     <div>
       <div>
@@ -48,9 +41,7 @@ const License = () => {
           />
         </MetaTags>
       </div>
-      <Suspense fallback={renderLoader()}>
-        <Navigation />
-      </Suspense>
+      <Navigation />
       <h1>load</h1>
       <main className="page landing-page">
         <section className="clean-block about-us">
