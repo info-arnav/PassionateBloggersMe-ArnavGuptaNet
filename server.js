@@ -484,9 +484,6 @@ app.post("/likes/pop", (req, res) => {
     )
     .then((e) => res.redirect(body.path));
 });
-app.get("/debug-sentry", function mainHandler(req, res) {
-  throw new Error("My first Sentry error!");
-});
 /* renders the react components from port 5000 */
 app.get("*", (req, res) => {
   let header = req.headers;
@@ -558,6 +555,25 @@ let mongoosePort =
   "mongodb+srv://Arnav:Arnav300804@cluster0.ahuqv.mongodb.net/health?retryWrites=true&w=majority";
 
 var app3 = express();
+
+Sentry.init({
+  dsn:
+    "https://c26ed687b6cc4a2a9b8adef70f3372f7@o487448.ingest.sentry.io/5546239",
+  integrations: [
+    // enable HTTP calls tracing
+    new Sentry.Integrations.Http({ tracing: true }),
+    // enable Express.js middleware tracing
+    new Tracing.Integrations.Express({ app3 }),
+  ],
+
+  // We recommend adjusting this value in production, or using tracesSampler
+  // for finer control
+  tracesSampleRate: 1.0,
+});
+
+app3.use(Sentry.Handlers.requestHandler());
+// TracingHandler creates a trace for every incoming request
+app3.use(Sentry.Handlers.tracingHandler());
 
 app3.use(compression());
 
@@ -1000,5 +1016,12 @@ app3.get("*", (req, res) => {
       }
     }
   );
+});
+app3.use(Sentry.Handlers.errorHandler());
+app3.use(function onError(err, req, res, next) {
+  // The error id is attached to `res.sentry` to be returned
+  // and optionally displayed to the user for support.
+  res.statusCode = 500;
+  res.end(res.sentry + "\n");
 });
 app3.listen("7000", "0.0.0.0");
