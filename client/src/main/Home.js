@@ -31,7 +31,10 @@ const Home = (props) => {
       <div>
         <Helmet>
           <title>{`Infinity - The place where thoughts expand`}</title>
-          <meta name="twitter:title" content={`Infinity - The place where thoughts expand`} />
+          <meta
+            name="twitter:title"
+            content={`Infinity - The place where thoughts expand`}
+          />
           <meta
             name="description"
             content="Infinity is a platform for various bloggers to share their posts with various people"
@@ -53,7 +56,10 @@ const Home = (props) => {
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-          <meta property="og:title" content={`Infinity - Home`} />
+          <meta
+            property="og:title"
+            content={`Infinity - The place were thoughts expand`}
+          />
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"

@@ -25,7 +25,10 @@ const License = () => {
             name="twitter:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-          <meta property="og:title" content={`Infinity - Home`} />
+          <meta
+            property="og:title"
+            content={`Infinity - The place were thoughts expand`}
+          />
           <meta property="og:type" content={`License`} />
           <meta
             property="og:image"
