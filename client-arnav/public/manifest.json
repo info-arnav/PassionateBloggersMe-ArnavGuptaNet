@@ -1,0 +1,31 @@
+{
+  "short_name": "Infinity",
+  "name": "Infinity",
+  "description": "Infinity - The place where thoughts expand",
+  "icons": [
+    {
+      "src": "logo.png",
+      "purpose": "any maskable",
+      "type": "image/png",
+      "sizes": "192x192"
+    },
+    {
+      "src": "logo.png",
+      "type": "image/png",
+      "purpose": "any maskable",
+      "sizes": "512x512"
+    }
+  ],
+  "start_url": "/",
+  "display": "standalone",
+  "scope": "/",
+  "shortcuts": [
+    {
+      "name": "Home Page",
+      "short_name": "Home",
+      "description": "Infinity - The place where thoughts expand",
+      "url": "/",
+      "icons": [{ "src": "logo.png", "sizes": "192x192" }]
+    }
+  ]
+}
