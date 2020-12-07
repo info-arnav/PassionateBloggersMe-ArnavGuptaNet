@@ -86,7 +86,9 @@ class Feed extends Component {
       <div>
         <div>
           <Helmet>
-            {" "}
+            <header>
+              <link rel="manifest" href="/manifest.json" />
+            </header>{" "}
             <meta charset="utf-8" />
             <meta name="copyright" content="Infinity" />
             <div hidden>71441</div>
