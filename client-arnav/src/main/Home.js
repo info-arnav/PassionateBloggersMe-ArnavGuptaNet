@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../elements/Footer";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Navigation from "../elements/Navigation";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
@@ -29,7 +29,7 @@ const Home = (props) => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta name="twitter:title" content={`Infinity - All Blogs`} />
           <meta
             name="description"
@@ -55,7 +55,7 @@ const Home = (props) => {
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       <Navigation />
       {user.name ? (

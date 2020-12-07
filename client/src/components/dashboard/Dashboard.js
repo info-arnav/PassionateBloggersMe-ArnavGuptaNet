@@ -7,7 +7,7 @@ import { EditorState, convertToRaw } from "draft-js";
 import { Editor } from "react-draft-wysiwyg";
 import "../../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import htmlToDraft from "html-to-draftjs";
 import axios from "axios";
 import Navigation from "../../elements/Navigation";
@@ -62,7 +62,7 @@ class Dashboard extends Component {
     return (
       <div>
         <div>
-          <MetaTags>
+          <Helmet>
             <meta name="twitter:title" content={`Infinity - Dashboard`} />
             <meta
               name="description"
@@ -92,7 +92,7 @@ class Dashboard extends Component {
               property="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
-          </MetaTags>
+          </Helmet>
         </div>
         {loading ? (
           <div>

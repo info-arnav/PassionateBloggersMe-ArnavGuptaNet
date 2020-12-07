@@ -2,7 +2,7 @@ import React, { useEffect, useState, Component } from "react";
 import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import PropTypes from "prop-types";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 
@@ -29,7 +29,7 @@ const Event = (props) => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta name="twitter:title" content={`Infinity - All Blogs`} />
           <meta
             name="description"
@@ -58,7 +58,7 @@ const Event = (props) => {
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       {loading ? (
         <div>

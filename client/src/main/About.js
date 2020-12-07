@@ -1,5 +1,5 @@
 import React from "react";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Footer from "../elements/Footer";
 import Navigation from "../elements/Navigation";
 
@@ -7,7 +7,7 @@ const About = () => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta name="twitter:title" content={`Infinity - About`} />
           <meta
             name="description"
@@ -39,7 +39,7 @@ Infinity is a platform for various bloggers to share their posts with various pe
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       <Navigation />
       <h1>load</h1>

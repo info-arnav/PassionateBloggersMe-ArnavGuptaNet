@@ -2,7 +2,7 @@ import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
 import Navigation from "./elements/Navigation";
 import { useParams } from "react-router-dom";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
@@ -64,7 +64,7 @@ const Single = (props) => {
         <div>
           {" "}
           <div>
-            <MetaTags>
+            <Helmet>
               <meta
                 name="twitter:title"
                 content={`Infinity - ${posts.subject}`}
@@ -105,7 +105,7 @@ const Single = (props) => {
                 property="og:image"
                 content="https://www.passionatebloggers.me/logo.png"
               />
-            </MetaTags>
+            </Helmet>
           </div>
           <Navigation />
           <main className="page blog-post">

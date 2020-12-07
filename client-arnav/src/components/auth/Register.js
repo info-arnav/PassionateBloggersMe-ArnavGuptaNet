@@ -3,7 +3,7 @@ import ReCAPTCHA from "react-google-recaptcha";
 import Recaptcha from "react-grecaptcha";
 import { Link, withRouter } from "react-router-dom";
 import PropTypes from "prop-types";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
@@ -63,7 +63,7 @@ class Register extends Component {
     return (
       <div>
         <div>
-          <MetaTags>
+          <Helmet>
             <meta
               name="twitter:title"
               content={`Infinity - Registeration page`}
@@ -95,7 +95,7 @@ class Register extends Component {
               property="og:image"
               content="https://www.arnavgupta.net/logo.png"
             />
-          </MetaTags>
+          </Helmet>
         </div>
         <Navigation />
         <h1>load</h1>

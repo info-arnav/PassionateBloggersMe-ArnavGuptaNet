@@ -3,7 +3,7 @@ import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
 import Navigation from "../elements/Navigation";
@@ -143,7 +143,7 @@ const Profile = (props) => {
         </div>
       ) : (
         <div>
-          <MetaTags>
+          <Helmet>
             <meta
               name="twitter:title"
               content={`Infinity - Profile - ${data.name}`}
@@ -184,7 +184,7 @@ const Profile = (props) => {
               property="og:image"
               content="https://www.arnavgupta.net/logo.png"
             />
-          </MetaTags>
+          </Helmet>
           <Navigation />
           <main className="page">
             <section className="clean-block about-us">

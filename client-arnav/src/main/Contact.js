@@ -1,13 +1,13 @@
 import React from "react";
 import Navigation from "../elements/Navigation";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Footer from "../elements/Footer";
 
 const Contact = () => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta name="twitter:title" content={`Infinity - Contact`} />
           <meta
             name="description"
@@ -39,7 +39,7 @@ You can share your queries with Arnav or Infinity Team here`}
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       <Navigation />
       <main className="page contact-us-page">

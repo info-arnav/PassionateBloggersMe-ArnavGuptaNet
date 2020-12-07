@@ -1,5 +1,5 @@
 import React from "react";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Footer from "../elements/Footer";
 import Navigation from "../elements/Navigation";
 
@@ -7,7 +7,7 @@ const License = () => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta name="twitter:title" content={`Infinity - License`} />
           <meta name="description" content="Infinity sticks to a MIT license" />
           <meta
@@ -33,7 +33,7 @@ const License = () => {
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       <Navigation />
       <h1>load</h1>

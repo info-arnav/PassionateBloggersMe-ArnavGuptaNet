@@ -4,7 +4,7 @@ import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Navigation from "../../elements/Navigation";
 
 class Login extends Component {
@@ -57,7 +57,7 @@ class Login extends Component {
     return (
       <div>
         <div>
-          <MetaTags>
+          <Helmet>
             <meta name="twitter:title" content={`Infinity - login page`} />
             <meta
               name="description"
@@ -86,7 +86,7 @@ class Login extends Component {
               property="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
-          </MetaTags>
+          </Helmet>
         </div>
         <Navigation />
         <h1>load</h1>

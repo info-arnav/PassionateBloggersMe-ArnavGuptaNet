@@ -2,7 +2,7 @@ import React, { Component } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
 import Button from "react-bootstrap/Button";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import { Editor } from "react-draft-wysiwyg";
 import "../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
@@ -85,7 +85,7 @@ class Feed extends Component {
     return (
       <div>
         <div>
-          <MetaTags>
+          <Helmet>
             <meta name="twitter:title" content={`Infinity - Feed`} />
             <meta
               name="description"
@@ -114,7 +114,7 @@ class Feed extends Component {
               property="og:image"
               content="https://www.arnavgupta.net/logo.png"
             />
-          </MetaTags>
+          </Helmet>
         </div>
         {loading ? (
           <div>

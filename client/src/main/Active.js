@@ -1,7 +1,7 @@
 import React, { useEffect, useState, Component } from "react";
 import PropTypes from "prop-types";
 import Modal from "react-bootstrap/Modal";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import Skeleton from "react-loading-skeleton";
 import Button from "react-bootstrap/Button";
 import { connect } from "react-redux";
@@ -98,7 +98,7 @@ class Active extends Component {
     return (
       <div>
         <div>
-          <MetaTags>
+          <Helmet>
             <meta name="twitter:title" content={`Infinity - YOur Profile`} />
             <meta
               name="description"
@@ -127,7 +127,7 @@ class Active extends Component {
               property="og:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
-          </MetaTags>
+          </Helmet>
         </div>
         {loading ? (
           <div>

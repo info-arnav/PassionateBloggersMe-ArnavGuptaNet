@@ -1,7 +1,7 @@
 import React, { useEffect, useState } from "react";
 import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
-import MetaTags from "react-meta-tags";
+import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
@@ -24,7 +24,7 @@ const SiteMap = (props) => {
   return (
     <div>
       <div>
-        <MetaTags>
+        <Helmet>
           <meta
             name="twitter:title"
             content={`Infinity - User Friendly Site Map`}
@@ -59,7 +59,7 @@ const SiteMap = (props) => {
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-        </MetaTags>
+        </Helmet>
       </div>
       {loading ? (
         <div>
