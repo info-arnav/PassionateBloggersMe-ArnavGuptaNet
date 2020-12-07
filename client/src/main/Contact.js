@@ -8,7 +8,8 @@ const Contact = () => {
     <div>
       <div>
         <Helmet>
-          <link rel="manifest" href="/manifest.json" /> <meta charset="utf-8" />
+          <link rel="manifest" href="/manifest.webmanifest" />{" "}
+          <meta charset="utf-8" />
           <meta name="copyright" content="Infinity" />
           <div hidden>71441</div>
           <meta name="author" content="Arnav Gupta" />
