@@ -144,6 +144,21 @@ const Profile = (props) => {
       ) : (
         <div>
           <Helmet>
+            {" "}
+            <meta charset="utf-8" />
+            <meta name="copyright" content="Infinity" />
+            <div hidden>71441</div>
+            <meta name="author" content="Arnav Gupta" />
+            <meta
+              name="viewport"
+              content="width=device-width, initial-scale=1"
+            />
+            <meta name="theme-color" content="#000000" />
+            <meta name="twitter:card" content="summary" />
+            <meta name="twitter:site" content="@InfinityByArnav" />
+            <meta name="twitter:creator" content="@arnav95600" />
+            <meta property="og:site_name" content="Infinity" />
+            <meta property="fb:app_id" content="807904256677081" />
             <title>{`Infinity - Profile - ${data.name}`}</title>
             <meta
               name="twitter:title"
@@ -167,7 +182,6 @@ const Profile = (props) => {
                 data.name
               } - ${data.biology.substring(0, 30)}`}
             />
-
             <meta
               property="og:url"
               content={`https://www.arnavgupta.net/profiles&value=${data.name}`}
