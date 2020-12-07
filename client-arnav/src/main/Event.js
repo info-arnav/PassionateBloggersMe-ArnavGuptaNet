@@ -31,7 +31,6 @@ const Event = (props) => {
       <div>
         <Helmet>
           <header>
-            <link rel="manifest" href="/manifest.webmanifest" />
             <link rel="manifest" href="/manifest.json" />
           </header>{" "}
           <meta charset="utf-8" />
