@@ -71,24 +71,21 @@ const Single = (props) => {
               />
               <meta
                 name="description"
-                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
-                  0,
-                  30
-                )}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog
+                  .replace(/(<([^>]+)>)/gi, "")
+                  .substring(0, 30)}`}
               />
               <meta
                 property="og:description"
-                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
-                  0,
-                  30
-                )}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog
+                  .replace(/(<([^>]+)>)/gi, "")
+                  .substring(0, 30)}`}
               />
               <meta
                 name="twitter:description"
-                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
-                  0,
-                  30
-                )}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog
+                  .replace(/(<([^>]+)>)/gi, "")
+                  .substring(0, 30)}`}
               />
 
               <meta
