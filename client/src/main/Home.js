@@ -248,10 +248,9 @@ const Home = (props) => {
               <div className="block-heading">
                 <h2 className="text-info">About</h2>
                 <p>
-                  PassionateBloggers is a platform where various people can
-                  share their blogs with each other they can als follow the
-                  users they like. We will be adding additional features in the
-                  future.
+                  Infinity is a platform where various people can share their
+                  blogs with each other they can als follow the users they like.
+                  We will be adding additional features in the future.
                 </p>
               </div>
             </div>
