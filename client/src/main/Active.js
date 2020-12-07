@@ -99,6 +99,7 @@ class Active extends Component {
       <div>
         <div>
           <Helmet>
+            <title>{`Infinity - YOur Profile`} </title>
             <meta name="twitter:title" content={`Infinity - YOur Profile`} />
             <meta
               name="description"

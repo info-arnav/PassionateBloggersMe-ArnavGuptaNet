@@ -64,6 +64,7 @@ class Register extends Component {
       <div>
         <div>
           <Helmet>
+            <title>{`Infinity - Registeration page`}</title>
             <meta
               name="twitter:title"
               content={`Infinity - Registeration page`}

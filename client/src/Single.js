@@ -64,7 +64,9 @@ const Single = (props) => {
         <div>
           {" "}
           <div>
-            <Helmet>
+              <Helmet>
+                
+  <title>{`Infinity - ${posts.subject}`}</title>
               <meta
                 name="twitter:title"
                 content={`Infinity - ${posts.subject}`}

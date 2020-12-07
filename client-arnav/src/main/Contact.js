@@ -8,6 +8,7 @@ const Contact = () => {
     <div>
       <div>
         <Helmet>
+          <title>{`Infinity - Contact`}</title>
           <meta name="twitter:title" content={`Infinity - Contact`} />
           <meta
             name="description"

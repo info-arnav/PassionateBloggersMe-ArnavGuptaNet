@@ -8,6 +8,7 @@ const License = () => {
     <div>
       <div>
         <Helmet>
+          <title>{`Infinity - License`}</title>
           <meta name="twitter:title" content={`Infinity - License`} />
           <meta name="description" content="Infinity sticks to a MIT license" />
           <meta

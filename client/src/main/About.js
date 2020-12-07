@@ -8,6 +8,7 @@ const About = () => {
     <div>
       <div>
         <Helmet>
+          <title>{`Infinity - About`}</title>
           <meta name="twitter:title" content={`Infinity - About`} />
           <meta
             name="description"

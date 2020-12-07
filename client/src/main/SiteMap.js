@@ -25,6 +25,7 @@ const SiteMap = (props) => {
     <div>
       <div>
         <Helmet>
+          <title>{`Infinity - User Friendly Site Map`}</title>
           <meta
             name="twitter:title"
             content={`Infinity - User Friendly Site Map`}

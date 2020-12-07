@@ -86,6 +86,7 @@ class Feed extends Component {
       <div>
         <div>
           <Helmet>
+            <title>{`Infinity - Feed`}</title>
             <meta name="twitter:title" content={`Infinity - Feed`} />
             <meta
               name="description"

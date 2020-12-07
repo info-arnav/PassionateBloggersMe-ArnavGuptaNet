@@ -144,6 +144,7 @@ const Profile = (props) => {
       ) : (
         <div>
           <Helmet>
+            <title>{`Infinity - Profile - ${data.name}`}</title>
             <meta
               name="twitter:title"
               content={`Infinity - Profile - ${data.name}`}

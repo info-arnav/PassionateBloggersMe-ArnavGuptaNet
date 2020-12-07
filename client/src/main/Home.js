@@ -30,7 +30,8 @@ const Home = (props) => {
     <div>
       <div>
         <Helmet>
-          <meta name="twitter:title" content={`Infinity - All Blogs`} />
+          <title>{`Infinity - The place where thoughts expand`}</title>
+          <meta name="twitter:title" content={`Infinity - The place where thoughts expand`} />
           <meta
             name="description"
             content="Infinity is a platform for various bloggers to share their posts with various people"

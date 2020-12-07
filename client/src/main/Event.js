@@ -30,6 +30,7 @@ const Event = (props) => {
     <div>
       <div>
         <Helmet>
+          <title>{`Infinity - All Blogs`}</title>
           <meta name="twitter:title" content={`Infinity - All Blogs`} />
           <meta
             name="description"

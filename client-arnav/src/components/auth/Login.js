@@ -58,6 +58,7 @@ class Login extends Component {
       <div>
         <div>
           <Helmet>
+            <title>{`Infinity - login page`}</title>
             <meta name="twitter:title" content={`Infinity - login page`} />
             <meta
               name="description"

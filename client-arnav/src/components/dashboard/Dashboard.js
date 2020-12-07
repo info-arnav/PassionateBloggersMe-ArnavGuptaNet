@@ -63,6 +63,7 @@ class Dashboard extends Component {
       <div>
         <div>
           <Helmet>
+            <title>{`Infinity - Dashboard`}</title>
             <meta name="twitter:title" content={`Infinity - Dashboard`} />
             <meta
               name="description"
