@@ -8,24 +8,21 @@ const About = () => {
     <div>
       <div>
         <MetaTags>
-          <meta
-            name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - About`}
-          />
+          <meta name="twitter:title" content={`Infinity - About`} />
           <meta
             name="description"
             content="
-Passionate Bloggers is a platform for various bloggers to share their posts with various people"
+Infinity is a platform for various bloggers to share their posts with various people"
           />
           <meta
             property="og:description"
             content="
-Passionate Bloggers is a platform for various bloggers to share their posts with various people"
+Infinity is a platform for various bloggers to share their posts with various people"
           />
           <meta
             name="twitter:description"
             content={`
-Passionate Bloggers is a platform for various bloggers to share their posts with various people`}
+Infinity is a platform for various bloggers to share their posts with various people`}
           />
 
           <meta
@@ -36,10 +33,7 @@ Passionate Bloggers is a platform for various bloggers to share their posts with
             name="twitter:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-          <meta
-            property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - About`}
-          />
+          <meta property="og:title" content={`Infinity - About`} />
           <meta property="og:type" content={`About`} />
           <meta
             property="og:image"

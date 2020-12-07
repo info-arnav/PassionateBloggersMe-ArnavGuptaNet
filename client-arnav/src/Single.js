@@ -67,25 +67,28 @@ const Single = (props) => {
             <MetaTags>
               <meta
                 name="twitter:title"
-                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+                content={`Infinity - ${posts.subject}`}
               />
               <meta
                 name="description"
-                content={`Passionate Bloggers - ${
-                  posts.subject
-                } - ${posts.blog.substring(0, 30)}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
+                  0,
+                  30
+                )}`}
               />
               <meta
                 property="og:description"
-                content={`Passionate Bloggers - ${
-                  posts.subject
-                } - ${posts.blog.substring(0, 30)}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
+                  0,
+                  30
+                )}`}
               />
               <meta
                 name="twitter:description"
-                content={`Passionate Bloggers - ${
-                  posts.subject
-                } - ${posts.blog.substring(0, 30)}`}
+                content={`Infinity - ${posts.subject} - ${posts.blog.substring(
+                  0,
+                  30
+                )}`}
               />
 
               <meta
@@ -98,7 +101,7 @@ const Single = (props) => {
               />
               <meta
                 property="og:title"
-                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+                content={`Infinity - ${posts.subject}`}
               />
               <meta property="og:type" content={`Blog Post`} />
               <meta

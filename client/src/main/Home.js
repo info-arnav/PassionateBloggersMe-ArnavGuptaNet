@@ -30,21 +30,18 @@ const Home = (props) => {
     <div>
       <div>
         <MetaTags>
-          <meta
-            name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - All Blogs`}
-          />
+          <meta name="twitter:title" content={`Infinity - All Blogs`} />
           <meta
             name="description"
-            content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
+            content="Infinity is a platform for various bloggers to share their posts with various people"
           />
           <meta
             property="og:description"
-            content="Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people"
+            content="Infinity is a platform for various bloggers to share their posts with various people"
           />
           <meta
             name="twitter:description"
-            content={`Passionate Bloggers design by Arnav Gupta is a platform for various bloggers to share their posts with various people`}
+            content={`Infinity is a platform for various bloggers to share their posts with various people`}
           />
 
           <meta
@@ -55,10 +52,7 @@ const Home = (props) => {
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-          <meta
-            property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - Home`}
-          />
+          <meta property="og:title" content={`Infinity - Home`} />
           <meta property="og:type" content={`All Blogs`} />
           <meta
             property="og:image"

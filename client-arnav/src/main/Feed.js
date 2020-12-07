@@ -86,10 +86,7 @@ class Feed extends Component {
       <div>
         <div>
           <MetaTags>
-            <meta
-              name="twitter:title"
-              content={`Passionate Bloggers by Arnav Gupta - Feed`}
-            />
+            <meta name="twitter:title" content={`Infinity - Feed`} />
             <meta
               name="description"
               content="YOu can view and edit all your new and old posts here"
@@ -111,10 +108,7 @@ class Feed extends Component {
               name="twitter:image"
               content="https://www.arnavgupta.net/logo.png"
             />
-            <meta
-              property="og:title"
-              content={`Passionate Bloggers by Arnav Gupta - Feed`}
-            />
+            <meta property="og:title" content={`Infinity - Feed`} />
             <meta property="og:type" content={`Feed`} />
             <meta
               property="og:image"

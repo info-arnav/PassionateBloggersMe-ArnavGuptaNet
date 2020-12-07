@@ -67,7 +67,7 @@ const Single = (props) => {
             <MetaTags>
               <meta
                 name="twitter:title"
-                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+                content={`Passionate Bloggers - ${posts.subject}`}
               />
               <meta
                 name="description"
@@ -98,7 +98,7 @@ const Single = (props) => {
               />
               <meta
                 property="og:title"
-                content={`Passionate Bloggers by Arnav Gupta - ${posts.subject}`}
+                content={`Passionate Bloggers - ${posts.subject}`}
               />
               <meta property="og:type" content={`Blog Post`} />
               <meta

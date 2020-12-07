@@ -99,10 +99,7 @@ class Active extends Component {
       <div>
         <div>
           <MetaTags>
-            <meta
-              name="twitter:title"
-              content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
-            />
+            <meta name="twitter:title" content={`Infinity - YOur Profile`} />
             <meta
               name="description"
               content="You can view and edit your profile here"
@@ -128,10 +125,7 @@ class Active extends Component {
               name="twitter:image"
               content="https://www.arnavgupta.net/logo.png"
             />
-            <meta
-              property="og:title"
-              content={`Passionate Bloggers by Arnav Gupta - YOur Profile`}
-            />
+            <meta property="og:title" content={`Infinity - YOur Profile`} />
             <meta property="og:type" content={`Profile`} />
             <meta
               property="og:image"
