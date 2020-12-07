@@ -41,7 +41,9 @@
     "webpack-cli": "3.3.12",
     "webpack-node-externals": "1.7.2"
   },
-  "scripts": {
+"reactSnap": {
+  "inlineCss": true
+},  "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "postbuild": "react-snap",
