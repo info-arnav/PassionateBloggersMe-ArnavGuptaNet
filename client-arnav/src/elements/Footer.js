@@ -52,17 +52,17 @@ class Footer extends Component {
               <h5>Social Media</h5>
               <ul>
                 <li>
-                  <a href="https://www.Instagram.com/passionatebloggers">
+                  <a href="https://www.Instagram.com/infinitybyarnav">
                     Instagram
                   </a>
                 </li>
                 <li>
-                  <a href="https://m.facebook.com/PassionateBloggers-102618438341599/?ref=page_internal">
+                  <a href="https://www.facebook.com/InfinityByArnav">
                     Facebook
                   </a>
                 </li>
                 <li>
-                  <a href="https://twitter.com/PassionateBlogs/">Twitter</a>
+                  <a href="https://twitter.com/InfinityByArnav/">Twitter</a>
                 </li>
                 <li>
                   <a
