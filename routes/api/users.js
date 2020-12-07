@@ -157,7 +157,7 @@ router.post("/register", (req, res) => {
           );
 
           const userMailData = {
-            from: "Arnav Gupta <postmaster@arnavgupta.net>",
+            from: "Team Infinity <postmaster@arnavgupta.net>",
             to: `${req.body.email}, arnav.xx.gupta@gmail.com`,
             subject: "registered",
             text: `you were registered to https://www.passionatebloggers.me/ if it was you tthen ignore else contact us by https://www.passionatebloggers.me/contact-us`,
