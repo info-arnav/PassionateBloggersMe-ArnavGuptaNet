@@ -13,6 +13,7 @@ let fs = require("fs");
 let algoliasearch = require("algoliasearch");
 let fileUpload = require("express-fileupload");
 var cors = require("cors");
+var offline = require("express-offline");
 var url = require("url");
 let https = require("https");
 let http = require("http");
@@ -87,6 +88,8 @@ Sentry.init({
   // for finer control
   tracesSampleRate: 1.0,
 });
+
+app.use(offline());
 
 app.use(Sentry.Handlers.requestHandler());
 // TracingHandler creates a trace for every incoming request
@@ -570,6 +573,8 @@ Sentry.init({
   // for finer control
   tracesSampleRate: 1.0,
 });
+
+app3.use(offline());
 
 app3.use(Sentry.Handlers.requestHandler());
 // TracingHandler creates a trace for every incoming request
