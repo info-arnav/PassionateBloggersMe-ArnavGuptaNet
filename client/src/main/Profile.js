@@ -144,7 +144,7 @@ const Profile = (props) => {
       ) : (
         <div>
           <Helmet>
-            {" "}
+            <link rel="manifest" href="/manifest.json" />{" "}
             <meta charset="utf-8" />
             <meta name="copyright" content="Infinity" />
             <div hidden>71441</div>
