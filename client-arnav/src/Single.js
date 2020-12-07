@@ -65,8 +65,7 @@ const Single = (props) => {
           {" "}
           <div>
             <Helmet>
-              <link rel="manifest" href="/webmanifest.manifest" />
-              <link rel="manifest" href="/webmanifest.json" />{" "}
+              {" "}
               <meta charset="utf-8" />
               <meta name="copyright" content="Infinity" />
               <div hidden>71441</div>
