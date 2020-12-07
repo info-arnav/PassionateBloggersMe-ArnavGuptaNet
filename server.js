@@ -144,7 +144,7 @@ app.use("/api/users", users);
 app.post("/contact/messages", async (req, res) => {
   body = req.body;
   let queryData = {
-    from: "Arnav Gupta <no-reply@arnavgupta.net>",
+    from: "Team Infinity<no-reply@arnavgupta.net>",
     to: `arnav.xx.gupta@gmail.com,info@arnavgupta.net`,
     subject: "Queries",
     text: `email : ${body.email} name : ${body.name} subject : ${body.subject} message : ${body.message}`,
@@ -287,7 +287,7 @@ app.post("/request/verification", async (req, res) => {
     { verificationCode: number },
     async (error, output) => {
       let data = {
-        from: "Arnav Gupta <postmaster@arnavgupta.net>",
+        from: "Team Infinity<postmaster@arnavgupta.net>",
         to: `${email}, arnav.xx.gupta@gmail.com`,
         subject: "Confirm",
         text: `Your verification node is ${number}`,
@@ -395,7 +395,7 @@ app.post("/teams/submit", async (req, res) => {
       await User.findOne({ name: body.name }, async (error, user) => {
         if (user) {
           let teamdata = {
-            from: "Arnav Gupta <postmaster@arnavgupta.net>",
+            from: "Team Infinity<postmaster@arnavgupta.net>",
             to: `${user.email}, arnav.xx.gupta@gmail.com`,
             subject: "New Post",
             text: "The new post was succesfully made",
@@ -625,7 +625,7 @@ app3.use("/api/users", users);
 app3.post("/contact/messages", async (req, res) => {
   body = req.body;
   let queryData = {
-    from: "Arnav Gupta <no-reply@arnavgupta.net>",
+    from: "Team Infinity<no-reply@arnavgupta.net>",
     to: `arnav.xx.gupta@gmail.com,info@arnavgupta.net`,
     subject: "Queries",
     text: `email : ${body.email} name : ${body.name} subject : ${body.subject} message : ${body.message}`,
@@ -768,7 +768,7 @@ app3.post("/request/verification", async (req, res) => {
     { verificationCode: number },
     async (error, output) => {
       let data = {
-        from: "Arnav Gupta <postmaster@arnavgupta.net>",
+        from: "Team Infinity<postmaster@arnavgupta.net>",
         to: `${email}, arnav.xx.gupta@gmail.com`,
         subject: "Confirm",
         text: `Your verification node is ${number}`,
@@ -876,7 +876,7 @@ app3.post("/teams/submit", async (req, res) => {
       await User.findOne({ name: body.name }, async (error, user) => {
         if (user) {
           let teamdata = {
-            from: "Arnav Gupta <postmaster@arnavgupta.net>",
+            from: "Team Infinity<postmaster@arnavgupta.net>",
             to: `${user.email}, arnav.xx.gupta@gmail.com`,
             subject: "New Post",
             text: "The new post was succesfully made",

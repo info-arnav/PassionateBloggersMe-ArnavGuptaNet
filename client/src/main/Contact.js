@@ -8,24 +8,21 @@ const Contact = () => {
     <div>
       <div>
         <MetaTags>
-          <meta
-            name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - Contact`}
-          />
+          <meta name="twitter:title" content={`Infinity - Contact`} />
           <meta
             name="description"
             content="
-You can share your queries with Arnav or Passionate Bloggers Team here"
+You can share your queries with Arnav or Infinity Team here"
           />
           <meta
             property="og:description"
             content="
-You can share your queries with Arnav or Passionate Bloggers Team here"
+You can share your queries with Arnav or Infinity Team here"
           />
           <meta
             name="twitter:description"
             content={`
-You can share your queries with Arnav or Passionate Bloggers Team here`}
+You can share your queries with Arnav or Infinity Team here`}
           />
 
           <meta
@@ -36,10 +33,7 @@ You can share your queries with Arnav or Passionate Bloggers Team here`}
             name="twitter:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-          <meta
-            property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - Contact`}
-          />
+          <meta property="og:title" content={`Infinity - Contact`} />
           <meta property="og:type" content={`Contact`} />
           <meta
             property="og:image"

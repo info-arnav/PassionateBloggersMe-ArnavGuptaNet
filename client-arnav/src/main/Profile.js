@@ -146,23 +146,23 @@ const Profile = (props) => {
           <MetaTags>
             <meta
               name="twitter:title"
-              content={`Passionate Bloggers by Arnav Gupta - Profile - ${data.name}`}
+              content={`Infinity - Profile - ${data.name}`}
             />
             <meta
               name="description"
-              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+              content={`Infinity - Profile - ${
                 data.name
               } - ${data.biology.substring(0, 30)}`}
             />
             <meta
               property="og:description"
-              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+              content={`Infinity - Profile - ${
                 data.name
               } - ${data.biology.substring(0, 30)}`}
             />
             <meta
               name="twitter:description"
-              content={`Passionate Bloggers by Arnav Gupta - Profile - ${
+              content={`Infinity - Profile - ${
                 data.name
               } - ${data.biology.substring(0, 30)}`}
             />
@@ -177,7 +177,7 @@ const Profile = (props) => {
             />
             <meta
               property="og:title"
-              content={`Passionate Bloggers by Arnav Gupta - Profile ${data.name}`}
+              content={`Infinity - Profile ${data.name}`}
             />
             <meta property="og:type" content={`Profile - ${data.name}`} />
             <meta

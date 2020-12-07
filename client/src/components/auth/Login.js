@@ -58,21 +58,18 @@ class Login extends Component {
       <div>
         <div>
           <MetaTags>
-            <meta
-              name="twitter:title"
-              content={`Passionate Bloggers by Arnav Gupta - login page`}
-            />
+            <meta name="twitter:title" content={`Infinity - login page`} />
             <meta
               name="description"
-              content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
+              content="Infinity - login here to make your own posts."
             />
             <meta
               property="og:description"
-              content="Passionate Bloggers by Arnav Gupta - login here to make your own posts."
+              content="Infinity - login here to make your own posts."
             />
             <meta
               name="twitter:description"
-              content={`Passionate Bloggers by Arnav Gupta - login here to make your own posts.`}
+              content={`Infinity - login here to make your own posts.`}
             />
 
             <meta
@@ -83,10 +80,7 @@ class Login extends Component {
               name="twitter:image"
               content="https://www.passionatebloggers.me/logo.png"
             />
-            <meta
-              property="og:title"
-              content={`Passionate Bloggers by Arnav Gupta - Login`}
-            />
+            <meta property="og:title" content={`Infinity - Login`} />
             <meta property="og:type" content={`Login`} />
             <meta
               property="og:image"

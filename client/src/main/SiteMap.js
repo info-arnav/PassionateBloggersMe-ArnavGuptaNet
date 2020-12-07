@@ -27,19 +27,19 @@ const SiteMap = (props) => {
         <MetaTags>
           <meta
             name="twitter:title"
-            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map`}
+            content={`Infinity - User Friendly Site Map`}
           />
           <meta
             name="description"
-            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
+            content={`Infinity - User Friendly Site Map - overview`}
           />
           <meta
             property="og:description"
-            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
+            content={`Infinity - User Friendly Site Map - overview`}
           />
           <meta
             name="twitter:description"
-            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Map - overview`}
+            content={`Infinity - User Friendly Site Map - overview`}
           />
 
           <meta
@@ -52,7 +52,7 @@ const SiteMap = (props) => {
           />
           <meta
             property="og:title"
-            content={`Passionate Bloggers by Arnav Gupta - User Friendly Site Ma`}
+            content={`Infinity - User Friendly Site Ma`}
           />
           <meta property="og:type" content={`User Friendly Site Map`} />
           <meta
