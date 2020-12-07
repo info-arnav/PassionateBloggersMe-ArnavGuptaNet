@@ -25,7 +25,7 @@
       "short_name": "Home",
       "description": "Infinity - The place where thoughts expand",
       "url": "/",
-      "icons": [{ "src": "logo.png", "sizes": "192x192" }]
+      "icons": [{ "src": "/logo.png", "sizes": "192x192" }]
     }
   ]
 }
