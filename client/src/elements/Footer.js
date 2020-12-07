@@ -85,7 +85,7 @@ class Footer extends Component {
           </div>
         </div>
         <div className="footer-copyright">
-          <p>© 2020 Pass</p>
+          <p>© 2020 Infinity</p>
         </div>
       </footer>
     );
