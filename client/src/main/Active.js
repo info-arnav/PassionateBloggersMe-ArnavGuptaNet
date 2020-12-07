@@ -7,9 +7,7 @@ import Button from "react-bootstrap/Button";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
 import { Link } from "react-router-dom";
-
-import loadable from "@loadable/component";
-const Navigation = loadable(() => import("./../elements/Navigation"));
+import Navigation from "../elements/Navigation";
 
 class Active extends Component {
   constructor() {

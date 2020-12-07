@@ -1,12 +1,10 @@
 import React, { useEffect, useState } from "react";
+import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-
-import loadable from "@loadable/component";
-const Navigation = loadable(() => import("./../elements/Navigation"));
 
 const SiteMap = (props) => {
   const { user } = props.auth;

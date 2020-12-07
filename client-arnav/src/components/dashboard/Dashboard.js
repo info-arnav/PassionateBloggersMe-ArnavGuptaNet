@@ -10,10 +10,8 @@ import draftToHtml from "draftjs-to-html";
 import { Helmet } from "react-helmet";
 import htmlToDraft from "html-to-draftjs";
 import axios from "axios";
-
-import loadable from "@loadable/component";
-const Navigation = loadable(() => import("./../../elements/Navigation"));
-const wysiwyg = loadable(() => import("./../../elements/Wysiwyg"));
+import Navigation from "../../elements/Navigation";
+import Wysiwyg from "../../elements/Wysiwyg";
 
 class Dashboard extends Component {
   onLogoutClick = (e) => {

@@ -1,13 +1,11 @@
 import React, { useEffect, useState } from "react";
 import Footer from "../elements/Footer";
 import { Helmet } from "react-helmet";
+import Navigation from "../elements/Navigation";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
-
-import loadable from "@loadable/component";
-const Navigation = loadable(() => import("./../elements/Navigation"));
 
 const Home = (props) => {
   const [loading, setLoading] = useState(true);

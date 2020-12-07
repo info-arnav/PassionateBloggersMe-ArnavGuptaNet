@@ -1,8 +1,7 @@
 import React from "react";
 import { Helmet } from "react-helmet";
-
-import loadable from "@loadable/component";
-const Navigation = loadable(() => import("./../elements/Navigation"));
+import Footer from "../elements/Footer";
+import Navigation from "../elements/Navigation";
 
 const License = () => {
   return (
