@@ -5,7 +5,8 @@ import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
 import { Helmet } from "react-helmet";
-import Navigation from "../../elements/Navigation";
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./../../elements/Navigation"));
 
 class Login extends Component {
   constructor() {

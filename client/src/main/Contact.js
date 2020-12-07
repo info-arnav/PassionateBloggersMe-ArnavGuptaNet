@@ -1,7 +1,8 @@
 import React from "react";
-import Navigation from "../elements/Navigation";
 import { Helmet } from "react-helmet";
-import Footer from "../elements/Footer";
+
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./../elements/Navigation"));
 
 const Contact = () => {
   return (

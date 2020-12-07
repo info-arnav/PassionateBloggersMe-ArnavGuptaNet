@@ -6,7 +6,9 @@ import { logoutUser } from "../actions/authActions";
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
-import Navigation from "../elements/Navigation";
+
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./../elements/Navigation"));
 
 const Profile = (props) => {
   const { user } = props.auth;

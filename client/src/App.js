@@ -1,5 +1,6 @@
 import React, { Component, lazy, Suspense } from "react";
 import "./loading.css";
+import loadable from "@loadable/component";
 import {
   BrowserRouter as Router,
   Route,
@@ -16,21 +17,21 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 
 import "./App.css";
 import Skeleton from "react-loading-skeleton";
-const Home = lazy(() => import("./main/Home"));
-const Footer = lazy(() => import("./elements/Footer"));
-const Event = lazy(() => import("./main/Event"));
-const Contact = lazy(() => import("./main/Contact"));
-const Feed = lazy(() => import("./main/Feed"));
-const Single = lazy(() => import("./Single"));
-const Profile = lazy(() => import("./main/Profile"));
-const Register = lazy(() => import("./components/auth/Register"));
-const Login = lazy(() => import("./components/auth/Login"));
-const Dashboard = lazy(() => import("./components/dashboard/Dashboard"));
-const SiteMap = lazy(() => import("./main/SiteMap"));
-const Active = lazy(() => import("./main/Active"));
-const NotFound = lazy(() => import("./NotFound"));
-const About = lazy(() => import("./main/About"));
-const License = lazy(() => import("./main/License"));
+const Home = loadable(() => import("./main/Home"));
+const Footer = loadable(() => import("./elements/Footer"));
+const Event = loadable(() => import("./main/Event"));
+const Contact = loadable(() => import("./main/Contact"));
+const Feed = loadable(() => import("./main/Feed"));
+const Single = loadable(() => import("./Single"));
+const Profile = loadable(() => import("./main/Profile"));
+const Register = loadable(() => import("./components/auth/Register"));
+const Login = loadable(() => import("./components/auth/Login"));
+const Dashboard = loadable(() => import("./components/dashboard/Dashboard"));
+const SiteMap = loadable(() => import("./main/SiteMap"));
+const Active = loadable(() => import("./main/Active"));
+const NotFound = loadable(() => import("./NotFound"));
+const About = loadable(() => import("./main/About"));
+const License = loadable(() => import("./main/License"));
 
 // Check for token to keep user logged in
 if (localStorage.jwtToken) {
@@ -77,41 +78,36 @@ class App extends Component {
     return (
       <Provider store={store}>
         <Router>
-          <Suspense fallback={renderLoader()}>
-            <div className="App">
+          <div className="App">
+            <Switch>
+              <Route exact path="/" component={Home} />
+              <Route path="/license" component={License} />
+              <Route path="/index" component={Home} />
+              <Route path="/sitemap" component={SiteMap} />
+              <Route exact path="/register" component={Register} />
+              <Route exact path="/registration" component={Register} />
+              <Route exact path="/login" component={Login} />
+              <Route path="/projects" component={Event} />
+              <Route path="/profile:id" component={Profile} />
+              <Route path="/contact" component={Contact} />
+              <Route path="/contact-us" component={Contact} />
+              <Route path="/about" component={About} />
+              <Route path="/posted/:username/:subject/:id" component={Single} />
+              <Route
+                path="/error-page-not-found"
+                component={NotFound}
+                status={404}
+              />
               <Switch>
-                <Route exact path="/" component={Home} />
-                <Route path="/license" component={License} />
-                <Route path="/index" component={Home} />
-                <Route path="/sitemap" component={SiteMap} />
-                <Route exact path="/register" component={Register} />
-                <Route exact path="/registration" component={Register} />
-                <Route exact path="/login" component={Login} />
-                <Route path="/projects" component={Event} />
-                <Route path="/profile:id" component={Profile} />
-                <Route path="/contact" component={Contact} />
-                <Route path="/contact-us" component={Contact} />
-                <Route path="/about" component={About} />
-                <Route
-                  path="/posted/:username/:subject/:id"
-                  component={Single}
-                />
-                <Route
-                  path="/error-page-not-found"
-                  component={NotFound}
-                  status={404}
-                />
-                <Switch>
-                  <PrivateRoute exact path="/active" component={Active} />
-                  <PrivateRoute exact path="/dashboard" component={Dashboard} />
-                  <PrivateRoute exact path="/feed" component={Feed} />
-                  <Redirect to="/error-page-not-found" />
-                </Switch>
+                <PrivateRoute exact path="/active" component={Active} />
+                <PrivateRoute exact path="/dashboard" component={Dashboard} />
+                <PrivateRoute exact path="/feed" component={Feed} />
                 <Redirect to="/error-page-not-found" />
               </Switch>
-              <Footer />
-            </div>
-          </Suspense>
+              <Redirect to="/error-page-not-found" />
+            </Switch>
+            <Footer />
+          </div>
         </Router>
       </Provider>
     );

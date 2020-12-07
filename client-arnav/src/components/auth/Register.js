@@ -7,7 +7,9 @@ import { Helmet } from "react-helmet";
 import { connect } from "react-redux";
 import { registerUser } from "../../actions/authActions";
 import classnames from "classnames";
-import Navigation from "../../elements/Navigation";
+
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./../../elements/Navigation"));
 
 class Register extends Component {
   constructor() {

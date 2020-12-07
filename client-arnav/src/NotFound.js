@@ -1,5 +1,7 @@
 import React from "react";
-import Navigation from "./elements/Navigation";
+
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./elements/Navigation"));
 
 const NotFound = () => {
   return (

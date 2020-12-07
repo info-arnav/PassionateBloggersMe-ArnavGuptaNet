@@ -11,9 +11,11 @@ import { connect } from "react-redux";
 import { convertFromRaw, ContentState } from "draft-js";
 import { EditorState, convertToRaw } from "draft-js";
 import { logoutUser } from "../actions/authActions";
-import Navigation from "../elements/Navigation";
 import Skeleton from "react-loading-skeleton";
 import { Link } from "react-router-dom";
+
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./../elements/Navigation"));
 
 class Feed extends Component {
   onLogoutClick = (e) => {

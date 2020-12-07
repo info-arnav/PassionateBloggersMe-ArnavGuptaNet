@@ -1,12 +1,13 @@
 import React, { useEffect, useState } from "react";
 import Skeleton from "react-loading-skeleton";
-import Navigation from "./elements/Navigation";
 import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
 import Axios from "axios";
+import loadable from "@loadable/component";
+const Navigation = loadable(() => import("./elements/Navigation"));
 
 const Single = (props) => {
   const { user } = props.auth;
@@ -64,9 +65,8 @@ const Single = (props) => {
         <div>
           {" "}
           <div>
-              <Helmet>
-                
-  <title>{`Infinity - ${posts.subject}`}</title>
+            <Helmet>
+              <title>{`Infinity - ${posts.subject}`}</title>
               <meta
                 name="twitter:title"
                 content={`Infinity - ${posts.subject}`}
