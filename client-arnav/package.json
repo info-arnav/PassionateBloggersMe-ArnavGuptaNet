@@ -2,6 +2,9 @@
   "name": "client",
   "version": "0.1.0",
   "private": true,
+  "reactSnap": {
+    "inlineCss": true
+  },
   "dependencies": {
     "@babel/preset-env": "^7.1.6",
     "@babel/preset-react": "^7.0.0",
