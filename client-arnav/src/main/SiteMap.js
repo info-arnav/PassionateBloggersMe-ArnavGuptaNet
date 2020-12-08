@@ -88,7 +88,11 @@ const SiteMap = (props) => {
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-        <Helmet/><link rel="apple-touch-icon" href={`${process.env.PUBLIC_URL}/logo.png`} />
+        </Helmet>
+        <link
+          rel="apple-touch-icon"
+          href={`${process.env.PUBLIC_URL}/logo.png`}
+        />
         <link
           rel="apple-touch-icon"
           href={`${process.env.PUBLIC_URL}/logo.png`}

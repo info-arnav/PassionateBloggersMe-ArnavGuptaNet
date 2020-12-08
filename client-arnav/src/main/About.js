@@ -68,7 +68,11 @@ Infinity is a platform for various bloggers to share their posts with various pe
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
           />
-        <Helmet/><link rel="apple-touch-icon" href={`${process.env.PUBLIC_URL}/logo.png`} />
+        </Helmet>
+        <link
+          rel="apple-touch-icon"
+          href={`${process.env.PUBLIC_URL}/logo.png`}
+        />
         <link
           rel="apple-touch-icon"
           href={`${process.env.PUBLIC_URL}/logo.png`}
