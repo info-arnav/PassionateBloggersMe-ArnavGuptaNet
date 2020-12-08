@@ -8,8 +8,15 @@ const About = () => {
     <div>
       <div>
         <Helmet>
+          <link
+            rel="manifest"
+            href={`${process.env.PUBLIC_URL}/manifest.json`}
+          />
           <header>
-            <link rel="manifest" href="/manifest.json" />
+            <link
+              rel="manifest"
+              href={`${process.env.PUBLIC_URL}/manifest.json`}
+            />
           </header>{" "}
           <meta charset="utf-8" />
           <meta name="copyright" content="Infinity" />
@@ -54,6 +61,13 @@ Infinity is a platform for various bloggers to share their posts with various pe
             content="https://www.passionatebloggers.me/logo.png"
           />
         </Helmet>
+        <header>
+          <link
+            rel="manifest"
+            href={`${process.env.PUBLIC_URL}/manifest.json`}
+          />
+        </header>
+        <link rel="manifest" href={`${process.env.PUBLIC_URL}/manifest.json`} />
       </div>
       <Navigation />
       <h1>load</h1>

@@ -30,8 +30,15 @@ const Event = (props) => {
     <div>
       <div>
         <Helmet>
+          <link
+            rel="manifest"
+            href={`${process.env.PUBLIC_URL}/manifest.json`}
+          />
           <header>
-            <link rel="manifest" href="/manifest.json" />
+            <link
+              rel="manifest"
+              href={`${process.env.PUBLIC_URL}/manifest.json`}
+            />
           </header>{" "}
           <meta charset="utf-8" />
           <meta name="copyright" content="Infinity" />
@@ -73,6 +80,13 @@ const Event = (props) => {
             content="https://www.passionatebloggers.me/logo.png"
           />
         </Helmet>
+        <header>
+          <link
+            rel="manifest"
+            href={`${process.env.PUBLIC_URL}/manifest.json`}
+          />
+        </header>
+        <link rel="manifest" href={`${process.env.PUBLIC_URL}/manifest.json`} />
       </div>
       {loading ? (
         <div>
