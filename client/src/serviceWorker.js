@@ -69,21 +69,7 @@ function registerValidSW(swUrl, config) {
               // At this point, the updated precached content has been fetched,
               // but the previous service worker will still serve the older
               // content until all client tabs are closed.
-              window.addEventListener("fetch", (event) => {
-                event.respondWith(
-                  caches.match(event.request).then((response) => {
-                    if (response) {
-                      return response;
-                    }
-                    return fetch(event.request).then((response) => {
-                      caches.open("fetch").then((cache) => {
-                        cache.put(event.request, response.clone());
-                      });
-                      return response;
-                    });
-                  })
-                );
-              });
+
               console.log(
                 "New content is available and will be used when all " +
                   "tabs for this page are closed. See http://bit.ly/CRA-PWA."
