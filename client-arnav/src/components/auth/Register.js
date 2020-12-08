@@ -198,6 +198,7 @@ class Register extends Component {
                 <div className="form-group">
                   <label for="password">Password</label>
                   <input
+                    onKeyDown={this.handleKeyDown}
                     className="form-control item"
                     type="password"
                     id="password"
