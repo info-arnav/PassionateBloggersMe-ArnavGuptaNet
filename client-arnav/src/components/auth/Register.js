@@ -163,6 +163,7 @@ class Register extends Component {
                 <div className="form-group">
                   <label for="name">Username</label>
                   <input
+                    pattern="[a-zA-Z0-9][A-Za-z0-9.-]*"
                     onChange={this.onChange}
                     value={this.state.name}
                     error={errors.name}
