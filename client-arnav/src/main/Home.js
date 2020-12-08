@@ -76,7 +76,7 @@ const Home = (props) => {
             name="twitter:description"
             content={`Infinity is a platform for various bloggers to share their posts with various people`}
           />
-          <meta property="og:url" content={`https://www.arnavgupta.net/feed`} />
+          <meta property="og:url" content={`https://www.arnavgupta.net/`} />
           <meta
             name="twitter:image"
             content="https://www.arnavgupta.net/logo.png"
