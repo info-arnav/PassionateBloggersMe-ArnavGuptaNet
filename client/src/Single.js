@@ -319,7 +319,12 @@ const Single = (props) => {
                                   }
                                 />
                               </div>
-                              <Button>Post</Button>
+                              <button
+                                className="btn btn-primary btn-block"
+                                type="submit"
+                              >
+                                Post
+                              </button>
                             </p>
                           </form>
                         </div>
