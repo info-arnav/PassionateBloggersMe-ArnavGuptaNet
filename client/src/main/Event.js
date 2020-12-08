@@ -34,7 +34,15 @@ const Event = (props) => {
             rel="manifest"
             href={`${process.env.PUBLIC_URL}/manifest.json`}
           />
+          <link
+            rel="apple-touch-icon"
+            href={`${process.env.PUBLIC_URL}/logo.png`}
+          />
           <header>
+            <link
+              rel="apple-touch-icon"
+              href={`${process.env.PUBLIC_URL}/logo.png`}
+            />
             <link
               rel="manifest"
               href={`${process.env.PUBLIC_URL}/manifest.json`}
@@ -79,8 +87,16 @@ const Event = (props) => {
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
           />
-        </Helmet>
+        <Helmet/><link rel="apple-touch-icon" href={`${process.env.PUBLIC_URL}/logo.png`} />
+        <link
+          rel="apple-touch-icon"
+          href={`${process.env.PUBLIC_URL}/logo.png`}
+        />
         <header>
+          <link
+            rel="apple-touch-icon"
+            href={`${process.env.PUBLIC_URL}/logo.png`}
+          />
           <link
             rel="manifest"
             href={`${process.env.PUBLIC_URL}/manifest.json`}
