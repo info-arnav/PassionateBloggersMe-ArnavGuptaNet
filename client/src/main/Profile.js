@@ -251,19 +251,15 @@ const Profile = (props) => {
                   <div className="col-sm-6 col-lg-4">
                     <div className="card clean-card text-center">
                       {data.imagePath ? (
-                        <svg>
-                          <img
-                            className="card-img-top w-100 d-block"
-                            src={data.imagePath}
-                          />
-                        </svg>
+                        <img
+                          className="card-img-top w-100 d-block"
+                          src={data.imagePath}
+                        />
                       ) : (
-                        <svg>
-                          <img
-                            className="card-img-top w-100 d-block"
-                            src="l60Hf.png"
-                          />
-                        </svg>
+                        <img
+                          className="card-img-top w-100 d-block"
+                          src="l60Hf.png"
+                        />
                       )}
                       <div className="card-body info">
                         <h4 className="card-title">{data.name}</h4>
@@ -388,28 +384,24 @@ const Profile = (props) => {
                       <div className="row">
                         {e.imagePath ? (
                           <div class="col-lg-5">
-                            <svg>
-                              <img
-                                height="305.76px"
-                                class="rounded img-fluid"
-                                id="yaya"
-                                src={e.imagePath}
-                              />
-                            </svg>
+                            <img
+                              height="305.76px"
+                              class="rounded img-fluid"
+                              id="yaya"
+                              src={e.imagePath}
+                            />
                           </div>
                         ) : (
                           <div class="col-lg-5">
-                            <svg>
-                              <img
-                                height="305.76px"
-                                class="rounded img-fluid"
-                                id="yaya"
-                                src={
-                                  process.env.PUBLIC_URL +
-                                  "/blog-teaser-default-full_5.jpg"
-                                }
-                              />
-                            </svg>
+                            <img
+                              height="305.76px"
+                              class="rounded img-fluid"
+                              id="yaya"
+                              src={
+                                process.env.PUBLIC_URL +
+                                "/blog-teaser-default-full_5.jpg"
+                              }
+                            />
                           </div>
                         )}
                         <div className="col-lg-7">

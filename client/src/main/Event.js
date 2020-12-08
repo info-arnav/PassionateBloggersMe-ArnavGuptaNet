@@ -157,28 +157,24 @@ const Event = (props) => {
                       <div className="row">
                         {datas.imagePath ? (
                           <div class="col-lg-5">
-                            <svg>
-                              <img
-                                height="305.76px"
-                                class="rounded img-fluid"
-                                id="yaya"
-                                src={datas.imagePath}
-                              />
-                            </svg>
+                            <img
+                              height="305.76px"
+                              class="rounded img-fluid"
+                              id="yaya"
+                              src={datas.imagePath}
+                            />
                           </div>
                         ) : (
                           <div class="col-lg-5">
-                            <svg>
-                              <img
-                                height="305.76px"
-                                class="rounded img-fluid"
-                                id="yaya"
-                                src={
-                                  process.env.PUBLIC_URL +
-                                  "/blog-teaser-default-full_5.jpg"
-                                }
-                              />
-                            </svg>
+                            <img
+                              height="305.76px"
+                              class="rounded img-fluid"
+                              id="yaya"
+                              src={
+                                process.env.PUBLIC_URL +
+                                "/blog-teaser-default-full_5.jpg"
+                              }
+                            />
                           </div>
                         )}
                         <div className="col-lg-7">
