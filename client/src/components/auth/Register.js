@@ -36,6 +36,12 @@ class Register extends Component {
     }
   }
 
+  handleKeyDown = (e) => {
+    if (e.key === " ") {
+      e.preventDefault();
+    }
+  };
+
   onChange = (e) => {
     this.setState({ [e.target.id]: e.target.value });
   };
@@ -163,7 +169,7 @@ class Register extends Component {
                 <div className="form-group">
                   <label for="name">Username</label>
                   <input
-                    pattern="[a-zA-Z0-9][A-Za-z0-9.-]*"
+                    onKeyDown={this.handleKeyDown}
                     onChange={this.onChange}
                     value={this.state.name}
                     error={errors.name}
