@@ -295,15 +295,19 @@ class Active extends Component {
                     <div className="col-sm-6 col-lg-4">
                       <div className="card clean-card text-center">
                         {datass.imagePath ? (
-                          <img
-                            className="card-img-top w-100 d-block"
-                            src={datass.imagePath}
-                          />
+                          <svg>
+                            <img
+                              className="card-img-top w-100 d-block"
+                              src={datass.imagePath}
+                            />
+                          </svg>
                         ) : (
-                          <img
-                            className="card-img-top w-100 d-block"
-                            src="l60Hf.png"
-                          />
+                          <svg>
+                            <img
+                              className="card-img-top w-100 d-block"
+                              src="l60Hf.png"
+                            />
+                          </svg>
                         )}
                         <div className="card-body info">
                           <h4 className="card-title">{datass.name}</h4>

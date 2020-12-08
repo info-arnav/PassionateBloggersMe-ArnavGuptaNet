@@ -166,23 +166,27 @@ const Home = (props) => {
                               <div className="row">
                                 {f.imagePath ? (
                                   <div class="col-lg-5">
-                                    <img
-                                      id="yaya"
-                                      class="rounded img-fluid"
-                                      src={f.imagePath}
-                                    />
+                                    <svg>
+                                      <img
+                                        id="yaya"
+                                        class="rounded img-fluid"
+                                        src={f.imagePath}
+                                      />
+                                    </svg>
                                   </div>
                                 ) : (
                                   <div class="col-lg-5">
-                                    <img
-                                      height="305.76px"
-                                      class="rounded img-fluid"
-                                      id="yaya"
-                                      src={
-                                        process.env.PUBLIC_URL +
-                                        "/blog-teaser-default-full_5.jpg"
-                                      }
-                                    />
+                                    <svg>
+                                      <img
+                                        height="305.76px"
+                                        class="rounded img-fluid"
+                                        id="yaya"
+                                        src={
+                                          process.env.PUBLIC_URL +
+                                          "/blog-teaser-default-full_5.jpg"
+                                        }
+                                      />
+                                    </svg>
                                   </div>
                                 )}
                                 <div className="col-lg-7">
