@@ -142,6 +142,20 @@ app.post("/request/invite", (req, res) => {
   });
 });
 
+app.post("/comment/append", (req, res) => {
+  body = req.body;
+  eventModel
+    .findByIdAndUpdate(
+      body.id,
+      {
+        $addToSet: { comments: { user: body.user, comment: body.comment } },
+      },
+      (error, success) => {
+        console.log(error, success);
+      }
+    )
+    .then((e) => res.redirect(`/posted/@Ausername/title/${body.id}`));
+});
 // Routes
 app.use("/api/users", users);
 
@@ -942,6 +956,21 @@ app3.post("/following/pop", (req, res) => {
         res.send("done");
       })
     );
+});
+
+app3.post("/comment/append", (req, res) => {
+  body = req.body;
+  eventModel
+    .findByIdAndUpdate(
+      body.id,
+      {
+        $addToSet: { comments: { user: body.user, comment: body.comment } },
+      },
+      (error, success) => {
+        console.log(error, success);
+      }
+    )
+    .then((e) => res.redirect(`/posted/@Ausername/title/${body.id}`));
 });
 
 app3.post("/likes/append", (req, res) => {

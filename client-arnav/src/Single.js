@@ -6,10 +6,21 @@ import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
 import { logoutUser } from "./actions/authActions";
-import Axios from "axios";
+import axios from "axios";
+import Modal from "react-bootstrap/esm/Modal";
+import Button from "react-bootstrap/esm/Button";
 
 const Single = (props) => {
+  const [show, modalHandler] = useState(false);
   const { user } = props.auth;
+  const [typedComment, typingComment] = useState("");
+  const [refresh, refresher] = useState("unchanged");
+  const handleShow = () => {
+    modalHandler(true);
+  };
+  const handleHide = () => {
+    modalHandler(false);
+  };
   const [data, setData] = useState([]);
   const [loading, setLoading] = useState(true);
   const [liker, refresg] = useState("-1");
@@ -29,6 +40,7 @@ const Single = (props) => {
         .then((e) => setData(e));
     };
     secondry();
+    refresher("unchanged");
   }, []);
   return (
     <div>
@@ -247,7 +259,80 @@ const Single = (props) => {
                     <p>
                       <div dangerouslySetInnerHTML={{ __html: posts.blog }} />
                     </p>
+                    <Button
+                      variant="secondary"
+                      onClick={(e) => modalHandler(true)}
+                    >
+                      Comments
+                    </Button>
                   </div>
+                  <Modal
+                    show={show}
+                    onHide={handleHide}
+                    backdrop="static"
+                    keyboard={false}
+                  >
+                    <Modal.Header closeButton>
+                      <Modal.Title>Comments</Modal.Title>
+                    </Modal.Header>
+                    <Modal.Body>
+                      <div
+                        className="comments"
+                        style={{
+                          height: "200px",
+                          width: "100%",
+                          overflow: "auto",
+                          overflowX: "hidden",
+                        }}
+                      >
+                        {posts.comments.map((e) => (
+                          <div style={{ paddingTop: "5px" }}>
+                            <div style={{ backgroundColor: "lightgrey" }}>
+                              {e.user} - {e.comment}
+                            </div>
+                          </div>
+                        ))}
+                      </div>
+                      {user.name ? (
+                        <div className="form">
+                          <form
+                            action="/comment/append"
+                            method="post"
+                            style={{ paddingTop: "25px" }}
+                          >
+                            <p>
+                              <input value={posts._id} hidden name="id"></input>
+                              <input
+                                name="user"
+                                value={user.name}
+                                hidden
+                              ></input>
+                              <div className="form-group">
+                                <input
+                                  required
+                                  className="form-control"
+                                  placeholder="type your comment here"
+                                  value={typedComment}
+                                  name="comment"
+                                  onChange={(e) =>
+                                    typingComment(e.target.value)
+                                  }
+                                />
+                              </div>
+                              <Button>Post</Button>
+                            </p>
+                          </form>
+                        </div>
+                      ) : (
+                        <div></div>
+                      )}
+                    </Modal.Body>
+                    <Modal.Footer>
+                      <Button variant="secondary" onClick={handleHide}>
+                        Close
+                      </Button>
+                    </Modal.Footer>
+                  </Modal>
                 </div>
               </div>
             </section>
