@@ -5,6 +5,8 @@ import { connect } from "react-redux";
 import { loginUser } from "../../actions/authActions";
 import classnames from "classnames";
 import { Helmet } from "react-helmet";
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 import Navigation from "../../elements/Navigation";
 
 class Login extends Component {
@@ -145,6 +147,23 @@ class Login extends Component {
         <Navigation />
         <h1>load</h1>
         <main className="page login-page">
+          <Offline>
+            <Toast>
+              <Toast.Header>
+                <img
+                  src={`${process.env.PUBLIC_URL}/logo.png`}
+                  className="rounded mr-2"
+                  alt="logo"
+                />
+                <strong className="mr-auto">Infinity</strong>
+                <small>Currently</small>
+              </Toast.Header>
+              <Toast.Body>
+                Hey ! You are offline, connect to Internet for updates or go to
+                home page to see some of posts of people you follow
+              </Toast.Body>
+            </Toast>
+          </Offline>
           <section className="clean-block clean-form dark">
             <div className="container">
               <div className="block-heading">

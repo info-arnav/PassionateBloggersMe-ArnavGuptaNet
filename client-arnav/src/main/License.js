@@ -3,6 +3,8 @@ import { Helmet } from "react-helmet";
 import Footer from "../elements/Footer";
 import Navigation from "../elements/Navigation";
 
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 const License = () => {
   return (
     <div>
@@ -86,6 +88,23 @@ const License = () => {
       <Navigation />
       <h1>load</h1>
       <main className="page landing-page">
+        <Offline>
+          <Toast>
+            <Toast.Header>
+              <img
+                src={`${process.env.PUBLIC_URL}/logo.png`}
+                className="rounded mr-2"
+                alt="logo"
+              />
+              <strong className="mr-auto">Infinity</strong>
+              <small>Currently</small>
+            </Toast.Header>
+            <Toast.Body>
+              Hey ! You are offline, connect to Internet for updates or go to
+              home page to see some of posts of people you follow
+            </Toast.Body>
+          </Toast>
+        </Offline>
         <section className="clean-block about-us">
           <div className="container">
             <div className="block-heading">

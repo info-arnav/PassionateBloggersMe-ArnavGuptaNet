@@ -8,6 +8,8 @@ import { connect } from "react-redux";
 import Comment from "@bit/semantic-org.semantic-ui-react.comment";
 import Icon from "@bit/semantic-org.semantic-ui-react.icon";
 import { logoutUser } from "./actions/authActions";
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 import axios from "axios";
 import Modal from "react-bootstrap/esm/Modal";
 import Button from "react-bootstrap/esm/Button";
@@ -59,7 +61,25 @@ const Single = (props) => {
       {loading ? (
         <div>
           <Navigation />
+          <h1>load</h1>
           <main className="page blog-post">
+            <Offline>
+              <Toast>
+                <Toast.Header>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/logo.png`}
+                    className="rounded mr-2"
+                    alt="logo"
+                  />
+                  <strong className="mr-auto">Infinity</strong>
+                  <small>Currently</small>
+                </Toast.Header>
+                <Toast.Body>
+                  Hey ! You are offline, connect to Internet for updates or go
+                  to home page to see some of posts of people you follow
+                </Toast.Body>
+              </Toast>
+            </Offline>
             <section className="clean-block clean-post dark">
               <div className="container">
                 <div className="block-content">
@@ -186,7 +206,25 @@ const Single = (props) => {
             />
           </div>
           <Navigation />
+          <h1>load</h1>
           <main className="page blog-post">
+            <Offline>
+              <Toast>
+                <Toast.Header>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/logo.png`}
+                    className="rounded mr-2"
+                    alt="logo"
+                  />
+                  <strong className="mr-auto">Infinity</strong>
+                  <small>Currently</small>
+                </Toast.Header>
+                <Toast.Body>
+                  Hey ! You are offline, connect to Internet for updates or go
+                  to home page to see some of posts of people you follow
+                </Toast.Body>
+              </Toast>
+            </Offline>
             <section className="clean-block clean-post dark">
               <div className="container">
                 <div className="block-content">

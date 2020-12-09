@@ -6,6 +6,8 @@ import { Helmet } from "react-helmet";
 import { Editor } from "react-draft-wysiwyg";
 import "../../node_modules/react-draft-wysiwyg/dist/react-draft-wysiwyg.css";
 import draftToHtml from "draftjs-to-html";
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 import htmlToDraft from "html-to-draftjs";
 import { connect } from "react-redux";
 import { convertFromRaw, ContentState } from "draft-js";
@@ -177,6 +179,24 @@ class Feed extends Component {
               <section className="clean-block clean-blog-list dark">
                 <h1>load</h1>
                 <div className="container">
+                  <Offline>
+                    <Toast>
+                      <Toast.Header>
+                        <img
+                          src={`${process.env.PUBLIC_URL}/logo.png`}
+                          className="rounded mr-2"
+                          alt="logo"
+                        />
+                        <strong className="mr-auto">Infinity</strong>
+                        <small>Currently</small>
+                      </Toast.Header>
+                      <Toast.Body>
+                        Hey ! You are offline, connect to Internet for updates
+                        or go to home page to see some of posts of people you
+                        follow
+                      </Toast.Body>
+                    </Toast>
+                  </Offline>
                   <div className="block-heading">
                     <h2 className="text-info">Your Blogs</h2>
                   </div>
@@ -244,6 +264,24 @@ class Feed extends Component {
               <section className="clean-block clean-blog-list dark">
                 <h1>load</h1>
                 <div className="container">
+                  <Offline>
+                    <Toast>
+                      <Toast.Header>
+                        <img
+                          src={`${process.env.PUBLIC_URL}/logo.png`}
+                          className="rounded mr-2"
+                          alt="logo"
+                        />
+                        <strong className="mr-auto">Infinity</strong>
+                        <small>Currently</small>
+                      </Toast.Header>
+                      <Toast.Body>
+                        Hey ! You are offline, connect to Internet for updates
+                        or go to home page to see some of posts of people you
+                        follow
+                      </Toast.Body>
+                    </Toast>
+                  </Offline>
                   <div className="block-heading">
                     <h2 className="text-info">Your Blogs</h2>
                   </div>

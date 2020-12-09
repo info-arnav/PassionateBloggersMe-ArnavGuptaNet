@@ -3,6 +3,8 @@ import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
 import { logoutUser } from "../actions/authActions";
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 import { Helmet } from "react-helmet";
 import { Link, useParams } from "react-router-dom";
 import axios from "axios";
@@ -75,6 +77,24 @@ const Profile = (props) => {
               <div className="container">
                 <h1>load</h1>
                 <div className="block-heading">
+                  <Offline>
+                    <Toast>
+                      <Toast.Header>
+                        <img
+                          src={`${process.env.PUBLIC_URL}/logo.png`}
+                          className="rounded mr-2"
+                          alt="logo"
+                        />
+                        <strong className="mr-auto">Infinity</strong>
+                        <small>Currently</small>
+                      </Toast.Header>
+                      <Toast.Body>
+                        Hey ! You are offline, connect to Internet for updates
+                        or go to home page to see some of posts of people you
+                        follow
+                      </Toast.Body>
+                    </Toast>
+                  </Offline>
                   <h2 className="text-info">About</h2>
                 </div>
                 <div className="row justify-content-center">
@@ -245,6 +265,24 @@ const Profile = (props) => {
               <div className="container">
                 <h1>load</h1>
                 <div className="block-heading">
+                  <Offline>
+                    <Toast>
+                      <Toast.Header>
+                        <img
+                          src={`${process.env.PUBLIC_URL}/logo.png`}
+                          className="rounded mr-2"
+                          alt="logo"
+                        />
+                        <strong className="mr-auto">Infinity</strong>
+                        <small>Currently</small>
+                      </Toast.Header>
+                      <Toast.Body>
+                        Hey ! You are offline, connect to Internet for updates
+                        or go to home page to see some of posts of people you
+                        follow
+                      </Toast.Body>
+                    </Toast>
+                  </Offline>
                   <h2 className="text-info">About</h2>
                 </div>
                 <div className="row justify-content-center">

@@ -11,6 +11,8 @@ import { logoutUser } from "./actions/authActions";
 import axios from "axios";
 import Modal from "react-bootstrap/esm/Modal";
 import Button from "react-bootstrap/esm/Button";
+import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 
 const style = (
   <link
@@ -61,7 +63,25 @@ const Single = (props) => {
           <Navigation />
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
+              <h1>load</h1>
               <div className="container">
+                <Offline>
+                  <Toast>
+                    <Toast.Header>
+                      <img
+                        src={`${process.env.PUBLIC_URL}/logo.png`}
+                        className="rounded mr-2"
+                        alt="logo"
+                      />
+                      <strong className="mr-auto">Infinity</strong>
+                      <small>Currently</small>
+                    </Toast.Header>
+                    <Toast.Body>
+                      Hey ! You are offline, connect to Internet for updates or
+                      go to home page to see some of posts of people you follow
+                    </Toast.Body>
+                  </Toast>
+                </Offline>
                 <div className="block-content">
                   <div className="post-body">
                     <h3>
@@ -188,7 +208,25 @@ const Single = (props) => {
           <Navigation />
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
+              <h1>load</h1>
               <div className="container">
+                <Offline>
+                  <Toast>
+                    <Toast.Header>
+                      <img
+                        src={`${process.env.PUBLIC_URL}/logo.png`}
+                        className="rounded mr-2"
+                        alt="logo"
+                      />
+                      <strong className="mr-auto">Infinity</strong>
+                      <small>Currently</small>
+                    </Toast.Header>
+                    <Toast.Body>
+                      Hey ! You are offline, connect to Internet for updates or
+                      go to home page to see some of posts of people you follow
+                    </Toast.Body>
+                  </Toast>
+                </Offline>
                 <div className="block-content">
                   {posts.imagePath ? (
                     <div

@@ -3,6 +3,7 @@ import Footer from "../elements/Footer";
 import { Helmet } from "react-helmet";
 import Navigation from "../elements/Navigation";
 import { Offline, Online } from "react-detect-offline";
+import { Toast } from "react-bootstrap";
 import PropTypes from "prop-types";
 import Skeleton from "react-loading-skeleton";
 import { connect } from "react-redux";
@@ -131,6 +132,24 @@ const Home = (props) => {
                 <section className="clean-block clean-blog-list dark">
                   <h1>load</h1>
                   <div className="container">
+                    <Offline>
+                      <Toast>
+                        <Toast.Header>
+                          <img
+                            src={`${process.env.PUBLIC_URL}/logo.png`}
+                            className="rounded mr-2"
+                            alt="logo"
+                          />
+                          <strong className="mr-auto">Infinity</strong>
+                          <small>Currently</small>
+                        </Toast.Header>
+                        <Toast.Body>
+                          Hey ! You are offline, connect to Internet for updates
+                          or go to home page to see some of posts of people you
+                          follow
+                        </Toast.Body>
+                      </Toast>
+                    </Offline>
                     <div className="block-heading">
                       <h2 className="text-info">Blog Post List</h2>
                     </div>
@@ -163,6 +182,24 @@ const Home = (props) => {
                 <section className="clean-block clean-blog-list dark">
                   <h1>load</h1>
                   <div className="container">
+                    <Offline>
+                      <Toast>
+                        <Toast.Header>
+                          <img
+                            src={`${process.env.PUBLIC_URL}/logo.png`}
+                            className="rounded mr-2"
+                            alt="logo"
+                          />
+                          <strong className="mr-auto">Infinity</strong>
+                          <small>Currently</small>
+                        </Toast.Header>
+                        <Toast.Body>
+                          Hey ! You are offline, connect to Internet for updates
+                          or go to home page to see some of posts of people you
+                          follow
+                        </Toast.Body>
+                      </Toast>
+                    </Offline>
                     <div className="block-heading">
                       <h2 className="text-info">Home</h2>
                     </div>
@@ -296,6 +333,23 @@ const Home = (props) => {
         ) : (
           <main className="page landing-page">
             <h1>load</h1>
+            <Offline>
+              <Toast>
+                <Toast.Header>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/logo.png`}
+                    className="rounded mr-2"
+                    alt="logo"
+                  />
+                  <strong className="mr-auto">Infinity</strong>
+                  <small>Currently</small>
+                </Toast.Header>
+                <Toast.Body>
+                  Hey ! You are offline, connect to Internet for updates or go
+                  to home page to see some of posts of people you follow
+                </Toast.Body>
+              </Toast>
+            </Offline>
             <section className="clean-block clean-hero" id="homeImage">
               <div className="text">
                 <h2>Blogs for all </h2>
@@ -422,6 +476,24 @@ const Home = (props) => {
                 <section className="clean-block clean-blog-list dark">
                   <h1>load</h1>
                   <div className="container">
+                    <Offline>
+                      <Toast>
+                        <Toast.Header>
+                          <img
+                            src={`${process.env.PUBLIC_URL}/logo.png`}
+                            className="rounded mr-2"
+                            alt="logo"
+                          />
+                          <strong className="mr-auto">Infinity</strong>
+                          <small>Currently</small>
+                        </Toast.Header>
+                        <Toast.Body>
+                          Hey ! You are offline, connect to Internet for updates
+                          or go to home page to see some of posts of people you
+                          follow
+                        </Toast.Body>
+                      </Toast>
+                    </Offline>
                     <div className="block-heading">
                       <h2 className="text-info">Blog Post List</h2>
                     </div>
@@ -454,6 +526,24 @@ const Home = (props) => {
                 <section className="clean-block clean-blog-list dark">
                   <h1>load</h1>
                   <div className="container">
+                    <Offline>
+                      <Toast>
+                        <Toast.Header>
+                          <img
+                            src={`${process.env.PUBLIC_URL}/logo.png`}
+                            className="rounded mr-2"
+                            alt="logo"
+                          />
+                          <strong className="mr-auto">Infinity</strong>
+                          <small>Currently</small>
+                        </Toast.Header>
+                        <Toast.Body>
+                          Hey ! You are offline, connect to Internet for updates
+                          or go to home page to see some of posts of people you
+                          follow
+                        </Toast.Body>
+                      </Toast>
+                    </Offline>
                     <div className="block-heading">
                       <h2 className="text-info">Home</h2>
                     </div>
@@ -603,6 +693,23 @@ const Home = (props) => {
         ) : (
           <main className="page landing-page">
             <h1>load</h1>
+            <Offline>
+              <Toast>
+                <Toast.Header>
+                  <img
+                    src={`${process.env.PUBLIC_URL}/logo.png`}
+                    className="rounded mr-2"
+                    alt="logo"
+                  />
+                  <strong className="mr-auto">Infinity</strong>
+                  <small>Currently</small>
+                </Toast.Header>
+                <Toast.Body>
+                  Hey ! You are offline, connect to Internet for updates or go
+                  to home page to see some of posts of people you follow
+                </Toast.Body>
+              </Toast>
+            </Offline>
             <section className="clean-block clean-hero" id="homeImage">
               <div className="text">
                 <h2>Blogs for all </h2>
