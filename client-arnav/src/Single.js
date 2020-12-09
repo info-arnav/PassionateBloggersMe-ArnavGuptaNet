@@ -5,12 +5,11 @@ import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
-import Comment from "@bit/semantic-org.semantic-ui-react.comment";
-import Icon from "@bit/semantic-org.semantic-ui-react.icon";
 import { logoutUser } from "./actions/authActions";
 import { Offline, Online } from "react-detect-offline";
 import { Toast } from "react-bootstrap";
 import axios from "axios";
+import { Comment, Form, Header } from "semantic-ui-react";
 import Modal from "react-bootstrap/esm/Modal";
 import Button from "react-bootstrap/esm/Button";
 
@@ -301,21 +300,30 @@ const Single = (props) => {
                           overflowX: "hidden",
                         }}
                       >
-                        {posts.comments.map((e) => (
-                          <Comment.Group>
-                            {style}
+                        <Comment.Group>
+                          {posts.comments.map((e) => (
                             <Comment>
-                              <Comment.Avatar as="a" src={e.image} />
+                              <Comment.Avatar
+                                src={
+                                  e.image
+                                    ? e.image
+                                    : `${process.env.PUBLIC_URL}/l60Hf.png`
+                                }
+                              />
                               <Comment.Content>
-                                <Comment.Author>{e.user}</Comment.Author>
+                                <Comment.Author as="a">
+                                  <a href={`/profiles&value=${e.user}`}>
+                                    {e.user}
+                                  </a>
+                                </Comment.Author>
+                                <Comment.Metadata>
+                                  <div>{e.date}</div>
+                                </Comment.Metadata>
                                 <Comment.Text>{e.comment}</Comment.Text>
-                                <Comment.Actions>
-                                  <Comment.Date>{e.date}</Comment.Date>
-                                </Comment.Actions>
                               </Comment.Content>
                             </Comment>
-                          </Comment.Group>
-                        ))}
+                          ))}
+                        </Comment.Group>
                       </div>
                       {user.name ? (
                         <div className="form">
@@ -338,7 +346,7 @@ const Single = (props) => {
                               ></input>
                               <input
                                 name="date"
-                                value={new Date().getDate}
+                                value={new Date().getTime}
                                 hidden
                               ></input>
                               <div className="form-group">

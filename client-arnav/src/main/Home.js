@@ -34,76 +34,11 @@ const Home = (props) => {
   }, []);
   return (
     <div>
-      <Online>
-        <div>
-          <Helmet>
-            <link
-              rel="manifest"
-              href={`${process.env.PUBLIC_URL}/manifest.json`}
-            />
-            <link
-              rel="apple-touch-icon"
-              href={`${process.env.PUBLIC_URL}/logo.png`}
-            />
-            <header>
-              <link
-                rel="apple-touch-icon"
-                href={`${process.env.PUBLIC_URL}/logo.png`}
-              />
-              <link
-                rel="manifest"
-                href={`${process.env.PUBLIC_URL}/manifest.json`}
-              />
-            </header>{" "}
-            <meta charset="utf-8" />
-            <meta name="copyright" content="Infinity" />
-            <div hidden>71441</div>
-            <meta name="author" content="Arnav Gupta" />
-            <meta
-              name="viewport"
-              content="width=device-width, initial-scale=1"
-            />
-            <meta name="theme-color" content="#000000" />
-            <meta name="twitter:card" content="summary" />
-            <meta name="twitter:site" content="@InfinityByArnav" />
-            <meta name="twitter:creator" content="@arnav95600" />
-            <meta property="og:site_name" content="Infinity" />
-            <meta property="fb:app_id" content="807904256677081" />
-            <title>{`Infinity - The place where thoughts expand`}</title>
-            <meta
-              name="twitter:title"
-              content={`Infinity - The place where thoughts expand`}
-            />
-            <meta
-              name="description"
-              content="Infinity is a platform for various bloggers to share their posts with various people"
-            />
-            <meta
-              property="og:description"
-              content="Infinity is a platform for various bloggers to share their posts with various people"
-            />
-            <meta
-              name="twitter:description"
-              content={`Infinity is a platform for various bloggers to share their posts with various people`}
-            />
-            <meta property="og:url" content={`https://www.arnavgupta.net/`} />
-            <meta
-              name="twitter:image"
-              content="https://www.arnavgupta.net/logo.png"
-            />
-            <meta
-              property="og:title"
-              content={`Infinity - The place were thoughts expand`}
-            />
-            <meta property="og:type" content={`All Blogs`} />
-            <meta
-              property="og:image"
-              content="https://www.arnavgupta.net/logo.png"
-            />
-          </Helmet>
+      <div>
+        <Helmet>
           <link
-            rel="apple-touch-icon"
-            href={`${process.env.PUBLIC_URL}/logo.png`}
+            rel="manifest"
+            href={`${process.env.PUBLIC_URL}/manifest.json`}
           />
           <link
             rel="apple-touch-icon"
@@ -118,214 +53,268 @@ const Home = (props) => {
               rel="manifest"
               href={`${process.env.PUBLIC_URL}/manifest.json`}
             />
-          </header>
+          </header>{" "}
+          <meta charset="utf-8" />
+          <meta name="copyright" content="Infinity" />
+          <div hidden>71441</div>
+          <meta name="author" content="Arnav Gupta" />
+          <meta name="viewport" content="width=device-width, initial-scale=1" />
+          <meta name="theme-color" content="#000000" />
+          <meta name="twitter:card" content="summary" />
+          <meta name="twitter:site" content="@InfinityByArnav" />
+          <meta name="twitter:creator" content="@arnav95600" />
+          <meta property="og:site_name" content="Infinity" />
+          <meta property="fb:app_id" content="807904256677081" />
+          <title>{`Infinity - The place where thoughts expand`}</title>
+          <meta
+            name="twitter:title"
+            content={`Infinity - The place where thoughts expand`}
+          />
+          <meta
+            name="description"
+            content="Infinity is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            property="og:description"
+            content="Infinity is a platform for various bloggers to share their posts with various people"
+          />
+          <meta
+            name="twitter:description"
+            content={`Infinity is a platform for various bloggers to share their posts with various people`}
+          />
+          <meta property="og:url" content={`https://www.arnavgupta.net/`} />
+          <meta
+            name="twitter:image"
+            content="https://www.arnavgupta.net/logo.png"
+          />
+          <meta
+            property="og:title"
+            content={`Infinity - The place were thoughts expand`}
+          />
+          <meta property="og:type" content={`All Blogs`} />
+          <meta
+            property="og:image"
+            content="https://www.arnavgupta.net/logo.png"
+          />
+        </Helmet>
+        <link
+          rel="apple-touch-icon"
+          href={`${process.env.PUBLIC_URL}/logo.png`}
+        />
+        <link
+          rel="apple-touch-icon"
+          href={`${process.env.PUBLIC_URL}/logo.png`}
+        />
+        <header>
+          <link
+            rel="apple-touch-icon"
+            href={`${process.env.PUBLIC_URL}/logo.png`}
+          />
           <link
             rel="manifest"
             href={`${process.env.PUBLIC_URL}/manifest.json`}
           />
-        </div>
-        <Navigation />
-        {user.name ? (
-          loading ? (
-            <div>
-              <main className="page blog-post-list">
-                <section className="clean-block clean-blog-list dark">
-                  <h1>load</h1>
-                  <div className="container">
-                    <div className="block-heading">
-                      <h2 className="text-info">Blog Post List</h2>
-                    </div>
-                    <div className="block-content">
-                      <div className="clean-blog-post">
-                        <div className="row">
-                          <div className="col-lg-7">
-                            <h3 className="">
-                              <Skeleton />
-                            </h3>
-                            <div className="info">
-                              <span className="text-muted">
-                                <Skeleton />
-                                &nbsp;
-                                <Skeleton />
-                              </span>
-                            </div>
+        </header>
+        <link rel="manifest" href={`${process.env.PUBLIC_URL}/manifest.json`} />
+      </div>
+      <Navigation />
+      {user.name ? (
+        loading ? (
+          <div>
+            <main className="page blog-post-list">
+              <section className="clean-block clean-blog-list dark">
+                <h1>load</h1>
+                <div className="container">
+                  <div className="block-heading">
+                    <h2 className="text-info">Blog Post List</h2>
+                  </div>
+                  <div className="block-content">
+                    <div className="clean-blog-post">
+                      <div className="row">
+                        <div className="col-lg-7">
+                          <h3 className="">
                             <Skeleton />
+                          </h3>
+                          <div className="info">
+                            <span className="text-muted">
+                              <Skeleton />
+                              &nbsp;
+                              <Skeleton />
+                            </span>
                           </div>
+                          <Skeleton />
                         </div>
                       </div>
                     </div>
                   </div>
-                </section>
-              </main>
-            </div>
-          ) : (
-            <div>
-              <main className="page blog-post-list">
-                <section className="clean-block clean-blog-list dark">
-                  <h1>load</h1>
-                  <div className="container">
-                    <div className="block-heading">
-                      <h2 className="text-info">Home</h2>
-                    </div>
-                    <div className="block-content">
-                      {userData.following.map((e) =>
-                        postData.map((f) =>
-                          e == f.userId ? (
-                            <div>
-                              <div className="clean-blog-post">
-                                <div className="row">
-                                  {f.imagePath ? (
-                                    <div class="col-lg-5">
-                                      <img
-                                        id="yaya"
-                                        class="rounded img-fluid"
-                                        src={f.imagePath}
-                                      />
-                                    </div>
-                                  ) : (
-                                    <div class="col-lg-5">
-                                      <img
-                                        height="305.76px"
-                                        class="rounded img-fluid"
-                                        id="yaya"
-                                        src={
-                                          process.env.PUBLIC_URL +
-                                          "/blog-teaser-default-full_5.jpg"
-                                        }
-                                      />
-                                    </div>
-                                  )}
-                                  <div className="col-lg-7">
-                                    <h3>{f.subject}</h3>
-                                    <p>
-                                      {user.name ? (
-                                        f.likes.indexOf(userData._id) == -1 ? (
-                                          <form
-                                            action="/likes/append"
-                                            method="POST"
-                                          >
-                                            <input
-                                              value={f._id}
-                                              name="affected"
-                                              hidden
-                                            />
-                                            <input
-                                              value={userData._id}
-                                              name="affector"
-                                              hidden
-                                            />
-                                            <input
-                                              value="/projects"
-                                              name="path"
-                                              hidden
-                                            />
-                                            <button
-                                              className="btn btn-outline-primary btn-sm"
-                                              type="submit"
-                                            >
-                                              like - {f.likes.length}
-                                            </button>
-                                          </form>
-                                        ) : (
-                                          <form
-                                            action="/likes/pop"
-                                            method="POST"
-                                          >
-                                            <input
-                                              value={f._id}
-                                              name="affected"
-                                              hidden
-                                            />
-                                            <input
-                                              value={userData._id}
-                                              name="affector"
-                                              hidden
-                                            />
-                                            <input
-                                              value="/projects"
-                                              name="path"
-                                              hidden
-                                            />
-                                            <button
-                                              type="submit"
-                                              className="btn btn-outline-primary btn-sm"
-                                            >
-                                              unlike -{" "}
-                                              <meta
-                                                itemprop="ratingValue"
-                                                content={f.likes.length}
-                                              />
-                                              {f.likes.length}
-                                            </button>
-                                          </form>
-                                        )
-                                      ) : (
-                                        <div />
-                                      )}
-                                    </p>
-                                    <div className="info">
-                                      <span className="text-muted">
-                                        <time datetime={f.date}>{f.date}</time>{" "}
-                                        by&nbsp;
-                                        <a href={`/profiles&value=${f.name}`}>
-                                          {f.name}
-                                        </a>
-                                      </span>
-                                    </div>
-                                    <a
-                                      className="btn btn-outline-primary btn-sm"
-                                      type="button"
-                                      href={`/posted/@${f.name}/${f.subject}/${f._id}`}
-                                    >
-                                      Read More
-                                    </a>
+                </div>
+              </section>
+            </main>
+          </div>
+        ) : (
+          <div>
+            <main className="page blog-post-list">
+              <section className="clean-block clean-blog-list dark">
+                <h1>load</h1>
+                <div className="container">
+                  <div className="block-heading">
+                    <h2 className="text-info">Home</h2>
+                  </div>
+                  <div className="block-content">
+                    {userData.following.map((e) =>
+                      postData.map((f) =>
+                        e == f.userId ? (
+                          <div>
+                            <div className="clean-blog-post">
+                              <div className="row">
+                                {f.imagePath ? (
+                                  <div class="col-lg-5">
+                                    <img
+                                      id="yaya"
+                                      class="rounded img-fluid"
+                                      src={f.imagePath}
+                                    />
                                   </div>
+                                ) : (
+                                  <div class="col-lg-5">
+                                    <img
+                                      height="305.76px"
+                                      class="rounded img-fluid"
+                                      id="yaya"
+                                      src={
+                                        process.env.PUBLIC_URL +
+                                        "/blog-teaser-default-full_5.jpg"
+                                      }
+                                    />
+                                  </div>
+                                )}
+                                <div className="col-lg-7">
+                                  <h3>{f.subject}</h3>
+                                  <p>
+                                    {user.name ? (
+                                      f.likes.indexOf(userData._id) == -1 ? (
+                                        <form
+                                          action="/likes/append"
+                                          method="POST"
+                                        >
+                                          <input
+                                            value={f._id}
+                                            name="affected"
+                                            hidden
+                                          />
+                                          <input
+                                            value={userData._id}
+                                            name="affector"
+                                            hidden
+                                          />
+                                          <input
+                                            value="/projects"
+                                            name="path"
+                                            hidden
+                                          />
+                                          <button
+                                            className="btn btn-outline-primary btn-sm"
+                                            type="submit"
+                                          >
+                                            like - {f.likes.length}
+                                          </button>
+                                        </form>
+                                      ) : (
+                                        <form action="/likes/pop" method="POST">
+                                          <input
+                                            value={f._id}
+                                            name="affected"
+                                            hidden
+                                          />
+                                          <input
+                                            value={userData._id}
+                                            name="affector"
+                                            hidden
+                                          />
+                                          <input
+                                            value="/projects"
+                                            name="path"
+                                            hidden
+                                          />
+                                          <button
+                                            type="submit"
+                                            className="btn btn-outline-primary btn-sm"
+                                          >
+                                            unlike -{" "}
+                                            <meta
+                                              itemprop="ratingValue"
+                                              content={f.likes.length}
+                                            />
+                                            {f.likes.length}
+                                          </button>
+                                        </form>
+                                      )
+                                    ) : (
+                                      <div />
+                                    )}
+                                  </p>
+                                  <div className="info">
+                                    <span className="text-muted">
+                                      <time datetime={f.date}>{f.date}</time>{" "}
+                                      by&nbsp;
+                                      <a href={`/profiles&value=${f.name}`}>
+                                        {f.name}
+                                      </a>
+                                    </span>
+                                  </div>
+                                  <a
+                                    className="btn btn-outline-primary btn-sm"
+                                    type="button"
+                                    href={`/posted/@${f.name}/${f.subject}/${f._id}`}
+                                  >
+                                    Read More
+                                  </a>
                                 </div>
                               </div>
                             </div>
-                          ) : (
-                            <div />
-                          )
+                          </div>
+                        ) : (
+                          <div />
                         )
-                      )}
-                    </div>
+                      )
+                    )}
                   </div>
-                </section>
-              </main>
-            </div>
-          )
-        ) : (
-          <main className="page landing-page">
-            <h1>load</h1>
-
-            <section className="clean-block clean-hero" id="homeImage">
-              <div className="text">
-                <h2>Blogs for all </h2>
-                <p>share your blogs with the world</p>
-                <a
-                  href="/register"
-                  className="btn btn-outline-light btn-lg"
-                  type="button"
-                >
-                  Callaborate
-                </a>
-              </div>
-            </section>
-            <section className="clean-block about-us">
-              <div className="container">
-                <div className="block-heading">
-                  <h2 className="text-info">About</h2>
-                  <p>
-                    Infinity is a platform where various people can share their
-                    blogs with each other they can als follow the users they
-                    like. We will be adding additional features in the future.
-                  </p>
                 </div>
+              </section>
+            </main>
+          </div>
+        )
+      ) : (
+        <main className="page landing-page">
+          <h1>load</h1>
+
+          <section className="clean-block clean-hero" id="homeImage">
+            <div className="text">
+              <h2>Blogs for all </h2>
+              <p>share your blogs with the world</p>
+              <a
+                href="/register"
+                className="btn btn-outline-light btn-lg"
+                type="button"
+              >
+                Callaborate
+              </a>
+            </div>
+          </section>
+          <section className="clean-block about-us">
+            <div className="container">
+              <div className="block-heading">
+                <h2 className="text-info">About</h2>
+                <p>
+                  Infinity is a platform where various people can share their
+                  blogs with each other they can als follow the users they like.
+                  We will be adding additional features in the future.
+                </p>
               </div>
-            </section>
-          </main>
-        )}
-      </Online>
+            </div>
+          </section>
+        </main>
+      )}
     </div>
   );
 };
