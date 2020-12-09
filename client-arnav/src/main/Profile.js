@@ -77,24 +77,6 @@ const Profile = (props) => {
               <div className="container">
                 <h1>load</h1>
                 <div className="block-heading">
-                  <Offline>
-                    <Toast>
-                      <Toast.Header>
-                        <img
-                          src={`${process.env.PUBLIC_URL}/logo.png`}
-                          className="rounded mr-2"
-                          alt="logo"
-                        />
-                        <strong className="mr-auto">Infinity</strong>
-                        <small>Currently</small>
-                      </Toast.Header>
-                      <Toast.Body>
-                        Hey ! You are offline, connect to Internet for updates
-                        or go to home page to see some of posts of people you
-                        follow
-                      </Toast.Body>
-                    </Toast>
-                  </Offline>
                   <h2 className="text-info">About</h2>
                 </div>
                 <div className="row justify-content-center">
@@ -265,24 +247,6 @@ const Profile = (props) => {
               <div className="container">
                 <h1>load</h1>
                 <div className="block-heading">
-                  <Offline>
-                    <Toast>
-                      <Toast.Header>
-                        <img
-                          src={`${process.env.PUBLIC_URL}/logo.png`}
-                          className="rounded mr-2"
-                          alt="logo"
-                        />
-                        <strong className="mr-auto">Infinity</strong>
-                        <small>Currently</small>
-                      </Toast.Header>
-                      <Toast.Body>
-                        Hey ! You are offline, connect to Internet for updates
-                        or go to home page to see some of posts of people you
-                        follow
-                      </Toast.Body>
-                    </Toast>
-                  </Offline>
                   <h2 className="text-info">About</h2>
                 </div>
                 <div className="row justify-content-center">
