@@ -325,14 +325,10 @@ const Single = (props) => {
                         </Comment.Group>
                       </div>
                       {user.name ? (
-                        <div className="form">
-                          <form
-                            action="/comment/append"
-                            method="post"
-                            style={{ paddingTop: "25px" }}
-                          >
+                        <div className="form" style={{ paddingTop: "25px" }}>
+                          <form action="/comment/append" method="POST">
                             <p>
-                              <input value={posts._id} hidden name="id"></input>
+                              <input value={posts._id} name="id" hidden></input>
                               <input
                                 name="user"
                                 value={user.name}

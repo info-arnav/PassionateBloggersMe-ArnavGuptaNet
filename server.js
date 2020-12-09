@@ -143,17 +143,17 @@ app.post("/request/invite", (req, res) => {
 });
 
 app.post("/comment/append", (req, res) => {
-  body = req.body;
+  bodys = req.body;
   eventModel
     .findByIdAndUpdate(
-      body.id,
+      bodys.id,
       {
         $addToSet: {
           comments: {
-            user: body.user,
-            comment: body.comment,
-            image: body.image,
-            date: image.date,
+            user: bodys.user,
+            comment: bodys.comment,
+            image: bodys.image,
+            date: bodys.date,
           },
         },
       },
@@ -161,7 +161,7 @@ app.post("/comment/append", (req, res) => {
         console.log(error, success);
       }
     )
-    .then((e) => res.redirect(`/posted/@Ausername/title/${body.id}`));
+    .then((e) => res.redirect(`/posted/@Ausername/title/${bodys.id}`));
 });
 // Routes
 app.use("/api/users", users);
@@ -966,17 +966,17 @@ app3.post("/following/pop", (req, res) => {
 });
 
 app3.post("/comment/append", (req, res) => {
-  body = req.body;
+  bodys = req.body;
   eventModel
     .findByIdAndUpdate(
-      body.id,
+      bodys.id,
       {
         $addToSet: {
           comments: {
-            user: body.user,
-            comment: body.comment,
-            image: body.image,
-            date: image.date,
+            user: bodys.user,
+            comment: bodys.comment,
+            image: bodys.image,
+            date: bodys.date,
           },
         },
       },
@@ -984,7 +984,7 @@ app3.post("/comment/append", (req, res) => {
         console.log(error, success);
       }
     )
-    .then((e) => res.redirect(`/posted/@Ausername/title/${body.id}`));
+    .then((e) => res.redirect(`/posted/@Ausername/title/${bodys.id}`));
 });
 
 app3.post("/likes/append", (req, res) => {
