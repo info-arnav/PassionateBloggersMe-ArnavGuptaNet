@@ -160,7 +160,7 @@ class Register extends Component {
           />
         </div>
         <Navigation />
-        <h1>load</h1>
+
         <main className="page registration-page">
           <section className="clean-block clean-form dark">
             <div className="container">

@@ -145,7 +145,7 @@ class Login extends Component {
           />
         </div>
         <Navigation />
-        <h1>load</h1>
+
         <main className="page login-page">
           <section className="clean-block clean-form dark">
             <div className="container">

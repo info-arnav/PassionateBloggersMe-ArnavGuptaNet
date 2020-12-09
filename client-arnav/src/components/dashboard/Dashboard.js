@@ -154,7 +154,6 @@ class Dashboard extends Component {
             <Navigation />
             <main className="page registration-page">
               <section className="clean-block clean-form dark">
-                <h1>load</h1>
                 <div className="container">
                   <div className="block-heading">
                     <h2 className="text-info">
@@ -196,7 +195,6 @@ class Dashboard extends Component {
                 <Navigation />
                 <main className="page registration-page">
                   <section className="clean-block clean-form dark">
-                    <h1>load</h1>
                     <div className="container">
                       <div className="block-heading">
                         <h2 className="text-info">New Blog</h2>
@@ -271,7 +269,6 @@ class Dashboard extends Component {
                 <Navigation />
                 <main className="page registration-page">
                   <section className="clean-block clean-form dark">
-                    <h1>load</h1>
                     <div className="container">
                       <div className="block-heading">
                         <h2 className="text-info">Verify</h2>

@@ -95,7 +95,6 @@ You can share your queries with Arnav or Infinity Team here`}
       <main className="page contact-us-page">
         <section className="clean-block clean-form dark">
           <div className="container">
-            <h1>load</h1>
             <div className="block-heading">
               <h2 className="text-info">Contact Us</h2>
             </div>

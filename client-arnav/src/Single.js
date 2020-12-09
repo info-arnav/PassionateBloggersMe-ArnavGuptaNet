@@ -60,7 +60,7 @@ const Single = (props) => {
       {loading ? (
         <div>
           <Navigation />
-          <h1>load</h1>
+
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
               <div className="container">
@@ -188,7 +188,6 @@ const Single = (props) => {
             />
           </div>
           <Navigation />
-          <h1>load</h1>
           <main className="page blog-post">
             <section className="clean-block clean-post dark">
               <div className="container">

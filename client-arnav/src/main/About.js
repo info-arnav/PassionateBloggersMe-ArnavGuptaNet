@@ -92,7 +92,7 @@ Infinity is a platform for various bloggers to share their posts with various pe
         <link rel="manifest" href={`${process.env.PUBLIC_URL}/manifest.json`} />
       </div>
       <Navigation />
-      <h1>load</h1>
+
       <main className="page landing-page">
         <section className="clean-block clean-hero" id="homeImage">
           <div className="text">

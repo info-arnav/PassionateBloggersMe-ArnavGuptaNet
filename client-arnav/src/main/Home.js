@@ -123,7 +123,6 @@ const Home = (props) => {
           <div>
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
-                <h1>load</h1>
                 <div className="container">
                   <div className="block-heading">
                     <h2 className="text-info">Blog Post List</h2>
@@ -155,7 +154,6 @@ const Home = (props) => {
           <div>
             <main className="page blog-post-list">
               <section className="clean-block clean-blog-list dark">
-                <h1>load</h1>
                 <div className="container">
                   <div className="block-heading">
                     <h2 className="text-info">Home</h2>
@@ -286,8 +284,6 @@ const Home = (props) => {
         )
       ) : (
         <main className="page landing-page">
-          <h1>load</h1>
-
           <section className="clean-block clean-hero" id="homeImage">
             <div className="text">
               <h2>Blogs for all </h2>

@@ -1,6 +1,7 @@
 import React, { Component, lazy, Suspense } from "react";
 import "react-notifications-component/dist/theme.css";
 import "./loading.css";
+import { ToastContainer, toast } from "react-toastify";
 import { Offline, Online } from "react-detect-offline";
 import {
   BrowserRouter as Router,
@@ -8,20 +9,20 @@ import {
   Switch,
   Redirect,
 } from "react-router-dom";
+import "bootstrap/dist/css/bootstrap.min.css";
 import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
+import checkIcon from "./check.svg";
+import errorIcon from "./error.svg";
+import infoIcon from "./info.svg";
+import warningIcon from "./warning.svg";
 import store from "./store";
-import ReactNotification from "react-notifications-component";
 import PrivateRoute from "./components/private-route/PrivateRoute";
-import { withToastManager } from "react-toast-notifications";
 
 import "./App.css";
-import Skeleton from "react-loading-skeleton";
-import { Toast } from "react-bootstrap";
-import { notification } from "antd";
-const ConnectivityListener = lazy(() => import("./offline"));
+import OfflineNotify from "./OfflineNotify";
 const Home = lazy(() => import("./main/Home"));
 const Footer = lazy(() => import("./elements/Footer"));
 const Event = lazy(() => import("./main/Event"));
@@ -59,7 +60,6 @@ if (localStorage.jwtToken) {
 }
 
 class App extends Component {
-  state = { isOnline: window ? window.navigator.onLine : false };
   render() {
     const renderLoader = () => (
       <div class="loader">
@@ -88,10 +88,9 @@ class App extends Component {
           <Suspense fallback={renderLoader()}>
             <div className="App">
               <Offline>
-                <Offline>
-                  <ConnectivityListener></ConnectivityListener>
-                </Offline>
+                <OfflineNotify></OfflineNotify>
               </Offline>
+              <ToastContainer />
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/license" component={License} />

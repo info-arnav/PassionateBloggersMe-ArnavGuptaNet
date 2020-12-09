@@ -115,7 +115,6 @@ const Event = (props) => {
           <Navigation />
           <main className="page blog-post-list">
             <section className="clean-block clean-blog-list dark">
-              <h1>load</h1>
               <div className="container">
                 <div className="block-heading">
                   <h2 className="text-info">Blogs</h2>
@@ -148,7 +147,6 @@ const Event = (props) => {
           <Navigation />
           <main className="page blog-post-list">
             <section className="clean-block clean-blog-list dark">
-              <h1>load</h1>
               <div className="container">
                 <div className="block-heading">
                   <h2 className="text-info">Blogs</h2>

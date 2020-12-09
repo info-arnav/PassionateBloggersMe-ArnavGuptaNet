@@ -149,7 +149,6 @@ const SiteMap = (props) => {
           <Navigation />
           <main className="page blog-post-list">
             <section className="clean-block clean-blog-list dark">
-              <h1>load</h1>
               <div className="container">
                 <div className="block-heading">
                   <h2 className="text-info">Site Map</h2>

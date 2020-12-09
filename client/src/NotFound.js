@@ -5,7 +5,7 @@ const NotFound = () => {
   return (
     <div>
       <Navigation />
-      <h1>load</h1>
+
       <main className="page landing-page">
         <section className="clean-block clean-hero">
           <div className="text">

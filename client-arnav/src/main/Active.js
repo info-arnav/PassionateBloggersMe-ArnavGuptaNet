@@ -196,7 +196,6 @@ class Active extends Component {
             <main className="page">
               <section className="clean-block about-us">
                 <div className="container">
-                  <h1>load</h1>
                   <div className="block-heading">
                     <h2 className="text-info">
                       <Skeleton />
@@ -293,7 +292,6 @@ class Active extends Component {
             <main className="page">
               <section className="clean-block about-us">
                 <div className="container">
-                  <h1>load</h1>
                   <div className="block-heading">
                     <h2 className="text-info">Your Profile</h2>
                   </div>
