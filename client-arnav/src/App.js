@@ -1,5 +1,6 @@
 import React, { Component, lazy, Suspense } from "react";
 import "./loading.css";
+import { Offline, Online } from "react-detect-offline";
 import {
   BrowserRouter as Router,
   Route,
@@ -15,6 +16,7 @@ import PrivateRoute from "./components/private-route/PrivateRoute";
 
 import "./App.css";
 import Skeleton from "react-loading-skeleton";
+import { Toast } from "react-bootstrap";
 const Home = lazy(() => import("./main/Home"));
 const Footer = lazy(() => import("./elements/Footer"));
 const Event = lazy(() => import("./main/Event"));
@@ -78,6 +80,23 @@ class App extends Component {
         <Router>
           <Suspense fallback={renderLoader()}>
             <div className="App">
+              <Offline>
+                <Toast>
+                  <Toast.Header>
+                    <img
+                      src={`${process.env.PUBLIC_URL}/logo.png`}
+                      className="rounded mr-2"
+                      alt="logo"
+                    />
+                    <strong className="mr-auto">Infinity</strong>
+                    <small>Currently</small>
+                  </Toast.Header>
+                  <Toast.Body>
+                    Hey ! You are offline, connect to Internet for updates or go
+                    to home page to see some of posts of people you follow
+                  </Toast.Body>
+                </Toast>
+              </Offline>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/license" component={License} />
