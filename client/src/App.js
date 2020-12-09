@@ -1,4 +1,5 @@
 import React, { Component, lazy, Suspense } from "react";
+import "react-notifications-component/dist/theme.css";
 import "./loading.css";
 import { Offline, Online } from "react-detect-offline";
 import {
@@ -12,11 +13,15 @@ import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
 import store from "./store";
+import ReactNotification from "react-notifications-component";
 import PrivateRoute from "./components/private-route/PrivateRoute";
+import { withToastManager } from "react-toast-notifications";
 
 import "./App.css";
 import Skeleton from "react-loading-skeleton";
 import { Toast } from "react-bootstrap";
+import { notification } from "antd";
+const ConnectivityListener = lazy(() => import("./offline"));
 const Home = lazy(() => import("./main/Home"));
 const Footer = lazy(() => import("./elements/Footer"));
 const Event = lazy(() => import("./main/Event"));
@@ -52,7 +57,9 @@ if (localStorage.jwtToken) {
     window.location.href = "./login";
   }
 }
+
 class App extends Component {
+  state = { isOnline: window ? window.navigator.onLine : false };
   render() {
     const renderLoader = () => (
       <div class="loader">
@@ -80,6 +87,11 @@ class App extends Component {
         <Router>
           <Suspense fallback={renderLoader()}>
             <div className="App">
+              <Offline>
+                <Offline>
+                  <ConnectivityListener></ConnectivityListener>
+                </Offline>
+              </Offline>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/license" component={License} />

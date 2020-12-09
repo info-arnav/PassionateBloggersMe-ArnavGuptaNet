@@ -1,0 +1,9 @@
+{
+    "apps": [
+        {
+            "name": "client",
+            "script": "yarn",
+            "args" : "build"
+        }
+    ]
+}
