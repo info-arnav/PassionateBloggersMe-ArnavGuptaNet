@@ -80,23 +80,6 @@ class App extends Component {
         <Router>
           <Suspense fallback={renderLoader()}>
             <div className="App">
-              <Offline>
-                <Toast>
-                  <Toast.Header>
-                    <img
-                      src={`${process.env.PUBLIC_URL}/logo.png`}
-                      className="rounded mr-2"
-                      alt="logo"
-                    />
-                    <strong className="mr-auto">Infinity</strong>
-                    <small>Currently</small>
-                  </Toast.Header>
-                  <Toast.Body>
-                    Hey ! You are offline, connect to Internet for updates or go
-                    to home page to see some of posts of people you follow
-                  </Toast.Body>
-                </Toast>
-              </Offline>
               <Switch>
                 <Route exact path="/" component={Home} />
                 <Route path="/license" component={License} />
