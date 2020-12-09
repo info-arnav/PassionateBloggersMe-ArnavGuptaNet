@@ -148,7 +148,14 @@ app.post("/comment/append", (req, res) => {
     .findByIdAndUpdate(
       body.id,
       {
-        $addToSet: { comments: { user: body.user, comment: body.comment } },
+        $addToSet: {
+          comments: {
+            user: body.user,
+            comment: body.comment,
+            image: body.image,
+            date: image.date,
+          },
+        },
       },
       (error, success) => {
         console.log(error, success);
@@ -964,7 +971,14 @@ app3.post("/comment/append", (req, res) => {
     .findByIdAndUpdate(
       body.id,
       {
-        $addToSet: { comments: { user: body.user, comment: body.comment } },
+        $addToSet: {
+          comments: {
+            user: body.user,
+            comment: body.comment,
+            image: body.image,
+            date: image.date,
+          },
+        },
       },
       (error, success) => {
         console.log(error, success);

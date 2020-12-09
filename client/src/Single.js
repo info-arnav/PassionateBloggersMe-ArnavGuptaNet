@@ -5,11 +5,19 @@ import { useParams } from "react-router-dom";
 import { Helmet } from "react-helmet";
 import PropTypes from "prop-types";
 import { connect } from "react-redux";
+import Comment from "@bit/semantic-org.semantic-ui-react.comment";
+import Icon from "@bit/semantic-org.semantic-ui-react.icon";
 import { logoutUser } from "./actions/authActions";
 import axios from "axios";
 import Modal from "react-bootstrap/esm/Modal";
 import Button from "react-bootstrap/esm/Button";
 
+const style = (
+  <link
+    rel="stylesheet"
+    href="https://cdn.jsdelivr.net/npm/semantic-ui@2.4.1/dist/semantic.min.css"
+  />
+);
 const Single = (props) => {
   const [show, modalHandler] = useState(false);
   const { user } = props.auth;
@@ -31,13 +39,17 @@ const Single = (props) => {
       await fetch(`/single/post/${id}`)
         .then((e) => e.json())
         .then((e) => updater(e))
+        .then((e) => localStorage.setItem(`/single/post/${id}`, posts))
         .then((e) => setLoading(false));
     };
     fetcher();
     const secondry = async () => {
       await fetch(`/user/profile/data/${user.name}`)
         .then((e) => e.json())
-        .then((e) => setData(e));
+        .then((e) => setData(e))
+        .then((e) =>
+          localStorage.setItem(`/user/profile/data/${user.name}`, data)
+        );
     };
     secondry();
     refresher("unchanged");
@@ -286,11 +298,19 @@ const Single = (props) => {
                         }}
                       >
                         {posts.comments.map((e) => (
-                          <div style={{ paddingTop: "5px" }}>
-                            <div style={{ backgroundColor: "lightgrey" }}>
-                              {e.user} - {e.comment}
-                            </div>
-                          </div>
+                          <Comment.Group>
+                            {style}
+                            <Comment>
+                              <Comment.Avatar as="a" src={e.image} />
+                              <Comment.Content>
+                                <Comment.Author>{e.user}</Comment.Author>
+                                <Comment.Text>{e.comment}</Comment.Text>
+                                <Comment.Actions>
+                                  <Comment.Date>{e.date}</Comment.Date>
+                                </Comment.Actions>
+                              </Comment.Content>
+                            </Comment>
+                          </Comment.Group>
                         ))}
                       </div>
                       {user.name ? (
@@ -305,6 +325,16 @@ const Single = (props) => {
                               <input
                                 name="user"
                                 value={user.name}
+                                hidden
+                              ></input>
+                              <input
+                                name="image"
+                                value={user.imagePath}
+                                hidden
+                              ></input>
+                              <input
+                                name="date"
+                                value={new Date().getDate}
                                 hidden
                               ></input>
                               <div className="form-group">
