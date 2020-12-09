@@ -1,0 +1,28 @@
+{
+  "name": "@bit/semantic-org.semantic-ui-react.comment",
+  "version": "0.88.2",
+  "homepage": "https://bit.dev/semantic-org/semantic-ui-react/comment",
+  "main": "dist/views/Comment/index.js",
+  "componentId": {
+    "scope": "semantic-org.semantic-ui-react",
+    "name": "comment",
+    "version": "0.88.2"
+  },
+  "dependencies": {
+    "classnames": "^2.2.6",
+    "prop-types": "^15.7.2",
+    "lodash": "^4.17.15",
+    "@bit/semantic-org.semantic-ui-react.internal.genericd": "0.88.2",
+    "@bit/semantic-org.semantic-ui-react.internal.utils.index": "0.88.2"
+  },
+  "devDependencies": {},
+  "peerDependencies": {
+    "react": "^16.8.0"
+  },
+  "license": "SEE LICENSE IN LICENSE",
+  "bit": {
+    "env": {
+      "compiler": "semantic-org.semantic-ui-react-compiler/compilers/react@1.0.3"
+    }
+  }
+}

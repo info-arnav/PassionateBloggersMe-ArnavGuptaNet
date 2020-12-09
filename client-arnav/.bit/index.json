@@ -1,0 +1,194 @@
+[
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "comment"
+    },
+    "isSymlink": false,
+    "hash": "7e7059fd288c784960f3b75669b01cb5cbc62bd3"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "internal/genericd"
+    },
+    "isSymlink": false,
+    "hash": "5640f26e6363220ce9db7a7e3d6043123051e18f"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "internal/utils/index"
+    },
+    "isSymlink": false,
+    "hash": "6a4b69879b160625a52f08ffae5d5ce13872dbe6"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/auto-controlled-component"
+    },
+    "isSymlink": false,
+    "hash": "e4df416096daddfef53d6c4a25f724dfe057c65e"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/modern-auto-controlled-component"
+    },
+    "isSymlink": false,
+    "hash": "6577f25622398d5d22393fe11cf02aa91a654dc4"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/sui"
+    },
+    "isSymlink": false,
+    "hash": "8921fbeb2c8e6582581e98493034148346b85e9e"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/number-to-word"
+    },
+    "isSymlink": false,
+    "hash": "cb1ba2d540ed01f9c37d1b77cad936c2cfe35512"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/child-mapping"
+    },
+    "isSymlink": false,
+    "hash": "9981346d091813c75dbfb6c1fb4ab59be6ea7163"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/children-utils"
+    },
+    "isSymlink": false,
+    "hash": "7e598c5bbd3a0758e7da276bc0f5c1bddcf0e896"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/class-name-builders"
+    },
+    "isSymlink": false,
+    "hash": "0a3a4c81ae6ef85f1320569d3775d049250ee782"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/create-pagination-items"
+    },
+    "isSymlink": false,
+    "hash": "721fd87d649b707c5b03569d84b3ed5ddb08d3d7"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/custom-prop-types"
+    },
+    "isSymlink": false,
+    "hash": "4642f752aa5bd7c455b66d9863fb04aa6a59967a"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/leven"
+    },
+    "isSymlink": false,
+    "hash": "38df7de1106f366b53f538a90f0002b0c9610bf4"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/does-node-contain-click"
+    },
+    "isSymlink": false,
+    "hash": "433c57526b44d9d9a42909ed3c2be03e84ea4154"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/event-stack"
+    },
+    "isSymlink": false,
+    "hash": "48155125288024fa65cac777658619db83a02d88"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/factories"
+    },
+    "isSymlink": false,
+    "hash": "79c3276a0fd806aeff923914a2b4eaa07058cbdd"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/get-element-type"
+    },
+    "isSymlink": false,
+    "hash": "3dfb6f13e283c79bc3206929543a30f16a647656"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/get-unhandled-props"
+    },
+    "isSymlink": false,
+    "hash": "069baa4a10ddb2734d5e6c7ecff322f42c662571"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/html-props-utils"
+    },
+    "isSymlink": false,
+    "hash": "86adafc95abbcc021f3d4f4d72292deaa48ce178"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/is-browser"
+    },
+    "isSymlink": false,
+    "hash": "2936fdf59a28dc85b367b2e393648349523e5e31"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/make-debugger"
+    },
+    "isSymlink": false,
+    "hash": "5da2e0403bcd6ee5af1766b6df13d8776006c3f1"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/normalize-offset"
+    },
+    "isSymlink": false,
+    "hash": "7cca25432e58bc570a5622090302dc98c5dd3a48"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/normalize-transition-duration"
+    },
+    "isSymlink": false,
+    "hash": "f7f89c95daea826e69a44908e8a3b10a5bfde126"
+  },
+  {
+    "id": {
+      "scope": "semantic-org.semantic-ui-react",
+      "name": "utils/object-diff"
+    },
+    "isSymlink": false,
+    "hash": "002c0c1f174519623c25205d7d84bdb361bb168e"
+  }
+]
