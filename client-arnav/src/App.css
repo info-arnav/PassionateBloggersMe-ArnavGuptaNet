@@ -1,4 +1,8 @@
- /*
+ h1{
+color:white !important;
+}
+@import "~antd/dist/antd.css";
+/*
  * # Semantic UI - 2.4.2
  * https://github.com/Semantic-Org/Semantic-UI
  * http://www.semantic-ui.com/
