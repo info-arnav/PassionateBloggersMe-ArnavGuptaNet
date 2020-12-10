@@ -4,6 +4,8 @@ import "./index.css";
 import "./App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
+import { render } from 'react-snapshot';
+import 'localstorage-polyfill'
 
 const rootElement = document.getElementById("root");
 
@@ -12,6 +14,7 @@ if (rootElement.hasChildNodes()) {
 } else {
   ReactDOM.render(<App />, rootElement);
 }
+
 
 // If you want your app to work offline and load faster, you can change
 // unregister() to register() below. Note this comes with some pitfalls.

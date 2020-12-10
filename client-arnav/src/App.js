@@ -21,6 +21,7 @@ import warningIcon from "./warning.svg";
 import store from "./store";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 
+import 'localstorage-polyfill'
 import "./App.css";
 import OfflineNotify from "./OfflineNotify";
 const Home = lazy(() => import("./main/Home"));

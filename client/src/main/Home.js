@@ -289,7 +289,7 @@ const Home = (props) => {
         <main className="page landing-page">
           <section className="clean-block clean-hero" id="homeImage">
             <div className="text">
-              <h2 style={{ color: "white", paddingTop: "150px !important" }}>
+              <h2 id = "newImportant" style={{ color: "white", paddingTop: "150px !important" }}>
                 Blogs for all{" "}
               </h2>
               <p>share your blogs with the world</p>

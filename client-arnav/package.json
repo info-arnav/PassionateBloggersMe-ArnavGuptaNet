@@ -3,12 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "reactSnap": {
-    "puppeteerExecutablePath":"/usr/bin/google-chrome-stable",
+    "puppeteerExecutablePath": "/usr/bin/google-chrome-stable",
     "puppeteerArgs": [
       "--no-sandbox",
       "--disable-setuid-sandbox"
     ],
-    "inlineCss":true
+    "inlineCss": true
   },
   "dependencies": {
     "@babel/preset-env": "^7.1.6",
@@ -83,8 +83,10 @@
   ],
   "devDependencies": {
     "@babel/core": "^7.12.3",
+    "@fullhuman/postcss-purgecss": "^3.0.0",
     "babel-core": "^7.0.0-bridge.0",
     "babel-jest": "^26.6.3",
+    "localstorage-polyfill": "^1.0.1",
     "regenerator-runtime": "^0.13.7"
   }
 }
