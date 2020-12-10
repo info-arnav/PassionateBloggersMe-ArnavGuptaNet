@@ -1,5 +1,4 @@
 import React, { Component } from "react";
-import { withToastManager } from "react-toast-notifications";
 import { ToastContainer, toast } from "react-toastify";
 
 class OfflineNotify extends Component {

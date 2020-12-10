@@ -14,10 +14,6 @@ import jwt_decode from "jwt-decode";
 import setAuthToken from "./utils/setAuthToken";
 import { setCurrentUser, logoutUser } from "./actions/authActions";
 import { Provider } from "react-redux";
-import checkIcon from "./check.svg";
-import errorIcon from "./error.svg";
-import infoIcon from "./info.svg";
-import warningIcon from "./warning.svg";
 import store from "./store";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 
