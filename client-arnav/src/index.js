@@ -5,10 +5,9 @@ import "./App.css";
 import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 import { render } from 'react-snapshot';
-import 'localstorage-polyfill'
 
+console.log = () => {}
 const rootElement = document.getElementById("root");
-
 if (rootElement.hasChildNodes()) {
   ReactDOM.hydrate(<App />, rootElement);
 } else {

@@ -6,7 +6,7 @@ import App from "./App";
 import * as serviceWorker from "./serviceWorker";
 
 const rootElement = document.getElementById("root");
-
+console.log = () => {}
 if (rootElement.hasChildNodes()) {
   ReactDOM.hydrate(<App />, rootElement);
 } else {

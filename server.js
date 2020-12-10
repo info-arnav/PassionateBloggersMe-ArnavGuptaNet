@@ -27,7 +27,7 @@ let users = require("./routes/api/users");
 let eventModel = require("./models/eventModal");
 
 let extra = "";
-
+console.log = () => {}
 let tinkerFest = mongoose.Schema({
   name: String,
   codingsr: String,
