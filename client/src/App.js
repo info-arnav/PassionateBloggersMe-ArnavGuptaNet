@@ -1,5 +1,4 @@
 import React, { Component, lazy, Suspense } from "react";
-import "react-notifications-component/dist/theme.css";
 import "./loading.css";
 import { ToastContainer, toast } from "react-toastify";
 import { Offline, Online } from "react-detect-offline";
