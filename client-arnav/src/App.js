@@ -17,7 +17,7 @@ import store from "./store";
 import PrivateRoute from "./components/private-route/PrivateRoute";
 
 import "./App.css";
-import OfflineNotify from "./OfflineNotify";
+const OfflineNotify = lazy(() => import("./OfflineNotify"));
 const Home = lazy(() => import("./main/Home"));
 const Footer = lazy(() => import("./elements/Footer"));
 const Event = lazy(() => import("./main/Event"));
