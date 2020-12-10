@@ -16,7 +16,6 @@ var cors = require("cors");
 var url = require("url");
 let https = require("https");
 let http = require("http");
-var compression = require("compression");
 
 let User = require("./models/User");
 
@@ -91,8 +90,6 @@ Sentry.init({
 app.use(Sentry.Handlers.requestHandler());
 // TracingHandler creates a trace for every incoming request
 app.use(Sentry.Handlers.tracingHandler());
-
-app.use(compression());
 
 app.use(express.static(path.join(__dirname, "./client/build")));
 app.use(bodyParser.urlencoded({ extended: false }));
@@ -595,8 +592,6 @@ Sentry.init({
 app3.use(Sentry.Handlers.requestHandler());
 // TracingHandler creates a trace for every incoming request
 app3.use(Sentry.Handlers.tracingHandler());
-
-app3.use(compression());
 
 app3.use(express.static(path.join(__dirname, "./client-arnav/build")));
 app3.use(bodyParser.urlencoded({ extended: false }));
