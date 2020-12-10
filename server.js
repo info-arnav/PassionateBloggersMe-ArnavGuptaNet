@@ -5,7 +5,6 @@ let bodyParser = require("body-parser");
 let xml2js = require("xml2js");
 let mailgun = require("mailgun-js");
 let path = require("path");
-require("node-offline-localhost").always();
 var Sentry = require("@sentry/node");
 var Tracing = require("@sentry/tracing");
 let passport = require("passport");
@@ -27,7 +26,7 @@ let users = require("./routes/api/users");
 let eventModel = require("./models/eventModal");
 
 let extra = "";
-console.log = () => {}
+console.log = () => {};
 let tinkerFest = mongoose.Schema({
   name: String,
   codingsr: String,
