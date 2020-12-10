@@ -289,7 +289,7 @@ const Home = (props) => {
               <h2
                 style={{
                   color: "white",
-                  paddingTop: "150px !important",
+                  paddingTop: "150px",
                 }}
               >
                 Blogs for all{" "}
