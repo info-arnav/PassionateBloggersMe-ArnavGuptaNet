@@ -1,3 +1,6 @@
+h1{
+color:white !important;
+}
 @import "~antd/dist/antd.css";
 #notificationApp {
   display: inline !important;

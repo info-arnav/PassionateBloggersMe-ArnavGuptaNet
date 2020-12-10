@@ -286,7 +286,7 @@ const Home = (props) => {
         <main className="page landing-page">
           <section className="clean-block clean-hero" id="homeImage">
             <div className="text">
-              <h2>Blogs for all </h2>
+              <h2 style={{color:"white"}}>Blogs for all </h2>
               <p>share your blogs with the world</p>
               <a
                 href="/register"

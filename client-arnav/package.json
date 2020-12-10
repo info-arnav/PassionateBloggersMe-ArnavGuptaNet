@@ -3,7 +3,12 @@
   "version": "0.1.0",
   "private": true,
   "reactSnap": {
-    "inlineCss": true
+    "puppeteerExecutablePath":"/usr/bin/google-chrome-stable",
+    "puppeteerArgs": [
+      "--no-sandbox",
+      "--disable-setuid-sandbox"
+    ],
+    "inlineCss":true
   },
   "dependencies": {
     "@babel/preset-env": "^7.1.6",
