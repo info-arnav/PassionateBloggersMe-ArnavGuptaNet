@@ -59,7 +59,7 @@ const License = () => {
             property="og:title"
             content={`Infinity - The place were thoughts expand`}
           />
-          <meta property="og:type" content={`License`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"

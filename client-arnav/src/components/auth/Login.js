@@ -115,7 +115,7 @@ class Login extends Component {
               content="https://www.arnavgupta.net/logo.png"
             />
             <meta property="og:title" content={`Infinity - Login`} />
-            <meta property="og:type" content={`Login`} />
+            <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
               content="https://www.arnavgupta.net/logo.png"

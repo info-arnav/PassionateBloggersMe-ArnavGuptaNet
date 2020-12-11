@@ -84,7 +84,7 @@ const Event = (props) => {
             content="https://www.arnavgupta.net/logo.png"
           />
           <meta property="og:title" content={`Infinity - All Blogs`} />
-          <meta property="og:type" content={`All Blogs`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"

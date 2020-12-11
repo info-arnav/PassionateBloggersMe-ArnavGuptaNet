@@ -1,11 +1,14 @@
 import React from "react";
+import { Helmet } from "react-helmet";
 import Navigation from "./elements/Navigation";
 
 const NotFound = () => {
   return (
     <div>
       <Navigation />
-
+      <Helmet>
+        <meta name="robots" content="noindex" />
+      </Helmet>
       <main className="page landing-page">
         <section className="clean-block clean-hero">
           <div className="text">

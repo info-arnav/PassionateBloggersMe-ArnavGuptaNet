@@ -156,7 +156,7 @@ class Active extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta property="og:title" content={`Infinity - YOur Profile`} />
-            <meta property="og:type" content={`Profile`} />
+            <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
               content="https://www.passionatebloggers.me/logo.png"

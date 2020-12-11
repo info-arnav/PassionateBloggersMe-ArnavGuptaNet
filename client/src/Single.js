@@ -158,7 +158,7 @@ const Single = (props) => {
                 property="og:title"
                 content={`Infinity - ${posts.subject}`}
               />
-              <meta property="og:type" content={`Blog Post`} />
+              <meta property="og:type" content={`website`} />
               <meta
                 property="og:image"
                 content="https://www.passionatebloggers.me/logo.png"

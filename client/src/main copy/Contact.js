@@ -65,7 +65,7 @@ You can share your queries with Arnav or Infinity Team here`}
             content="https://www.arnavgupta.net/logo.png"
           />
           <meta property="og:title" content={`Infinity - Contact`} />
-          <meta property="og:type" content={`Contact`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"

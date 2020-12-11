@@ -212,7 +212,7 @@ const Profile = (props) => {
               property="og:title"
               content={`Infinity - Profile ${data.name}`}
             />
-            <meta property="og:type" content={`Profile - ${data.name}`} />
+            <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
               content="https://www.arnavgupta.net/logo.png"

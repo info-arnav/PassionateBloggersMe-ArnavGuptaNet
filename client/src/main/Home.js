@@ -94,7 +94,7 @@ const Home = (props) => {
             property="og:title"
             content={`Infinity - The place were thoughts expand`}
           />
-          <meta property="og:type" content={`All Blogs`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"
@@ -289,10 +289,10 @@ const Home = (props) => {
         <main className="page landing-page">
           <section className="clean-block clean-hero" id="homeImage">
             <div className="text">
-             <h2 id = "newImportant" style={{ color: "white", paddingTop: "150px !important" }}>
-
-
-
+              <h2
+                id="newImportant"
+                style={{ color: "white", paddingTop: "150px !important" }}
+              >
                 Blogs for all{" "}
               </h2>
               <p>share your blogs with the world</p>

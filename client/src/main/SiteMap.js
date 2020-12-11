@@ -85,7 +85,7 @@ const SiteMap = (props) => {
             property="og:title"
             content={`Infinity - User Friendly Site Ma`}
           />
-          <meta property="og:type" content={`User Friendly Site Map`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"

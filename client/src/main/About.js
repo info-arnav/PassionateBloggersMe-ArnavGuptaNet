@@ -65,7 +65,7 @@ Infinity is a platform for various bloggers to share their posts with various pe
             content="https://www.passionatebloggers.me/logo.png"
           />
           <meta property="og:title" content={`Infinity - About`} />
-          <meta property="og:type" content={`About`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.passionatebloggers.me/logo.png"

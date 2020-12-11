@@ -130,7 +130,7 @@ class Register extends Component {
               content="https://www.passionatebloggers.me/logo.png"
             />
             <meta property="og:title" content={`Infinity - Registeration`} />
-            <meta property="og:type" content={`Registeration`} />
+            <meta property="og:type" content={`website`} />
             <meta
               property="og:image"
               content="https://www.passionatebloggers.me/logo.png"

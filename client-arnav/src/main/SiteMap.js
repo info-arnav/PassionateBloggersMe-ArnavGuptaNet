@@ -83,9 +83,9 @@ const SiteMap = (props) => {
           />
           <meta
             property="og:title"
-            content={`Infinity - User Friendly Site Ma`}
+            content={`Infinity - User Friendly Site Map`}
           />
-          <meta property="og:type" content={`User Friendly Site Map`} />
+          <meta property="og:type" content={`website`} />
           <meta
             property="og:image"
             content="https://www.arnavgupta.net/logo.png"
