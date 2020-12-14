@@ -505,6 +505,9 @@ app.post("/likes/pop", (req, res) => {
     )
     .then((e) => res.redirect(body.path));
 });
+app.get("/error-page-not-found", (req, res)=> {
+res.status(404).send(path.join(__dirname, "./client/build", "index.html"))
+})
 /* renders the react components from port 5000 */
 app.get("*", (req, res) => {
   let header = req.headers;
@@ -1008,7 +1011,9 @@ app3.post("/likes/pop", (req, res) => {
     )
     .then((e) => res.redirect(body.path));
 });
-
+app3.get("/error-page-not-found", (req, res)=> {
+res.status(404).send(path.join(__dirname, "./client/build", "index.html"))
+})
 /* renders the react components from port 5000 */
 app3.get("*", (req, res) => {
   let header = req.headers;
