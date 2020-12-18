@@ -52,99 +52,108 @@ class Navigation extends Component {
     return (
       <div>
         {user.name ? (
-          <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-            <div class="container" id="adjustments">
-              <a class="navbar-brand" href="/">
+          <nav className="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+            <div className="container">
+              <a className="navbar-brand logo" href="/">
                 Infinity
               </a>
-              <div
-                class="collapse navbar-collapse"
-                id="adjustments navcol-1"
-                style={{
-                  paddingLeft: "0px !important",
-                  paddingRight: "0px !important",
-                }}
+              <button
+                data-toggle="collapse"
+                className="navbar-toggler"
+                data-target="#navcol-1"
               >
-                <ul id="adjustments" class="nav navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="/">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="navbar-toggler-icon" />
+              </button>
+              <div className="collapse navbar-collapse" id="navcol-1">
+                <ul className="nav navbar-nav ml-auto">
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/index">
                       Home
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/projects">
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/projects">
                       Blog
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/feed">
-                      Feed
+
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/feed">
+                      Your Blog
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/dashboard">
+                      New Blog
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/contact-us">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/active">
+                      Profile
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a
+                      className="nav-link"
+                      href="/login"
+                      onClick={this.onLogoutClick}
+                    >
+                      {user.name.split(" ")[0]} - logout
                     </a>
                   </li>
                 </ul>
               </div>
-              <form action="" id="adjustments">
-                <input placeholder="Search" type="search" />
-                <i class="fa fa-search"></i>
-              </form>
-              <span class="navbar-text actions" id="adjustments">
-                <a
-                  class=" fas fa-user login"
-                  href="/active"
-                  style={{ paddingLeft: "5px" }}
-                ></a>
-                <a
-                  class="btn btn-light action-button"
-                  role="button"
-                  onClick={this.onLogoutClick}
-                  href="/login"
-                >
-                  <i class="material-icons">exit_to_app</i>
-                </a>
-              </span>
             </div>
           </nav>
         ) : (
-          <nav class="navbar navbar-light navbar-expand-md navigation-clean-button">
-            <div class="container" id="adjustments">
-              <a class="navbar-brand" href="/">
+          <nav className="navbar navbar-light navbar-expand-lg fixed-top bg-white clean-navbar">
+            <div className="container">
+              <a className="navbar-brand logo" href="/">
                 Infinity
               </a>
-              <div
-                class="collapse navbar-collapse"
-                id="adjustments navcol-1"
-                style={{
-                  paddingLeft: "0px !important",
-                  paddingRight: "0px !important",
-                }}
+              <button
+                data-toggle="collapse"
+                className="navbar-toggler"
+                data-target="#navcol-1"
               >
-                <ul id="adjustments" class="nav navbar-nav mr-auto">
-                  <li class="nav-item">
-                    <a class="nav-link " href="/">
+                <span className="sr-only">Toggle navigation</span>
+                <span className="navbar-toggler-icon" />
+              </button>
+              <div className="collapse navbar-collapse" id="navcol-1">
+                <ul className="nav navbar-nav ml-auto">
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/index">
                       Home
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/projects">
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/projects">
                       Blog
                     </a>
                   </li>
-                  <li class="nav-item">
-                    <a class="nav-link" href="/feed">
-                      Feed
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/contact-us">
+                      Contact Us
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/login">
+                      Login
+                    </a>
+                  </li>
+                  <li className="nav-item" role="presentation">
+                    <a className="nav-link" href="/registration">
+                      Register
                     </a>
                   </li>
                 </ul>
               </div>
-              <form action="" id="adjustments">
-                <input placeholder="Search" type="search" />
-                <i class="fa fa-search"></i>
-              </form>
-              <span class="navbar-text actions" id="adjustments">
-                <a class="login" href="#" style={{ paddingLeft: "5px" }}>
-                  login
-                </a>
-              </span>
             </div>
           </nav>
         )}
